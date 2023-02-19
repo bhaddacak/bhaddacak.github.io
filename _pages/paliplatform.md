@@ -1,6 +1,6 @@
 ---
 title: "Pāli Platform 2 RC1"
-layout: post
+permalink: /paliplatform
 ---
 
 ![Pāli Platform 2's main screen](/assets/images/platform2-main-dark.png)

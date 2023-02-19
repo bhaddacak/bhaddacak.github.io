@@ -1,7 +1,7 @@
-title: "A Blog of Bhaddacak"
+title: "bhaddacak.github.io"
 author: "J.R. Bhaddacak"
 description: "Make life simple and easily happy"
-permalink: /:title/
+#permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
@@ -15,10 +15,11 @@ show_sidebar: false        # show a sidebar instead of the usual header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
+  - {file: "index.md", title: Home}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Blogger, icon: blogger-b, url: "http://paliplatform.blogspot.com"}
   - {title: Github, icon: github, url: "https://github.com/bhaddacak"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
@@ -28,3 +29,22 @@ comments:
 
 plugins:
  - jekyll-feed
+
+defaults:
+  -
+    scope:
+      type: posts
+      path: _posts
+    values:
+      is_post: true
+      layout: post
+      permalink: /blog/:title/
+  -
+    scope:
+      type: pages
+      path: _pages
+    values:
+      is_post: false
+      layout: page
+        
+include: [_pages]

@@ -1,6 +1,6 @@
 ---
 title: "Pāli Platform Meditation Timer (PPMT)"
-layout: post
+permalink: /ppmt
 ---
 
 ![PPMT](/assets/images/ppmt-timer.jpg)
