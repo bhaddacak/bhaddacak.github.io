@@ -4,11 +4,13 @@
 @import index, font, basic, layout, classes
 
 html
-  background: lighten($dark, 70%)
+  background: $dark
   padding: 0 calc(38% - 21em)
 
 body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+  background: $dark
+  color: $light
+  box-shadow: 0 0 0 1px lighten($dark, 8%)
 
 body > header, body > footer
   background: lighten($dark, 5%)
