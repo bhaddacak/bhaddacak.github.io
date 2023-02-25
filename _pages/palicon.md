@@ -27,3 +27,5 @@ permalink: /palicon
 }
 ```
 
+#### Preview
+{% include embed.html url="https://drive.google.com/file/d/1GBuuLuxc_pIqRV0VJsBmnFEDsMa2GxV7/preview" %}

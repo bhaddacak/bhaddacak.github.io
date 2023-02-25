@@ -26,3 +26,6 @@ permalink: /pp2man
 	url = {https://bhaddacak.github.io/pp2man},
 }
 ```
+
+#### Preview
+{% include embed.html url="https://drive.google.com/file/d/1N7e1FYr1LGP5PbYWtQhsqxT9bn7FX-m-/preview" %}

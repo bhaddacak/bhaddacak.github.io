@@ -26,3 +26,6 @@ permalink: /palitex
 	url = {https://bhaddacak.github.io/palitex},
 }
 ```
+
+#### Preview
+{% include embed.html url="https://drive.google.com/file/d/1420XPxTmfUjOs5GfUcbqX2b54Ja1DYnb/preview" %}
