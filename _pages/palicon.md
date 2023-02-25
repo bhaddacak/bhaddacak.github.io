@@ -12,7 +12,7 @@ permalink: /palicon
 | Project code: | palicon |
 | Version: | 2.0 |
 | File: | [palicon-2.0.pdf](https://drive.google.com/file/d/1GBuuLuxc_pIqRV0VJsBmnFEDsMa2GxV7/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| Graphic cover: | [palicon-cover.jpg](https://drive.google.com/file/d/145U0G3-Z7zl03yyTdsHPveZTtWEadnk7/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
+| Cover: | [palicon-cover.jpg](https://drive.google.com/file/d/145U0G3-Z7zl03yyTdsHPveZTtWEadnk7/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
 | Typical citation: | Bhaddacak, J. R. 2023. *Pāli for New Learners, Book 1: How to Say It*. 2.0. https://bhaddacak.github.io/palicon |
 
 #### Bib file entry
