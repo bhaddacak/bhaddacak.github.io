@@ -30,6 +30,5 @@ permalink: /ppmt
 
 The app will NOT be found in the Google Play Store.
 
-**Downloads:**
-- [PPMT 1.3.1](https://github.com/bhaddacak/ppmt/releases/tag/v1.3.1) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (Uninstall the older version first, or long press the reset button before use.)
-- [PPMT Simple 1.0.1](https://github.com/bhaddacak/ppmt/releases/tag/v1.0.1-simple) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (This can be installed together with the above one.) 
+[**Downloads**](https://github.com/bhaddacak/ppmt/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg>
+
