@@ -18,6 +18,7 @@ permalink: /ppmt
 - Select an interval between 1-20 minutes
 - Select a repeat up to 12 times
 - Select an alarm either bells or voice or none
+- Select the ending bell to use, if needed
 - Select a pattern of leading clicks
 - Select a preparation to use
 - Select if the device is kept awake
