@@ -6,7 +6,7 @@ permalink: /palicon
 ![PNL1](/assets/images/palicon-cover.jpg)
 
 | --- | --- |
-| Book name: | **Pāli for New Learners, Book 1: How to say it** |
+| Book title: | **Pāli for New Learners, Book 1: How to say it** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | A reader-friendly, yet comprehensive, Pāli primer |
 | Project code: | palicon |

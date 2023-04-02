@@ -4,4 +4,10 @@ layout: default
 <article>
   <header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>
   {{ content }}
+<footer>
+	{% if page.is_article %}
+	<br><small><code>Citation guide:</code> Bhaddacak, J. R. {{ page.date | date: '%Y'}}. "{{ page.title }}." Last modified {{ page.date | date: '%B %-d'}}. {{ site.url }}{{ page.url }}</small>
+	<br><small><code>Licensed under:</code> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></small>
+	{% endif %}
+</footer>
 </article>

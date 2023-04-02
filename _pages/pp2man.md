@@ -6,7 +6,7 @@ permalink: /pp2man
 ![PP2MAN](/assets/images/pp2man.png)
 
 | --- | --- |
-| Book name: | **Pāli Platform 2: The Official Manual** |
+| Book title: | **Pāli Platform 2: The Official Manual** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | The survival manual of Pāli Platform 2 |
 | Project code: | pp2man |

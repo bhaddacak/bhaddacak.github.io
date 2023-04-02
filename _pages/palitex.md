@@ -6,7 +6,7 @@ permalink: /palitex
 ![PNL2](/assets/images/palitex-cover.jpg)
 
 | --- | --- |
-| Book name: | **Pāli for New Learners, Book 2: How to read it** |
+| Book title: | **Pāli for New Learners, Book 2: How to read it** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | A manual of Pāli text reading |
 | Project code: | palitex |
