@@ -2,7 +2,7 @@
 title: "A Humble Guide to Meditation"
 permalink: /medguide
 is_article: true
-date: 2023-04-02 12:00:00 +0700
+date: 2023-04-07 12:00:00 +0700
 ---
 
 I am not a meditation teacher, and I will never position myself in such a role. Because I have little to say about meditation, even though I do it everyday for nearly two decades (plus one decade of occasional practices before that). I see it as a personal endeavor that everyone should find their own way to do it. Like bodily exercise, if done properly, meditation, beyond any dispute, has great benefits for our health and other aspects of our life. So, there is no reason why you shouldn't do it.
@@ -59,7 +59,7 @@ Many things can happen in a meditation session, particularly a long one. The mos
 
 Without this rule, your meditation can go awry, and you can miss the very result of it. Many people start meditate with some goal in mind.[^medgoallist] This seriously hampers the practice. So, you have to expect nothing from your meditation.
 
-[^medgoallist]: See a list in [Introduction to Critical Buddhist Studies](/cribudstu#meditation), for example.
+[^medgoallist]: See a list in "[Introduction to Critical Buddhist Studies](/cribudstu#meditation)," for example.
 
 Also do not judge your meditative experiences from any of your beliefs, like "This must come from my bad karma" or "This must be the Buddha coming to me" or "This must be a sign of the stream-enterer." Your beliefs will ruin your meditation's result and drive you crazy.
 
@@ -84,10 +84,12 @@ And these results will be better in the next decade to come. This is the nonsens
 - You may attend a meditation retreat once a year. At retreats, the environment can help you in a significant way. You will have less distractions. And you can get help from teachers.
 - Be careful with advice from meditation teachers. The advice can go in a variety of ways, even contradict to what I guide you here. A criterion to assess teachers' advice I often use is whether the advice makes you stuck with certain beliefs or not. If so, it is a sign of danger.
 - Be careful with vipassanā retreats, particularly in the Mahāsī system. Mostly this kind of retreat has helpful environment and it is normally free of charge in Buddhist countries. In this system, you have to be interviewed daily. The interview will keep you from going astray (not conforming with the system). Most of the time, you will be asked whether you feel something unusual in your experiences. I find that this asking can press the practitioners to make up the seeing by themselves (possibly from their former reading), often unconsciously (Maybe the asking implies that you have to feel or see something otherwise you fail). Moreover, many retreats in Buddhist countries incessantly inculcate Buddhist ideology into the mind of meditators. I also see this as a sign of danger. However, it is advisable to have this kind of retreat at least once in your life. You can learn many things from it, such as an effective way to do walking meditation.
-- A suggested, additional reading on the subject is *Zen Mind, Beginner's Mind* by Shunryu Suzuki (1970).[^zenmind] Excluding its Soto Zen ideology, the simple approach in the book is close to mine. As Dogen teaches his students, "We all have the Buddha-nature, hence each of us is already a buddha, so we sit." This is the source of *just sitting* approach. You sit, not for being an enlightened one or someone other than you, but instead you are already that being, so you sit. You can subtract the belief in the Buddha-nature and other things from the teaching, and just enjoy the practical guidelines. Still, you have to follow the three rules above strictly, otherwise you fail.
+- A suggested, additional reading on the subject is *Zen Mind, Beginner's Mind* by Shunryu Suzuki (1970).[^zenmind] Excluding its Soto Zen ideology, the simple approach in the book is close to mine. As Dōgen teaches his students, "We all have the Buddha-nature, hence each of us is already enlightened, so we sit."[^mappo] This is the source of *just sitting* approach. You sit, not for being an enlightened one or someone other than you, but instead you are already that being, so you sit. You can subtract the belief in the Buddha-nature and other things from the teaching, and just enjoy the practical guidelines. Still, you have to follow the three rules above strictly, otherwise you fail.
 
 [^music]: Since it goes against the traditional belief, I hesitate to suggest that listening to music can also helpful in this situation, particularly in a very noisy place. However, you have to train yourself to listen attentively. Do nothing else, just listen, and listen to everything of every second of it. The best music genre to use is classical music. Some New Age music can be as good as it. Some Jazz can be jerky; smooth/cool Jazz is better. Avoid tunes with lyrics, because intelligible words are distracting and can induce thoughts. Or try foreign songs that cannot be understood by you. Young listeners can use instrumental rock music, or incomprehensible death metal songs. However, music cannot replace real meditation. Never use music in your main meditation sessions. In fact, any kind of audio tracks, such as dhamma talks, should be avoided as well.
 
 [^zenmind]: Shunryu Suzuki, 2020, *Zen Mind, Beginner's Mind: Informal talks on Zen meditation and practice*, 50th anniversary edition, Shambhala.
+
+[^mappo]: For serious readers, see further "[Mappō, Hongaku, and Hijiri: Three Factors That Shaped Kamakura Buddhism](/mahohi)" for a deeper understanding of Japanese Buddhism and the idea of *original enlightenment* (hongaku).
 
 ## Notes

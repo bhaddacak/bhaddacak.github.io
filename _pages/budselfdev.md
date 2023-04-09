@@ -2,7 +2,7 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2023-04-02 12:00:00 +0700
+date: 2023-04-06 12:00:00 +0700
 ---
 
 After I studied Buddhism seriously and critically, it happens that many things taught by the tradition have to be discarded. I do not want to make myself in trouble by rejecting the tradition. But rather my integrity does not allow inconsistency happens. When we really understand things critically, we cannot help rejecting things not conforming to what we hold as true.
@@ -13,7 +13,7 @@ As the big picture tells us, Buddhism emerged into the world to solve the proble
 
 That may sound familiar to those who know the ethics of Aristotle. In short, we have to train ourselves until we possess dispositions that make us happy.[^happiness] Scholars generally call this system *virtue ethics*. And many see Buddhism in the same way, but with its own framework.
 
-[^happiness]: The word *happy* is misleading in this sense. In Greek, it is *eudaimonia* (happiness), often translated as *flourishing* or *success* to avoid narrowing it to just pleasure. The best way to get the idea is by answering this question: "What is the best possible life for a human being to live?" See M. Andrew Holowchak, 2004, *Happiness and Greek Ethical Thought*, Continuum, page xii.
+[^happiness]: The word *happy* is misleading in this sense. In Greek, it is *eudaimonia* (happiness), often translated as *flourishing* or *success* to avoid narrowing it to just pleasure. The best way to get the idea is by answering this question: "What is the best possible life for a human being to live?" See M. Andrew Holowchak, 2004, *Happiness and Greek Ethical Thought*, Continuum, p. xii.
 
 What I will describe here goes beyond the notion of ethics in its narrow sense---what kind of conduct counted as good. But rather it represents the whole guideline of living a wholesome life according to the Buddhist model.
 
@@ -236,7 +236,7 @@ Here are my down-to-earth explanation of perfections.
 
 [^nekkhamma]: In Pāli, *nekkhamma* is secondary derivation of *nikkhamma*, an absolutive form of *nikkhamati* (to go forth, to come out).
 
-[^factors]: There are five jhānic factors, namely *vitakka*, *vicāra*, *pīti*, *sukha*, and *upekkhā* (or *ekaggatā*). All these are technical terms with a variety of explanations, so I leave out them because they have little to do with the real practice. The most recognizable factor is pīti (rapture).
+[^factors]: There are five jhānic factors, namely *vitakka* (applied thought), *vicāra* (sustained thought), *pīti* (rapture), *sukha* (pleasure), and *upekkhā* (equanimity) (or *ekaggatā*). All these are technical terms with a variety of explanations, so I leave out them because they have little to do with the real practice. The most recognizable factor is pīti. See also in [*Is Vipassanā a Mystical Experience?*](/vipmysexp).
 
 Like the noble eightfold path, each perfection can be put in relation to the threefold training. For some items are redundant, I will leave them out. The full picture of all factors put together is shown in Figure 3.
 

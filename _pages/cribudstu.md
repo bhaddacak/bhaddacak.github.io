@@ -2,7 +2,7 @@
 title: "Introduction to Critical Buddhist Studies"
 permalink: /cribudstu
 is_article: true
-date: 2023-04-02 12:00:00 +0700
+date: 2023-04-04 12:00:00 +0700
 ---
 
 Here, I am not going to introduce a new kind of discipline or field of study, because Buddhist studies has already been a well-established academic field for a long time, and very active with vast area of research nowadays. As an academic discipline, Buddhist studies is supposed to be engaged with a critical mind. That is to say, critical Buddhist studies should be a default mode of inquiry into the subject. In other words, it is redundant to use critical Buddhist studies in academia. The field should be critical by its nature.
@@ -15,7 +15,7 @@ Now I will define what I mean by *Critical Buddhist Studies* (CBS onwards). CBS 
 
 Why do Buddhists need CBS? This is a pressing problem in our time, which is called *post-truth*[^posttruth] era. In short, If you are not critical enough on everything nowadays, you are likely to be a victim of manipulations. Apart from politics, from which the notion of *post-truth* originated, religion is also one of the most active domain that reality is manipulated, or ignored completely, for various benefits, sometimes not the benefits for the adherents themselves but just for those who control the narration of truth.
 
-[^posttruth]: "[P]ost-truth amounts to a form of ideological supremacy, whereby its practitioners are trying to compel someone to believe in something whether there is good evidence for it or not." Lee McIntyre, 2018, *Post-Truth*, The MIT Press, page 13.
+[^posttruth]: "[P]ost-truth amounts to a form of ideological supremacy, whereby its practitioners are trying to compel someone to believe in something whether there is good evidence for it or not." Lee McIntyre, 2018, *Post-Truth*, The MIT Press, p. 13.
 
 Most religious adherents normally believe, without using proper reasoning, that what is told from authorities is the unquestionable, unchallengeable truth. That is a sign of unhealthy condition of their being, because they can be moved in any direction, or do anything complying with the controllers' will and benefits.
 
@@ -45,7 +45,7 @@ If the result of critical thinking does not agree with what has been told former
 
 Why that can happen if we are rational beings? As modern cognitive sciences tell us, however, we are normally not so reasonable. Because using reasoning is costly, and we tend to be lazy when thinking about things. Psychologists therefore see our way of thinking as a dual process, widely called *System 1* (intuitive processor) and *System 2* (conscious rule interpreter).[^twosystems]
 
-[^twosystems]: Jack Lyons and Barry Ward, 2018, *The New Critical Thinking: An Empirically Informed Introduction*, Routledge, pages 4--5. The most complete and readable book about the two systems is Daniel Kahneman, 2011, *Thinking, Fast and Slow*, Macmillan.
+[^twosystems]: Jack Lyons and Barry Ward, 2018, *The New Critical Thinking: An Empirically Informed Introduction*, Routledge, pp. 4--5. The most complete and readable book about the two systems is Daniel Kahneman, 2011, *Thinking, Fast and Slow*, Macmillan.
 
 In short, System 1 is quick, automatic, and unconscious process, while System 2 is slow, deliberate, and effortful. The two systems are suitable for different tasks: in daily routine we mostly use System 1, in solving a Math problem we use System 2, for example. Both systems are the source of our beliefs. We can believe many things by our 'intuition' or by our conscious reasoning. Unfortunately, System 1 or 'intuition' often wins and causes more problems in life.
 
@@ -53,19 +53,19 @@ Therefore, we have to use conscious thinking more when considering religious (an
 
 Some may see our reasoning differently. For example, Hugo Mercier and Dan Sperber contend that the two main functions of our reason are (1) to explain and justify ourselves, and (2) to persuade others.[^enigma]
 
-[^enigma]: Hugo Mercier and Dan Sperber, 2017, *The Enigma of Reason*, Harvard University Press, pages 8--9.
+[^enigma]: Hugo Mercier and Dan Sperber, 2017, *The Enigma of Reason*, Harvard University Press, pp. 8--9.
 
 That may explain why good evidence cannot help someone from being a post-truth victim. Because we normally attach to our dear beliefs; we are on guard to rationalize our actions and beliefs. This even shows that critical thinking skill is really important to rescue us from irrational world.
 
 Another reason I want to stress why critical thinking matters is about consistency. To maintain our integrity, hence "say what we do, and do what we say," we must keep our thinking consistent.[^normative] Those who have good critical thinking skill normally also have high integrity. For religious people, integrity is a crucial characteristic. Otherwise, they are just hypocrites.
 
-[^normative]: In a normative theory of thinking, or how should we think, we maintain our consistency by (1) *logic* (to clarify sets of beliefs), (2) *probability* (to clarify degrees of belief), and (3) *rational choice* (to make our choices consistent). Nick Chater and Mike Oaksford, 2012, "Normative Systems: Logic, Probability, and Rational Choice," in Keith J. Holyoak and Robert G. Morrison (eds), *The Oxford Handbook of Thinking and Reasoning*, Oxford University Press, pages 11--21.
+[^normative]: In a normative theory of thinking, or how should we think, we maintain our consistency by (1) *logic* (to clarify sets of beliefs), (2) *probability* (to clarify degrees of belief), and (3) *rational choice* (to make our choices consistent). Nick Chater and Mike Oaksford, 2012, "Normative Systems: Logic, Probability, and Rational Choice," in *The Oxford Handbook of Thinking and Reasoning*, edited by Keith J. Holyoak and Robert G. Morrison, 11--21, Oxford University Press.
 
 To sum up, critical thinking skill is indispensable to CBS. It is really necessary nowadays and should be used in every aspect of our life. And we have to practice it. Here is the intended definition of the term, the most widely used.
 
 > Critical thinking is reasonable, reflective thinking that is focused on deciding what to believe or do.[^ennisdef]
 
-[^ennisdef]: The definition by Robert Ennis. Alec Fisher, 2011, *Critical Thinking: An Introduction*, 2nd ed., Cambridge University Press, page 4.
+[^ennisdef]: The definition by Robert Ennis. Alec Fisher, 2011, *Critical Thinking: An Introduction*, 2nd ed., Cambridge University Press, p. 4.
 
 How to think critically, then? If we take the subject seriously, it will be a lot of things to know, like logic, fallacies, psychology of thinking and decision, and those kinds of thing. And it is worth investing your time and effort to study these rigorously. But I think reasoning with our commonsense is enough in most cases. We just have to be aware of it and acknowledge our ignorance, prejudice, and hypocrisy. *"Do not judge beyond evidence"* is a simple but crucial rule.
 
