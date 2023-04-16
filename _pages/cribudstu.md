@@ -2,7 +2,7 @@
 title: "Introduction to Critical Buddhist Studies"
 permalink: /cribudstu
 is_article: true
-date: 2023-04-04 12:00:00 +0700
+date: 2023-04-13 12:00:00 +0700
 ---
 
 Here, I am not going to introduce a new kind of discipline or field of study, because Buddhist studies has already been a well-established academic field for a long time, and very active with vast area of research nowadays. As an academic discipline, Buddhist studies is supposed to be engaged with a critical mind. That is to say, critical Buddhist studies should be a default mode of inquiry into the subject. In other words, it is redundant to use critical Buddhist studies in academia. The field should be critical by its nature.
@@ -65,7 +65,7 @@ To sum up, critical thinking skill is indispensable to CBS. It is really necessa
 
 > Critical thinking is reasonable, reflective thinking that is focused on deciding what to believe or do.[^ennisdef]
 
-[^ennisdef]: The definition by Robert Ennis. Alec Fisher, 2011, *Critical Thinking: An Introduction*, 2nd ed., Cambridge University Press, p. 4.
+[^ennisdef]: The definition by Robert Ennis. Cited in Alec Fisher, 2011, *Critical Thinking: An Introduction*, 2nd ed., Cambridge University Press, p. 4.
 
 How to think critically, then? If we take the subject seriously, it will be a lot of things to know, like logic, fallacies, psychology of thinking and decision, and those kinds of thing. And it is worth investing your time and effort to study these rigorously. But I think reasoning with our commonsense is enough in most cases. We just have to be aware of it and acknowledge our ignorance, prejudice, and hypocrisy. *"Do not judge beyond evidence"* is a simple but crucial rule.
 

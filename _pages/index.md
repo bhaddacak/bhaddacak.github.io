@@ -32,3 +32,5 @@ permalink: /
 - [The Case for Nirvana: An Application of Karen Armstrong's Methodology](/fornirvana)
 - [Is Vipassanā a Mystical Experience?](/vipmysexp)
 - [Mystical Experience: A Buddhist View](/mysexpbud)
+- [Theodicy: A Key to Max Weber's Idea of Religion](/theodicyweber)
+- [Buddhism in Sri Lanka: An Essential Summary](/budsrilanka)
