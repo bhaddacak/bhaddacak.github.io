@@ -129,7 +129,7 @@ How about if people are still attracted to it? This makes things complicated, I 
 | 114 BCE | Dutthagāmani Abhaya seized the power back and reigned for 24 years |
 | 103 BCE | Vattagāmani Abhaya accessed the throne and was defeated by the Tamil |
 | 89 BCE | Vattagāmani Abhaya regained the throne |
-| 89 BCE | The Pali Canon was written down |
+| c.32 BCE | The Pali Canon was written down |
 | 410 | King Mahānāma reigned; Buddhaghosa came to Lanka in his reign |
 | c.450--1025 | Political unrest |
 | 1017 | Sri Lanka was under control of Chola Empire |

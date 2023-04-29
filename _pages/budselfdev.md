@@ -2,7 +2,7 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2023-04-06 12:00:00 +0700
+date: 2023-04-17 12:00:00 +0700
 ---
 
 After I studied Buddhism seriously and critically, it happens that many things taught by the tradition have to be discarded. I do not want to make myself in trouble by rejecting the tradition. But rather my integrity does not allow inconsistency happens. When we really understand things critically, we cannot help rejecting things not conforming to what we hold as true.
@@ -146,7 +146,7 @@ Does the noble eightfold path have things to do with liberation? As asserted by 
 
 Surely it does, because I see no substantial contradiction between the traditional explanation and my account. I just make the model more applicable. So, it should lead you to liberation. A more serious question, however, is what you exactly mean by liberation or enlightenment. I will not go to this metaphysical problem.
 
-I suggest instead that those who lead themselves with the Buddhist way of training eliminate 'liberation' or 'enlightenment' or 'nibbāna' or 'arhatship' or the like from their vocabulary. You hardly need the terms. Once you have any concept of liberation, you will set it as a goal and attach to it. Just do your work, and forget about where to go.[^healthiness]
+I suggest instead that those who lead themselves with the Buddhist way of training eliminate 'liberation' or 'enlightenment' or 'awakening' or 'nibbāna' or 'arhatship' or the like from their vocabulary. You hardly need the terms. Once you have any concept of liberation, you will set it as a goal and attach to it. Just do your work, and forget about where to go.[^healthiness]
 
 [^healthiness]: If an explanation has to be given at all, I will define the ultimate goal as *healthiness in its entirety*.
 

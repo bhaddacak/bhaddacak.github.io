@@ -2,7 +2,7 @@
 title: "A Humble Guide to Meditation"
 permalink: /medguide
 is_article: true
-date: 2023-04-07 12:00:00 +0700
+date: 2023-04-27 12:00:00 +0700
 ---
 
 I am not a meditation teacher, and I will never position myself in such a role. Because I have little to say about meditation, even though I do it everyday for nearly two decades (plus one decade of occasional practices before that). I see it as a personal endeavor that everyone should find their own way to do it. Like bodily exercise, if done properly, meditation, beyond any dispute, has great benefits for our health and other aspects of our life. So, there is no reason why you shouldn't do it.
@@ -35,7 +35,7 @@ This is the most important. Without meditating daily, you go nowhere. The techni
 - Start with a manageable duration, and gradually increase it.
 - Always finish the session as planned.
 - Do not overdo it, and decrease the duration if you cannot get through the session.
-- The target is you are able to sit a 30-minute stretch without pain everyday.
+- The target is you are able to sit a 30-minute stretch without pain everyday. Also you are capable of sitting up to 1 hour when needed.
 
 The most important thing here is *resolution*, not how long you can sit. You have to finish each session completely and cleanly. This is an overlooked aspect of good meditators.
 
