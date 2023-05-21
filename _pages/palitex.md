@@ -1,6 +1,7 @@
 ---
 title: "Pāli for New Learners, Book 2"
 permalink: /palitex
+version: 2.0
 ---
 
 ![PNL2](/assets/images/palitex-cover.jpg)
@@ -10,11 +11,11 @@ permalink: /palitex
 | Author: | *J.R. Bhaddacak* |
 | Description: | A manual of Pāli text reading |
 | Project code: | palitex |
-| Version: | 2.0 |
+| Version: | {{ page.version }} |
 | License: | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) |
-| File: | [palitex-2.0.pdf](https://drive.google.com/file/d/1420XPxTmfUjOs5GfUcbqX2b54Ja1DYnb/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
+| File: | [palitex-{{ page.version }}.pdf](https://drive.google.com/file/d/1420XPxTmfUjOs5GfUcbqX2b54Ja1DYnb/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
 | Cover: | [palitex-cover.jpg](https://drive.google.com/file/d/1z5VOcjhUpQhwSuG_1AQEtZdKsrk61Z0s/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| Typical citation: | Bhaddacak, J. R. 2023. *Pāli for New Learners, Book 2: How to Read It*. 2.0. https://bhaddacak.github.io/palitex |
+| Typical citation: | Bhaddacak, J. R. 2023. *Pāli for New Learners, Book 2: How to Read It*. {{ page.version }}. https://bhaddacak.github.io/palitex |
 
 #### Bib file entry
 ```bib
