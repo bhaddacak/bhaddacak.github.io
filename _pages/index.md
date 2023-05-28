@@ -34,3 +34,6 @@ permalink: /
 - [Mystical Experience: A Buddhist View](/mysexpbud)
 - [Theodicy: A Key to Max Weber's Idea of Religion](/theodicyweber)
 - [Buddhism in Sri Lanka: An Essential Summary](/budsrilanka)
+
+## ผลงานภาษาไทย
+- [โครงการศิลาปราชญ์](https://bhaddacak.github.io/silaprat) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล

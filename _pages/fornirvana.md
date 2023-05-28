@@ -2,7 +2,7 @@
 title: "The Case for Nirvana: An Application of Karen Armstrong's Methodology"
 permalink: /fornirvana
 is_article: true
-date: 2023-04-10 12:00:00 +0700
+date: 2023-05-26 12:00:00 +0700
 ---
 
 > This is the second short essay I wrote for *Contemporary Approaches to the Study of Religion* class (2nd semester of 2014). Dr. Imtiyaz Yusuf, the instructor of the class, graded this essay as 'Excellent.' It must be something interesting here.
@@ -37,7 +37,7 @@ As we have seen, Nirvana as the ideal of Theravāda Buddhism now loses its attra
 
 One of the major theses of Karen Armstrong's methodology is that the ultimate reality of all religions is beyond our reason. What is beyond our reason is always open to interpretations. When we put the ultimate reality into words, reasoning is inevitably used, and what we get is not truth but just a small portion of reality. From this perspective, we can describe Nirvana simply by not describing it. Either extinction or blissful state is misleading. Or even holding it as an ultimate goal is mistaken, because when we set a goal we must desire it first, and once we have a desire we always get off the track. So, to bring Nirvana back to Buddhists' concern, we must reframe the concept of Nirvana by putting it out of frame or making it incomprehensible. Is it paradoxical? Yes, it must be paradoxical to get out of the grip of reasoning. To bring Nirvana back, we must understand it as an unintelligible and leave it as such. Words can be used to describe it only by means of negation (apophatic), describing by something else that it is not, or it is far better to keep silent.
 
-## Practice is the only thing we must concern
+## Practice is the only thing we must be concerned
 
 If we put Nirvana out of our attention, how does Buddhism go then? To this point, Karen Armstrong has a message. She says "Religion ... was not primarily something that people thought but something they did. Its truth was acquired by *practical action*."[^armstrong-action] We will go nowhere, if we only think about Nirvana. We must act upon it by following the path, the Noble Eightfold Path. And we must have 'faith' first before we start any action. But 'faith' does not mean belief in everything we have been told by our tradition. For Karen Armstrong, 'faith' is "purely a matter of *commitment* and *practical living*."[^armstrong-faith] Faith is not a kind of belief that is based on our thought and reasoning. Faith is our responsibility to our tradition.
 
@@ -56,12 +56,12 @@ Does Karen Armstrong's method really work? To my understanding, it does, but the
 
 The real problem is that most Buddhists in Thailand are still trapped in 'modern' reasoning. Many of them believe their definition of truth is the only truth, and they practice in ritualistic and dogmatic way. By such practice, the sense of self cannot be eliminated, but it is aggrandized instead. Once the sense of self is beefed up, no Nirvana can be brought back. Therefore, Karen Armstrong's method possibly works, but many things have to be done first.
 
-## Recent reflections
-
-After I read this essay again years later, I find some of my ideas have changed. So, I should put some notes here. 
-- Making Nirvana incomprehensible sounds really absurd. It makes sense when we see through Karen Armstrong's method. But for me now, making anything incomprehensible is likely to be dangerous, because vaugeness can become an effective tool for manipulation. It is better to reject anything incomprehensible to us first. Therefore, my current treatment on the notion of Nirvana is *elimination*. For practitioners, it is better to completely remove this word and the like from your vocabulary.
-- To my understanding now, there is no such thing as 'postmodern' way of thinking or reasoning. At the end, I tend to rely more on scientific reasoning---the 'modern' mode of reasoning in 'postmodern' view.
-- I think the main reason Dr. Imtiyaz Yusuf gave 'Excellent' to this essay is that the application of *The Case for God* to the notion of Nirvana looks promising. The essay therefore can be a good example for a classroom assignment.
-- My last words, I disclaim any idea concerning God and Nirvana in this essay. However, I still accept the notion of *practice* described here.
+> ## Recent reflections
+> 
+> After I read this essay again years later, I find some of my ideas have changed. So, I should put some notes here. 
+> - Making Nirvana incomprehensible sounds really absurd. It makes sense when we see through Karen Armstrong's method. But for me now, making anything incomprehensible is likely to be dangerous, because vaugeness can become an effective tool for manipulation. It is better to reject anything incomprehensible to us first. Therefore, my current treatment on the notion of Nirvana is *elimination*. For practitioners, it is better to completely remove this word and the like from your vocabulary.
+> - To my understanding now, there is no such thing as 'postmodern' way of thinking or reasoning. At the end, I tend to rely more on scientific reasoning---the 'modern' mode of reasoning in 'postmodern' view.
+> - I think the main reason Dr. Imtiyaz Yusuf gave 'Excellent' to this essay is that the application of *The Case for God* to the notion of Nirvana looks promising. The essay therefore can be a good example for a classroom assignment.
+> - My last words, I disclaim any idea concerning God and Nirvana in this essay. However, I still accept the notion of *practice* described here.
 
 ## Notes
