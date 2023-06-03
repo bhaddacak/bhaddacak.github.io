@@ -37,3 +37,4 @@ permalink: /
 
 ## ผลงานภาษาไทย
 - [โครงการศิลาปราชญ์](https://bhaddacak.github.io/silaprat) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
+	- [Download pdf version](https://github.com/bhaddacak/silaprat/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
