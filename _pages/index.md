@@ -36,7 +36,7 @@ permalink: /
 - [Buddhism in Sri Lanka: An Essential Summary](/budsrilanka)
 
 ## ผลงานภาษาไทย
-- [โครงการพุทธิปราชญ์](https://bhaddacak.github.io/buddhipraj) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
-	- [Download pdf version](https://github.com/bhaddacak/buddhipraj/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
-	- [Declension Table Calculator](https://bhaddacak.github.io/buddhipraj/docs/pali/appendix/declension.html)
-	- [New Concise Pali-English Dictionary](https://bhaddacak.github.io/buddhipraj/docs/pali/appendix/dictionary.html)
+- [โครงการอิสราศรม](https://bhaddacak.github.io/israsom) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
+	- [Download pdf version](https://github.com/bhaddacak/israsom/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
+	- [Declension Table Calculator](https://bhaddacak.github.io/israsom/docs/pali/appendix/declension.html)
+	- [New Concise Pali-English Dictionary](https://bhaddacak.github.io/israsom/docs/pali/appendix/dictionary.html)
