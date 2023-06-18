@@ -18,6 +18,11 @@ permalink: /
 - [Pāli Platform 2](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
+## Online Tools
+- [Sutta Reader](/suttareader)
+- [New Concise Pali-English Dictionary](/ncped)
+- [Declension Table Calculator](/declension)
+
 ## Term Papers and Minor Writings
 
 > When I studied in classes of my PhD program in Religious Studies, I wrote a number of essays. Some of them, particularly term papers, are pretty good and interesting. Instead of leaving them in my archive, inaccessible to others, and waiting to be lost forever, I revise some of my papers and put them here. These include some trivial works that look interesting or useful somehow.
@@ -38,5 +43,3 @@ permalink: /
 ## ผลงานภาษาไทย
 - [โครงการอิสราศรม](https://bhaddacak.github.io/israsom) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
 	- [Download pdf version](https://github.com/bhaddacak/israsom/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
-	- [Declension Table Calculator](https://bhaddacak.github.io/israsom/docs/pali/appendix/declension.html)
-	- [New Concise Pali-English Dictionary](https://bhaddacak.github.io/israsom/docs/pali/appendix/dictionary.html)

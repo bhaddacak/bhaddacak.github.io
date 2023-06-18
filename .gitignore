@@ -6,5 +6,7 @@ Gemfile.lock
 _site
 *.gem
 assets/katex/
+assets/external/
 gvimrc
 *.vim
+*.sh
