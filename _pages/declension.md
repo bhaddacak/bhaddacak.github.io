@@ -2,35 +2,18 @@
 title: "Declension Table Calculator"
 permalink: /declension
 is_application: true
-date: 2023-06-15 12:00:00 +0700
+date: 2023-06-23 12:00:00 +0700
 ---
 
-<div>
-<span style="font-size:0.8em;">
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ā');">ā</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ī');">ī</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ū');">ū</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ṅ');">ṅ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ñ');">ñ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ṭ');">ṭ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ḍ');">ḍ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ṇ');">ṇ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ḷ');">ḷ</button>
-<button style="padding-left:0.5em;padding-right:0.5em;" onClick="insertChar('ṃ');">ṃ</button>
-</span>
-</div>
-<div style="padding: 3px">
-<input type="text" id="wordinput" placeholder="Enter a raw word" size="30">&nbsp;<span><button onClick="wordClear();">Clear</button>&nbsp;<button onClick="compute();">Compute</button></span>
-</div>
+{% include pali_input.html button="Compute" function="compute()" after_clear="fillTable(1)" placeholder="Enter a raw word" %}
 <div>
 <span style="padding: 3px">
-<input type="radio" id="gendm" name="gender-radio" value="m" onChange="compute();" checked><label for="gendm">masculine</label>
-<input type="radio" id="gendf" name="gender-radio" value="f" onChange="compute();"><label for="gendf">feminine</label>
-<input type="radio" id="gendn" name="gender-radio" value="n" onChange="compute();"><label for="gendn">neuter</label>
+<label for="gendm"><input type="radio" id="gendm" name="gender-radio" value="m" onChange="compute();" checked>m.</label>
+<label for="gendf"><input type="radio" id="gendf" name="gender-radio" value="f" onChange="compute();">f.</label>
+<label for="gendn"><input type="radio" id="gendn" name="gender-radio" value="n" onChange="compute();">nt.</label>
 </span>
-<span><input type="checkbox" id="forcegen" onChange="compute();"><label for="forcegen">Force generic</label></span>
-<span class="label" id="wordclass" style="display:none;"></span>
-<span class="label label-green" id="computed" style="display:none;">computed</span>
+<span><label for="forcegen"><input type="checkbox" id="forcegen" onChange="compute();">Force generic</label></span>
+<span class="label" id="wordclass" style="display:none;"></span><span class="label label-green" id="computed" style="display:none;">computed</span>
 </div>
 <p>
 <table>

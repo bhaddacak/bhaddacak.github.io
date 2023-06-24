@@ -16,24 +16,8 @@ irrn_child_list = {
 	"pitu":[ "cūlapitu", "bhātu", "jeṭṭhabhātu", "kaṇiṭṭhabhātu", "jāmātu", "mātāpitu" ],
 	"mātu": [ "cūlamātu", "dhītu", "duhitu", "bhātudhītu" ]
 };
-
-const input = document.getElementById("wordinput");
-input.addEventListener("keydown", wordInputKeyDown);
-function wordInputKeyDown(event) {
-	if (event.key === "Enter")
-		compute();
-}
-function insertChar(ch) {
-	input.value = input.value + ch;
-	input.focus();
-}
-function wordClear() {
-	input.value = "";
-	input.focus();
-	fillTable(1);
-}
 function compute() {
-	const inputWord = input.value.trim().toLowerCase();
+	const inputWord = textInputElem.value.trim().toLowerCase();
 	if (inputWord.length >= 2) {
 		updateDeclTable(inputWord);
 	} else {
