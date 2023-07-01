@@ -194,11 +194,11 @@ ncped.getNearestEntry = function(term) {
 		else
 			result = null;
 	}
-	if (result !== null) {
+	if (result === null) {
 		let word = term;
 		while (word.length > 0) {
 			word = word.slice(0, word.length-1);
-			const result = this.getExactEntry(word);
+			result = this.getExactEntry(word);
 			if (result !== null)
 				break;
 		}
