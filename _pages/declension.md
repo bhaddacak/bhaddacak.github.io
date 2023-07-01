@@ -2,17 +2,17 @@
 title: "Declension Table Calculator"
 permalink: /declension
 is_application: true
-date: 2023-06-23 12:00:00 +0700
+date: 2023-06-30 12:00:00 +0700
 ---
 
-{% include pali_input.html button="Compute" function="compute()" after_clear="fillTable(1)" placeholder="Enter a raw word" %}
+{% include pali_input.html button="Compute" function="declHost.compute()" after_clear="declHost.fillTable(1)" placeholder="Enter a raw word" %}
 <div>
 <span style="padding: 3px">
-<label for="gendm"><input type="radio" id="gendm" name="gender-radio" value="m" onChange="compute();" checked>m.</label>
-<label for="gendf"><input type="radio" id="gendf" name="gender-radio" value="f" onChange="compute();">f.</label>
-<label for="gendn"><input type="radio" id="gendn" name="gender-radio" value="n" onChange="compute();">nt.</label>
+<label for="gendm"><input type="radio" id="gendm" name="gender-radio" value="m" onChange="declHost.compute();" checked>m.</label>
+<label for="gendf"><input type="radio" id="gendf" name="gender-radio" value="f" onChange="declHost.compute();">f.</label>
+<label for="gendn"><input type="radio" id="gendn" name="gender-radio" value="n" onChange="declHost.compute();">nt.</label>
 </span>
-<span><label for="forcegen"><input type="checkbox" id="forcegen" onChange="compute();">Force generic</label></span>
+<span><label for="forcegen"><input type="checkbox" id="forcegen" onChange="declHost.compute();">Force generic</label></span>
 <span class="label" id="wordclass" style="display:none;"></span><span class="label label-green" id="computed" style="display:none;">computed</span>
 </div>
 <p>
@@ -47,7 +47,7 @@ date: 2023-06-23 12:00:00 +0700
 > All recognizable whole-word inputs are:
 > - *Pronouns*: amha, tumha, ta, eta, ima, amu, ka, kiṃ, kiṃci, ya, sabba, katara, katama, ubhaya, itara, añña, aññatara, aññatama, pubba, para, apara, dakkhiṇa, uttara, adhara, eka (1), dvi (2), ti (3), catu (4), and ubho
 > - *Irregular nouns*:
-> 	- Masculine: *mana* and its group, rāja, brahma, atta, ātuma, satthu, *kattu* and its group, *pitu* and its group, yuva, addhā, muddhā, sā, bhavanta, karonta, arahanta, santa 
+> 	- Masculine: *mana* and its group, rāja, brahma, atta, ātuma, satthu, *kattu* and its group, *pitu* and its group, yuva, addhā, muddhā, sā, bhavanta, karonta, arahanta, santa, mahanta 
 > 	- Others: *mātu* and its group (f.), kamma (nt.), go (m., f.), gacchanta (m., nt.), himavant (m.), satimant (m.), guṇavant (m., f., nt.)
 >
 > The computed results can be totally meaningless.

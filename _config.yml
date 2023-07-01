@@ -3,19 +3,16 @@ author: "J.R. Bhaddacak"
 description: "Make life simple and easily happy"
 bilara_url: "https://raw.githubusercontent.com/suttacentral/bilara-data/published"
 #bilara_url: "/assets/external/bilara"
-#permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
 # Layout
-
 show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
-
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: Home}
   - {file: "README.md"}

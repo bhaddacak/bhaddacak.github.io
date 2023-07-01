@@ -1,33 +1,34 @@
-declFunc = {
-	generic: getGenericDeclensionStr,
-	pronoun: getPronounDeclensionStr,
-	irregular: getIrrnDeclensionStr
+const declHost = {};
+declHost.declFunc = {
+	generic: declension.getGenericDeclensionStr,
+	pronoun: declension.getPronounDeclensionStr,
+	irregular: declension.getIrrnDeclensionStr
 };
-paliNumber = { "1": "eka", "2": "dvi", "3": "ti", "4": "catu" };
-pron_parad = [ "sabba", "pubba" ];
-pron_child_list = {
+declHost.paliNumber = { "1": "eka", "2": "dvi", "3": "ti", "4": "catu" };
+declHost.pron_parad = [ "sabba", "pubba" ];
+declHost.pron_child_list = {
 	"sabba": [ "katara", "katama", "ubhaya", "itara", "añña", "aññatara", "aññatama" ],
 	"pubba": [ "para", "apara", "dakkhiṇa", "uttara", "adhara" ]
 };
-irrn_parad = [ "mana", "kattu", "pitu", "mātu" ];
-irrn_child_list = {
+declHost.irrn_parad = [ "mana", "kattu", "pitu", "mātu" ];
+declHost.irrn_child_list = {
 	"mana": [ "aya", "aha", "ura", "ceta", "chanda", "tapa", "tama", "teja", "paya", "yasa", "raha", "vaca", "vaya", "sara", "sira" ],
 	"kattu": [ "akkhātu", "abhibhavitu", "uṭṭhātu", "uppādetu", "okkamitu", "kāretu", "khattu", "khantu", "gajjitu", "gantu", "cetu", "chettu", "jetu", "ñātu", "tatu", "tātu", "dātu", "dhātu", "nattu", "netu", "nettu", "paṭisedhitu", "paṭisevitu", "panattu", "pabrūhetu", "pucchitu", "bhattu", "bhāsitu", "bhettu", "bhoddhu", "bhodhetu", "metu", "mucchitu", "vattu", "vassitu", "viññāpetu", "vinetu", "sandassetu", "sahitu", "sāvetu", "sotu", "hantu" ],
 	"pitu":[ "cūlapitu", "bhātu", "jeṭṭhabhātu", "kaṇiṭṭhabhātu", "jāmātu", "mātāpitu" ],
 	"mātu": [ "cūlamātu", "dhītu", "duhitu", "bhātudhītu" ]
 };
-function compute() {
+declHost.compute = function() {
 	const inputWord = textInputElem.value.trim().toLowerCase();
 	if (inputWord.length >= 2) {
-		updateDeclTable(inputWord);
+		this.updateDeclTable(inputWord);
 	} else {
-		if (paliNumber[inputWord] === undefined)
-			fillTable(1);
+		if (this.paliNumber[inputWord] === undefined)
+			this.fillTable(1);
 		else
-			updateDeclTable(paliNumber[inputWord]);
+			this.updateDeclTable(this.paliNumber[inputWord]);
 	}
-}
-function getSelectedGender() {
+};
+declHost.getSelectedGender = function() {
 	let result = 'm';
 	const elem = document.getElementById("gendm");
 	const elef = document.getElementById("gendf");
@@ -37,8 +38,8 @@ function getSelectedGender() {
 	else if (elen.checked)
 		result = 'n';
 	return result;
-}
-function getFixedLastChar(term, gender) {
+};
+declHost.getFixedLastChar = function(term, gender) {
 	let lastCh = term.charAt(term.length-1);
 	switch (gender) {
 		case "m":
@@ -54,10 +55,10 @@ function getFixedLastChar(term, gender) {
 			break;
 	}
 	return lastCh;
-}
-function getGenericParam(term, gender) {
+};
+declHost.getGenericParam = function(term, gender) {
 	let result = { nclass: "generic", group: "", stem: term };
-	const lastCh = getFixedLastChar(term, gender);
+	const lastCh = this.getFixedLastChar(term, gender);
 	if ("aāiīuū".indexOf(lastCh) > -1) {
 		result.group = lastCh + "," + gender;
 		result.stem = term.slice(0, term.length-1);
@@ -65,23 +66,23 @@ function getGenericParam(term, gender) {
 		result.group = "";
 	}
 	return result;
-}
-function updateDeclTable(term) {
-	const selgen = getSelectedGender();
+};
+declHost.updateDeclTable = function(term) {
+	const selgen = this.getSelectedGender();
 	const forceGeneric = document.getElementById("forcegen").checked;
 	let param = {};
 	let computed = false;
 	if (forceGeneric) {
-		param = getGenericParam(term, selgen);
+		param = this.getGenericParam(term, selgen);
 		computed = true;
 	} else {
-		const lastCh = getFixedLastChar(term, selgen);
+		const lastCh = this.getFixedLastChar(term, selgen);
 		let group = term + ";" + lastCh + "," + selgen;
-		if (paradn_pron[group] != undefined) {
+		if (declension.paradn_pron[group] != undefined) {
 			param.nclass = "pronoun";
 			param.group = group;
 			param.stem = term.slice(0, term.length-1);
-		} else if (paradn_irrn[group] != undefined) {
+		} else if (declension.paradn_irrn[group] != undefined) {
 			param.nclass = "irregular";
 			param.group = group;
 			const cutAt = term.endsWith("t") ? 3 : 1;
@@ -125,53 +126,53 @@ function updateDeclTable(term) {
 			computed = true;
 		} else {
 			let generic = true;
-			for (let i=0; i<pron_parad.length; i++) {
-				if (pron_child_list[pron_parad[i]].indexOf(term) >= 0) {
+			for (let i=0; i<this.pron_parad.length; i++) {
+				if (this.pron_child_list[this.pron_parad[i]].indexOf(term) >= 0) {
 					const end = selgen === "f" ? "ā" : "a";
 					param.nclass = "pronoun";
-					param.group = pron_parad[i] + ";" + lastCh + "," + selgen;
+					param.group = dthis.pron_parad[i] + ";" + lastCh + "," + selgen;
 					param.stem = term.slice(0, term.length-1);
 					generic = false;
 				}
 			}
-			for (let i=0; i<irrn_parad.length; i++) {
-				if (irrn_child_list[irrn_parad[i]].indexOf(term) >= 0) {
-					if (selgen === "m" || (irrn_parad[i] === "mātu" && selgen === "f")) {
+			for (let i=0; i<this.irrn_parad.length; i++) {
+				if (this.irrn_child_list[this.irrn_parad[i]].indexOf(term) >= 0) {
+					if (selgen === "m" || (this.irrn_parad[i] === "mātu" && selgen === "f")) {
 						param.nclass = "irregular";
-						param.group = irrn_parad[i] + ";" + term[term.length-1] + "," + selgen;
+						param.group = this.irrn_parad[i] + ";" + term[term.length-1] + "," + selgen;
 						param.stem = term.slice(0, term.length-1);
 						generic = false;
 					}
 				}
 			}
 			if (generic) {
-				param = getGenericParam(term, selgen);
+				param = this.getGenericParam(term, selgen);
 				computed = true;
 			}
 		}
 	}
 	if (param.group.length > 0)
-		fillTable(1, param.stem, param.group, param.nclass);
+		this.fillTable(1, param.stem, param.group, param.nclass);
 	else
-		fillTable(1);
+		this.fillTable(1);
 	const lblComputed = document.getElementById("computed");
 	if (computed)
 		lblComputed.style.display = "inline";
 	else
 		lblComputed.style.display = "none";
-}
-function fillTable(tnumber, stem, group, nclass) {
+};
+declHost.fillTable = function(tnumber, stem, group, nclass) {
 	const isClear = stem === undefined;
 	const lblWordClass = document.getElementById("wordclass");
-	for (let i = 0; i < case_abbr.length; i++) {
- 		let cas = case_abbr[i];
-		for (let g = 0; g < gender_abbr.length; g++) {
-			const gen = gender_abbr[g];
-			const elem = document.getElementById(cas+"_"+gen+tnumber);
+	for (let i = 0; i < declension.case_abbr.length; i++) {
+ 		let cas = declension.case_abbr[i];
+		for (let n = 0; n < declension.number_abbr.length; n++) {
+			const num = declension.number_abbr[n];
+			const elem = document.getElementById(cas+"_"+num+tnumber);
 			if (isClear) {
 				elem.innerHTML = "";
 			} else {
-				elem.innerHTML = declFunc[nclass](stem, group, i, g);
+				elem.innerHTML = this.declFunc[nclass](stem, group, i, n);
 			}
 		}
 	}
@@ -182,4 +183,4 @@ function fillTable(tnumber, stem, group, nclass) {
 		lblWordClass.innerHTML = nclass;
 		lblWordClass.style.display = "inline";
 	}
-}
+};

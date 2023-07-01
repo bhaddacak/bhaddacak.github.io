@@ -39,7 +39,7 @@ function clearNode(node) {
 function loadSuttaList() {
 	const request = new XMLHttpRequest();
 	request.open("GET", "assets/data/suttalist.json", true);
-	request.onload = function(){
+	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			allSutta = JSON.parse(request.responseText);
 			filter();
@@ -47,7 +47,7 @@ function loadSuttaList() {
 			console.log("Error loading ajax request. Request status:" + request.status);
 		}
 	};
-	request.onerror = function(){
+	request.onerror = function() {
 		console.log("There was a connection error");
 	};
 	request.send();
@@ -79,7 +79,7 @@ function processGroupSwitch() {
 function filter() {
 	processGroupSwitch();
 	idList = [];
-	const text = textInputElem.value.toLowerCase();
+	const text = textInputElem.value.toLowerCase().replace(/ṁ/g, "ṃ");
 	for (let s in allSutta) {
 		const title = breakTitle(s).char;
 		if (shownGroup.indexOf(title) > -1) {
