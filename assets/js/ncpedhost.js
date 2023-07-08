@@ -1,5 +1,7 @@
 const ncpedHost = {};
-ncpedHost.dict = {};
+ncpedHost.dict = null;
+ncpedHost.paliInput = null;
+ncpedHost.blockquote_class = "";
 ncpedHost.clearNode = function(node) {
 	while (node.firstChild)
 		node.removeChild(node.firstChild);
@@ -10,12 +12,12 @@ ncpedHost.clearResult = function() {
 };
 ncpedHost.showWordCount = function(num, mode) {
 	const wordcount = document.getElementById("wordcount");
-	const exactly = mode === "exact" ? " exactly" : "";
+	const exactly = mode === "exact" ? "&nbsp;exactly" : "";
 	if (num === 0) {
 		wordcount.style.display = "none";	
 	} else {
 		const s = num === 1 ? "" : "s";
-		wordcount.innerHTML = num + " term" + s + " found" + exactly;
+		wordcount.innerHTML = num + "&nbsp;term" + s + "&nbsp;found" + exactly;
 		wordcount.style.display = "inline";	
 	}
 };
@@ -27,11 +29,11 @@ ncpedHost.showNotFound = function() {
 	document.getElementById("dictresult").innerHTML = "Nothing found";
 };
 ncpedHost.search = function() {
-	const result = document.getElementById("dictresult");
 	const findInDef = document.getElementById("findindef").checked;
 	let mode = "normal";
 	let cutNeeded = false;
-	const inputval = findInDef ? textInputElem.value : textInputElem.value.trim().toLowerCase();
+	const inputText = this.paliInput.getText();
+	const inputval = findInDef ? inputText : inputText.trim().toLowerCase();
 	if (findInDef) {
 		mode = "indef"
 	} else if (inputval.startsWith("\"")) {
@@ -42,8 +44,7 @@ ncpedHost.search = function() {
 		cutNeeded = true;
 	}
 	let query = cutNeeded ? inputval.slice(1) : inputval;
-	query = query.replace(/ṁ/g, "ṃ");
-	this.dict.search(query, mode);
+	this.dict.search(query, mode, this);
 };
 ncpedHost.showResult = function(dictItem, index){
 	const result = document.getElementById("dictresult");
@@ -60,8 +61,8 @@ ncpedHost.showResult = function(dictItem, index){
 ncpedHost.getDetailBlock = function(dictItem) {
 	const block = document.createElement("blockquote");
 	block.appendChild(this.getDetail(dictItem));
-	if (blockquote_class && blockquote_class.length > 0)
-		block.className = blockquote_class;
+	if (this.blockquote_class.length > 0)
+		block.className = this.blockquote_class;
 	block.style.cursor = "default";
 	return block;
 };
@@ -136,11 +137,11 @@ ncpedHost.getDetail = function(item) {
 	head.innerHTML = term;
 	para.appendChild(head);
 	para.appendChild(this.getGrammar(item.grammar));
-	if (item.definition != undefined)
+	if (item.definition !== undefined)
 		para.appendChild(this.getDefinition(item.definition));
-	if (item.homonyms != undefined)
+	if (item.homonyms !== undefined)
 		para.appendChild(this.getHomonyms(item.homonyms));
-	if (item.xr != undefined)
+	if (item.xr !== undefined)
 		para.appendChild(this.getXR(item.xr));
 	return para
 };
@@ -185,9 +186,9 @@ ncpedHost.getXR = function(xr) {
 	const xrList = typeof xr === "string" ? [ xr ] : xr;
 	let xrFinal = [];
 	for (let i=0; i<xrList.length; i++) {
-		const xr = ncpedHost.dict === ncped
-					? '<em style="cursor:pointer;" onClick="ncpedHost.goXR(\'' + xrList[i] + '\');">' + xrList[i] + '</em>'
-					: "<em>" + xrList[i] + "</em>";
+		const xr = ncpedHost.dict === null
+					? "<em>" + xrList[i] + "</em>"
+					: '<em style="cursor:pointer;" onClick="ncpedHost.goXR(\'' + xrList[i] + '\');">' + xrList[i] + '</em>';
 		xrFinal.push(xr);
 	}
 	xrNode.style = "font-size:0.9em";
@@ -195,7 +196,7 @@ ncpedHost.getXR = function(xr) {
 	return xrNode;
 };
 ncpedHost.goXR = function(xr) {
-	textInputElem.value = "\"" + xr;
+	this.paliInput.setText("\"" + xr);
 	document.getElementById("findindef").checked = false;
 	this.search();
 };
@@ -205,11 +206,11 @@ ncpedHost.getHomonyms = function(homonyms) {
 		for (let i=0; i < homonyms.length; i++) {
 			let item = homonyms[i];
 			let homoChild = document.createElement("div");
-			if (item.grammar != undefined)
+			if (item.grammar !== undefined)
 				homoChild.appendChild(this.getGrammar(item.grammar));
-			if (item.definition != undefined)
+			if (item.definition !== undefined)
 				homoChild.appendChild(this.getDefinition(item.definition));
-			if (item.xr != undefined)
+			if (item.xr !== undefined)
 				homoChild.appendChild(this.getXR(item.xr));
 			homoNode.appendChild(homoChild);
 		}

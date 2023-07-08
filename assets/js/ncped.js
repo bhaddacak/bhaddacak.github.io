@@ -1,15 +1,18 @@
 const ncped = {};
 ncped.initList = [ "ak", "ag", "aṅ", "ac", "aj", "añ", "aṭ", "aḍ", "aṇ", "at", "ad", "an", "ap", "ab", "am", "ay", "ar", "al", "av", "as", "ah", "aḷ", "aṃ", "āk", "āg", "āc", "āj", "āñ", "āṇ", "āt", "ād", "ān", "āp", "āb", "ām", "āy", "ār", "āl", "āv", "ās", "āh", "āḷ", "ik", "iṅ", "ic", "ij", "iñ", "iṭ", "iṇ", "it", "id", "in", "ib", "im", "ir", "iv", "is", "īt", "īd", "īs", "uk", "ug", "uc", "uj", "uñ", "uṭ", "uḍ", "uṇ", "ut", "ud", "un", "up", "ub", "um", "uy", "ur", "ul", "uv", "us", "uḷ", "ūn", "ūm", "ūr", "ūs", "ūh", "ek", "ej", "eṇ", "et", "ed", "en", "em", "er", "el", "ev", "es", "eh", "eḷ", "ok", "og", "oc", "oj", "oñ", "oṭ", "oḍ", "oṇ", "ot", "od", "on", "op", "ob", "om", "oy", "or", "ol", "ov", "os", "oh", "oḷ", "ka", "kā", "ki", "kī", "ku", "kū", "ke", "ko", "kr", "kl", "kv", "kh", "ga", "gā", "gi", "gī", "gu", "gū", "ge", "go", "gh", "ca", "cā", "ci", "cī", "cu", "cū", "ce", "co", "ch", "ja", "jā", "ji", "jī", "ju", "jū", "je", "jo", "jy", "jh", "ña", "ñā", "ñe", "ṭa", "ṭh", "ḍa", "ḍā", "ḍi", "ḍe", "ta", "tā", "ti", "tī", "tu", "tū", "te", "to", "ty", "tv", "th", "da", "dā", "di", "dī", "du", "dū", "de", "do", "dv", "dh", "na", "nā", "ni", "nī", "nu", "nū", "ne", "no", "nh", "pa", "pā", "pi", "pī", "pu", "pū", "pe", "po", "pr", "pl", "ph", "ba", "bā", "bi", "bī", "bu", "be", "bo", "by", "br", "bh", "ma", "mā", "mi", "mī", "mu", "mū", "me", "mo", "ya", "yā", "yi", "yu", "yū", "ye", "yo", "ra", "rā", "ri", "ru", "rū", "re", "ro", "la", "lā", "li", "lī", "lu", "lū", "le", "lo", "va", "vā", "vi", "vī", "vu", "vū", "ve", "vo", "vy", "sa", "sā", "si", "sī", "su", "sū", "se", "so", "sn", "sv", "ha", "hā", "hi", "hī", "hu", "he", "ho", "ḷa", "ḷā" ];
 ncped.dict = {};
+ncped.dictHost = {};
+ncped.reader = {};
 ncped.foundList = [];
 ncped.foundMultiList = {};
+ncped.url = "";
 ncped.query = "";
 ncped.multiSearchCount = 0;
 ncped.clearResult = function() {
 	this.foundList = [];
 	this.foundMultiList = {};
-	dictHost.clearResult();
-	dictHost.showWordCount(0);
+	this.dictHost.clearResult();
+	this.dictHost.showWordCount(0);
 };
 ncped.updateMultiResultCount = function() {
 	let count = 0;
@@ -17,9 +20,10 @@ ncped.updateMultiResultCount = function() {
 		if (this.foundMultiList[this.initList[i]])
 			count += this.foundMultiList[this.initList[i]].length;
 	}
-	dictHost.showWordCount(count);
+	this.dictHost.showWordCount(count);
 };
-ncped.searchForAnalysis = function(query, element) {
+ncped.searchForAnalysis = function(query, element, reader) {
+	this.reader = reader;
 	const initial = query.slice(0, 2);
 	if (this.initList.indexOf(initial) >= 0) {
 		if (this.dict[initial])
@@ -28,13 +32,14 @@ ncped.searchForAnalysis = function(query, element) {
 			this.loadDict(initial, { "mode": "reader", "query": query, "element": element } );
 	}
 }
-ncped.search = function(query, mode) {
+ncped.search = function(query, mode, host) {
+	this.dictHost = host;
 	this.clearResult();
 	this.query = query;
 	if (query.length >= 2) {
 		if (mode === "indef" || mode === "wildcard") {
 			if (query.trim().length > 2) {
-				dictHost.showSearching(true);
+				this.dictHost.showSearching(true);
 				this.multiSearchCount = 0;
 				this.multiSearch(mode);
 			}
@@ -46,13 +51,13 @@ ncped.search = function(query, mode) {
 				else
 					this.loadDict(initial, { "mode": mode });
 			} else {
-				dictHost.showNotFound();
+				this.dictHost.showNotFound();
 			}
 		}
 	}
 };
 ncped.multiSearch = function(mode) {
-	dictHost.createMultiResultNodes(this.initList);
+	this.dictHost.createMultiResultNodes(this.initList);
 	for (let i=0; i<this.initList.length; i++) {
 		if (this.dict[this.initList[i]])
 			this.showMultiResult(this.initList[i], mode);
@@ -62,13 +67,13 @@ ncped.multiSearch = function(mode) {
 };
 ncped.loadDict = function(initial, opts) {
 	const request = new XMLHttpRequest();
-	request.open("GET", ncped_url + "/" + initial + ".json", true);
+	request.open("GET", this.url + "/" + initial + ".json", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			ncped.dict[initial] = JSON.parse(request.responseText);
 			if (opts.mode === "indef" || opts.mode === "wildcard") {
 				ncped.showMultiResult(initial, opts.mode);
-			} else if (opts.mode == "reader") {
+			} else if (opts.mode === "reader") {
 				ncped.showResultForAnalysis(opts.query, opts.element);
 			} else {
 				ncped.showResult(initial, opts.mode);
@@ -85,18 +90,18 @@ ncped.loadDict = function(initial, opts) {
 ncped.showMultiResult = function(initial, mode) {
 	this.multiSearchCount++;
 	if (this.multiSearchCount >= this.initList.length) {
-		dictHost.showSearching(false);
+		this.dictHost.showSearching(false);
 		let foundCount = 0;
 		for (let i=0; i<this.initList.length; i++) {
 			if (this.foundMultiList[this.initList[i]] && this.foundMultiList[this.initList[i]].length > 0)
 				foundCount++;
 		}
 		if (foundCount === 0) {
-			showNotFound();
+			this.dictHost.showNotFound();
 		} else if (foundCount === 1){
 			for (let i=0; i<this.initList.length; i++) {
 				if (this.foundMultiList[this.initList[i]] && this.foundMultiList[this.initList[i]].length === 1) {
-					dictHost.showDetail(0, null, this.initList[i]);
+					this.dictHost.showDetail(0, null, this.initList[i]);
 					break;
 				}
 			}
@@ -124,9 +129,9 @@ ncped.showMultiResult = function(initial, mode) {
 		}
 	}
 	if (this.foundMultiList[initial] && this.foundMultiList[initial].length > 0) {
-		dictHost.showMultiResultNodes(this.foundMultiList, initial, mode);
+		this.dictHost.showMultiResultNodes(this.foundMultiList, initial, mode);
 		this.updateMultiResultCount();
-		dictHost.checkForShowAllDetails(this.foundMultiList, initial, mode);
+		this.dictHost.checkForShowAllDetails(this.foundMultiList, initial, mode);
 	}
 };
 ncped.showResult = function(initial, mode) {
@@ -140,15 +145,15 @@ ncped.showResult = function(initial, mode) {
 			if (cond) {
 				this.foundList.push(this.dict[initial][i]);
 				const ind = this.foundList.length - 1;
-				dictHost.showResult(this.dict[initial][i], ind);
+				this.dictHost.showResult(this.dict[initial][i], ind);
 				if (mode === "exact")
 					break;
 			}
 		}
-		dictHost.showWordCount(this.foundList.length, mode);
-		dictHost.checkForShowDetails(this.foundList);
+		this.dictHost.showWordCount(this.foundList.length, mode);
+		this.dictHost.checkForShowDetails(this.foundList);
 	} else {
-		dictHost.showNotFound();
+		this.dictHost.showNotFound();
 	}
 };
 ncped.showResultForAnalysis = function(query, element) {
@@ -161,12 +166,12 @@ ncped.showResultForAnalysis = function(query, element) {
 		isExact = false;
 	}
 	if (entry) {
-		if (ppReader.shownTerms.indexOf(entry.entry) > -1) {
-			ppReader.showInfo(element, "seeabove", isExact);
+		if (this.reader.shownTerms.indexOf(entry.entry) > -1) {
+			this.reader.showInfo(element, "seeabove", isExact);
 		} else {
-			ppReader.shownTerms.push(entry.entry);
-			const block = dictHost.getDetailBlock(entry);
-			ppReader.addDetail(element, block, isExact);
+			this.reader.shownTerms.push(entry.entry);
+			const block = this.dictHost.getDetailBlock(entry);
+			this.reader.addDetail(element, block, isExact);
 		}
 	}
 };
@@ -185,34 +190,25 @@ ncped.getExactEntry = function(term) {
 };
 ncped.getNearestEntry = function(term) {
 	let result = null;
-	const initial = term.slice(0, 2);
-	const opts = ppReader.getOptions();
-	if (opts.bestguess) {
-		const bgTerm = this.getBestGuessNearest(term);
-		if (bgTerm.length >= 2 )
-			result = this.getExactEntry(bgTerm);
-		else
-			result = null;
-	}
-	if (result === null) {
-		let word = term;
-		while (word.length > 0) {
+	let word = term;
+	while (word.length > 0) {
+		word = this.replaceEnding(word);
+		result = this.getExactEntry(word);
+		if (result === null) {
 			word = word.slice(0, word.length-1);
 			result = this.getExactEntry(word);
-			if (result !== null)
-				break;
 		}
+		if (result !== null)
+			break;
 	}
 	return result;
 };
-ncped.getBestGuessNearest = function(term) {
-	let result = term;
-	const ends = [ "o", "ena", "esu" ];
-	for (let i=0; i<ends.length; i++) {
-		if (term.endsWith(ends[i])) {
-			result = term.slice(0, term.indexOf(ends[i])) + "a";
-			break;
-		}
-	}
-	return result;
+ncped.replaceEnding = function(term) {
+	const end = term.charAt(term.length - 1);
+	const replacement = ["ā", "e", "o"].indexOf(end) > -1
+						? "a"
+						: end === "ī"
+							? "i"
+							: end === "ū" ? "u" : end;
+	return term.slice(0, term.length-1) + replacement;
 };

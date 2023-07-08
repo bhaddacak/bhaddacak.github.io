@@ -10,7 +10,7 @@ permalink: /
 
 ## Books
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
-- [Pāli for New Learners, Book 1: How to say it](/palicon) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
+- [Pāli for New Learners, Book 1: How to say it](/palicon) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg><span class="label label-green">v2.0.1&nbsp;updated</span>
 - [Pāli for New Learners, Book 2: How to read it](/palitex) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 - [Pāli Platform 2: The Official Manual](/pp2man) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
@@ -21,8 +21,8 @@ permalink: /
 ## Online Tools
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
-- [Pāli Passage Reader](/ppreader)
-- [New Concise Pali-English Dictionary](/ncped)
+- [Pāli Passage Reader](/ppreader)<span class="label label-green">new</span>
+- [New Concise Pāli-English Dictionary](/ncped)
 - [Declension Table Calculator](/declension)
 
 ## Term Papers and Minor Writings

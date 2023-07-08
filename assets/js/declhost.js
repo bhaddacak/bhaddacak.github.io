@@ -1,9 +1,7 @@
 const declHost = {};
-declHost.declFunc = {
-	generic: declension.getGenericDeclensionStr,
-	pronoun: declension.getPronounDeclensionStr,
-	irregular: declension.getIrrnDeclensionStr
-};
+declHost.paliInput = {};
+declHost.declension = {};
+declHost.declFunc = {};
 declHost.paliNumber = { "1": "eka", "2": "dvi", "3": "ti", "4": "catu" };
 declHost.pron_parad = [ "sabba", "pubba" ];
 declHost.pron_child_list = {
@@ -17,8 +15,16 @@ declHost.irrn_child_list = {
 	"pitu":[ "cūlapitu", "bhātu", "jeṭṭhabhātu", "kaṇiṭṭhabhātu", "jāmātu", "mātāpitu" ],
 	"mātu": [ "cūlamātu", "dhītu", "duhitu", "bhātudhītu" ]
 };
+declHost.init = function(declObj) {
+	this.declension = declObj;
+	this.declFunc = {
+		generic: declObj.getGenericDeclensionStr,
+		pronoun: declObj.getPronounDeclensionStr,
+		irregular: declObj.getIrrnDeclensionStr
+	};
+};
 declHost.compute = function() {
-	const inputWord = textInputElem.value.trim().toLowerCase();
+	const inputWord = this.paliInput.getText().trim().toLowerCase();
 	if (inputWord.length >= 2) {
 		this.updateDeclTable(inputWord);
 	} else {
@@ -30,7 +36,6 @@ declHost.compute = function() {
 };
 declHost.getSelectedGender = function() {
 	let result = 'm';
-	const elem = document.getElementById("gendm");
 	const elef = document.getElementById("gendf");
 	const elen = document.getElementById("gendn");
 	if (elef.checked)
@@ -78,11 +83,11 @@ declHost.updateDeclTable = function(term) {
 	} else {
 		const lastCh = this.getFixedLastChar(term, selgen);
 		let group = term + ";" + lastCh + "," + selgen;
-		if (declension.paradn_pron[group] != undefined) {
+		if (this.declension.paradn_pron[group] !== undefined) {
 			param.nclass = "pronoun";
 			param.group = group;
 			param.stem = term.slice(0, term.length-1);
-		} else if (declension.paradn_irrn[group] != undefined) {
+		} else if (this.declension.paradn_irrn[group] !== undefined) {
 			param.nclass = "irregular";
 			param.group = group;
 			const cutAt = term.endsWith("t") ? 3 : 1;
@@ -128,9 +133,8 @@ declHost.updateDeclTable = function(term) {
 			let generic = true;
 			for (let i=0; i<this.pron_parad.length; i++) {
 				if (this.pron_child_list[this.pron_parad[i]].indexOf(term) >= 0) {
-					const end = selgen === "f" ? "ā" : "a";
 					param.nclass = "pronoun";
-					param.group = dthis.pron_parad[i] + ";" + lastCh + "," + selgen;
+					param.group = this.pron_parad[i] + ";" + lastCh + "," + selgen;
 					param.stem = term.slice(0, term.length-1);
 					generic = false;
 				}
@@ -164,15 +168,15 @@ declHost.updateDeclTable = function(term) {
 declHost.fillTable = function(tnumber, stem, group, nclass) {
 	const isClear = stem === undefined;
 	const lblWordClass = document.getElementById("wordclass");
-	for (let i = 0; i < declension.case_abbr.length; i++) {
- 		let cas = declension.case_abbr[i];
-		for (let n = 0; n < declension.number_abbr.length; n++) {
-			const num = declension.number_abbr[n];
+	for (let i = 0; i < this.declension.case_abbr.length; i++) {
+		let cas = this.declension.case_abbr[i];
+		for (let n = 0; n < this.declension.number_abbr.length; n++) {
+			const num = this.declension.number_abbr[n];
 			const elem = document.getElementById(cas+"_"+num+tnumber);
 			if (isClear) {
 				elem.innerHTML = "";
 			} else {
-				elem.innerHTML = this.declFunc[nclass](stem, group, i, n);
+				elem.innerHTML = declHost.declFunc[nclass](stem, group, i, n);
 			}
 		}
 	}

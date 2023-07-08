@@ -1,4 +1,7 @@
 const ppReader = {};
+ppReader.textInputElem = {};
+ppReader.dict = {};
+ppReader.declension = {};
 ppReader.charTable = {
 	"=a": "ā", "=i": "ī", "=u": "ū", "\\^n": "ṅ", "~n": "ñ", "\\.t": "ṭ", "\\.d": "ḍ", "\\.n": "ṇ", "\\.l": "ḷ", "\\.m": "ṃ",
 	"=A": "Ā", "=I": "Ī", "=U": "Ū", "\\^N": "Ṅ", "~N": "Ñ", "\\.T": "Ṭ", "\\.D": "Ḍ", "\\.N": "Ṇ", "\\.L": "Ḷ", "\\.M": "Ṃ"
@@ -39,7 +42,7 @@ ppReader.stockIrrnWords = {
 	"bhagavant:m": "guṇavant;t,m", "bhavanta:m": "bhavanta;a,m", "santa:m": "santa;a,m", "mahanta:m": "mahanta;a,m"
 };
 ppReader.sandhiWords = {
-	"nāhaṃ": "na+ahaṃ", "yaṃnūnāhaṃ": "yaṃnūna+ahaṃ", "panāhaṃ": "pana+ahaṃ", "khvāhaṃ": "kho+ahaṃ", "cāhaṃ": "ca+ahaṃ", "sacāhaṃ": "sace+ahaṃ", "handāhaṃ": "handa+ahaṃ", "svāhaṃ": "so+ahaṃ", "idhāhaṃ": "idha+ahaṃ", "tāhaṃ": "te+ahaṃ", "vatāhaṃ": "vata+ahaṃ", "evāhaṃ": "eva+ahaṃ", "tyāhaṃ": "tyā+ahaṃ", "tadāhaṃ": "tadā+ahaṃ", "tassāhaṃ": "tassa+ahaṃ", "kadāhaṃ": "kadā+ahaṃ", "yenāhaṃ": "yena+ahaṃ", "sāhaṃ": "sā+ahaṃ", "sohaṃ": "so+ahaṃ", "svāhaṃ": "so+ahaṃ", "tathāhaṃ": "tathā+ahaṃ", "tenāhaṃ": "tena+ahaṃ", "imāhaṃ": "imā+ahaṃ", "tāvāhaṃ": "tāva+ahaṃ", "apāhaṃ": "api+ahaṃ", "yathāhaṃ": "yathā+ahaṃ", "ekāhaṃ": "ekā+ahaṃ", "ekohaṃ": "eko+ahaṃ", "tathūpamāhaṃ": "tathā+upamā+ahaṃ", "esāhaṃ": "esā+ahaṃ", "esohaṃ": "eso+ahaṃ", "athāhaṃ": "atha+ahaṃ", "imināhaṃ": "iminā+ahaṃ", "nāmāhaṃ": "nāma+ahaṃ", "tesāhaṃ": "tesā+ahaṃ", "kathāhaṃ": "kathaṃ+ahaṃ", "māhaṃ": "mā+ahaṃ", "ekamidāhaṃ": "ekaṃ+idha+ahaṃ", "yāvāhaṃ": "yāva+ahaṃ", "kyāhaṃ": "kiṃ+ahaṃ", "vāhaṃ": "vā+ahaṃ", "tasmāhaṃ": "tasmā+ahaṃ", "yvāhaṃ": "yo+ahaṃ", "yadāhaṃ": "yadā+ahaṃ", "idānāhaṃ": "idāni+ahaṃ", "hetaṃ": "hi+etaṃ", "hetāni": "hi+etāni", "nohetaṃ": "no+hi+etaṃ", "sametāyasmā": "sametu+āyasmā", "matthi": "me+atthi", "asantettha": "asanto+ettha", "nasi": "na+asi", "yassete": "yassa+ete", "māvuso": "mā+āvuso", "itthāyaṃ": "itthī+ayaṃ", "ānentetaṃ": "ānentu+etaṃ", "metaṃ": "me+etaṃ", "mokāso": "me+okāso", "esāvuso": "eso+āvuso", "kutettha": "kuto+ettha", "sāpi": "sā+api", "sopi": "so+api", "sāva": "sā+iva", "bandhusseva": "bandhussa+iva", "tassedaṃ": "tassa+idaṃ", "latāva": "latā+iva", "lateva": "latā+iva", "ceti": "ca+iti", "guṇeneti": "guṇena+iti", "cūbhayaṃ": "ca+ubhayaṃ", "saddhīdha": "saddhā+idha", "tatrāyaṃ": "tatra+ayaṃ", "nāyyo": "na+ayyo", "nāssa": "na+assa", "māyyo": "mā+ayyo", "māssu": "mā+assu", "tadāssu": "tadā+assu", "kadāssu": "kadā+assu", "vāssa": "vā+assa", "tasmāssa": "tasmā+assa", "tatrāssa": "tatra+assa", "taṇhāssa": "taṇhā+assa", "katvātra": "katvā+atra", "sādhūti": "sādhu+iti", "tyāhaṃ": "te+ahaṃ", "tyāssa": "te+assa", "myāyaṃ": "me+ayaṃ", "khvassa": "kho+assa", "yvāyaṃ": "yo+ayaṃ", "svāyaṃ": "so+ayaṃ", "svāssa": "so+assa", "svāgataṃ": "su+āgataṃ", "hetuttho": "hetu+attho", "hetuattho": "hetu+attho", "dhātuttho": "dhātu+attho", "iccassa": "iti+assa", "iccetaṃ": "iti+etaṃ", "itīti": "iti+iti", "itīdaṃ": "iti+idaṃ", "itveva": "iti+eva;", "idheva": "idha+eva", "yathariva": "yathā+eva", "tathariva": "tathā+eva", "manuññaṃ": "mano+aññaṃ", "gavassaṃ": "go+assaṃ", "yajjevaṃ": "yadi+evaṃ", "yathayidaṃ": "yathā+idaṃ", "sammadeva": "sammā+eva", "yasmātiha": "yasmā+iha", "sabbhireva": "sabbhi+eva", "yāvañcidha": "yāva+ca+idha", "taññeva": "taṃ+eva", "evañhi": "evaṃ+hi", "yañhi": "yaṃ+hi", "tañhi": "taṃ+hi", "tamahaṃ": "taṃ+ahaṃ", "tamāha": "taṃ+āha", "yamāha": "yaṃ+āha", "tamāhu": "taṃ+āhu", "yamāhu": "yaṃ+āhu", "evametaṃ": "evaṃ+etaṃ", "ahameva": "ahaṃ+eva", "tvameva": "tvaṃ+eva", "tayidaṃ": "taṃ+idaṃ", "tadate": "taṃ+te", "etadakiñci": "etaṃ+kiñci", "tāsāhaṃ": "tāsaṃ+ahaṃ", "idampi": "idaṃ+api", "kindāni": "kiṃ+idāni", "tvaṃsi": "tvaṃ+asi", "tadaminā": "taṃ+iminā", "evumaṃ": "evaṃ+imaṃ", "kahaṃ": "kaṃ+ahaṃ", "kehaṃ": "kaṃ+ahaṃ", "tampi": "taṃ+pi", "yampi": "yaṃ+pi", "nālaṃ": "na+alaṃ", "alañca": "alaṃ+ca"
+	"nāhaṃ": "na+ahaṃ", "yaṃnūnāhaṃ": "yaṃnūna+ahaṃ", "panāhaṃ": "pana+ahaṃ", "khvāhaṃ": "kho+ahaṃ", "cāhaṃ": "ca+ahaṃ", "sacāhaṃ": "sace+ahaṃ", "handāhaṃ": "handa+ahaṃ", "svāhaṃ": "so+ahaṃ", "idhāhaṃ": "idha+ahaṃ", "tāhaṃ": "te+ahaṃ", "vatāhaṃ": "vata+ahaṃ", "evāhaṃ": "eva+ahaṃ", "tadāhaṃ": "tadā+ahaṃ", "tassāhaṃ": "tassa+ahaṃ", "kadāhaṃ": "kadā+ahaṃ", "yenāhaṃ": "yena+ahaṃ", "sāhaṃ": "sā+ahaṃ", "sohaṃ": "so+ahaṃ", "tathāhaṃ": "tathā+ahaṃ", "tenāhaṃ": "tena+ahaṃ", "imāhaṃ": "imā+ahaṃ", "tāvāhaṃ": "tāva+ahaṃ", "apāhaṃ": "api+ahaṃ", "yathāhaṃ": "yathā+ahaṃ", "ekāhaṃ": "ekā+ahaṃ", "ekohaṃ": "eko+ahaṃ", "tathūpamāhaṃ": "tathā+upamā+ahaṃ", "esāhaṃ": "esā+ahaṃ", "esohaṃ": "eso+ahaṃ", "athāhaṃ": "atha+ahaṃ", "imināhaṃ": "iminā+ahaṃ", "nāmāhaṃ": "nāma+ahaṃ", "tesāhaṃ": "tesā+ahaṃ", "kathāhaṃ": "kathaṃ+ahaṃ", "māhaṃ": "mā+ahaṃ", "ekamidāhaṃ": "ekaṃ+idha+ahaṃ", "yāvāhaṃ": "yāva+ahaṃ", "kyāhaṃ": "kiṃ+ahaṃ", "vāhaṃ": "vā+ahaṃ", "tasmāhaṃ": "tasmā+ahaṃ", "yvāhaṃ": "yo+ahaṃ", "yadāhaṃ": "yadā+ahaṃ", "idānāhaṃ": "idāni+ahaṃ", "hetaṃ": "hi+etaṃ", "hetāni": "hi+etāni", "nohetaṃ": "no+hi+etaṃ", "sametāyasmā": "sametu+āyasmā", "matthi": "me+atthi", "asantettha": "asanto+ettha", "nasi": "na+asi", "yassete": "yassa+ete", "māvuso": "mā+āvuso", "itthāyaṃ": "itthī+ayaṃ", "ānentetaṃ": "ānentu+etaṃ", "metaṃ": "me+etaṃ", "mokāso": "me+okāso", "esāvuso": "eso+āvuso", "kutettha": "kuto+ettha", "sāpi": "sā+api", "sopi": "so+api", "sāva": "sā+iva", "bandhusseva": "bandhussa+iva", "tassedaṃ": "tassa+idaṃ", "latāva": "latā+iva", "lateva": "latā+iva", "ceti": "ca+iti", "guṇeneti": "guṇena+iti", "cūbhayaṃ": "ca+ubhayaṃ", "saddhīdha": "saddhā+idha", "tatrāyaṃ": "tatra+ayaṃ", "nāyyo": "na+ayyo", "nāssa": "na+assa", "māyyo": "mā+ayyo", "māssu": "mā+assu", "tadāssu": "tadā+assu", "kadāssu": "kadā+assu", "vāssa": "vā+assa", "tasmāssa": "tasmā+assa", "tatrāssa": "tatra+assa", "taṇhāssa": "taṇhā+assa", "katvātra": "katvā+atra", "sādhūti": "sādhu+iti", "tyāhaṃ": "te+ahaṃ", "tyāssa": "te+assa", "myāyaṃ": "me+ayaṃ", "khvassa": "kho+assa", "yvāyaṃ": "yo+ayaṃ", "svāyaṃ": "so+ayaṃ", "svāssa": "so+assa", "svāgataṃ": "su+āgataṃ", "hetuttho": "hetu+attho", "hetuattho": "hetu+attho", "dhātuttho": "dhātu+attho", "iccassa": "iti+assa", "iccetaṃ": "iti+etaṃ", "itīti": "iti+iti", "itīdaṃ": "iti+idaṃ", "itveva": "iti+eva;", "idheva": "idha+eva", "yathariva": "yathā+eva", "tathariva": "tathā+eva", "manuññaṃ": "mano+aññaṃ", "gavassaṃ": "go+assaṃ", "yajjevaṃ": "yadi+evaṃ", "yathayidaṃ": "yathā+idaṃ", "sammadeva": "sammā+eva", "yasmātiha": "yasmā+iha", "sabbhireva": "sabbhi+eva", "yāvañcidha": "yāva+ca+idha", "taññeva": "taṃ+eva", "evañhi": "evaṃ+hi", "yañhi": "yaṃ+hi", "tañhi": "taṃ+hi", "tamahaṃ": "taṃ+ahaṃ", "tamāha": "taṃ+āha", "yamāha": "yaṃ+āha", "tamāhu": "taṃ+āhu", "yamāhu": "yaṃ+āhu", "evametaṃ": "evaṃ+etaṃ", "ahameva": "ahaṃ+eva", "tvameva": "tvaṃ+eva", "tayidaṃ": "taṃ+idaṃ", "tadate": "taṃ+te", "etadakiñci": "etaṃ+kiñci", "tāsāhaṃ": "tāsaṃ+ahaṃ", "idampi": "idaṃ+api", "kindāni": "kiṃ+idāni", "tvaṃsi": "tvaṃ+asi", "tadaminā": "taṃ+iminā", "evumaṃ": "evaṃ+imaṃ", "kahaṃ": "kaṃ+ahaṃ", "kehaṃ": "kaṃ+ahaṃ", "tampi": "taṃ+pi", "yampi": "yaṃ+pi", "nālaṃ": "na+alaṃ", "alañca": "alaṃ+ca"
 };
 ppReader.tokens = [];
 ppReader.shownTerms = [];
@@ -50,14 +53,14 @@ ppReader.processStockWords = function() {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("ṃ") ? 2 : 1;
 		const stem = term.slice(0, term.length-cutAt);
-		const prod = declension.getPronounDeclensionAll(stem, this.stockPronWords[w])
+		const prod = this.declension.getPronounDeclensionAll(stem, this.stockPronWords[w])
 		this.declPronProducts[w] = prod;
 	}
 	for (const w in this.stockIrrnWords) {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("t") ? 3 : 1;
 		const stem = term.slice(0, term.length-cutAt);
-		const prod = declension.getIrrnDeclensionAll(stem, this.stockIrrnWords[w])
+		const prod = this.declension.getIrrnDeclensionAll(stem, this.stockIrrnWords[w])
 		this.declIrrnProducts[w] = prod;
 	}
 };
@@ -69,7 +72,6 @@ ppReader.showOptions = function() {
 };
 ppReader.getOptions = function() {
 	const opts = {};
-	opts["bestguess"] = document.getElementById("opt_bestguess").checked;
 	opts["pronouns"] = document.getElementById("opt_pronouns").checked;
 	opts["irrns"] = document.getElementById("opt_irrns").checked;
 	opts["sandhis"] = document.getElementById("opt_sandhis").checked;
@@ -88,11 +90,11 @@ ppReader.showInstruction = function() {
 		instruction.style.display = "none";
 };
 ppReader.clear = function() {
-	textInputElem.value = "";
+	this.textInputElem.value = "";
 	this.clearNode(document.getElementById("analyzed_result"));
 };
 ppReader.pasteText = function() {
-	window.navigator.clipboard.readText().then(clipText => textInputElem.value = clipText);
+	window.navigator.clipboard.readText().then(clipText => this.textInputElem.value = clipText);
 };
 ppReader.analyze = function() {
 	ppReader.tokens = [];
@@ -103,17 +105,17 @@ ppReader.analyze = function() {
 	this.showDetails();
 };
 ppReader.refresh = function() {
-	let text = textInputElem.value;
+	let text = this.textInputElem.value;
 	for (const ch in ppReader.charTable) {
 		const regex = new RegExp(ch, "g");
 		text = text.replace(regex, ppReader.charTable[ch]);
 	}
 	text = text.replace(/ṁ/g, "ṃ");
-	textInputElem.value = text;
+	this.textInputElem.value = text;
 };
 ppReader.tokenize = function() {
-	const re = /[^A-Za-zÑĀĪŪḌḶṂṄṆṬñāīūḍḷṃṅṇṭ]/;
-	const terms = textInputElem.value.toLowerCase().split(re);
+	const re = /[^A-Za-zÑĀĪŪḌḶṂṄṆṬñāīūḍḷṃṅṇṭ]+/;
+	const terms = this.textInputElem.value.toLowerCase().split(re);
 	for (let i=0; i<terms.length; i++) {
 		if (terms[i].length > 0)
 			this.tokens.push(terms[i] + ":" + i);
@@ -124,14 +126,14 @@ ppReader.findTermInStock = function(term) {
 	const opts = this.getOptions();
 	if (opts.pronouns) {
 		for (const t in this.declPronProducts) {
-			prod = this.declPronProducts[t];
+			const prod = this.declPronProducts[t];
 			if (term in prod)
 				result[t] = prod[term];
 		}
 	}
 	if (opts.irrns) {
 		for (const t in this.declIrrnProducts) {
-			prod = this.declIrrnProducts[t];
+			const prod = this.declIrrnProducts[t];
 			if (term in prod)
 				result[t] = prod[term];
 		}
@@ -145,13 +147,13 @@ ppReader.createStockInfoBox = function(termsInfo) {
 		const elem = document.createElement("div");
 		const det = termsInfo[t];
 		const cas = det.cas;
-		let casStr = declension.case_abbr[cas[0]] + ".";
+		let casStr = this.declension.case_abbr[cas[0]] + ".";
 		for (let c=1; c<cas.length; c++)
-			casStr += "/" + declension.case_abbr[cas[c]] + ".";
+			casStr += "/" + this.declension.case_abbr[cas[c]] + ".";
 		const num = det.num;
-		let numStr = declension.number_abbr[num[0]] + ".";
+		let numStr = this.declension.number_abbr[num[0]] + ".";
 		for (let n=1; n<num.length; n++)
-			numStr += "/" + declension.number_abbr[num[n]] + ".";
+			numStr += "/" + this.declension.number_abbr[num[n]] + ".";
 		let [ term, gen ] = t.split(":");
 		if (gen === "n") gen = "nt";
 		const genStr = gen === "3" ? "" : "(" + gen + "." + ") ";
@@ -199,7 +201,7 @@ ppReader.showList = function() {
 			this.addDetail(dictDetail, block, true);
 		}
 		result.appendChild(div);
-		ncped.searchForAnalysis(term, dictDetail);
+		this.dict.searchForAnalysis(term, dictDetail, this);
 	}
 };
 ppReader.showInfo = function(node, type, isExact) {

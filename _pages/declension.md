@@ -2,7 +2,7 @@
 title: "Declension Table Calculator"
 permalink: /declension
 is_application: true
-date: 2023-06-30 12:00:00 +0700
+date: 2023-07-06 12:00:00 +0700
 ---
 
 {% include pali_input.html button="Compute" function="declHost.compute()" after_clear="declHost.fillTable(1)" placeholder="Enter a raw word" %}
@@ -32,9 +32,12 @@ date: 2023-06-30 12:00:00 +0700
 	</tbody>
 </table>
 </p>
-
 <script src="/assets/js/decllib.js"></script>
-<script src="/assets/js/declprog.js"></script>
+<script src="/assets/js/declhost.js"></script>
+<script>
+	declHost.paliInput = paliInput;
+	declHost.init(declension);
+</script>
 
 > The declension table can be calculated from the following inputs:
 > - a pronoun in raw form e.g. amha tumha ta etc. (including number 1--4)
