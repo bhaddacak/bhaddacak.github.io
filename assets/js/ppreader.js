@@ -1,3 +1,5 @@
+/*! ppreader.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const ppReader = {};
 ppReader.textInputElem = {};
 ppReader.dict = {};
@@ -52,14 +54,14 @@ ppReader.processStockWords = function() {
 	for (const w in this.stockPronWords) {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("ṃ") ? 2 : 1;
-		const stem = term.slice(0, term.length-cutAt);
+		const stem = term.slice(0, -cutAt);
 		const prod = this.declension.getPronounDeclensionAll(stem, this.stockPronWords[w])
 		this.declPronProducts[w] = prod;
 	}
 	for (const w in this.stockIrrnWords) {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("t") ? 3 : 1;
-		const stem = term.slice(0, term.length-cutAt);
+		const stem = term.slice(0, -cutAt);
 		const prod = this.declension.getIrrnDeclensionAll(stem, this.stockIrrnWords[w])
 		this.declIrrnProducts[w] = prod;
 	}

@@ -1,3 +1,5 @@
+/*! decllib.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const declension = {};
 declension.case_abbr = ["nom", "acc", "ins", "dat", "abl", "gen", "loc", "voc"];
 declension.number_abbr = ["sg", "pl"];
@@ -103,7 +105,7 @@ declension.combineEnding = function(stem, end) {
 	if (end.startsWith("-")) {
 		const delNum = parseInt(end.slice(1,2));
 		const realEnd = end.slice(2);
-		result = result.slice(0, result.length-delNum) + realEnd;
+		result = result.slice(0, -delNum) + realEnd;
 	} else {
 		result += end;
 	}

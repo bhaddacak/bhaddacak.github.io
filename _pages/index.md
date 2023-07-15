@@ -21,8 +21,9 @@ permalink: /
 ## Online Tools
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
-- [Pāli Passage Reader](/ppreader)<span class="label label-green">new</span>
+- [Pāli Passage Reader](/ppreader)
 - [New Concise Pāli-English Dictionary](/ncped)
+- [PTS Pali-English Dictionary](/ptsped)<span class="label label-green">new</span>
 - [Declension Table Calculator](/declension)
 
 ## Term Papers and Minor Writings

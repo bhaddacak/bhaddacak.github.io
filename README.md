@@ -8,5 +8,5 @@ layout: page
 
 This site is meant to be the official portal to his works and thoughts. The theme used here is slightly modified from [`contrast`](https://github.com/niklasbuschmann/contrast).
 
-The site's dark color scheme can be set by the browser's preferences, e.g., by *Website appearance* in Firefox.
+The site's design is intentedly kept <strong>s</strong>imple, <strong>c</strong>lean, and <strong>u</strong>nintrusive (SCU). Its dark color scheme can be set by the browser's preferences, e.g., by *Website appearance* in Firefox.
 

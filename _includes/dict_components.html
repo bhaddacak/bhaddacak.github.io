@@ -1,5 +1,8 @@
 <div>
-<span><label for="showdetails"><input type="checkbox" id="showdetails" onChange="ncpedHost.search();">Show details</label> <label for="findindef"><input type="checkbox" id="findindef" onChange="ncpedHost.search();">Search in definitions</label>
+<span><label for="showdetails"><input type="checkbox" id="showdetails" onChange="ncpedHost.search();">Show details</label>
+{% if include.def_search %}
+<label for="findindef"><input type="checkbox" id="findindef" onChange="ncpedHost.search();"> Search in definitions</label>
+{% endif %}
 </span>
 <span class="label" id="wordcount" style="display:none;"></span><span class="label label-yellow" id="searching" style="display:none;">Searching&nbsp;...</span>
 </div>

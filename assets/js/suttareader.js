@@ -1,3 +1,5 @@
+/*! suttareader.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const suttaReader = {};
 suttaReader.suttaCount = { "dn": 34, "mn": 152, "sn": 56, "an": 11 };
 suttaReader.suttaSubList = {

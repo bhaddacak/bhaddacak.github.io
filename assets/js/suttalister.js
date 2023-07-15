@@ -1,3 +1,5 @@
+/*! suttalister.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const suttaLister = {};
 suttaLister.resultElem = document.getElementById("listresult");
 suttaLister.paliInput = {};

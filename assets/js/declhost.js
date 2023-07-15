@@ -1,3 +1,5 @@
+/*! declhost.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const declHost = {};
 declHost.paliInput = {};
 declHost.declension = {};
@@ -66,7 +68,7 @@ declHost.getGenericParam = function(term, gender) {
 	const lastCh = this.getFixedLastChar(term, gender);
 	if ("aāiīuū".indexOf(lastCh) > -1) {
 		result.group = lastCh + "," + gender;
-		result.stem = term.slice(0, term.length-1);
+		result.stem = term.slice(0, -1);
 	} else {
 		result.group = "";
 	}
@@ -86,12 +88,12 @@ declHost.updateDeclTable = function(term) {
 		if (this.declension.paradn_pron[group] !== undefined) {
 			param.nclass = "pronoun";
 			param.group = group;
-			param.stem = term.slice(0, term.length-1);
+			param.stem = term.slice(0, -1);
 		} else if (this.declension.paradn_irrn[group] !== undefined) {
 			param.nclass = "irregular";
 			param.group = group;
 			const cutAt = term.endsWith("t") ? 3 : 1;
-			param.stem = term.slice(0, term.length - cutAt);
+			param.stem = term.slice(0, -cutAt);
 		} else if (term === "go") {
 			const end = selgen === "f" ? "ā" : "a";
 			param.nclass = "irregular";
@@ -111,23 +113,23 @@ declHost.updateDeclTable = function(term) {
 			param.nclass = "irregular";
 			param.group = "guṇavant;t," + selgen;
 			const cutAt = term.endsWith("u") ? 4 : 3;
-			param.stem = term.slice(0, term.length - cutAt);
+			param.stem = term.slice(0, -cutAt);
 			computed = true;
 		} else if (term.endsWith("anta")) {
 			if (selgen === "f") {
 				param.nclass = "generic";
 				param.group = "ā," + selgen;
-				param.stem = term.slice(0, term.length-1);
+				param.stem = term.slice(0, -1);
 			} else {
 				param.nclass = "irregular";
 				param.group = "gacchanta;a," + selgen;
-				param.stem = term.slice(0, term.length-1);
+				param.stem = term.slice(0, -1);
 			}
 			computed = true;
 		} else if (term.endsWith("tar") && selgen === "m") {
 			param.nclass = "irregular";
 			param.group = "kattu;u,m";
-			param.stem = term.slice(0, term.length-2);
+			param.stem = term.slice(0, -2);
 			computed = true;
 		} else {
 			let generic = true;
@@ -135,7 +137,7 @@ declHost.updateDeclTable = function(term) {
 				if (this.pron_child_list[this.pron_parad[i]].indexOf(term) >= 0) {
 					param.nclass = "pronoun";
 					param.group = this.pron_parad[i] + ";" + lastCh + "," + selgen;
-					param.stem = term.slice(0, term.length-1);
+					param.stem = term.slice(0, -1);
 					generic = false;
 				}
 			}
@@ -144,7 +146,7 @@ declHost.updateDeclTable = function(term) {
 					if (selgen === "m" || (this.irrn_parad[i] === "mātu" && selgen === "f")) {
 						param.nclass = "irregular";
 						param.group = this.irrn_parad[i] + ";" + term[term.length-1] + "," + selgen;
-						param.stem = term.slice(0, term.length-1);
+						param.stem = term.slice(0, -1);
 						generic = false;
 					}
 				}

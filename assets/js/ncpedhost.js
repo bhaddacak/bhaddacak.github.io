@@ -1,3 +1,5 @@
+/*! ncpedhost.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
 const ncpedHost = {};
 ncpedHost.dict = null;
 ncpedHost.paliInput = null;
@@ -178,7 +180,7 @@ ncpedHost.highlightMeaning = function(text) {
 		pos = text.indexOf(this.dict.query, start);
 	}
 	if (start < text.length)
-		output += text.slice(start, text.length);
+		output += text.slice(start);
 	return(output);
 };
 ncpedHost.getXR = function(xr) {
