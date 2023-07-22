@@ -44,5 +44,5 @@ permalink: /
 - [Buddhism in Sri Lanka: An Essential Summary](/budsrilanka)
 
 ## ผลงานภาษาไทย
-- [โครงการอิสราศรม](https://bhaddacak.github.io/israsom) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
+- [อิสราศรม ทิศาปาโมกข์](https://bhaddacak.github.io/israsom) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
 	- [Download pdf version](https://github.com/bhaddacak/israsom/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
