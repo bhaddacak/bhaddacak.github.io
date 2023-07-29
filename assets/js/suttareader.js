@@ -182,7 +182,7 @@ suttaReader.changeNikaya = function() {
 		}
 		if (!dnORmn) {
 			groupElem.style.display = "inline";
-			this.changeGroup()
+			this.changeGroup();
 		} else {
 			groupElem.style.display = "none";
 		}
@@ -401,7 +401,7 @@ suttaReader.displayText = function() {
 			const para = document.createElement("p");
 			let text = this.textObj[this.idList[i]] ? this.textObj[this.idList[i]] : "";
 			if (document.getElementById("mdotbelow").checked)
-				text = text.replace(/ṁ/g,'ṃ');
+				text = text.replace(/ṁ/g,"ṃ");
 			let code = this.idList[i].slice(this.idList[i].lastIndexOf(":")+1);
 			let element = "div";
 			if (code.startsWith("0.")) {
@@ -446,8 +446,8 @@ suttaReader.changeNiggahita = function() {
 		if (this.idList[i].trim().length > 0) {
 			const textNode = document.getElementById("text-" + this.idList[i]);
 			let text = document.getElementById("mdotabove").checked
-				? textNode.innerHTML.replace(/ṃ/g,'ṁ')
-				: textNode.innerHTML.replace(/ṁ/g,'ṃ');
+				? textNode.innerHTML.replace(/ṃ/g,"ṁ")
+				: textNode.innerHTML.replace(/ṁ/g,"ṃ");
 			textNode.innerHTML = text;
 		}
 	}

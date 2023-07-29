@@ -55,14 +55,14 @@ ppReader.processStockWords = function() {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("ṃ") ? 2 : 1;
 		const stem = term.slice(0, -cutAt);
-		const prod = this.declension.getPronounDeclensionAll(stem, this.stockPronWords[w])
+		const prod = this.declension.getPronounDeclensionAll(stem, this.stockPronWords[w]);
 		this.declPronProducts[w] = prod;
 	}
 	for (const w in this.stockIrrnWords) {
 		const term = w.slice(0, w.indexOf(":"));
 		const cutAt = term.endsWith("t") ? 3 : 1;
 		const stem = term.slice(0, -cutAt);
-		const prod = this.declension.getIrrnDeclensionAll(stem, this.stockIrrnWords[w])
+		const prod = this.declension.getIrrnDeclensionAll(stem, this.stockIrrnWords[w]);
 		this.declIrrnProducts[w] = prod;
 	}
 };
@@ -212,7 +212,7 @@ ppReader.showInfo = function(node, type, isExact) {
 		const span = document.createElement("span");
 		span.style.fontSize = "0.8em";
 		const nearest = isExact ? " the" : " a similar";
-		span.innerHTML = "&nbsp;(See" + nearest + " definition above or below)"
+		span.innerHTML = "&nbsp;(See" + nearest + " definition above or below)";
 		head.appendChild(span);
 	}
 };

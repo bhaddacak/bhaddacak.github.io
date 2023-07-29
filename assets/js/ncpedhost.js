@@ -37,7 +37,7 @@ ncpedHost.search = function() {
 	const inputText = this.paliInput.getText();
 	const inputval = findInDef ? inputText : inputText.trim().toLowerCase();
 	if (findInDef) {
-		mode = "indef"
+		mode = "indef";
 	} else if (inputval.startsWith("\"")) {
 		mode = "exact";
 		cutNeeded = true;
@@ -145,7 +145,7 @@ ncpedHost.getDetail = function(item) {
 		para.appendChild(this.getHomonyms(item.homonyms));
 	if (item.xr !== undefined)
 		para.appendChild(this.getXR(item.xr));
-	return para
+	return para;
 };
 ncpedHost.getGrammar = function(grammar) {
 	const gramNode = document.createElement("div");
@@ -175,7 +175,7 @@ ncpedHost.highlightMeaning = function(text) {
 	let pos = text.indexOf(this.dict.query, start);
 	while (pos > -1) {
 		output += text.slice(start, pos);
-		output += '<span style="color:darkorange;">' + this.dict.query + "</span>";
+		output += "<span style='color:darkorange;'>" + this.dict.query + "</span>";
 		start = pos + this.dict.query.length;
 		pos = text.indexOf(this.dict.query, start);
 	}
@@ -190,7 +190,7 @@ ncpedHost.getXR = function(xr) {
 	for (let i=0; i<xrList.length; i++) {
 		const xr = ncpedHost.dict === null
 					? "<em>" + xrList[i] + "</em>"
-					: '<em style="cursor:pointer;" onClick="ncpedHost.goXR(\'' + xrList[i] + '\');">' + xrList[i] + '</em>';
+					: "<em style='cursor:pointer;' onClick=\"ncpedHost.goXR('" + xrList[i] + "');\">" + xrList[i] + "</em>";
 		xrFinal.push(xr);
 	}
 	xrNode.style = "font-size:0.9em";

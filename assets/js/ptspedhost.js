@@ -30,7 +30,6 @@ ptspedHost.showNotFound = function() {
 	document.getElementById("dictresult").innerHTML = "Nothing found";
 };
 ptspedHost.search = function() {
-	const result = document.getElementById("dictresult");
 	const query = this.paliInput.getText().trim().toLowerCase();
 	this.dict.search(query, this);
 };
@@ -79,13 +78,13 @@ ptspedHost.cleanDetail = function(text) {
 	let result = text;
 	result = result.replace(/href=\"#/gi, "title=\"#");
 	return result;
-}
+};
 ptspedHost.getDetail = function(item) {
 	const para = document.createElement("p");
 	const body = document.createElement("div");
 	body.innerHTML = this.cleanDetail(item.d);
 	para.appendChild(body);
-	return para
+	return para;
 };
 ptspedHost.getDetailBlock = function(dictItem) {
 	const block = document.createElement("blockquote");

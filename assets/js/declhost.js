@@ -37,13 +37,13 @@ declHost.compute = function() {
 	}
 };
 declHost.getSelectedGender = function() {
-	let result = 'm';
+	let result = "m";
 	const elef = document.getElementById("gendf");
 	const elen = document.getElementById("gendn");
 	if (elef.checked)
-		result = 'f';
+		result = "f";
 	else if (elen.checked)
-		result = 'n';
+		result = "n";
 	return result;
 };
 declHost.getFixedLastChar = function(term, gender) {

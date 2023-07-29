@@ -2,10 +2,10 @@
 title: "PTS Pali-English Dictionary"
 permalink: /ptsped
 is_application: true
-date: 2023-07-14 12:00:00 +0700
+date: 2023-07-27 12:00:00 +0700
 ---
 
-This program is based on *The Pali Text Society's Pali-English Dictionary* revised in accordance with the 2015 "Reprint with corrections" by K.R. Norman, William Pruitt and Peter Jackson. The digital version is released by [Buddhadust](http://buddhadust.net/) (proofread 2021). We are grateful to the great effort that makes this happen. For more information, see [PTSPED](https://vpnry.github.io/ptsped/) and Buddhadust. This online version uses [`pako`](https://github.com/nodeca/pako), a compression library (zlib), to make the loading faster.
+This program is based on *The Pali Text Society's Pali-English Dictionary* revised in accordance with the 2015 "Reprint with corrections" by K.R. Norman, William Pruitt and Peter Jackson. The digital version is released by [Buddhadust](http://buddhadust.net/) (proofread 2021). We are grateful to the great effort that makes this happen. For more information, see [PTSPED](https://vpnry.github.io/ptsped/) and Buddhadust.
 
 {% include pali_input.html button="Search" function="ptspedHost.search();" after_clear="ptspedHost.clearResult();" placeholder="Search for ..." %}
 {% include dict_components.html def_search=false %}

@@ -27,7 +27,7 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header>
+<header id="main-header">
 	<a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
 </header>
@@ -35,10 +35,32 @@
 {{ content }}
 
 {% if site.external %}
-<footer>
+<footer id="main-footer">
   <div>{{ site.description | default: site.title }}</div>
   {% include menu.html menu=site.external %}
 </footer>
 {% endif %}
 
+<script>
+function toggleTheme() {
+	const body = document.body;
+	const header = document.getElementById("main-header");
+	const footer = document.getElementById("main-footer");
+	body.parentNode.classList.toggle("dark-theme");
+	body.classList.toggle("dark-theme");
+	header.classList.toggle("dark-theme");
+	footer.classList.toggle("dark-theme");
+}
+function toggleThemeSave() {
+	toggleTheme();
+	const theme = localStorage.getItem("globaltheme") === "light" ? "dark" : "light";
+	localStorage.setItem("globaltheme", theme);
+}
+if (localStorage.getItem("globaltheme")) {
+	if (localStorage.getItem("globaltheme") === "dark")
+		toggleTheme();
+} else {
+	localStorage.setItem("globaltheme", "light");
+}
+</script>
 </html>

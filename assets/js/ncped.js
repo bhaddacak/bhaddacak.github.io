@@ -33,7 +33,7 @@ ncped.searchForAnalysis = function(query, element, reader) {
 		else
 			this.loadDict(initial, { "mode": "reader", "query": query, "element": element } );
 	}
-}
+};
 ncped.search = function(query, mode, host) {
 	this.dictHost = host;
 	this.clearResult();

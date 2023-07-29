@@ -178,12 +178,12 @@ const DeclProduct = function() {
 	};
 	this.getProduct = function() {
 		return this.product;
-	}
+	};
 	this.mergeWith = function(product) {
 		for (const term in product) {
 			const info = product[term];
 			this.addTerm(term, info.cas, info.num);
 		}
 		return this.product;
-	}
+	};
 };
