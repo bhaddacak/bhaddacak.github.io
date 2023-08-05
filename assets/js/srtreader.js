@@ -14,7 +14,7 @@ srtReader.loadText = function() {
 	let text = textSelector.options[textSelector.selectedIndex].value;
 	const request = new XMLHttpRequest();
 	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/tipitaka/siamrath/" + text, true);
+	request.open("GET", "/assets/palitext/siamrath/" + text, true);
 	request.onload = function(){
 		if (request.status >= 200 && request.status < 400) {
 			const content = window.pako.ungzip(request.response, { to: "string" });
@@ -73,11 +73,12 @@ srtReader.formatText = function(text) {
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
-		if (lines[i].match(/page \d\d\d\d/) !== null) {
+		const pline = lines[i].match(/\[page \d\d\d\d]/);
+		if (pline !== null) {
 			if (i === 0)
-				result += "<p style='text-align:left;'>";
+				result += "<p id='" + pline[0] + "' style='text-align:left;'>";
 			else
-				result += "</p><p style='text-align:left;'>";
+				result += "</p><p id='" + pline[0] + "' style='text-align:left;'>";
 			result += "<strong>" + lines[i] + "</strong>";
 			lineno = 1;
 		} else {
@@ -111,21 +112,12 @@ srtReader.updatePageList = function(list) {
 	}
 };
 srtReader.gotoPage = function() {
-	const display = document.getElementById("textdisplay");
 	const pageSelector = document.getElementById("pageselector");
 	if (pageSelector.options.length > 0) {
 		const pageToGo = pageSelector.options[pageSelector.selectedIndex].value;
-		const allP = display.getElementsByTagName("p");
-		for (let i=0; i<allP.length; i++) {
-			const p = allP[i];
-			const childs = p.childNodes;
-			for (let n=0; n<childs.length; n++) {
-				if (childs[n].innerText === pageToGo) {
-					childs[n].scrollIntoView();
-					break;
-				}
-			}
-		}
+		const elem = document.getElementById(pageToGo);
+		if (elem)
+			elem.scrollIntoView();
 	}
 };
 srtReader.toggleLineNo = function() {

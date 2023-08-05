@@ -24,7 +24,7 @@ date: 2023-07-06 12:00:00 +0700
 	<label for="opt_sandhis"><input type="checkbox" id="opt_sandhis" checked>Common <em>sandhi</em> words</label><br>
 </div>
 <hr>
-<p id="analyzed_result"></p>
+<div id="analyzed_result"></div>
 <script src="/assets/js/ncpedhost.js"></script>
 <script src="/assets/js/ncped.js"></script>
 <script src="/assets/js/decllib.js"></script>

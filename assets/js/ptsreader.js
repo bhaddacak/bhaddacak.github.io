@@ -14,7 +14,7 @@ ptsReader.loadText = function() {
 	let text = textSelector.options[textSelector.selectedIndex].value;
 	const request = new XMLHttpRequest();
 	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/tipitaka/pts/" + text, true);
+	request.open("GET", "/assets/palitext/pts/" + text, true);
 	request.onload = function(){
 		if (request.status >= 200 && request.status < 400) {
 			const content = window.pako.ungzip(request.response, { to: "string" });

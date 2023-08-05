@@ -414,9 +414,11 @@ suttaReader.displayText = function() {
 			}
 			const textElem = document.createElement(element);
 			textElem.id = "text-" + this.idList[i];
+			textElem.style.textAlign = "left";
 			textElem.innerHTML = text;
 			const transElem = document.createElement("blockquote");
 			transElem.id = "trans-" + this.idList[i];
+			transElem.style.textAlign = "left";
 			transElem.style.display = "none";
 			para.appendChild(textElem);
 			para.appendChild(transElem);

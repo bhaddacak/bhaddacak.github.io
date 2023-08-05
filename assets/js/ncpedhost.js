@@ -12,6 +12,22 @@ ncpedHost.clearResult = function() {
 	const result = document.getElementById("dictresult");
 	this.clearNode(result);
 };
+ncpedHost.getUrlParams = function() {
+	const result = {};
+	const url = location.href;
+	const qpos = url.indexOf("?");
+	if (qpos > -1) {
+		const params = url.slice(qpos);
+		const spos = params.indexOf("q=");
+		if (spos > -1) {
+			let query = params.slice(spos + 2);
+			const apos = query.indexOf("&");
+			query = apos > -1 ? query.slice(0, apos) : query;
+			result["query"] = unescape(query);
+		}
+	}
+	return result;
+};
 ncpedHost.showWordCount = function(num, mode) {
 	const wordcount = document.getElementById("wordcount");
 	const exactly = mode === "exact" ? "&nbsp;exactly" : "";
@@ -218,4 +234,8 @@ ncpedHost.getHomonyms = function(homonyms) {
 		}
 	}
 	return homoNode;
+};
+ncpedHost.openPtsped = function() {
+	const query = this.paliInput.getText();
+	window.open("/ptsped?q=" + query, "ptsped-dict");
 };

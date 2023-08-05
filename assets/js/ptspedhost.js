@@ -12,6 +12,25 @@ ptspedHost.clearResult = function() {
 	const result = document.getElementById("dictresult");
 	this.clearNode(result);
 };
+ptspedHost.getUrlParams = function() {
+	const result = {};
+	const url = location.href;
+	const qpos = url.indexOf("?");
+	if (qpos > -1) {
+		const params = url.slice(qpos);
+		const spos = params.indexOf("q=");
+		if (spos > -1) {
+			let query = params.slice(spos + 2);
+			const apos = query.indexOf("&");
+			query = apos > -1 ? query.slice(0, apos) : query;
+			query = unescape(query);
+			if (query.startsWith("\""))
+				query = query.slice(1);
+			result["query"] = query;
+		}
+	}
+	return result;
+};
 ptspedHost.showWordCount = function(num) {
 	const wordcount = document.getElementById("wordcount");
 	if (num === 0) {
@@ -76,7 +95,7 @@ ptspedHost.checkForShowDetails = function(foundList) {
 };
 ptspedHost.cleanDetail = function(text) {
 	let result = text;
-	result = result.replace(/href=\"#/gi, "title=\"#");
+	result = result.replace(/href="#/gi, "title=\"#");
 	return result;
 };
 ptspedHost.getDetail = function(item) {
@@ -94,4 +113,7 @@ ptspedHost.getDetailBlock = function(dictItem) {
 	block.style.cursor = "default";
 	return block;
 };
-
+ptspedHost.openNcped = function() {
+	const query = this.paliInput.getText();
+	window.open("/ncped?q=" + query, "ncped-dict");
+};

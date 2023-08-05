@@ -19,11 +19,15 @@ permalink: /
 - [Pāli Platform 2](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
-## Online Tools
+## Online Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
-- [PTS Tipitaka Reader](/ptsreader)<span class="label label-green">new</span>
-- [Siam Rath Tipitaka Reader](/srtreader)<span class="label label-green">new</span>
+- [PTS Tipitaka Reader](/ptsreader)
+- [Siam Rath Tipitaka Reader](/srtreader)
+- [Dhammapadaṭṭhakathā Reader](/dhpareader)<span class="label label-green">new</span>
+- [Pāli Literature of Thailand](/thaipalitext)<span class="label label-green">new</span>
+
+## Online Pāli Tools
 - [Pāli Passage Reader](/ppreader)
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)

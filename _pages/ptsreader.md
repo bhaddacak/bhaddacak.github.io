@@ -2,12 +2,12 @@
 title: "PTS Tipitaka Reader"
 permalink: /ptsreader
 is_application: true
-date: 2023-07-29 12:00:00 +0700
+date: 2023-08-05 12:00:00 +0700
 ---
 
 This collection of the Pali Text Society's Pāli canon is taken from [GRETIL](http://gretil.sub.uni-goettingen.de/gretil.html), with several HTML fixes after careful validations. The text is intact, but its display is slightly changed to ease the reader. This tool can help students find references to the legacy publications. For the full set of the text, please see at GRETIL or better use `Pāli Platform 3` (forthcoming). For the text's information and copyright notice, see *Front Matter*. Once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
 
-<div>
+<div style="padding-bottom:10px;">
 <select id="texts">
 <optgroup label="Vinaya">
 <option value="vin1maou.gz">Mahavagga</option>
@@ -82,6 +82,6 @@ This collection of the Pali Text Society's Pāli canon is taken from [GRETIL](ht
 <span> Go to page: <select id="pageselector" onChange="ptsReader.gotoPage();"></select></span>
 <label for="dehyphen"><input type="checkbox" id="dehyphen" onClick="ptsReader.dehyphenate();">Dehyphenated</label>
 </div>
-<p id="textdisplay"></p>
+<div id="textdisplay"></div>
 <script src="/assets/js/ptsreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>

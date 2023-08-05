@@ -2,7 +2,6 @@
 "use strict";
 const suttaLister = {};
 suttaLister.resultElem = document.getElementById("listresult");
-suttaLister.paliInput = {};
 suttaLister.titleList = [
 "bu-vb-pj", "bu-vb-ss", "bu-vb-ay", "bu-vb-np", "bu-vb-pc", "bu-vb-pd", "bu-vb-sk", "bu-vb-as",
 "bi-vb-pj", "bi-vb-ss", "bi-vb-ay", "bi-vb-np", "bi-vb-pc", "bi-vb-pd", "bi-vb-sk", "bi-vb-as",
@@ -16,6 +15,7 @@ suttaLister.groupSwitch = {
 "an": { start: 21, end: 21, shown: true },
 "kn": { start: 22, end: 29, shown: true },
 };
+suttaLister.paliInput = {};
 suttaLister.shownGroup = [];
 suttaLister.allSutta = {};
 suttaLister.idList = [];
@@ -26,7 +26,7 @@ suttaLister.clearNode = function(node) {
 };
 suttaLister.loadSuttaList = function() {
 	const request = new XMLHttpRequest();
-	request.open("GET", "assets/data/suttalist.json", true);
+	request.open("GET", "assets/palitext/suttalist.json", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			suttaLister.allSutta = JSON.parse(request.responseText);

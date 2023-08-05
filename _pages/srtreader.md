@@ -2,10 +2,10 @@
 title: "Siam Rath Tipitaka Reader"
 permalink: /srtreader
 is_application: true
-date: 2023-07-29 12:00:00 +0700
+date: 2023-08-05 12:00:00 +0700
 ---
 
-This may be the first appearance of the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here: [Vol. 1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf) ... [Vol. 45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., 9/314/250 (DN 10.314). In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
+This may be the first appearance of the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here: [Vol. 1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf) ... [Vol. 45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., 9/314/250 (=DN 10.314), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
 
 <div>
 <select id="texts">
@@ -71,12 +71,12 @@ This may be the first appearance of the full set (45 volumes) of Siam Rath Pāli
 </select>
 <button onClick="srtReader.loadText();">Load</button>
 </div>
-<div style="padding-top:5px;">
+<div style="padding-top:5px;padding-bottom:10px;">
 <span> Go to page: <select id="pageselector" onChange="srtReader.gotoPage();"></select></span>
 <label for="showline"><input type="checkbox" id="showline" onClick="srtReader.toggleLineNo();">Line numbers</label>
 <label for="dehyphen"><input type="checkbox" id="dehyphen" onClick="srtReader.dehyphenate();">Dehyphenated</label>
 </div>
-<p id="textdisplay"></p>
+<div id="textdisplay"></div>
 <blockquote id="preface">
 <h3 style="text-align:center">Syāmaraṭṭhassa Tepiṭakārambhakathā</h3>
 <p style="text-align:left">

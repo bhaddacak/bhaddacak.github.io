@@ -2,10 +2,10 @@
 title: "Declension Table Calculator"
 permalink: /declension
 is_application: true
-date: 2023-07-06 12:00:00 +0700
+date: 2023-08-04 12:00:00 +0700
 ---
 
-{% include pali_input.html button="Compute" function="declHost.compute()" after_clear="declHost.fillTable(1)" placeholder="Enter a raw word" %}
+{% include pali_input.html search_button="Compute" search_func="declHost.compute()" after_clear="declHost.fillTable(1)" placeholder="Enter a raw word" %}
 <div>
 <span style="padding: 3px">
 <label for="gendm"><input type="radio" id="gendm" name="gender-radio" value="m" onChange="declHost.compute();" checked>m.</label>
