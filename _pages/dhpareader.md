@@ -7,7 +7,7 @@ date: 2023-08-12 12:00:00 +0700
 
 This commentary to Dhammapada is taken from the traditional Thai monastic Pāli curriculum, used in Level (Parian) 2--3. From the two volumes in the Pāli commentaries, the text is arranged into 8 parts, 26 sections (vaggas), and has totally 302 stories (vatthus). To Pāli learners, this is one of the most entertaining reading materials. The conversion from Thai script has some limitations. For example, the inconsistent use of space and tab in the source makes some verses look 'collapsed' (two feet are blended). An English translation of this can be found in *Buddhist Legends* (1921) by Eugene Watson Burlingame. We have only some parts of it here, but full Thai translation with its Google version is available.
 
-<div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;">
+<div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;z-index:10;">
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(dhpaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <button onClick="dhpaReader.showTOC(true);">TOC</button>

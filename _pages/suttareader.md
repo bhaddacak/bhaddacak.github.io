@@ -6,8 +6,10 @@ date: 2023-08-13 12:00:00 +0700
 ---
 
 This is a simple Pāli text reader, thanks to well-organized data from [SuttaCentral](https://suttacentral.net) that makes this possible. Only English translations by Ven. Brahmali (Vinaya) and Ven. Sujato (Suttanta), which have the best coverage, are available here. The program is meant to be fast and simple. So, please consult the original website for other details. [Sutta Lister](/suttalister) here may be helpful somehow, though.
-<div>
+
+<div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
+<button onClick="bcUtil.toggleToolBar(suttaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="nikaya" onClick="suttaReader.changeNikaya();">
 	<option value="vin">Vin</option>
 	<option value="dn" selected>DN</option>

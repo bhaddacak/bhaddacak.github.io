@@ -5,7 +5,7 @@ is_application: true
 date: 2023-08-13 12:00:00 +0700
 ---
 
-<div id="toolbar" style="padding-bottom:10px;padding-top:3px;">
+<div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(mdReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="paranumselector" title="Paragraph number to go" onChange="mdReader.goParaNum();"></select>

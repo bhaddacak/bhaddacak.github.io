@@ -7,7 +7,7 @@ date: 2023-08-13 12:00:00 +0700
 
 The translation also has the output from *Google Translate*. It is quite helpful with limitations. When Google meets difficult Pāli explanations, it can go crazy. In many parts, however, the translation is amazingly comprehensible. Yet, some sentences can be downright wrong and out of context. So, be careful and do not rely much on this, always look at the Pāli yourselves.
 
-<div id="toolbar" class="fixed" style="padding-bottom:10px;padding-top:3px;">
+<div id="toolbar" class="fixed" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(dhpaThai);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="vatthuselector" onChange="dhpaThai.goVatthu();"></select>
