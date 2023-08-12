@@ -2,11 +2,12 @@
 title: "Sutta Reader"
 permalink: /suttareader
 is_application: true
-date: 2023-07-08 12:00:00 +0700
+date: 2023-08-13 12:00:00 +0700
 ---
 
 This is a simple Pāli text reader, thanks to well-organized data from [SuttaCentral](https://suttacentral.net) that makes this possible. Only English translations by Ven. Brahmali (Vinaya) and Ven. Sujato (Suttanta), which have the best coverage, are available here. The program is meant to be fast and simple. So, please consult the original website for other details. [Sutta Lister](/suttalister) here may be helpful somehow, though.
 <div>
+<span class="toolbarbg">
 <select id="nikaya" onClick="suttaReader.changeNikaya();">
 	<option value="vin">Vin</option>
 	<option value="dn" selected>DN</option>
@@ -39,6 +40,7 @@ This is a simple Pāli text reader, thanks to well-organized data from [SuttaCen
 <label for="mdotbelow"><input type="radio" id="mdotbelow" name="niggahita-radio" onClick="suttaReader.changeNiggahita();" checked>ṃ</label>
 </span>
 <span><label for="showtrans"><input type="checkbox" id="showtrans" onChange="suttaReader.showTrans();" checked>Translation</label></span>
+</span>
 </div>
 <div id="textdisplay"></div>
 <script src="/assets/js/suttareader.js"></script>

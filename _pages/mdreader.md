@@ -2,7 +2,7 @@
 title: "Maṅgalatthadīpanī Reader"
 permalink: /mdreader
 is_application: true
-date: 2023-08-10 12:00:00 +0700
+date: 2023-08-13 12:00:00 +0700
 ---
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;">
@@ -10,7 +10,7 @@ date: 2023-08-10 12:00:00 +0700
 <button onClick="bcUtil.toggleToolBar(mdReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="paranumselector" title="Paragraph number to go" onChange="mdReader.goParaNum();"></select>
 <button title="Thai translation" onClick="mdReader.openTransThai();">Thai</button>
-<button title="Synchronize with Thai"><label for="syncthai"><input type="checkbox" id="syncthai" onClick="mdReader.syncThai();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#sync"></use></svg></label></button>
+<label for="syncthai" title="Synchronize with Thai"><input type="checkbox" id="syncthai" onClick="mdReader.syncThai();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#sync"></use></svg></label>
 <button id="volumebutton" onClick="mdReader.goVolume();">Vol.</button>
 </span>
 </div>

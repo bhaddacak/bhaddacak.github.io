@@ -2,7 +2,7 @@
 title: "Siam Rath Tipitaka Reader"
 permalink: /srtreader
 is_application: true
-date: 2023-08-08 12:00:00 +0700
+date: 2023-08-13 12:00:00 +0700
 ---
 
 This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here, Vols: [1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf), [2](http://www.car.chula.ac.th/rarebook/book2/clra58_0002.pdf), ...[45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., Dī Sī 9/314/250 (=DN 10.314), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
@@ -73,8 +73,8 @@ This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The 
 </select>
 <button onClick="srtReader.loadText();">Load</button>
 <select title="Page to go" id="pageselector" onChange="srtReader.gotoPage();"></select>
-<button title="Show line numbers"><label for="showline"><input type="checkbox" id="showline" onClick="srtReader.toggleLineNo();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#hashtag"></use></svg></label></button>
-<button title="Dehyphenated"><label for="dehyphen"><input type="checkbox" id="dehyphen" onClick="srtReader.dehyphenate();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#wrench"></use></svg></label></button>
+<label for="showline" title="Show line numbers"><input type="checkbox" id="showline" onClick="srtReader.toggleLineNo();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#hashtag"></use></svg></label>
+<label for="dehyphen" title="Dehyphenated"><input type="checkbox" id="dehyphen" onClick="srtReader.dehyphenate();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#wrench"></use></svg></label>
 </span>
 </div>
 <div id="textdisplay"></div>
