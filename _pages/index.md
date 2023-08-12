@@ -19,7 +19,7 @@ permalink: /
 - [Pāli Platform 2](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
-## Online Text Readers
+## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
 - [PTS Tipitaka Reader](/ptsreader)

@@ -1,10 +1,12 @@
 /*! mdthai.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const mdThai = {};
-mdThai.thaiNum = "๐๑๒๓๔๕๖๗๘๙";
 mdThai.partList = [[[1, 114], [115, 417]], [[1, 260], [261, 468], [469, 627]]];
+mdThai.util = {};
 mdThai.params = {};
 mdThai.pnList = [];
+mdThai.currThaiVol = 1;
+mdThai.fixedToolBar = true;
 mdThai.getUrlParams = function() {
 	const result = {};
 	const url = location.href;
@@ -30,15 +32,10 @@ mdThai.getUrlParams = function() {
 			result["paranum"] = "1";
 		}
 	} else {
-		result["paranum"] = "1";
 		result["volume"] = "1";
+		result["paranum"] = "1";
 	}
 	return result;
-};
-mdThai.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
 };
 mdThai.getThaiVolume = function(vol, paranum) {
 	const vl = parseInt(vol);
@@ -53,106 +50,104 @@ mdThai.getThaiVolume = function(vol, paranum) {
 	}
 	return result;
 };
-mdThai.loadText = function() {
-	this.params = this.getUrlParams();
-	const thaiVol = this.getThaiVolume(this.params.volume, this.params.paranum);
-	const request = new XMLHttpRequest();
-	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/palitext/md/md0" + thaiVol + "th.gz", true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			const content = window.pako.ungzip(request.response, { to: "string" });
-			mdThai.displayText(content);
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+mdThai.loadText = function(params) {
+	this.params = params === undefined ? this.getUrlParams() : params;
+	this.currThaiVol = this.getThaiVolume(this.params.volume, this.params.paranum);
+	const ajaxParams = {};
+	ajaxParams.address = "/assets/palitext/md/md0" + this.currThaiVol + "th.gz";
+	ajaxParams.isBinary = true;
+	ajaxParams.successCallback = function(response) {
+		const content = window.pako.ungzip(response, { to: "string" });
+		mdThai.displayText(mdThai.formatText(content));
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
+	ajaxParams.failureCallback = function() {
+		document.getElementById("textdisplay").innerHTML = "Content not found";
 	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
-mdThai.displayText = function(text) {
+mdThai.displayText = function(textObj) {
 	const resultElem = document.getElementById("textdisplay");
-	resultElem.innerHTML = this.formatText(text);
+	const head = this.util.makeHead(textObj.head) + this.util.ccsaHtmlText;
+	resultElem.innerHTML = head + textObj.text;
+	this.pnList = textObj.topicList;
 	this.fillParaNumList();
 	if ("paranum" in this.params) {
 		this.setPnSelector(this.params.paranum);
-		this.goParaNum();
+		this.goParaNum(this.params.paranum);
 	}
 };
 mdThai.formatText = function(text) {
-	const thaiVol = this.getThaiVolume(this.params.volume, this.params.paranum);
-	let result = "";
-	result += "<h3 style='text-align:center;'>มังคลัตถทีปนีแปล เล่ม " + this.thaiNum[thaiVol] + "</h3>";
-	result += "<div style='text-align:center;font-size:0.8em;'>This work is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>";
+	const result = {};
+	result.topicList = [];
+	result.head = "มังคลัตถทีปนีแปล เล่ม " + this.util.thaiNum[this.currThaiVol];
 	const lines = text.split(/\r?\n/);
+	const topicRex = new RegExp("^\\s*\\[[๐๑๒๓๔๕๖๗๘๙]+\\]");
+	let resultText = "";
+	let pstarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
 		if (lines[i].match(/page \d\d\d\d/) !== null) {
-			if (i === 0)
-				result += "<p style='text-align:left;'>";
-			else
-				result += "</p><p style='text-align:left;'>";
-			result += lines[i];
-		} else if (lines[i].match(/^\s*\[[๐๑๒๓๔๕๖๗๘๙]+]/) !== null) {
+			const pstyle = " style='text-align:left;padding-top:5px;'";
+			if (!pstarted) {
+				resultText += "\n<p" + pstyle + ">\n";
+				pstarted = true;
+			} else {
+				resultText += "\n</p>\n<p" + pstyle + ">\n";
+			}
+			resultText += lines[i];
+		} else if (lines[i].match(topicRex) !== null) {
 			const ln = lines[i].trim();
 			const pn = ln.slice(1, ln.indexOf("]"));
-			this.pnList.push(pn);
-			result += lines[i];
+			result.topicList.push(pn);
+			resultText += lines[i];
 		} else {
-			result += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			resultText += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
 		}
-		result += "<br>";
+		resultText += "<br>";
 	}
-	result += "</p>";
-	return result;
-};
-mdThai.toArabicNum = function(num) {
-	let result = "";
-	for (let i=0; i<num.length; i++) {
-		const ch = num.charAt(i);
-		const chPos = this.thaiNum.indexOf(ch);
-		if (chPos > -1)
-			result += chPos;
-	}
-	return result;
-};
-mdThai.toThaiNum = function(num) {
-	let result = "";
-	const numStr = "" + num;
-	for (let i=0; i<numStr.length; i++) {
-		const ch = numStr.charAt(i);
-		const chTh = this.thaiNum.charAt(parseInt(ch));
-		if (chTh !== undefined)
-			result += chTh;
-	}
+	resultText += "\n</p>\n";
+	result.text = resultText;
 	return result;
 };
 mdThai.fillParaNumList = function() {
 	const pnSelector = document.getElementById("paranumselector");
-	this.clearNode(pnSelector);
+	this.util.clearNode(pnSelector);
 	for (let i=0; i<this.pnList.length; i++) {
+		const pn = this.pnList[i];
 		const opt = document.createElement("option");
-		opt.value = this.pnList[i];
-		opt.innerText = this.pnList[i];
+		opt.value = pn;
+		opt.innerText = pn;
 		pnSelector.appendChild(opt);
 	}
 };
 mdThai.setPnSelector = function(paranum) {
-	const pnThai = this.toThaiNum(paranum);
 	const pnSelector = document.getElementById("paranumselector");
-	for (let i=0; i<pnSelector.options.length; i++) {
-		if (pnSelector.options[i].value === pnThai) {
-			pnSelector.options[i].selected = true;
-			break;
+	const pnNum = this.util.toThaiNum(paranum);
+	const selInd = this.util.findSelectIndex(pnSelector, pnNum);
+	if (selInd > -1)
+		pnSelector.options[selInd].selected = true;
+};
+mdThai.goParaNum = function(pnum) {
+	if (pnum !== undefined) {
+		const thaiVol = this.getThaiVolume(this.params.volume, pnum);
+		if (thaiVol !== this.currThaiVol) {
+			const prm = { volume: this.params.volume, paranum: pnum };
+			this.loadText(prm);
+			return;
 		}
 	}
-};
-mdThai.goParaNum = function() {
+	let pnToGo;
 	const pnSelector = document.getElementById("paranumselector");
-	const pnToGo = pnSelector.options[pnSelector.selectedIndex].value;
+	if (pnum === undefined) {
+		pnToGo = pnSelector.options[pnSelector.selectedIndex].value;
+	} else {
+		pnToGo = this.util.toThaiNum(pnum);
+		const selInd = this.util.findSelectIndex(pnSelector, pnToGo);
+		if (selInd > -1)
+			pnSelector.options[selInd].selected = true;
+	}
+	pnToGo = "[" + pnToGo + "]";
 	const resultElem = document.getElementById("textdisplay");
 	const allP = resultElem.getElementsByTagName("p");
 	for (let i=0; i<allP.length; i++) {
@@ -161,7 +156,7 @@ mdThai.goParaNum = function() {
 		for (let n=0; n<nodes.length; n++) {
 			if (nodes[n].nodeType === Node.TEXT_NODE) {
 				const text = nodes[n].textContent.trim();
-				if (text.startsWith("[" + pnToGo + "]")) {
+				if (text.startsWith(pnToGo)) {
 					p.scrollIntoView();
 					break;
 				}
@@ -169,4 +164,3 @@ mdThai.goParaNum = function() {
 		}
 	}
 };
-

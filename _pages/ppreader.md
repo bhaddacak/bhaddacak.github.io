@@ -2,7 +2,7 @@
 title: "Pāli Passage Reader"
 permalink: /ppreader
 is_application: true
-date: 2023-07-06 12:00:00 +0700
+date: 2023-08-12 12:00:00 +0700
 ---
 <div>
 <span><code> =a =i =u ^n ~n .t .d .n .l .m (āīūṅñṭḍṇḷṃ)</code></span> <button onClick="ppReader.showInstruction();">Instruction</button> <button onClick="ppReader.refresh();">Refresh</button>
@@ -32,6 +32,7 @@ date: 2023-07-06 12:00:00 +0700
 <script>
 ncped.url = "/assets/ncped";
 ncped.dictHost = ncpedHost;
+ncped.util = bcUtil;
 ncpedHost.dict = ncped;
 ppReader.dict = ncped;
 ppReader.declension = declension;

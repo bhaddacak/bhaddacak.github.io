@@ -18,6 +18,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Home, icon: home, url: "/"}
   - {title: Blogger, icon: blogger-b, url: "http://paliplatform.blogspot.com"}
   - {title: Github, icon: github, url: "https://github.com/bhaddacak"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}

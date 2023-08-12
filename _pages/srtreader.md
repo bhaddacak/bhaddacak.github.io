@@ -2,13 +2,15 @@
 title: "Siam Rath Tipitaka Reader"
 permalink: /srtreader
 is_application: true
-date: 2023-08-06 12:00:00 +0700
+date: 2023-08-08 12:00:00 +0700
 ---
 
-This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here: [Vol. 1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf) ... [Vol. 45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., 9/314/250 (=DN 10.314), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
+This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here, Vols: [1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf), [2](http://www.car.chula.ac.th/rarebook/book2/clra58_0002.pdf), ...[45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., Dī Sī 9/314/250 (=DN 10.314), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
 
-<div>
-<select id="texts">
+<div id="toolbar" style="padding-bottom:10px;padding-top:3px;">
+<span class="toolbarbg">
+<button onClick="bcUtil.toggleToolBar(srtReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
+<select id="texts" style="width:25em;">
 <optgroup label="Vinayo">
 <option value="01.gz">1. Mahāvibhaṅgo 1</option>
 <option value="02.gz">2. Mahāvibhaṅgo 2</option>
@@ -70,11 +72,10 @@ This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The 
 </optgroup>
 </select>
 <button onClick="srtReader.loadText();">Load</button>
-</div>
-<div style="padding-top:5px;padding-bottom:10px;">
-<span> Go to page: <select id="pageselector" onChange="srtReader.gotoPage();"></select></span>
-<label for="showline"><input type="checkbox" id="showline" onClick="srtReader.toggleLineNo();">Line numbers</label>
-<label for="dehyphen"><input type="checkbox" id="dehyphen" onClick="srtReader.dehyphenate();">Dehyphenated</label>
+<select title="Page to go" id="pageselector" onChange="srtReader.gotoPage();"></select>
+<button title="Show line numbers"><label for="showline"><input type="checkbox" id="showline" onClick="srtReader.toggleLineNo();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#hashtag"></use></svg></label></button>
+<button title="Dehyphenated"><label for="dehyphen"><input type="checkbox" id="dehyphen" onClick="srtReader.dehyphenate();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#wrench"></use></svg></label></button>
+</span>
 </div>
 <div id="textdisplay"></div>
 <blockquote id="preface">
@@ -104,4 +105,5 @@ Bhadrānupassī ca sadā bhavantaṃ.
 </blockquote>
 <script src="/assets/js/srtreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
+<script>srtReader.util=bcUtil;</script>
 

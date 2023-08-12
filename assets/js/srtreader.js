@@ -1,8 +1,10 @@
 /*! srtreader.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const srtReader = {};
+srtReader.util = null;
 srtReader.original = null;
 srtReader.dehyphenated = null;
+srtReader.fixedToolBar = false;
 srtReader.clearNode = function(node) {
 	while (node.firstChild) {
 		node.removeChild(node.firstChild);
@@ -12,25 +14,18 @@ srtReader.loadText = function() {
 	this.displayText("Loading... (please wait)");
 	const textSelector = document.getElementById("texts");
 	let text = textSelector.options[textSelector.selectedIndex].value;
-	const request = new XMLHttpRequest();
-	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/palitext/siamrath/" + text, true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			const content = window.pako.ungzip(request.response, { to: "string" });
-			document.getElementById("showline").checked = false;
-			document.getElementById("dehyphen").checked = false;
-			srtReader.displayText(srtReader.formatText(content));
-			srtReader.original = content;
-			srtReader.dehyphenated = null;
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = "/assets/palitext/siamrath/" + text;
+	ajaxParams.isBinary = true;
+	ajaxParams.successCallback = function(response) {
+		const content = window.pako.ungzip(response, { to: "string" });
+		document.getElementById("showline").checked = false;
+		document.getElementById("dehyphen").checked = false;
+		srtReader.displayText(srtReader.formatText(content));
+		srtReader.original = content;
+		srtReader.dehyphenated = null;
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 srtReader.displayText = function(text) {
 	const display = document.getElementById("textdisplay");
@@ -67,18 +62,23 @@ srtReader.formatText = function(text) {
 	const nikaya = this.getNikaya(textSelector.selectedIndex + 1);
 	result += "<h4 style='text-align:center;'>Volume " + vol + "</h4>";
 	result += "<h3 style='text-align:center;'>" + nikaya + "<br>" + book + "</h3>";
-	result += "<div style='text-align:center;font-size:0.8em;'>The text in Roman script is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>";
+	result += this.util.ccsaHtmlText;
 	const lines = text.split(/\r?\n/);
 	let lineno = 1;
+	let pstarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
 		const pline = lines[i].match(/\[page \d\d\d\d]/);
 		if (pline !== null) {
-			if (i === 0)
-				result += "<p id='" + pline[0] + "' style='text-align:left;'>";
-			else
-				result += "</p><p id='" + pline[0] + "' style='text-align:left;'>";
+			const pid = " id='" + pline[0] + "'";
+			const pstyle = " style='text-align:left;padding-top:5px'";
+			if (!pstarted) {
+				result += "<p" + pid + pstyle + ">";
+				pstarted = true;
+			} else {
+				result += "</p><p" + pid + pstyle + ">";
+			}
 			result += "<strong>" + lines[i] + "</strong>";
 			lineno = 1;
 		} else {
@@ -153,7 +153,7 @@ srtReader.dehyphenate = function() {
 		this.displayText(this.formatText(this.original));
 };
 srtReader.getHyphenedList = function(text) {
-	let result = [];
+	const result = [];
 	const lines = text.split(/\r?\n/);
 	for (let i=0; i<lines.length; i++) {
 		const line = lines[i].trim();

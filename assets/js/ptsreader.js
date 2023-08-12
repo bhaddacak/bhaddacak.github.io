@@ -1,35 +1,25 @@
 /*! ptsreader.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const ptsReader = {};
+ptsReader.util = null;
 ptsReader.original = null;
 ptsReader.dehyphenated = null;
-ptsReader.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
-};
+ptsReader.fixedToolBar = false;
 ptsReader.loadText = function() {
 	this.displayText("Loading... (please wait)");
 	const textSelector = document.getElementById("texts");
 	let text = textSelector.options[textSelector.selectedIndex].value;
-	const request = new XMLHttpRequest();
-	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/palitext/pts/" + text, true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			const content = window.pako.ungzip(request.response, { to: "string" });
-			document.getElementById("dehyphen").checked = false;
-			ptsReader.displayText(ptsReader.formatText(content));
-			ptsReader.original = null;
-			ptsReader.dehyphenated = null;
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = "/assets/palitext/pts/" + text;
+	ajaxParams.isBinary = true;
+	ajaxParams.successCallback = function(response) {
+		const content = window.pako.ungzip(response, { to: "string" });
+		document.getElementById("dehyphen").checked = false;
+		ptsReader.displayText(ptsReader.formatText(content));
+		ptsReader.original = null;
+		ptsReader.dehyphenated = null;
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 ptsReader.displayText = function(text) {
 	const display = document.getElementById("textdisplay");
@@ -94,7 +84,7 @@ ptsReader.toggleGretilNotes = function() {
 		gnote.style.display = "none";
 };
 ptsReader.getTagPosList = function(text, tag) {
-	let result = [];
+	const result = [];
 	let pos = text.indexOf(tag);
 	while (pos > -1) {
 		result.push(pos);
@@ -104,7 +94,7 @@ ptsReader.getTagPosList = function(text, tag) {
 };
 ptsReader.updatePageList = function(list) {
 	const pageSelector = document.getElementById("pageselector");
-	this.clearNode(pageSelector);
+	this.util.clearNode(pageSelector);
 	for (let i=0; i<list.length; i++) {
 		const opt = document.createElement("option");
 		opt.value = list[i];
@@ -155,7 +145,7 @@ ptsReader.dehyphenate = function() {
 		mainText.replaceWith(this.original);
 };
 ptsReader.getHyphenedList = function(node) {
-	let result = [];
+	const result = [];
 	const allNodes = node.childNodes;
 	for (let i=0; i<allNodes.length; i++) {
 		const elm = allNodes[i];

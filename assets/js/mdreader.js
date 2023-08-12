@@ -1,9 +1,12 @@
 /*! mdreader.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const mdReader = {};
+mdReader.util = {};
 mdReader.partPali = [ "Paṭhamo", "Dutiyo" ];
 mdReader.params = {};
 mdReader.pnList = [];
+mdReader.transWindow = {};
+mdReader.fixedToolBar = false;
 mdReader.getUrlParams = function() {
 	const result = {};
 	const url = location.href;
@@ -29,28 +32,16 @@ mdReader.getUrlParams = function() {
 	}
 	return result;
 };
-mdReader.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
-};
 mdReader.loadText = function() {
 	this.params = this.getUrlParams();
-	const request = new XMLHttpRequest();
-	request.responseType = "arraybuffer"; 
-	request.open("GET", "/assets/palitext/md/md0" + this.params.volume + ".gz", true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			const content = window.pako.ungzip(request.response, { to: "string" });
-			mdReader.displayText(content);
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = "/assets/palitext/md/md0" + this.params.volume + ".gz";
+	ajaxParams.isBinary = true;
+	ajaxParams.successCallback = function(response) {
+		const content = window.pako.ungzip(response, { to: "string" });
+		mdReader.displayText(content);
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 mdReader.displayText = function(text) {
 	const volbutt = document.getElementById("volumebutton");
@@ -66,17 +57,21 @@ mdReader.displayText = function(text) {
 mdReader.formatText = function(text) {
 	let part = parseInt(this.params.volume);
 	let result = "";
-	result += "<h3 style='text-align:center;'>Maṅgalatthadīpanī " + this.partPali[part-1] + " Bhāgo</h3>";
-	result += "<div style='text-align:center;font-size:0.8em;'>The text in Roman script is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>";
+	result += this.util.makeHead("Maṅgalatthadīpanī " + this.partPali[part-1] + " Bhāgo");
+	result += this.util.ccsaHtmlText;
 	const lines = text.split(/\r?\n/);
+	let pstarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
 		if (lines[i].match(/page \d\d\d\d/) !== null) {
-			if (i === 0)
-				result += "<p style='text-align:left;'>";
-			else
-				result += "</p><p style='text-align:left;'>";
+			const pstyle = " style='text-align:left;padding-top:5px;'";
+			if (!pstarted) {
+				result += "<p" + pstyle + ">";
+				pstarted = true;
+			} else {
+				result += "</p><p" + pstyle + ">";
+			}
 			result += lines[i];
 		} else if (lines[i].match(/^\s*\[\d+]/) !== null) {
 			const ln = lines[i].trim();
@@ -98,7 +93,7 @@ mdReader.goVolume = function() {
 };
 mdReader.fillParaNumList = function() {
 	const pnSelector = document.getElementById("paranumselector");
-	this.clearNode(pnSelector);
+	this.util.clearNode(pnSelector);
 	for (let i=0; i<this.pnList.length; i++) {
 		const opt = document.createElement("option");
 		opt.value = this.pnList[i];
@@ -133,10 +128,19 @@ mdReader.goParaNum = function() {
 			}
 		}
 	}
+	this.syncThai();
+};
+mdReader.syncThai = function() {
+	const syncthai = document.getElementById("syncthai");
+	if (syncthai.checked && "document" in this.transWindow) {
+		const pnSelector = document.getElementById("paranumselector");
+		const pnToGo = pnSelector.options[pnSelector.selectedIndex].value;
+		this.transWindow.mdThai.goParaNum(pnToGo);
+	}
 };
 mdReader.openTransThai = function() {
 	const pnSelector = document.getElementById("paranumselector");
 	const pnToGo = pnSelector.options[pnSelector.selectedIndex].value;
-	window.open("/mdthai?v=" + this.params.volume + "&pn=" + pnToGo, "md-trans-thai");
+	this.transWindow = window.open("/mdthai?v=" + this.params.volume + "&pn=" + pnToGo, "md-trans-thai");
 };
 

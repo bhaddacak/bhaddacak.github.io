@@ -2,13 +2,15 @@
 title: "Dhammapadaṭṭhakathā Reader"
 permalink: /dhpareader
 is_application: true
-date: 2023-08-05 12:00:00 +0700
+date: 2023-08-12 12:00:00 +0700
 ---
 
-This commentary to Dhammapada is taken from the traditional Thai monastic Pāli curriculum, used in Level (Parian) 2--3. From the two volumes in the Pāli commentaries, the text is arranged into 8 parts, 26 sections (vaggas), and has totally 302 stories (vatthus). To Pāli learners, this is one of the most entertaining reading materials. The conversion from Thai script has some limitations. For example, the inconsistent use of space and tab in the source makes some verses look 'collapsed' (two feet are blended). An English translation of this can be found in *Buddhist Legends* (1921) by Eugene Watson Burlingame (Vols: [1](https://archive.org/details/buddhistlegends01burluoft), [2](https://archive.org/details/buddhistlegends02burluoft), [3](https://archive.org/details/buddhistlegends03burluoft)). However, We have full Thai translation here. As for now Google translation is quite good, and this will be added later.
+This commentary to Dhammapada is taken from the traditional Thai monastic Pāli curriculum, used in Level (Parian) 2--3. From the two volumes in the Pāli commentaries, the text is arranged into 8 parts, 26 sections (vaggas), and has totally 302 stories (vatthus). To Pāli learners, this is one of the most entertaining reading materials. The conversion from Thai script has some limitations. For example, the inconsistent use of space and tab in the source makes some verses look 'collapsed' (two feet are blended). An English translation of this can be found in *Buddhist Legends* (1921) by Eugene Watson Burlingame. We have only some parts of it here, but full Thai translation with its Google version is available.
 
-<div id="toolbar" style="display:none">
-<button onClick="dhpaReader.showTOC();">TOC</button>
+<div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;">
+<span class="toolbarbg">
+<button onClick="bcUtil.toggleToolBar(dhpaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
+<button onClick="dhpaReader.showTOC(true);">TOC</button>
 <select id="partselector" onClick="dhpaReader.selectPart();">
 <option value="1">Part I</option>
 <option value="2">Part II</option>
@@ -21,12 +23,14 @@ This commentary to Dhammapada is taken from the traditional Thai monastic Pāli 
 </select>
 <select id="vatthuselector" onChange="dhpaReader.goVatthu();"></select>
 <button onClick="dhpaReader.loadText();">Load</button>
-<button onClick="dhpaReader.openTransThai();">Thai Tr.</button>
-<label for="synctrans"><input type="checkbox" id="synctrans">Sync</label>
+<button id="burlbutton" title="Burlingame's translation" onClick="dhpaReader.openTransBurl();">Burl</button>
+<button title="Thai translation" onClick="dhpaReader.openTransThai();">Thai</button>
+</span>
 </div>
 <div id="textdisplay"></div>
 <script src="/assets/js/dhpareader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>
+dhpaReader.util = bcUtil;
 dhpaReader.loadTOC();
 </script>

@@ -124,7 +124,7 @@ declension.getDeclensionAllStr = function(stem, endStr) {
 };
 declension.getDeclensionAllArr = function(stem, endStr) {
 	const endings = endStr.split(",");
-	let result = [];
+	const result = [];
 	for (let i=0; i<endings.length; i++) {
 		if (endings[i].length === 0) continue;
 		result.push(this.combineEnding(stem, endings[i]));

@@ -7,5 +7,5 @@
     {%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
   </a>
 {%- endfor -%}
-<a style="cursor:pointer;" onClick="toggleThemeSave();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#adjust"></use></svg></a>
+<a style="cursor:pointer;" onClick="bcUtil.toggleGlobalThemeSave();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#adjust"></use></svg></a>
 </nav>

@@ -65,8 +65,7 @@ ptspedHost.showResult = function(dictItem, index){
 	result.appendChild(div);
 };
 ptspedHost.showDetail = function(index, event) {
-	let item = {};
-	item = this.dict.foundList[index];
+	const item = this.dict.foundList[index];
 	if (item === undefined) return;
 	const termNode = document.getElementById(item.t);
 	if (termNode === null) return;

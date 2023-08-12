@@ -80,9 +80,8 @@ ppReader.getOptions = function() {
 	return opts;
 };
 ppReader.clearNode = function(node) {
-	while (node.firstChild) {
+	while (node.firstChild)
 		node.removeChild(node.firstChild);
-	}
 };
 ppReader.showInstruction = function() {
 	const instruction = document.getElementById("instruction");
@@ -124,7 +123,7 @@ ppReader.tokenize = function() {
 	}
 };
 ppReader.findTermInStock = function(term) {
-	let result = {};
+	const result = {};
 	const opts = this.getOptions();
 	if (opts.pronouns) {
 		for (const t in this.declPronProducts) {

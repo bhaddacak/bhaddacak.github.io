@@ -2,6 +2,7 @@
 "use strict";
 const ncped = {};
 ncped.initList = [ "ak", "ag", "aṅ", "ac", "aj", "añ", "aṭ", "aḍ", "aṇ", "at", "ad", "an", "ap", "ab", "am", "ay", "ar", "al", "av", "as", "ah", "aḷ", "aṃ", "āk", "āg", "āc", "āj", "āñ", "āṇ", "āt", "ād", "ān", "āp", "āb", "ām", "āy", "ār", "āl", "āv", "ās", "āh", "āḷ", "ik", "iṅ", "ic", "ij", "iñ", "iṭ", "iṇ", "it", "id", "in", "ib", "im", "ir", "iv", "is", "īt", "īd", "īs", "uk", "ug", "uc", "uj", "uñ", "uṭ", "uḍ", "uṇ", "ut", "ud", "un", "up", "ub", "um", "uy", "ur", "ul", "uv", "us", "uḷ", "ūn", "ūm", "ūr", "ūs", "ūh", "ek", "ej", "eṇ", "et", "ed", "en", "em", "er", "el", "ev", "es", "eh", "eḷ", "ok", "og", "oc", "oj", "oñ", "oṭ", "oḍ", "oṇ", "ot", "od", "on", "op", "ob", "om", "oy", "or", "ol", "ov", "os", "oh", "oḷ", "ka", "kā", "ki", "kī", "ku", "kū", "ke", "ko", "kr", "kl", "kv", "kh", "ga", "gā", "gi", "gī", "gu", "gū", "ge", "go", "gh", "ca", "cā", "ci", "cī", "cu", "cū", "ce", "co", "ch", "ja", "jā", "ji", "jī", "ju", "jū", "je", "jo", "jy", "jh", "ña", "ñā", "ñe", "ṭa", "ṭh", "ḍa", "ḍā", "ḍi", "ḍe", "ta", "tā", "ti", "tī", "tu", "tū", "te", "to", "ty", "tv", "th", "da", "dā", "di", "dī", "du", "dū", "de", "do", "dv", "dh", "na", "nā", "ni", "nī", "nu", "nū", "ne", "no", "nh", "pa", "pā", "pi", "pī", "pu", "pū", "pe", "po", "pr", "pl", "ph", "ba", "bā", "bi", "bī", "bu", "be", "bo", "by", "br", "bh", "ma", "mā", "mi", "mī", "mu", "mū", "me", "mo", "ya", "yā", "yi", "yu", "yū", "ye", "yo", "ra", "rā", "ri", "ru", "rū", "re", "ro", "la", "lā", "li", "lī", "lu", "lū", "le", "lo", "va", "vā", "vi", "vī", "vu", "vū", "ve", "vo", "vy", "sa", "sā", "si", "sī", "su", "sū", "se", "so", "sn", "sv", "ha", "hā", "hi", "hī", "hu", "he", "ho", "ḷa", "ḷā" ];
+ncped.util = {};
 ncped.dict = {};
 ncped.dictHost = {};
 ncped.reader = {};
@@ -68,26 +69,19 @@ ncped.multiSearch = function(mode) {
 	}
 };
 ncped.loadDict = function(initial, opts) {
-	const request = new XMLHttpRequest();
-	request.open("GET", this.url + "/" + initial + ".json", true);
-	request.onload = function() {
-		if (request.status >= 200 && request.status < 400) {
-			ncped.dict[initial] = JSON.parse(request.responseText);
-			if (opts.mode === "indef" || opts.mode === "wildcard") {
-				ncped.showMultiResult(initial, opts.mode);
-			} else if (opts.mode === "reader") {
-				ncped.showResultForAnalysis(opts.query, opts.element);
-			} else {
-				ncped.showResult(initial, opts.mode);
-			}
+	const ajaxParams = {};
+	ajaxParams.address = this.url + "/" + initial + ".json";
+	ajaxParams.successCallback = function(response) {
+		ncped.dict[initial] = JSON.parse(response);
+		if (opts.mode === "indef" || opts.mode === "wildcard") {
+			ncped.showMultiResult(initial, opts.mode);
+		} else if (opts.mode === "reader") {
+			ncped.showResultForAnalysis(opts.query, opts.element);
 		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
+			ncped.showResult(initial, opts.mode);
 		}
 	};
-	request.onerror = function() {
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 ncped.showMultiResult = function(initial, mode) {
 	this.multiSearchCount++;

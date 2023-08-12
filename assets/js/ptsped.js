@@ -2,6 +2,7 @@
 "use strict";
 const ptsped = {};
 ptsped.initList = [ "a", "ā", "i", "ī", "u", "ū", "e", "o", "k", "g", "c", "j", "ñ", "ṭ", "ḍ", "t", "d", "n", "p", "b", "m", "y", "r", "l", "v", "s", "h", "ḷ" ];
+ptsped.util = {};
 ptsped.dictHost = {};
 ptsped.dict = {};
 ptsped.foundList = [];
@@ -27,21 +28,14 @@ ptsped.search = function(query, host) {
 	}
 };
 ptsped.loadDict = function(initial) {
-	const request = new XMLHttpRequest();
-	request.responseType = "arraybuffer"; 
-	request.open("GET", this.url + "/" + initial + ".gz", true);
-	request.onload = function() {
-		if (request.status >= 200 && request.status < 400) {
-			ptsped.dict[initial] = JSON.parse(window.pako.ungzip(request.response, { to: "string" }));
-			ptsped.showResult(initial);
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = this.url + "/" + initial + ".gz";
+	ajaxParams.isBinary = true;
+	ajaxParams.successCallback = function(response) {
+		ptsped.dict[initial] = JSON.parse(window.pako.ungzip(response, { to: "string" }));
+		ptsped.showResult(initial);
 	};
-	request.onerror = function() {
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 ptsped.showResult = function(initial) {
 	if (this.dict[initial].length > 0) {

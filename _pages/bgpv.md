@@ -2,11 +2,11 @@
 title: "Buddhaghosappavattikathā"
 permalink: /bgpv
 is_application: true
-date: 2023-08-04 12:00:00 +0700
+date: 2023-08-11 12:00:00 +0700
 ---
 
 <div>
-<button onClick="openBgpv(0);">Pali</button>
+<button onClick="openBgpv(0);">Pāli</button>
 <button onClick="openBgpv(1);">Thai</button>
 </div>
 <div id="bgpvpali">
@@ -567,7 +567,7 @@ bhikjusaṅghaṃ vanditvā āpucchitvā jambūdīpameva paccāgamīti.<br>
  เทวดาทั้งหลายทั้งปวง จงอนุโมทนาบุญนั้น เพื่อ<br>
  ความสำเร็จแห่งสมาบัติทั้งปวงเถิด ขอสัตว์ทั้งหลาย<br>
  จงรักษาศีล เจริญจิตภาวนาด้วยศรัทธา และจง<br>
- ขอสัตว์ทั้งหลายผู้ต้องทุกข์ ตงนิรทุกข์ด้วย ผู้<br>
+ ขอสัตว์ทั้งหลายผู้ต้องทุกข์ จงนิรทุกข์ด้วย ผู้<br>
  ต้องภัย จงนิรภัยด้วย ผู้ต้องโศก จงนิรโศกด้วย<br>
  และสาธุชนทั้งหลาย จงถึงซึ่งความบริสุทธิ์ เทอญ.</B><br>
 </p>

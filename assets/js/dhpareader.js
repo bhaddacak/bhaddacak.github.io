@@ -4,14 +4,10 @@ const dhpaReader = {};
 dhpaReader.partList = [ [1], [2,3], [4,5], [6,7,8], [9,10,11], [12,13,14,15,16,17], [18,19,20,21,22,23], [24,25,26] ];
 dhpaReader.partNum = [ "I", "II", "III", "IV", "V", "VI", "VII", "VIII" ];
 dhpaReader.partPali = [ "Paṭhamo", "Dutiyo", "Tatiyo", "Catuttho", "Pañcamo", "Chaṭṭho", "Sattamo", "Aṭṭhamo" ];
+dhpaReader.util = {};
 dhpaReader.toc = {};
 dhpaReader.textCache = {};
-dhpaReader.trWindow = {};
-dhpaReader.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
-};
+dhpaReader.fixedToolBar = true;
 dhpaReader.getPart = function(vagga) {
 	let result = 0;
 	for (let i=0; i<this.partList.length; i++) {
@@ -23,29 +19,22 @@ dhpaReader.getPart = function(vagga) {
 	return result;
 };
 dhpaReader.loadTOC = function() {
-	const request = new XMLHttpRequest();
-	request.open("GET", "/assets/palitext/dhpa/dhpatoc.json", true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			dhpaReader.toc = JSON.parse(request.responseText);
-			dhpaReader.showTOC();
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = "/assets/palitext/dhpa/dhpatoc.json";
+	ajaxParams.successCallback = function(response) {
+		dhpaReader.toc = JSON.parse(response);
+		dhpaReader.showTOC();
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
-dhpaReader.showTOC = function() {
+dhpaReader.showTOC = function(scrollTop) {
 	const vaggas = Object.keys(this.toc);
 	if (vaggas.length === 0)
 		return;
 	const toolBar = document.getElementById("toolbar");
 	toolBar.style.display = "none";
 	const resultElem = document.getElementById("textdisplay");
-	this.clearNode(resultElem);
+	this.util.clearNode(resultElem);
 	let pnumStr = "";
 	for (let i=0; i< vaggas.length; i++) {
 		const currPart = this.getPart(i+1);
@@ -70,6 +59,8 @@ dhpaReader.showTOC = function() {
 		}
 		resultElem.appendChild(ul);
 	}
+	if (scrollTop)
+		resultElem.scrollIntoView();
 };
 dhpaReader.loadVatthu = function(part, vatthu) {
 	const toolBar = document.getElementById("toolbar");
@@ -78,17 +69,16 @@ dhpaReader.loadVatthu = function(part, vatthu) {
 	partSelector.options[part-1].selected = true;
 	const vattSelector = document.getElementById("vatthuselector");
 	this.fillVatthuSelector(part);
-	for (let j=0; j<vattSelector.options.length; j++) {
-		if (parseInt(vattSelector.options[j].value) === vatthu) {
-			vattSelector.options[j].selected = true;
-			break;
-		}
-	}
+	const selInd = this.util.findSelectIndex(vattSelector, "" + vatthu);
+	if (selInd > -1)
+		vattSelector.options[selInd].selected = true;
 	this.loadText(part, vatthu);
+	if (!this.fixedToolBar)
+		this.util.toggleToolBar(this);
 };
 dhpaReader.fillVatthuSelector = function(part) {
 	const vattSelector = document.getElementById("vatthuselector");
-	this.clearNode(vattSelector);
+	this.util.clearNode(vattSelector);
 	const vaggas = Object.keys(this.toc);
 	const thisVags = this.partList[part-1];
 	for (let i=0; i<thisVags.length; i++) {
@@ -106,6 +96,7 @@ dhpaReader.fillVatthuSelector = function(part) {
 		}
 		vattSelector.appendChild(optg);
 	}
+	vattSelector.style.width = "20em";
 };
 dhpaReader.selectPart = function() {
 	const partSelector = document.getElementById("partselector");
@@ -120,22 +111,15 @@ dhpaReader.loadText = function(part, vatthu) {
 		vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
 	}
 	if (!(part in this.textCache)) {
-		const request = new XMLHttpRequest();
-		request.responseType = "arraybuffer"; 
-		request.open("GET", "/assets/palitext/dhpa/dhpa0" + part + ".gz", true);
-		request.onload = function(){
-			if (request.status >= 200 && request.status < 400) {
-				const content = window.pako.ungzip(request.response, { to: "string" });
-				dhpaReader.textCache[part] = content;
-				dhpaReader.displayText(part, vatthu);
-			} else {
-				console.log("Error loading ajax request. Request status:" + request.status);
-			}
+		const ajaxParams = {};
+		ajaxParams.address = "/assets/palitext/dhpa/dhpa0" + part + ".gz";
+		ajaxParams.isBinary = true;
+		ajaxParams.successCallback = function(response) {
+			const content = window.pako.ungzip(response, { to: "string" });
+			dhpaReader.textCache[part] = content;
+			dhpaReader.displayText(part, vatthu);
 		};
-		request.onerror = function(){
-			console.log("There was a connection error");
-		};
-		request.send();
+		this.util.ajaxLoad(ajaxParams);
 	} else {
 		this.displayText(part, vatthu);
 	}
@@ -148,17 +132,21 @@ dhpaReader.displayText = function(part, vatthu) {
 };
 dhpaReader.formatText = function(text, part) {
 	let result = "";
-	result += "<h3 style='text-align:center;'>Dhammapadaṭṭhakathāya " + this.partPali[part-1] + " Bhāgo</h3>";
-	result += "<div style='text-align:center;font-size:0.8em;'>The text in Roman script is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>";
+	result += this.util.makeHead("Dhammapadaṭṭhakathāya " + this.partPali[part-1] + " Bhāgo");
+	result += this.util.ccsaHtmlText;
 	const lines = text.split(/\r?\n/);
+	let pstarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
 		if (lines[i].match(/page \d\d\d\d/) !== null) {
-			if (i === 0)
-				result += "<p style='text-align:left;'>";
-			else
-				result += "</p><p style='text-align:left;'>";
+			const pstyle = " style='text-align:left;padding-top:5px;'";
+			if (!pstarted) {
+				result += "<p" + pstyle + ">";
+				pstarted = true;
+			} else {
+				result += "</p><p" + pstyle + ">";
+			}
 			result += lines[i];
 		} else if (lines[i].match(/\[ \d+ ]$/) !== null) {
 			result += "<strong>" + lines[i] + "</strong>";
@@ -190,15 +178,14 @@ dhpaReader.goVatthu = function(vatthu) {
 			}
 		}
 	}
-	if ("document" in this.trWindow && document.getElementById("synctrans").checked) {
-		this.syncTrans(vattNum);
-	}
 };
 dhpaReader.openTransThai = function() {
 	const vattSelector = document.getElementById("vatthuselector");
 	const vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
-	this.trWindow = window.open("/dhpathai?vt=" + vatthu, "dhpa-trans-thai");
+	window.open("/dhpathai?vt=" + vatthu, "dhpa-trans-thai");
 };
-dhpaReader.syncTrans = function(vatthu) {
-	this.trWindow.dhpaThai.goVatthu(vatthu);
+dhpaReader.openTransBurl = function() {
+	const vattSelector = document.getElementById("vatthuselector");
+	const vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
+	window.open("/dhpaburl?vt=" + vatthu, "dhpa-trans-burl");
 };

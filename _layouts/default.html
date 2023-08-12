@@ -19,6 +19,8 @@
 {% endif %}
 {% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
+<script src="{{ "/assets/js/bcutil.js" | relative_url }}"></script>
+
 {% if site.show_sidebar or site.sidebar %}{% include sidebar.html %}{% endif %}
 
 {% if site.navigation %}
@@ -41,26 +43,5 @@
 </footer>
 {% endif %}
 
-<script>
-function toggleTheme() {
-	const body = document.body;
-	const header = document.getElementById("main-header");
-	const footer = document.getElementById("main-footer");
-	body.parentNode.classList.toggle("dark-theme");
-	body.classList.toggle("dark-theme");
-	header.classList.toggle("dark-theme");
-	footer.classList.toggle("dark-theme");
-}
-function toggleThemeSave() {
-	toggleTheme();
-	const theme = localStorage.getItem("globaltheme") === "light" ? "dark" : "light";
-	localStorage.setItem("globaltheme", theme);
-}
-if (localStorage.getItem("globaltheme")) {
-	if (localStorage.getItem("globaltheme") === "dark")
-		toggleTheme();
-} else {
-	localStorage.setItem("globaltheme", "light");
-}
-</script>
+<script>bcUtil.globalThemeCheck();</script>
 </html>

@@ -202,7 +202,7 @@ ncpedHost.highlightMeaning = function(text) {
 ncpedHost.getXR = function(xr) {
 	const xrNode = document.createElement("div");
 	const xrList = typeof xr === "string" ? [ xr ] : xr;
-	let xrFinal = [];
+	const xrFinal = [];
 	for (let i=0; i<xrList.length; i++) {
 		const xr = ncpedHost.dict === null
 					? "<em>" + xrList[i] + "</em>"
@@ -214,9 +214,13 @@ ncpedHost.getXR = function(xr) {
 	return xrNode;
 };
 ncpedHost.goXR = function(xr) {
-	this.paliInput.setText("\"" + xr);
-	document.getElementById("findindef").checked = false;
-	this.search();
+	if (this.paliInput === null) {
+		window.open("/ncped?q=" + escape("\"" + xr), "ncped-dict");
+	} else {
+		this.paliInput.setText("\"" + xr);
+		document.getElementById("findindef").checked = false;
+		this.search();
+	}
 };
 ncpedHost.getHomonyms = function(homonyms) {
 	const homoNode = document.createElement("p");

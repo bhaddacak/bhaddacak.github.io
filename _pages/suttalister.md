@@ -2,7 +2,7 @@
 title: "Sutta Lister"
 permalink: /suttalister
 is_application: true
-date: 2023-08-05 12:00:00 +0700
+date: 2023-08-08 12:00:00 +0700
 ---
 
 To ease the looking up, all suttas that can be viewed with [Sutta Reader](/suttareader) are listed here. The data from [SuttaCentral](https://suttacentral.net) are prepared offline, so they can be not up-to-date.
@@ -14,6 +14,7 @@ To ease the looking up, all suttas that can be viewed with [Sutta Reader](/sutta
 <div id="listresult"></div>
 <script src="/assets/js/suttalister.js"></script>
 <script>
-	suttaLister.paliInput = paliInput;
-	suttaLister.loadSuttaList();
+suttaLister.util = bcUtil;
+suttaLister.paliInput = paliInput;
+suttaLister.loadSuttaList();
 </script>

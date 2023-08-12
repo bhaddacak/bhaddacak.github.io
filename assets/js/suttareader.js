@@ -21,6 +21,7 @@ suttaReader.vinayaList = {
 "kd": "1>22",
 "pvr": [ "1>16", "2>16", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
 };
+suttaReader.util = {};
 suttaReader.bilara_url = "";
 suttaReader.nikaya = "";
 suttaReader.suttaSelector = {};
@@ -28,11 +29,6 @@ suttaReader.idList = [];
 suttaReader.textObj = {};
 suttaReader.transObj = {};
 suttaReader.suttaSelector = document.getElementById("suttaselector");
-suttaReader.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
-};
 suttaReader.getUrlParams = function() {
 	const result = {};
 	const url = location.href;
@@ -49,34 +45,11 @@ suttaReader.getUrlParams = function() {
 	}
 	return result;
 };
-suttaReader.findIndex = function(selElem, val) {
-	let ind = -1;
-	if (selElem) {
-		const opts = selElem.options;
-		for (let i=0; i<opts.length; i++) {
-			if (opts[i].value === val) {
-				ind = i;
-				break;
-			}
-		}
-	}
-	return ind;
-};
-suttaReader.indexOfFirstDigit = function(str) {
-	let ind = -1;
-	for (let i=0; i<str.length; i++) {
-		if (!isNaN(str.charAt(i))) {
-			ind = i;
-			break;
-		}
-	}
-	return ind;
-};
 suttaReader.setToSutta = function(sutta) {
 	const nikayaElem = document.getElementById("nikaya");
-	const initial = sutta.slice(0, this.indexOfFirstDigit(sutta));
+	const initial = sutta.slice(0, this.util.indexOfFirstDigit(sutta));
 	if (initial in this.suttaCount) {
-		const ind = this.findIndex(nikayaElem, initial);
+		const ind = this.util.findSelectIndex(nikayaElem, initial);
 		if (ind > -1) {
 			nikayaElem.options[ind].selected = true;
 			this.changeNikaya();
@@ -86,7 +59,7 @@ suttaReader.setToSutta = function(sutta) {
 		} else {
 			const group = sutta.slice(0, sutta.indexOf("."));
 			const groupElem = document.getElementById("groupselector");
-			const ind = this.findIndex(groupElem, group);
+			const ind = this.util.findSelectIndex(groupElem, group);
 			if (ind > -1) {
 				groupElem.options[ind].selected = true;
 				this.changeGroup();
@@ -96,18 +69,18 @@ suttaReader.setToSutta = function(sutta) {
 			}
 		}
 	} else if (initial in this.suttaSubList) {
-		nikayaElem.options[this.findIndex(nikayaElem, "kn")].selected = true;
+		nikayaElem.options[this.util.findSelectIndex(nikayaElem, "kn")].selected = true;
 		this.changeNikaya();
 		const knGroupElem = document.getElementById("kngroup");
-		knGroupElem.options[this.findIndex(knGroupElem, initial)].selected = true;
+		knGroupElem.options[this.util.findSelectIndex(knGroupElem, initial)].selected = true;
 		this.changeKNGroup();
 		this.selectAndLoad(sutta, this.havingVagga.indexOf(initial) > -1);
 	} else if (initial in this.vinayaList || initial.indexOf("-vb-") > -1) {
-		nikayaElem.options[this.findIndex(nikayaElem, "vin")].selected = true;
+		nikayaElem.options[this.util.findSelectIndex(nikayaElem, "vin")].selected = true;
 		this.changeNikaya();
 		const vinGroupElem = document.getElementById("vingroup");
 		const vgroup = initial.indexOf("-") > -1 ? initial.slice(0, 5) : initial;
-		vinGroupElem.options[this.findIndex(vinGroupElem, vgroup)].selected = true;
+		vinGroupElem.options[this.util.findSelectIndex(vinGroupElem, vgroup)].selected = true;
 		this.changeVinGroup();
 		this.selectAndLoad(sutta);
 	} else {
@@ -115,11 +88,11 @@ suttaReader.setToSutta = function(sutta) {
 	}
 };
 suttaReader.getItiVagga = function(sutta) {
-	const itiNum = parseInt(sutta.slice(this.indexOfFirstDigit(sutta)));
+	const itiNum = parseInt(sutta.slice(this.util.indexOfFirstDigit(sutta)));
 	const itiSeqs = this.suttaSubList["iti"];
 	let ind = 0;
 	for (let i=0; i<itiSeqs.length; i++) {
-		const seq = this.getNumSeq(itiSeqs[i]);
+		const seq = this.util.getNumSeq(itiSeqs[i]);
 		if (seq.indexOf(itiNum) > -1) {
 			ind = i;
 			break;
@@ -130,11 +103,11 @@ suttaReader.getItiVagga = function(sutta) {
 suttaReader.selectAndLoad = function(sutta, haveVagga) {
 	let vagga = "";
 	if (haveVagga) {
-		const vnum = sutta.startsWith("iti") ? this.getItiVagga(sutta) : sutta[this.indexOfFirstDigit(sutta)];
+		const vnum = sutta.startsWith("iti") ? this.getItiVagga(sutta) : sutta[this.util.indexOfFirstDigit(sutta)];
 		vagga = "vagga" + vnum + "/";
 	}
 	const id = sutta.indexOf("-vb-") > -1 ? sutta.slice(6) : sutta;
-	const ind = this.findIndex(this.suttaSelector, vagga + id);
+	const ind = this.util.findSelectIndex(this.suttaSelector, vagga + id);
 	if (ind > -1) {
 		this.suttaSelector.options[ind].selected = true;
 		this.loadSutta();
@@ -155,7 +128,7 @@ suttaReader.changeNikaya = function() {
 	this.idList = [];
 	this.textObj = {};
 	this.transObj = {};
-	this.clearNode(this.suttaSelector);
+	this.util.clearNode(this.suttaSelector);
 	if (this.nikaya === "vin") {
 		vinGroupElem.style.display = "inline";
 		knGroupElem.style.display = "none";
@@ -172,7 +145,7 @@ suttaReader.changeNikaya = function() {
 		let allsutta = this.suttaCount[this.nikaya];
 		let dnORmn = this.nikaya === "dn" || this.nikaya === "mn";
 		if (!dnORmn)
-			this.clearNode(groupElem);
+			this.util.clearNode(groupElem);
 		let elem = dnORmn ? this.suttaSelector : groupElem;
 		for (let i=1; i<=allsutta; i++) {
 			const opt = document.createElement("option");
@@ -190,7 +163,7 @@ suttaReader.changeNikaya = function() {
 };
 suttaReader.changeGroup = function() {
 	const groupElem = document.getElementById("groupselector");
-	this.clearNode(this.suttaSelector);
+	this.util.clearNode(this.suttaSelector);
 	const group = groupElem.options[groupElem.selectedIndex].value;
 	const slist = this.getSuttaList(group);
 	for (let i=0; i<slist.length; i++) {
@@ -204,13 +177,13 @@ suttaReader.changeKNGroup = function() {
 	const knGroupElem = document.getElementById("kngroup");
 	const groupElem = document.getElementById("groupselector");
 	groupElem.style.display = "none";
-	this.clearNode(this.suttaSelector);
+	this.util.clearNode(this.suttaSelector);
 	const knGroup = knGroupElem.options[knGroupElem.selectedIndex].value;
 	let slist = [];
 	if (this.havingVagga.indexOf(knGroup) > -1) {
 		const vaggaCount = this.suttaSubList[knGroup].length;
 		for (let v=1; v<=vaggaCount; v++) {
-			const seq = this.getNumSeq(this.suttaSubList[knGroup][v-1]);
+			const seq = this.util.getNumSeq(this.suttaSubList[knGroup][v-1]);
 			for (let n=0; n<seq.length; n++) {
 				const prefix = knGroup === "iti" ? knGroup : knGroup + v + ".";
 				slist.push("vagga" + v + "/" + prefix + seq[n]);
@@ -230,9 +203,9 @@ suttaReader.changeKNGroup = function() {
 };
 suttaReader.changeVinGroup = function() {
 	const vinGroupElem = document.getElementById("vingroup");
-	this.clearNode(this.suttaSelector);
+	this.util.clearNode(this.suttaSelector);
 	const vinGroup = vinGroupElem.options[vinGroupElem.selectedIndex].value;
-	let slist = [];
+	const slist = [];
 	if (vinGroup.endsWith("-vb")) {
 		const vbGroup = this.vinayaList[vinGroup];
 		const groupList = [];
@@ -243,7 +216,7 @@ suttaReader.changeVinGroup = function() {
 			const files = vbGroup[group];
 			for (let f=0; f<files.length; f++) {
 				if (files[f].match(/>/) !== null) {
-					const seq = this.getNumSeq(files[f]);
+					const seq = this.util.getNumSeq(files[f]);
 					for (let n=0; n<seq.length; n++)
 						slist.push(group + seq[n]);
 				} else {
@@ -254,7 +227,7 @@ suttaReader.changeVinGroup = function() {
 		slist.push("as1-7");
 	} else {
 		if (vinGroup === "kd") {
-			const kdSeq = this.getNumSeq(this.vinayaList[vinGroup]);
+			const kdSeq = this.util.getNumSeq(this.vinayaList[vinGroup]);
 			for (let i=0; i<kdSeq.length; i++)
 				slist.push(vinGroup + kdSeq[i]);
 		} else {
@@ -264,7 +237,7 @@ suttaReader.changeVinGroup = function() {
 				if (pvrList[i] === "0") {
 					slist.push(vinGroup + pvrNum);
 				} else {
-					const pvrSeq = this.getNumSeq(pvrList[i]);
+					const pvrSeq = this.util.getNumSeq(pvrList[i]);
 					for (let n=0; n<pvrSeq.length; n++)
 						slist.push(vinGroup + pvrNum + "." + pvrSeq[n]);
 				}
@@ -279,23 +252,14 @@ suttaReader.changeVinGroup = function() {
 		this.suttaSelector.appendChild(opt);
 	}
 };
-suttaReader.getNumSeq = function(input) {
-	let result = [];
-	const startend = input.split(">");
-	const start = parseInt(startend[0]);
-	const end = parseInt(startend[1]);
-	for (let n=start; n<=end; n++)
-		result.push(n);
-	return result;
-};
 suttaReader.getSuttaList = function(group) {
-	let result = [];
+	const result = [];
 	if (this.suttaSubList[group] === undefined) return result;
 	let list = this.suttaSubList[group];
 	const prefix = this.nikaya === "kn" ? group : group + ".";
 	for (let i=0; i<list.length; i++) {
 		if (list[i].match(/>/) !== null) {
-			const seq = this.getNumSeq(list[i]);
+			const seq = this.util.getNumSeq(list[i]);
 			const extra = group === "thag" || group === "thig" ? (i+1) + "." : "";
 			for (let n=0; n<seq.length; n++)
 				result.push(prefix + extra + seq[n]);
@@ -348,23 +312,16 @@ suttaReader.loadSutta = function() {
 		sutta = this.getVinayaFile(sutta);
 	}
 	const suttaFile = filePrefix + "/" +  sutta + "_root-pli-ms.json";
-	const request = new XMLHttpRequest();
-	request.open("GET", this.bilara_url + "/root/pli/ms/" + basket + "/" + suttaFile, true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			suttaReader.textObj = JSON.parse(request.responseText);
-			for (const id in suttaReader.textObj)
-				suttaReader.idList.push(id);
-			suttaReader.displayText();
-			suttaReader.loadTranslation();
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = this.bilara_url + "/root/pli/ms/" + basket + "/" + suttaFile;
+	ajaxParams.successCallback = function(response) {
+		suttaReader.textObj = JSON.parse(response);
+		for (const id in suttaReader.textObj)
+			suttaReader.idList.push(id);
+		suttaReader.displayText();
+		suttaReader.loadTranslation();
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 suttaReader.loadTranslation = function() {
 	let sutta = this.suttaSelector.options[this.suttaSelector.selectedIndex].value;
@@ -377,25 +334,18 @@ suttaReader.loadTranslation = function() {
 		sutta = this.getVinayaFile(sutta);
 	}
 	const transFile = filePrefix + "/" + sutta + "_translation-en-" + translator + ".json";
-	const request = new XMLHttpRequest();
-	request.open("GET", this.bilara_url + "/translation/en/" + translator + "/" + basket + "/" + transFile, true);
-	request.onload = function(){
-		if (request.status >= 200 && request.status < 400) {
-			suttaReader.transObj = JSON.parse(request.responseText);
-			if (document.getElementById("showtrans").checked)
-				suttaReader.displayTrans();
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = this.bilara_url + "/translation/en/" + translator + "/" + basket + "/" + transFile;
+	ajaxParams.successCallback = function(response) {
+		suttaReader.transObj = JSON.parse(response);
+		if (document.getElementById("showtrans").checked)
+			suttaReader.displayTrans();
 	};
-	request.onerror = function(){
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 suttaReader.displayText = function() {
 	const display = document.getElementById("textdisplay");
-	this.clearNode(display);
+	this.util.clearNode(display);
 	for (let i=0; i<this.idList.length; i++) {
 		if (this.idList[i].trim().length > 0) {
 			const para = document.createElement("p");

@@ -15,30 +15,19 @@ suttaLister.groupSwitch = {
 "an": { start: 21, end: 21, shown: true },
 "kn": { start: 22, end: 29, shown: true },
 };
+suttaLister.util = {};
 suttaLister.paliInput = {};
 suttaLister.shownGroup = [];
 suttaLister.allSutta = {};
 suttaLister.idList = [];
-suttaLister.clearNode = function(node) {
-	while (node.firstChild) {
-		node.removeChild(node.firstChild);
-	}
-};
 suttaLister.loadSuttaList = function() {
-	const request = new XMLHttpRequest();
-	request.open("GET", "assets/palitext/suttalist.json", true);
-	request.onload = function() {
-		if (request.status >= 200 && request.status < 400) {
-			suttaLister.allSutta = JSON.parse(request.responseText);
-			suttaLister.filter();
-		} else {
-			console.log("Error loading ajax request. Request status:" + request.status);
-		}
+	const ajaxParams = {};
+	ajaxParams.address = "assets/palitext/suttalist.json";
+	ajaxParams.successCallback = function(response) {
+		suttaLister.allSutta = JSON.parse(response);
+		suttaLister.filter();
 	};
-	request.onerror = function() {
-		console.log("There was a connection error");
-	};
-	request.send();
+	this.util.ajaxLoad(ajaxParams);
 };
 suttaLister.groupSelect = function(isAll) {
 	document.getElementById("cbvin").checked = isAll;
@@ -79,7 +68,7 @@ suttaLister.filter = function() {
 	this.showResult();
 };
 suttaLister.showResult = function() {
-	this.clearNode(this.resultElem);
+	this.util.clearNode(this.resultElem);
 	const countElem = document.getElementById("wordcount");
 	if (this.idList.length > 0) {
 		const table = document.createElement("table");
