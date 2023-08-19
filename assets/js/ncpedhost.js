@@ -1,6 +1,7 @@
 /*! ncpedhost.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const ncpedHost = {};
+ncpedHost.util = null;
 ncpedHost.dict = null;
 ncpedHost.paliInput = null;
 ncpedHost.blockquote_class = "";
@@ -14,18 +15,9 @@ ncpedHost.clearResult = function() {
 };
 ncpedHost.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const spos = params.indexOf("q=");
-		if (spos > -1) {
-			let query = params.slice(spos + 2);
-			const apos = query.indexOf("&");
-			query = apos > -1 ? query.slice(0, apos) : query;
-			result["query"] = unescape(query);
-		}
-	}
+	const vars = this.util.getUrlVars(location.href);
+	if ("q" in vars)
+		result["query"] = unescape(vars.q);
 	return result;
 };
 ncpedHost.showWordCount = function(num, mode) {

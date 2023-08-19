@@ -85,7 +85,7 @@ srtReader.formatText = function(text) {
 			const lo = lines[i].trim().length > 0
 						? document.getElementById("showline").checked ? this.fillZero(lineno + "") + ": " : ""
 						: "";
-			result += lo + lines[i].replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			result += lo + lines[i];
 			lineno++;
 		}
 		result += "<br>";

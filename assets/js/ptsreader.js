@@ -53,7 +53,7 @@ ptsReader.formatText = function(text) {
 		const gNote = "<blockquote id='gretil-notes' style='display:none;'>" + betweenHr + "</blockquote>";
 		const mainText = text.slice(text.indexOf(textTagStart), text.indexOf(textTagEnd));
 		const lines = mainText.split(/\r?\n/);
-		let mainPara = "<p id='main-text'>";
+		let mainPara = "<p id='main-text' style='text-align:left;'>";
 		for (let i=0; i<lines.length; i++)
 			mainPara += lines[i];
 		mainPara += "</p>";

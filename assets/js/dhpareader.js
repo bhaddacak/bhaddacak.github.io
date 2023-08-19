@@ -48,16 +48,22 @@ dhpaReader.showTOC = function(scrollTop) {
 		const vhead = document.createElement("h4");
 		vhead.innerText = vaggas[i];
 		resultElem.appendChild(vhead);
-		const ul = document.createElement("ul");
+		const table = document.createElement("table");
 		const vatthus = this.toc[vaggas[i]];
 		for (let v=0; v<vatthus.length; v++) {
-			const li = document.createElement("li");
-			const vt = vatthus[v];
-			const vnum = vt.slice(vt.indexOf("[")+1, -1);
-			li.innerHTML = "<a style='cursor:pointer;' oncLick='dhpaReader.loadVatthu(" + currPart + "," + vnum + ");'>" + vt + "</a>";
-			ul.appendChild(li);
+			const bpos = vatthus[v].indexOf("[");
+			const vt = vatthus[v].slice(0, bpos);
+			const vnum = vatthus[v].slice(bpos+1, -1);
+			const tr = document.createElement("tr");
+			const label = "<a style='cursor:pointer;' oncLick='dhpaReader.loadVatthu(" + currPart + "," + vnum + ");'>" + vt + "</a>";
+			const trans = " <span class='textbutton' oncLick='dhpaReader.openTransBurl(" + vnum + ");'>B</span>" +
+						" <span class='textbutton' oncLick='dhpaReader.openTransThai(" + vnum + ");'>T</span>";
+			tr.innerHTML = "<td style='width:30em;'>" + label
+							+ "</td><td style='text-align:right;width:2em;'>" + vnum
+							+ "</td><td style='text-align:center;width:3em;'>" + trans + "</td>";
+			table.appendChild(tr);
 		}
-		resultElem.appendChild(ul);
+		resultElem.appendChild(table);
 	}
 	if (scrollTop)
 		resultElem.scrollIntoView();
@@ -151,7 +157,7 @@ dhpaReader.formatText = function(text, part) {
 		} else if (lines[i].match(/\[ \d+ ]$/) !== null) {
 			result += "<strong>" + lines[i] + "</strong>";
 		} else {
-			result += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			result += lines[i];
 		}
 		result += "<br>";
 	}
@@ -179,13 +185,17 @@ dhpaReader.goVatthu = function(vatthu) {
 		}
 	}
 };
-dhpaReader.openTransThai = function() {
-	const vattSelector = document.getElementById("vatthuselector");
-	const vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
-	window.open("/dhpathai?vt=" + vatthu, "dhpa-trans-thai");
-};
-dhpaReader.openTransBurl = function() {
-	const vattSelector = document.getElementById("vatthuselector");
-	const vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
+dhpaReader.openTransBurl = function(vatthu) {
+	if (vatthu === undefined) {
+		const vattSelector = document.getElementById("vatthuselector");
+		vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
+	}
 	window.open("/dhpaburl?vt=" + vatthu, "dhpa-trans-burl");
+};
+dhpaReader.openTransThai = function(vatthu) {
+	if (vatthu === undefined) {
+		const vattSelector = document.getElementById("vatthuselector");
+		vatthu = parseInt(vattSelector.options[vattSelector.selectedIndex].value);
+	}
+	window.open("/dhpathai?vt=" + vatthu, "dhpa-trans-thai");
 };

@@ -1,6 +1,7 @@
 /*! ptspedhost.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const ptspedHost = {};
+ptspedHost.util = null;
 ptspedHost.dict = null;
 ptspedHost.paliInput = null;
 ptspedHost.blockquote_class = "";
@@ -14,20 +15,12 @@ ptspedHost.clearResult = function() {
 };
 ptspedHost.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const spos = params.indexOf("q=");
-		if (spos > -1) {
-			let query = params.slice(spos + 2);
-			const apos = query.indexOf("&");
-			query = apos > -1 ? query.slice(0, apos) : query;
-			query = unescape(query);
-			if (query.startsWith("\""))
-				query = query.slice(1);
-			result["query"] = query;
-		}
+	const vars = this.util.getUrlVars(location.href);
+	if ("q" in vars) {
+		let query = unescape(vars.q);
+		if (query.startsWith("\""))
+			query = query.slice(1);
+		result["query"] = query;
 	}
 	return result;
 };

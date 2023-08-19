@@ -1,9 +1,12 @@
 /*! dhpaburl.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const dhpaBurl = {};
-dhpaBurl.vaggaList = [["Book 1. Pairs, Yamaka Vagga", "Book 2. Heedfulness, Appamada Vagga"]];
-dhpaBurl.romanNum = ["I", "II", "III"];
-//dhpaBurl.volumeList = [[1, 23]];
+dhpaBurl.vaggaList = [
+	["Book 1. Pairs, Yamaka Vagga", "Book 2. Heedfulness, Appamada Vagga"], 
+	["Book 3. Thoughts, Citta Vagga ", "Book 4. Flowers, Puppha Vagga ", "Book 5. The Simpleton, Bala Vagga ", "Book 6. The Wise Man, Pandita Vagga ", "Book 7. The Arahat, Arahanta Vagga ", "Book 8. Thousands, Sahassa Vagga ", "Book 9. Evil, Papa Vagga ", "Book 10. The Rod or Punishment, Danda Vagga ", "Book 11. Old Age, Jara Vagga ", "Book 12. Self, Atta Vagga"], 
+	["Book 13. The World, Loka Vagga ", "Book 14. The Enlightened, Buddha Vagga ", "Book 15. Happiness, Sukha Vagga ", "Book 16. Objects of Affection, Piya Vagga ", "Book 17. Anger, Kodha Vagga ", "Book 18. Blemishes, Mala Vagga ", "Book 19. The Righteous, Dhammattha Vagga ", "Book 20. The Path, Magga Vagga ", "Book 21. Miscellaneous, Pakinnaka Vagga ", "Book 22. Hell, Niraya Vagga ", "Book 23. The Elephant, Naga Vagga ", "Book 24. Thirst or Craving, Tanha Vagga ", "Book 25. The Monk, Bhikkhu Vagga ", "Book 26. The Brahman, Brahmana Vagga"]];
+dhpaBurl.romanNum = ["0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+dhpaBurl.volumeList = [[1, 23], [24, 136], [137, 302]];
 dhpaBurl.util = {};
 dhpaBurl.params = {};
 dhpaBurl.currVol = 1;
@@ -11,24 +14,22 @@ dhpaBurl.vatthuList = [];
 dhpaBurl.fixedToolBar = true;
 dhpaBurl.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const vpos = params.indexOf("vt=");
-		if (vpos > -1) {
-			let vatthu = params.slice(vpos + 3);
-			const apos = vatthu.indexOf("&");
-			vatthu = apos > -1 ? vatthu.slice(0, apos) : vatthu;
-			result["vatthu"] = vatthu;
-		}
-	} else {
-		result["vatthu"] = 1;
-	}
+	const vars = this.util.getUrlVars(location.href);
+	if ("vt" in vars)
+		result["vatthu"] = vars.vt;
+	else
+		result["vatthu"] = "1";
 	return result;
 };
 dhpaBurl.getVolumeNum = function(vtnum) {
-	const result = vtnum <= 23 ? 1: -1;
+	const vt = typeof vtnum === "string" ? parseInt(vtnum) : vtnum;
+	let result = -1;
+	for (let i=0; i<this.volumeList.length; i++) {
+		if (vt >= this.volumeList[i][0] && vt <= this.volumeList[i][1]) {
+			result = i + 1;
+			break;
+		}
+	}
 	return result;
 };
 dhpaBurl.loadText = function() {
@@ -61,7 +62,7 @@ dhpaBurl.displayText = function(textObj) {
 dhpaBurl.formatText = function(text) {
 	const result = {};
 	result.topicList = [];
-	result.head = "Translation of the Legends of <br>the Dhammapada Commentary, Vol. " + this.romanNum[this.currVol-1];
+	result.head = "Translation of the Legends of <br>the Dhammapada Commentary, Vol. " + this.romanNum[this.currVol];
 	const lines = text.split(/\r?\n/);
 	const topicRex = new RegExp("\\[ \\d+ \\]$");
 	let resultText = "<br>";
@@ -83,7 +84,7 @@ dhpaBurl.formatText = function(text) {
 			result.topicList.push(vhead);
 			resultText += "<strong>" + lines[i] + "</strong>";
 		} else {
-			resultText += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			resultText += lines[i];
 		}
 		resultText += "<br>";
 	}

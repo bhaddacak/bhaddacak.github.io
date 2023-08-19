@@ -2,7 +2,7 @@
 title: "Maṅgalatthadīpanī Reader"
 permalink: /mdreader
 is_application: true
-date: 2023-08-13 12:00:00 +0700
+date: 2023-08-16 12:00:00 +0700
 ---
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
@@ -14,7 +14,7 @@ date: 2023-08-13 12:00:00 +0700
 <button id="volumebutton" onClick="mdReader.goVolume();">Vol.</button>
 </span>
 </div>
-<div id="textdisplay">Loading... (please wait)</div>
+<div id="textdisplay" class="textdisplay">Loading... (please wait)</div>
 <script src="/assets/js/mdreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>

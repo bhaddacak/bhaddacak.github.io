@@ -12,6 +12,24 @@ bcUtil.makeHead = function(text, hlevel) {
 	const tag = hlevel === undefined ? "h3" : "h"+hlevel;
 	return "<" + tag + " id='texthead' style='text-align:center;'>" + text + "</" + tag + ">";
 };
+bcUtil.getUrlVars = function(url) {
+	const result = {};
+	const qpos = url.indexOf("?");
+	if (qpos > -1) {
+		const chunks = url.slice(qpos+1).split("&");
+		for (let i=0; i<chunks.length; i++) {
+			const epos = chunks[i].indexOf("=");
+			if (epos > -1) {
+				const vname = chunks[i].slice(0, epos);
+				const vval = chunks[i].slice(epos+1);
+				result[vname] = vval;
+			} else {
+				result[chunks[i]] = "";
+			}
+		}
+	}
+	return result;
+};
 bcUtil.ajaxLoad = function(params) {
 	const request = new XMLHttpRequest();
 	if (params.isBinary)
@@ -82,6 +100,14 @@ bcUtil.toThaiNum = function(num) {
 			result += chTh;
 	}
 	return result;
+};
+bcUtil.setSelectSelection = function(selElem, val) {
+	for (let i=0; i<selElem.options.length; i++) {
+		if (selElem.options[i].value === val) {
+			selElem.options[i].selected = true;
+			break;
+		}
+	}
 };
 bcUtil.findSelectIndex = function(selElem, val) {
 	let ind = -1;

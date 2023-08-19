@@ -12,35 +12,28 @@ dhpaThai.lang = "thai";
 dhpaThai.fixedToolBar = true;
 dhpaThai.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const ppos = params.indexOf("pt=");
-		if (ppos > -1) {
-			let part = params.slice(ppos + 3);
-			const apos = part.indexOf("&");
-			part = apos > -1 ? part.slice(0, apos) : part;
-			result["part"] = part;
-		}
-		const vpos = params.indexOf("vt=");
-		if (vpos > -1) {
-			let vatthu = params.slice(vpos + 3);
-			const apos = vatthu.indexOf("&");
-			vatthu = apos > -1 ? vatthu.slice(0, apos) : vatthu;
-			result["vatthu"] = vatthu;
-		}
-	} else {
-		result["vatthu"] = 1;
+	const vars = this.util.getUrlVars(location.href);
+	if ("pt" in vars)
+		result["part"] = vars.pt;
+	if ("vt" in vars)
+		result["vatthu"] = vars.vt;
+	if (!("part" in result || "vatthu" in result)) {
+		result["vatthu"] = "1";
+	} else if ("vatthu" in result && !("part" in result)) {
+		const pt = this.getPart(result.vatthu);
+		if (pt > -1)
+			result["part"] = "" + pt;
 	}
-	if ("vatthu" in result && !("part" in result)) {
-		const vt = parseInt(result.vatthu);
-		for (let i=0; i<this.partList.length; i++) {
-			const vrange = this.partList[i];
-			if (vt >= vrange[0] && vt <= vrange[1]) {
-				result["part"] = i + 1;
-				break;
-			}
+	return result;
+};
+dhpaThai.getPart = function(vatthu) {
+	let result = -1;
+	const vt = typeof vatthu !== "number" ? parseInt(vatthu) : vatthu;
+	for (let i=0; i<this.partList.length; i++) {
+		const vrange = this.partList[i];
+		if (vt >= vrange[0] && vt <= vrange[1]) {
+			result = i + 1;
+			break;
 		}
 	}
 	return result;
@@ -107,7 +100,7 @@ dhpaThai.formatText = function(lang, text) {
 			result.vatthuList.push(vhead);
 			resultText += "<strong>" + lines[i] + "</strong>";
 		} else {
-			resultText += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			resultText += lines[i];
 		}
 		resultText += "<br>";
 	}

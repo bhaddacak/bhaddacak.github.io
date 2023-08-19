@@ -9,32 +9,15 @@ mdThai.currThaiVol = 1;
 mdThai.fixedToolBar = true;
 mdThai.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const vpos = params.indexOf("v=");
-		if (vpos > -1) {
-			let volume = params.slice(vpos + 2);
-			const apos = volume.indexOf("&");
-			volume = apos > -1 ? volume.slice(0, apos) : volume;
-			result["volume"] = volume;
-		} else {
-			result["volume"] = "1";
-		}
-		const pnpos = params.indexOf("pn=");
-		if (pnpos > -1) {
-			let paranum = params.slice(pnpos + 3);
-			const apos = paranum.indexOf("&");
-			paranum = apos > -1 ? paranum.slice(0, apos) : paranum;
-			result["paranum"] = paranum;
-		} else {
-			result["paranum"] = "1";
-		}
-	} else {
+	const vars = this.util.getUrlVars(location.href);
+	if ("v" in vars)
+		result["volume"] = vars.v;
+	else
 		result["volume"] = "1";
+	if ("pn" in vars)
+		result["paranum"] = vars.pn;
+	else
 		result["paranum"] = "1";
-	}
 	return result;
 };
 mdThai.getThaiVolume = function(vol, paranum) {
@@ -90,10 +73,10 @@ mdThai.formatText = function(text) {
 		if (lines[i].match(/page \d\d\d\d/) !== null) {
 			const pstyle = " style='text-align:left;padding-top:5px;'";
 			if (!pstarted) {
-				resultText += "\n<p" + pstyle + ">\n";
+				resultText += "<p" + pstyle + ">";
 				pstarted = true;
 			} else {
-				resultText += "\n</p>\n<p" + pstyle + ">\n";
+				resultText += "</p><p" + pstyle + ">";
 			}
 			resultText += lines[i];
 		} else if (lines[i].match(topicRex) !== null) {
@@ -102,11 +85,11 @@ mdThai.formatText = function(text) {
 			result.topicList.push(pn);
 			resultText += lines[i];
 		} else {
-			resultText += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			resultText += lines[i];
 		}
 		resultText += "<br>";
 	}
-	resultText += "\n</p>\n";
+	resultText += "</p>";
 	result.text = resultText;
 	return result;
 };

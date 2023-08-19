@@ -31,18 +31,9 @@ suttaReader.transObj = {};
 suttaReader.suttaSelector = document.getElementById("suttaselector");
 suttaReader.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const spos = params.indexOf("s=");
-		if (spos > -1) {
-			let sutta = params.slice(spos + 2);
-			const apos = sutta.indexOf("&");
-			sutta = apos > -1 ? sutta.slice(0, apos) : sutta;
-			result["sutta"] = sutta;
-		}
-	}
+	const vars = this.util.getUrlVars(location.href);
+	if ("s" in vars)
+		result["sutta"] = vars.s;
 	return result;
 };
 suttaReader.setToSutta = function(sutta) {

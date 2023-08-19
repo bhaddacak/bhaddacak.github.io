@@ -9,27 +9,13 @@ mdReader.transWindow = {};
 mdReader.fixedToolBar = false;
 mdReader.getUrlParams = function() {
 	const result = {};
-	const url = location.href;
-	const qpos = url.indexOf("?");
-	if (qpos > -1) {
-		const params = url.slice(qpos);
-		const vpos = params.indexOf("v=");
-		if (vpos > -1) {
-			let volume = params.slice(vpos + 2);
-			const apos = volume.indexOf("&");
-			volume = apos > -1 ? volume.slice(0, apos) : volume;
-			result["volume"] = volume;
-		} else {
-			result["volume"] = "1";
-		}
-		const pnpos = params.indexOf("pn=");
-		if (pnpos > -1) {
-			let paranum = params.slice(pnpos + 3);
-			const apos = paranum.indexOf("&");
-			paranum = apos > -1 ? paranum.slice(0, apos) : paranum;
-			result["paranum"] = paranum;
-		}
-	}
+	const vars = this.util.getUrlVars(location.href);
+	if ("v" in vars)
+		result["volume"] = vars.v;
+	else
+		result["volume"] = "1";
+	if ("pn" in vars)
+		result["paranum"] = vars.pn;
 	return result;
 };
 mdReader.loadText = function() {
@@ -50,7 +36,7 @@ mdReader.displayText = function(text) {
 	resultElem.innerHTML = this.formatText(text);
 	this.fillParaNumList();
 	if ("paranum" in this.params) {
-		this.setPnSelector(this.params.paranum);
+		this.util.setSelectSelection(document.getElementById("paranumselector"), this.params.paranum);
 		this.goParaNum();
 	}
 };
@@ -79,7 +65,7 @@ mdReader.formatText = function(text) {
 			this.pnList.push(pn);
 			result += lines[i];
 		} else {
-			result += lines[i].replace(/^\t/, "&nbsp;&nbsp;&nbsp;&nbsp;");
+			result += lines[i];
 		}
 		result += "<br>";
 	}
@@ -99,15 +85,6 @@ mdReader.fillParaNumList = function() {
 		opt.value = this.pnList[i];
 		opt.innerText = this.pnList[i];
 		pnSelector.appendChild(opt);
-	}
-};
-mdReader.setPnSelector = function(paranum) {
-	const pnSelector = document.getElementById("paranumselector");
-	for (let i=0; i<pnSelector.options.length; i++) {
-		if (pnSelector.options[i].value === paranum) {
-			pnSelector.options[i].selected = true;
-			break;
-		}
 	}
 };
 mdReader.goParaNum = function() {
