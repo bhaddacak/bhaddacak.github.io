@@ -7,14 +7,12 @@ saddSingle.suttas = {};
 saddSingle.fixedToolBar = false;
 saddSingle.getUrlParams = function() {
 	const result = {};
-	const url = location.href.endsWith("/") ? location.href.slice(0, -1) : location.href;
-	const dlpos = url.lastIndexOf("/");
+	const url = location.href;
+	const dlpos = url.lastIndexOf("?");
 	if (dlpos > -1) {
-		const sut = url.slice(dlpos+1);
-		if (sut === "sadd")
-			result["sutta"] = "1";
-		else
-			result["sutta"] = sut;
+		result["sutta"] = url.slice(dlpos+1);
+	} else {
+		result["sutta"] = "1";
 	}
 	return result;
 };

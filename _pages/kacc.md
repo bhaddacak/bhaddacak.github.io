@@ -2,10 +2,10 @@
 title: "Kaccāyana's Suttas"
 permalink: /kacc
 is_application: true
-date: 2023-08-25 12:00:00 +0700
+date: 2023-08-26 12:00:00 +0700
 ---
 
-This is the single-sutta version of Kaccāyana. It can be accessed by URL. For example, [{{ site.url }}/kacc/1](/kacc/1) leads to the sutta no. 1. For the full version, please visit [Kaccāyana-Rūpasiddhi](/kaccrupa).
+This is the single-sutta version of Kaccāyana. It can be accessed by URL. For example, [{{ site.url }}/kacc?1](/kacc?1) leads to the sutta no. 1. For the full version, please visit [Kaccāyana-Rūpasiddhi](/kaccrupa).
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

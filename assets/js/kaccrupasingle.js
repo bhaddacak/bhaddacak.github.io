@@ -11,12 +11,14 @@ kaccrupaSingle.getUrlParams = function() {
 	const result = {};
 	const url = location.href.endsWith("/") ? location.href.slice(0, -1) : location.href;
 	const tokens = url.split("/");
-	if (tokens[tokens.length-1] === "kacc" || tokens[tokens.length-1] === "rupa") {
-		this.book = tokens[tokens.length-1];
-		result["sutta"] = "1";
+	const lastChunk = tokens[tokens.length-1];
+	const dlpos = lastChunk.indexOf("?");
+	if (dlpos > -1) {
+		this.book = lastChunk.slice(0, dlpos);
+		result["sutta"] = lastChunk.slice(dlpos+1);
 	} else {
-		this.book = tokens[tokens.length-2];
-		result["sutta"] = tokens[tokens.length-1];
+		this.book = lastChunk;
+		result["sutta"] = "1";
 	}
 	return result;
 };
