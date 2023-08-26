@@ -6,6 +6,8 @@ saddsutReader.params = {};
 saddsutReader.suttaNumberList = [];
 saddsutReader.suttaFormulaList = [];
 saddsutReader.textCache = { "1-7": "", "8-9": "" };
+saddsutReader.currChapter = "1";
+saddsutReader.firstOpen = true;
 saddsutReader.fixedToolBar = false;
 saddsutReader.getUrlParams = function() {
 	const result = {};
@@ -14,8 +16,6 @@ saddsutReader.getUrlParams = function() {
 		result["chapter"] = vars.c;
 	if ("s" in vars)
 		result["sutta"] = vars.s;
-	if (!("chapter" in result || "sutta" in result))
-		result["chapter"] = "1";
 	return result;
 };
 saddsutReader.getChapterGroup = function(chap) {
@@ -24,9 +24,11 @@ saddsutReader.getChapterGroup = function(chap) {
 };
 saddsutReader.loadText = function(chap) {
 	this.params = this.getUrlParams();
-	if (chap !== undefined)
-		this.params.chapter = chap;
-	const textGrp = this.getChapterGroup(this.params.chapter);
+	if (chap === undefined) 
+		this.currChapter = "chapter" in this.params ? this.params.chapter : "1";
+	else
+		this.currChapter = chap;
+	const textGrp = this.getChapterGroup(this.currChapter);
 	if (this.textCache[textGrp].length > 0) {
 		this.displayText(this.textCache[textGrp]);
 		return;
@@ -43,7 +45,7 @@ saddsutReader.loadText = function(chap) {
 };
 saddsutReader.displayText = function(text) {
 	const resultElem = document.getElementById("textdisplay");
-	if (this.params.chapter < "8") {
+	if (this.currChapter < "8") {
 		if (document.getElementById("onlyformulas").checked)
 			resultElem.innerHTML = this.suttaFormulaList.join("<br>");
 		else
@@ -54,27 +56,29 @@ saddsutReader.displayText = function(text) {
 	}
 	if ("chapter" in this.params) {
 		this.util.setSelectSelection(document.getElementById("chapterselector"), this.params.chapter);
-		this.goChapter();
+		this.goChapter(this.params.chapter);
 	} else if ("sutta" in this.params) {
 		this.util.setSelectSelection(document.getElementById("suttaselector"), this.params.sutta);
 		this.goSutta();
+	} else {
+		if (this.firstOpen)
+			this.firstOpen = false;
+		else
+			this.goChapter(this.currChapter);
 	}
 };
 saddsutReader.updateDisplay = function() {
 	const resultElem = document.getElementById("textdisplay");
-	const chapSelector = document.getElementById("chapterselector");
-	const suttaSelector = document.getElementById("suttaselector");
-	if (document.getElementById("onlyformulas").checked) {
+	const onlyFor = document.getElementById("onlyformulas");
+	if (onlyFor.checked) {
 		resultElem.innerHTML = this.suttaFormulaList.join("<br>");
-		resultElem.scrollIntoView();
-		chapSelector.disabled = true;
-		suttaSelector.disabled = true;
+		this.util.scroll(resultElem, this.fixedToolBar);
 	} else {
 		resultElem.innerHTML = this.textCache["1-7"];
-		chapSelector.disabled = false;
-		suttaSelector.disabled = false;
-		this.goChapter();
+		this.goChapter(this.currChapter);
 	}
+	document.getElementById("chapterselector").disabled = onlyFor.checked;
+	document.getElementById("suttaselector").disabled = onlyFor.checked;
 };
 saddsutReader.formatText = function(text) {
 	let result = "";
@@ -89,10 +93,10 @@ saddsutReader.formatText = function(text) {
 		if (lines[i].match(/^<b>\d+\./) !== null) {
 			const pstyle = " style='text-align:left;padding-top:5px;'";
 			if (!pstarted) {
-				result += "<p" + pstyle + "><br>";
+				result += "<p" + pstyle + ">";
 				pstarted = true;
 			} else {
-				result += "</p><p" + pstyle + "><br>";
+				result += "</p><p" + pstyle + ">";
 			}
 			result += lines[i];
 			const ln = lines[i].trim();
@@ -111,20 +115,18 @@ saddsutReader.formatText = function(text) {
 	return result;
 };
 saddsutReader.fillSuttaNumberList = function() {
-	const suttaSelector = document.getElementById("suttaselector");
-	this.util.clearNode(suttaSelector);
-	for (let i=0; i<this.suttaNumberList.length; i++) {
-		const opt = document.createElement("option");
-		opt.value = this.suttaNumberList[i];
-		opt.innerText = this.suttaNumberList[i];
-		suttaSelector.appendChild(opt);
-	}
+	this.util.fillSelectOptions(document.getElementById("suttaselector"), this.suttaNumberList);
 };
-saddsutReader.goChapter = function() {
-	const chapSelector = document.getElementById("chapterselector");
-	const chapToGo = chapSelector.options[chapSelector.selectedIndex].value;
+saddsutReader.goChapter = function(chap) {
+	let chapToGo;
+	if (chap === undefined) {
+		const chapSelector = document.getElementById("chapterselector");
+		chapToGo = chapSelector.options[chapSelector.selectedIndex].value;
+	} else {
+		chapToGo = chap;
+	}
 	const chgrp = this.getChapterGroup(chapToGo);
-	if (chgrp !== this.getChapterGroup(this.params.chapter)) {
+	if (chgrp !== this.getChapterGroup(this.currChapter)) {
 		this.loadText(chapToGo);
 		return;
 	}
@@ -138,7 +140,7 @@ saddsutReader.goChapter = function() {
 		const h = allH[i];
 		const text = allH[i].textContent.trim();
 		if (text.startsWith(chapToGo + ".")) {
-			h.scrollIntoView({ block: "center" });
+			this.util.scroll(h, this.fixedToolBar);
 			break;
 		}
 	}
@@ -155,7 +157,7 @@ saddsutReader.goSutta = function() {
 			const text = nodes[n].textContent.trim();
 			const rex = new RegExp("^" + suttaToGo + "\\.");
 			if (text.match(rex) !== null) {
-				p.scrollIntoView();
+				this.util.scroll(p, this.fixedToolBar);
 				break;
 			}
 		}

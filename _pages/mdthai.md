@@ -2,7 +2,7 @@
 title: "Thai Translation of Maṅgalatthadīpanī"
 permalink: /mdthai
 is_application: true
-date: 2023-08-16 12:00:00 +0700
+date: 2023-08-21 12:00:00 +0700
 ---
 
 Unlike the commentary to Dhammapada, the Google translation of Maṅgalatthadīpanī is really a mess, because the text has many inline Pāli explanations. So, this can only benefit to those who know Thai. The Thai translation has 5 volumes, which the first two are of the first Pāli book.

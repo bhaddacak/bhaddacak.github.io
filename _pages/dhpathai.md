@@ -2,7 +2,7 @@
 title: "Thai Translation of Dhammapadaṭṭhakathā"
 permalink: /dhpathai
 is_application: true
-date: 2023-08-16 12:00:00 +0700
+date: 2023-08-21 12:00:00 +0700
 ---
 
 The translation also has the output from *Google Translate*. It is quite helpful with limitations. When Google meets difficult Pāli explanations, it can go crazy. In many parts, however, the translation is amazingly comprehensible. Yet, some sentences can be downright wrong and out of context. So, be careful and do not rely much on this, always look at the Pāli yourselves.

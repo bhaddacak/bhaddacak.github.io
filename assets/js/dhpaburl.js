@@ -140,7 +140,7 @@ dhpaBurl.goVatthu = function(vatthu) {
 		const nodes = p.getElementsByTagName("strong");
 		for (let n=0; n<nodes.length; n++) {
 			if (nodes[n].textContent.indexOf(vatToGo) > -1) {
-				p.scrollIntoView();
+				this.util.scroll(p, this.fixedToolBar);
 				break;
 			}
 		}

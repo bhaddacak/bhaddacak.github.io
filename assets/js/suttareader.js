@@ -160,7 +160,7 @@ suttaReader.changeGroup = function() {
 	for (let i=0; i<slist.length; i++) {
 		const opt = document.createElement("option");
 		opt.value = slist[i];
-		opt.innerHTML = opt.value.toUpperCase();
+		opt.innerText = opt.value.toUpperCase();
 		this.suttaSelector.appendChild(opt);
 	}
 };
@@ -188,7 +188,7 @@ suttaReader.changeKNGroup = function() {
 		opt.value = slist[i];
 		const slashPos = opt.value.indexOf("/");
 		const txt = slashPos > -1 ? opt.value.slice(slashPos+1) : opt.value;
-		opt.innerHTML = txt[0].toUpperCase() + txt.slice(1);
+		opt.innerText = txt[0].toUpperCase() + txt.slice(1);
 		this.suttaSelector.appendChild(opt);
 	}
 };
@@ -239,7 +239,7 @@ suttaReader.changeVinGroup = function() {
 		const opt = document.createElement("option");
 		const txt = slist[i];
 		opt.value = txt;
-		opt.innerHTML = txt[0].toUpperCase() + txt.slice(1);
+		opt.innerText = txt[0].toUpperCase() + txt.slice(1);
 		this.suttaSelector.appendChild(opt);
 	}
 };

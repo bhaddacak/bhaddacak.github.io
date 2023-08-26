@@ -117,7 +117,7 @@ srtReader.gotoPage = function() {
 		const pageToGo = pageSelector.options[pageSelector.selectedIndex].value;
 		const elem = document.getElementById(pageToGo);
 		if (elem)
-			elem.scrollIntoView();
+			this.util.scroll(elem, this.fixedToolBar);
 	}
 };
 srtReader.toggleLineNo = function() {

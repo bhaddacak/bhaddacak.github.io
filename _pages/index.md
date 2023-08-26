@@ -24,8 +24,8 @@ permalink: /
 - [Sutta Lister](/suttalister)
 - [PTS Tipitaka Reader](/ptsreader)
 - [Siam Rath Tipitaka Reader](/srtreader)
-- [Dhammapadaṭṭhakathā Reader](/dhpareader)<span class="label label-green">complete</span>
-- [Traditional Pāli Grammar Books](/grammarbooks)<span class="label label-green">new</span>
+- [Dhammapadaṭṭhakathā Reader](/dhpareader)
+- [Traditional Pāli Grammar Books](/grammarbooks)<span class="label label-green">updated</span>
 - [Pāli Literature of Thailand](/thaipalitext)
 
 ## Online Pāli Tools

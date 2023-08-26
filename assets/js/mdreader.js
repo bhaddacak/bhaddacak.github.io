@@ -78,14 +78,7 @@ mdReader.goVolume = function() {
 	window.open(url, "_self");
 };
 mdReader.fillParaNumList = function() {
-	const pnSelector = document.getElementById("paranumselector");
-	this.util.clearNode(pnSelector);
-	for (let i=0; i<this.pnList.length; i++) {
-		const opt = document.createElement("option");
-		opt.value = this.pnList[i];
-		opt.innerText = this.pnList[i];
-		pnSelector.appendChild(opt);
-	}
+	this.util.fillSelectOptions(document.getElementById("paranumselector"), this.pnList);
 };
 mdReader.goParaNum = function() {
 	const pnSelector = document.getElementById("paranumselector");
@@ -99,7 +92,7 @@ mdReader.goParaNum = function() {
 			if (nodes[n].nodeType === Node.TEXT_NODE) {
 				const text = nodes[n].textContent.trim();
 				if (text.startsWith("[" + pnToGo + "]")) {
-					p.scrollIntoView();
+					this.util.scroll(p, this.fixedToolBar);
 					break;
 				}
 			}

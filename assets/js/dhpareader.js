@@ -65,8 +65,9 @@ dhpaReader.showTOC = function(scrollTop) {
 		}
 		resultElem.appendChild(table);
 	}
-	if (scrollTop)
-		resultElem.scrollIntoView();
+	if (scrollTop) {
+		this.util.scroll(resultElem, this.fixedToolBar);
+	}
 };
 dhpaReader.loadVatthu = function(part, vatthu) {
 	const toolBar = document.getElementById("toolbar");
@@ -179,7 +180,7 @@ dhpaReader.goVatthu = function(vatthu) {
 		const nodes = p.getElementsByTagName("strong");
 		for (let n=0; n<nodes.length; n++) {
 			if (nodes[n].textContent.indexOf(vatToGo) > -1) {
-				p.scrollIntoView();
+				this.util.scroll(p, this.fixedToolBar);
 				break;
 			}
 		}

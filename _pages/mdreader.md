@@ -2,7 +2,7 @@
 title: "Maṅgalatthadīpanī Reader"
 permalink: /mdreader
 is_application: true
-date: 2023-08-16 12:00:00 +0700
+date: 2023-08-23 12:00:00 +0700
 ---
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">

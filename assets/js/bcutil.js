@@ -30,6 +30,18 @@ bcUtil.getUrlVars = function(url) {
 	}
 	return result;
 };
+bcUtil.scroll = function(element, condition) {
+	if (condition)
+		this.scrollIntoView(element);
+	else
+		element.scrollIntoView();
+};
+bcUtil.scrollIntoView = function(element, offset) {
+	if (offset === undefined)
+		offset = 27;
+	let dims = element.getBoundingClientRect(); 
+	window.scrollTo(window.scrollX, dims.top - offset + window.scrollY); 
+};
 bcUtil.ajaxLoad = function(params) {
 	const request = new XMLHttpRequest();
 	if (params.isBinary)
@@ -101,6 +113,22 @@ bcUtil.toThaiNum = function(num) {
 	}
 	return result;
 };
+bcUtil.fillSelectOptions = function(selElem, textList, param) {
+	this.clearNode(selElem);
+	for (let i=0; i<textList.length; i++) {
+		const opt = document.createElement("option");
+		if (param) {
+			if (typeof param === "function")
+				opt.value = param(textList[i]);
+			else
+				opt.value = param[i];
+		} else {
+			opt.value = textList[i];
+		}
+		opt.innerText = textList[i];
+		selElem.appendChild(opt);
+	}
+};
 bcUtil.setSelectSelection = function(selElem, val) {
 	for (let i=0; i<selElem.options.length; i++) {
 		if (selElem.options[i].value === val) {
@@ -149,7 +177,7 @@ bcUtil.getHtmlPList = function(htext) {
 	const lines = htext.split(/\r?\n/);
 	for (let i=0; i<lines.length; i++) {
 		const line = lines[i].trim().toLowerCase();
-		if (line.startsWith("<p ")) {
+		if (line.startsWith("<p ") || line.startsWith("<p>")) {
 			buffer = lines[i];
 		} else if (line.startsWith("</p>")) {
 			buffer += lines[i];

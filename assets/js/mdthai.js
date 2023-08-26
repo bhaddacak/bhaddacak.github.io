@@ -94,15 +94,7 @@ mdThai.formatText = function(text) {
 	return result;
 };
 mdThai.fillParaNumList = function() {
-	const pnSelector = document.getElementById("paranumselector");
-	this.util.clearNode(pnSelector);
-	for (let i=0; i<this.pnList.length; i++) {
-		const pn = this.pnList[i];
-		const opt = document.createElement("option");
-		opt.value = pn;
-		opt.innerText = pn;
-		pnSelector.appendChild(opt);
-	}
+	this.util.fillSelectOptions(document.getElementById("paranumselector"), this.pnList);
 };
 mdThai.setPnSelector = function(paranum) {
 	const pnSelector = document.getElementById("paranumselector");
@@ -140,7 +132,7 @@ mdThai.goParaNum = function(pnum) {
 			if (nodes[n].nodeType === Node.TEXT_NODE) {
 				const text = nodes[n].textContent.trim();
 				if (text.startsWith(pnToGo)) {
-					p.scrollIntoView();
+					this.util.scroll(p, this.fixedToolBar);
 					break;
 				}
 			}

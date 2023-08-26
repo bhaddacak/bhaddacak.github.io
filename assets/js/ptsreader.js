@@ -108,9 +108,9 @@ ptsReader.gotoPage = function() {
 		const pageToGo = pageSelector.options[pageSelector.selectedIndex].value;
 		const mainText = document.getElementById("main-text");
 		for (let i=0; i<mainText.children.length; i++) {
-			const elm = mainText.children[i];
-			if (elm.innerText === pageToGo) {
-				elm.scrollIntoView();
+			const elem = mainText.children[i];
+			if (elem.innerText === pageToGo) {
+				this.util.scroll(elem, this.fixedToolBar);
 				break;
 			}
 		}
