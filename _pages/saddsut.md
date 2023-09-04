@@ -2,10 +2,10 @@
 title: "Saddanītippakaraṇassa Suttamālā"
 permalink: /saddsut
 is_application: true
-date: 2023-08-23 12:00:00 +0700
+date: 2023-08-31 12:00:00 +0700
 ---
 
-The Roman text of Suttamālā is converted from Thai script available at [*PāliPage*](https://sites.google.com/view/palipage). While cleaning up, I accidentally corrected a few points. Although the text is mostly well-edited, glitches can be found more than that. For a serious citation, therefore, please check against the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar03)'s edition first.
+The Roman text of Suttamālā is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage). While cleaning up, I accidentally corrected a few points. Although the text is mostly well-edited, glitches can be found more than that. For a serious citation, therefore, please check against the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar03)'s edition first.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
@@ -22,7 +22,7 @@ The Roman text of Suttamālā is converted from Thai script available at [*Pāli
 <option value="9">9. Pāḷinayādisaṅgaha</option>
 </select>
 <select id="suttaselector" title="Sutta number to go" onChange="saddsutReader.goSutta();"></select>
-<label for="onlyformulas"><input type="checkbox" id="onlyformulas" onClick="saddsutReader.updateDisplay();">Only formulas</label>
+<label for="onlyformulas" title="Show only sutta heads"><input type="checkbox" id="onlyformulas" onClick="saddsutReader.updateDisplay();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#heading"></use></svg></label>
 </span>
 </div>
 <div id="textdisplay" class="textdisplay">Loading... (please wait)</div>

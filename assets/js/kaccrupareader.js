@@ -2,7 +2,6 @@
 "use strict";
 const kaccrupaReader = {};
 kaccrupaReader.util = {};
-kaccrupaReader.rupaSuttaRefDup = [ "3", "22", "26", "50", "148", "167", "186", "196", "215", "236", "279", "299", "329", "373", "401", "462", "476", "501", "562", "565", "647" ];
 kaccrupaReader.chapterList = { "kacc": [], "rupa": [] };
 kaccrupaReader.suttaNumberList = { "kacc": [], "rupa": [] };
 kaccrupaReader.suttaFormulaList = { "kacc": [], "rupa": [] };
@@ -83,29 +82,20 @@ kaccrupaReader.updateDisplay = function() {
 				const text = this.suttaFormulaList[currBook][i];
 				resText += text + "<br>";
 				const currSut = this.getSuttaNumber(text);
-				const refBook = currBook === "kacc" ? "rupa" : "kacc";
-				const refSut = this.getRupaSuttaNumber(currBook, text);
-				if (refSut.length > 0) {
-					let bqText = "";
-					if (currBook === "kacc" && currSut === "271") {
-						bqText = this.suttaFormulaList.rupa[this.suttaNumberList.rupa.indexOf("88")];
-						bqText += "<br>";
-						bqText += this.suttaFormulaList.rupa[this.suttaNumberList.rupa.indexOf("308")];
-					} else if (currBook === "rupa" && currSut === "88") {
-						bqText = this.suttaFormulaList.kacc[this.suttaNumberList.kacc.indexOf("271, 88, 308")];
-					} else {
-						const refKeys = this.getRefKey(refBook, refSut);
-						for (const rkey of refKeys) {
-							const refInd = this.suttaNumberList[refBook].indexOf(rkey);
-							if (refInd > -1)
-								bqText += this.suttaFormulaList[refBook][refInd] + "<br>";
-						}
-					}
-					if (bqText.endsWith("<br>"))
-						bqText = bqText.slice(0, -4);
-					if (bqText.length > 0)
-						resText += "<blockquote>" + bqText + "</blockquote>";
+				let refText = "";
+				if (currBook === "kacc") {
+					const rupaNums = this.getRupaSuttaNumber(currSut);
+					for (const key of rupaNums)
+						refText += this.suttaFormulaList.rupa[this.suttaNumberList.rupa.indexOf(key)] + "<br>";
+				} else {
+					const kaccKeys = this.getKaccSuttaKey(currSut);
+					for (const key of kaccKeys)
+						refText += this.suttaFormulaList.kacc[this.suttaNumberList.kacc.indexOf(key)] + "<br>";
 				}
+				if (refText.endsWith("<br>"))
+					refText = refText.slice(0, -4);
+				if (refText.length > 0)
+					resText += "<blockquote>" + refText + "</blockquote>";
 			}
 			resultElem.innerHTML = resText;
 		} else {
@@ -117,32 +107,24 @@ kaccrupaReader.updateDisplay = function() {
 	document.getElementById("chapterselector").disabled = onlyFormulas.checked;
 	document.getElementById("suttaselector").disabled = onlyFormulas.checked;
 	if (xRef.checked && !onlyFormulas.checked) {
-		const refBook = currBook === "kacc" ? "rupa" : "kacc";
 		const allSuttas = resultElem.getElementsByClassName(currBook);
 		for (let i=0; i<allSuttas.length; i++) {
 			const text = allSuttas[i].textContent.trim();
 			const currSut = this.getSuttaNumber(text);
-			const refSut = this.getRupaSuttaNumber(currBook, text);
-			if (refSut.length > 0) {
-				let htext = "";
-				if (currBook === "kacc" && currSut === "271") {
-					htext += this.suttaCache.rupa["88"];
-					htext += this.suttaCache.rupa["308"];
-				} else if (currBook === "rupa" && currSut === "88") {
-					htext = this.suttaCache.kacc["271, 88, 308"];
-				} else {
-					const refKeys = this.getRefKey(refBook, refSut);
-					for (const rkey of refKeys) {
-						const sut = this.suttaCache[refBook][rkey];
-						if (sut)
-							htext += sut;
-					}
-				}
-				if (htext.length > 0) {
-					const bq = document.createElement("blockquote");
-					bq.innerHTML = htext;
-					allSuttas[i].appendChild(bq);
-				}
+			let refText = "";
+			if (currBook === "kacc") {
+				const rupaNums = this.getRupaSuttaNumber(currSut);
+				for (const key of rupaNums)
+					refText += this.suttaCache.rupa[key];
+			} else {
+				const kaccKeys = this.getKaccSuttaKey(currSut);
+				for (const key of kaccKeys)
+					refText += this.suttaCache.kacc[key];
+			}
+			if (refText.length > 0) {
+				const bq = document.createElement("blockquote");
+				bq.innerHTML = refText;
+				allSuttas[i].appendChild(bq);
 			}
 		}
 	}
@@ -159,25 +141,28 @@ kaccrupaReader.getSuttaNumber = function(text) {
 		result = withTag ? sutRes[0].slice(3) : sutRes[0];
 	return result;
 };
-kaccrupaReader.getRupaSuttaNumber = function(book, text) {
-	let result = "";
-	const sutRes = book === "kacc" ? text.match(/, \d+\./) : text.match(/\d+\./);
-	if (sutRes !== null) {
-		const dotPos = sutRes[0].indexOf(".");
-		const start = sutRes[0].startsWith(",") ? 2 : 0;
-		result = sutRes[0].slice(start, dotPos);
+kaccrupaReader.getKaccSuttaKey = function(rupaNum) {
+	let result = [];
+	if (rupaNum === "88")
+		return ["271, 88, 308"];
+	for (const key of this.suttaNumberList.kacc) {
+		if (key.endsWith(" " + rupaNum))
+			result.push(key);
 	}
 	return result;
 };
-kaccrupaReader.getRefKey = function(book, sutta) {
+kaccrupaReader.getRupaSuttaNumber = function(kaccNum) {
 	let result = [];
-	if (book === "kacc") {
-		for (const key of this.suttaNumberList[book]) {
-			if (key.endsWith(" " + sutta))
-				result.push(key);
+	if (kaccNum === "271")
+		return ["88", "308"];
+	const rex = new RegExp("^" + kaccNum + ",");
+	for (const key of this.suttaNumberList.kacc) {
+		if (key.match(rex) !== null) {
+			const num = key.slice(key.lastIndexOf(",") + 1).trim();
+			if (num.length > 0)
+				result.push(num);
+			break;
 		}
-	} else {
-		result.push(sutta);
 	}
 	return result;
 };

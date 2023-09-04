@@ -1,7 +1,6 @@
 /*! suttalister.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const suttaLister = {};
-suttaLister.resultElem = document.getElementById("listresult");
 suttaLister.titleList = [
 "bu-vb-pj", "bu-vb-ss", "bu-vb-ay", "bu-vb-np", "bu-vb-pc", "bu-vb-pd", "bu-vb-sk", "bu-vb-as",
 "bi-vb-pj", "bi-vb-ss", "bi-vb-ay", "bi-vb-np", "bi-vb-pc", "bi-vb-pd", "bi-vb-sk", "bi-vb-as",
@@ -46,7 +45,7 @@ suttaLister.processGroupSwitch = function() {
 	this.groupSwitch["an"].shown = document.getElementById("cban").checked;
 	this.groupSwitch["kn"].shown = document.getElementById("cbkn").checked;
 	this.shownGroup = [];
-	for (let g in this.groupSwitch) {
+	for (const g in this.groupSwitch) {
 		if (this.groupSwitch[g].shown) {
 			for (let i=this.groupSwitch[g].start; i<=this.groupSwitch[g].end; i++)
 				this.shownGroup.push(this.titleList[i]);
@@ -56,11 +55,11 @@ suttaLister.processGroupSwitch = function() {
 suttaLister.filter = function() {
 	this.processGroupSwitch();
 	this.idList = [];
-	const text = this.paliInput.getText().toLowerCase();
-	for (let s in this.allSutta) {
+	const query = this.paliInput.getText().toLowerCase();
+	for (const s in this.allSutta) {
 		const title = this.breakTitle(s).char;
 		if (this.shownGroup.indexOf(title) > -1) {
-			if (text.length === 0 || this.allSutta[s].toLowerCase().indexOf(text) > -1)
+			if (query.length === 0 || this.allSutta[s].toLowerCase().indexOf(query) > -1)
 				this.idList.push(s);
 		}
 	}
@@ -68,7 +67,8 @@ suttaLister.filter = function() {
 	this.showResult();
 };
 suttaLister.showResult = function() {
-	this.util.clearNode(this.resultElem);
+	const resultElem = document.getElementById("listresult");
+	this.util.clearNode(resultElem);
 	const countElem = document.getElementById("wordcount");
 	if (this.idList.length > 0) {
 		const table = document.createElement("table");
@@ -85,7 +85,7 @@ suttaLister.showResult = function() {
 			tbody.appendChild(tr);
 		}
 		table.appendChild(tbody);
-		this.resultElem.appendChild(table);
+		resultElem.appendChild(table);
 		const s = this.idList.length > 1 ? "s" : "";
 		countElem.innerHTML = this.idList.length + "&nbsp;item" + s + "&nbsp;found"; 
 		countElem.style.display = "inline";

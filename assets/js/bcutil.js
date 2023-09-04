@@ -30,6 +30,14 @@ bcUtil.getUrlVars = function(url) {
 	}
 	return result;
 };
+bcUtil.getUrlSingleVar = function(url) {
+	let result = "";
+	const dlpos = url.indexOf("?");
+	if (dlpos > -1) {
+		result = url.slice(dlpos+1);
+	}
+	return result;
+};
 bcUtil.scroll = function(element, condition) {
 	if (condition)
 		this.scrollIntoView(element);
