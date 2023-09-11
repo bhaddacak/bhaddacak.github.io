@@ -33,6 +33,9 @@ srtReader.displayText = function(text) {
 	const preface = document.getElementById("preface");
 	if (preface)
 		preface.parentNode.removeChild(preface);
+	const abbr = document.getElementById("abbreviation");
+	if (abbr)
+		abbr.parentNode.removeChild(abbr);
 };
 srtReader.getNikaya = function(booknum) {
 	let result = "";

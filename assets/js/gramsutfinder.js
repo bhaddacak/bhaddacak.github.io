@@ -59,7 +59,7 @@ gramsutFinder.filter = function() {
 				this.shownList.push(s);
 		}
 	}
-	this.shownList.sort(this.compareHead);
+	//this.shownList.sort(this.compareHead);
 	this.showResult();
 };
 gramsutFinder.showResult = function() {
@@ -73,16 +73,10 @@ gramsutFinder.showResult = function() {
 			const tr = document.createElement("tr");
 			tr.style.fontSize = "0.9em";
 			let head = "";
-			if (document.getElementById("withnotes").checked) {
+			if (document.getElementById("withnotes").checked)
 				head = hd;
-			} else {
-				if (hd.startsWith("Payo")) {
-					const firstpos = hd.indexOf("]") + 1;
-					head = hd.slice(0, firstpos) + hd.slice(firstpos).replace(/ \[.*?\]/g, "");
-				} else {
-					head = hd.replace(/ \[.*?\]/g, "");
-				}
-			}
+			else
+				head = hd.startsWith("Niru") ? hd.replace(/ \[.*?\]/g, "") : hd;
 			const snum = this.xrefUtil.getSuttaNumber(head);
 			head = this.addLink(head, snum);
 			let seealso = "";

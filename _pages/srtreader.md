@@ -2,7 +2,7 @@
 title: "Siam Rath Tipitaka Reader"
 permalink: /srtreader
 is_application: true
-date: 2023-08-23 12:00:00 +0700
+date: 2023-09-11 12:00:00 +0700
 ---
 
 This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/). The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here, Vols: [1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf), [2](http://www.car.chula.ac.th/rarebook/book2/clra58_0002.pdf), ...[45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf). Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., Dī Sī 9/314/250 (=DN 10.314), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
@@ -103,6 +103,23 @@ Devā manussā ca pajā ca serī,<br>
 Bhadrānupassī ca sadā bhavantaṃ.
 </p>
 </blockquote>
+<div id="abbreviation">
+<h4>Some abbreviations used in the text</h4>
+<table>
+<thead>
+<tr><th>Abbreviation</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center;">ka.</td><td>Katthacipotthaka = Some unspecified text</td></tr>
+<tr><td style="text-align:center;">da.</td><td>Nālandādevanāgarīpālitepiṭaka = Nalanda edition</td></tr>
+<tr><td style="text-align:center;">ma.</td><td>Marammapotthaka = Myanmar edition</td></tr>
+<tr><td style="text-align:center;">po.</td><td>Porāṇapotthaka = Old palm-leaf text</td></tr>
+<tr><td style="text-align:center;">yu.</td><td>Yuropapotthaka? = PTS edition (now Iṅgalisapotthaka is used)</td></tr>
+<tr><td style="text-align:center;">rā.</td><td>Rāmaññapotthaka = Mon edition</td></tr>
+<tr><td style="text-align:center;">sī.</td><td>Sīhaḷapotthaka = Sinhala edition</td></tr>
+</tbody>
+</table>
+</div>
 <script src="/assets/js/srtreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>srtReader.util=bcUtil;</script>

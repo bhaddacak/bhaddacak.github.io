@@ -25,7 +25,7 @@ permalink: /
 - [PTS Tipitaka Reader](/ptsreader)
 - [Siam Rath Tipitaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
-- [Traditional Pāli Grammar Books](/grammarbooks)<span class="label label-green">Mogg added</span>
+- [Traditional Pāli Grammar Books](/grammarbooks)<span class="label label-green">Updated</span>
 - [Pāli Literature of Thailand](/thaipalitext)
 
 ## Online Pāli Tools

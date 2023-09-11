@@ -35,7 +35,6 @@ kaccrupaReader.formatText = function(text, book) {
 	result += this.util.ccsaHtmlText;
 	const lines = text.split(/\r?\n/);
 	const hpRex = new RegExp("<\\/?[hp]");
-	result += "";
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;

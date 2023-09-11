@@ -2,7 +2,7 @@
 title: "Niruttidīpanī's Suttas"
 permalink: /niru
 is_application: true
-date: 2023-09-03 12:00:00 +0700
+date: 2023-09-05 12:00:00 +0700
 ---
 
 This is the single-sutta version of Niruttidīpanī. It can be accessed by URL. For example, [{{ site.url }}/niru?1](/niru?1) leads to the sutta no. 1. For the full version, please visit [Niruttidīpanī](/nirutti).

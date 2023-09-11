@@ -67,11 +67,21 @@ niruttiReader.displayText = function() {
 };
 niruttiReader.updateDisplay = function() {
 	const resultElem = document.getElementById("textdisplay");
+	const withNotes = document.getElementById("withnotes");
 	const onlyFormulas = document.getElementById("onlyformulas");
-	if (onlyFormulas.checked)
-		resultElem.innerHTML = this.suttaFormulaList.join("<br>");
-	else
+	if (onlyFormulas.checked) {
+		let htext = "";
+		for (const h of this.suttaFormulaList) {
+			htext += withNotes.checked ? h : h.replace(/ \[.*?\]/g, "");
+			htext += "<br>";
+		}
+		resultElem.innerHTML = htext;
+		withNotes.disabled = false;
+	} else {
+		withNotes.disabled = true;
+		withNotes.checked = true;
 		resultElem.innerHTML = this.textCache;
+	}
 	document.getElementById("chapterselector").disabled = onlyFormulas.checked;
 	document.getElementById("suttaselector").disabled = onlyFormulas.checked;
 	if (this.firstOpen)

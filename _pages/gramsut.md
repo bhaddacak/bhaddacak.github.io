@@ -2,7 +2,7 @@
 title: "Grammatical Sutta Finder"
 permalink: /gramsut
 is_application: true
-date: 2023-09-04 12:00:00 +0700
+date: 2023-09-05 12:00:00 +0700
 ---
 
 This application lists all grammatical suttas (only heads) found in Pāli grammar books. The books' name has two forms, truncated and single-letter, i.e., Kacc (k), Rūpa (r), Mogg (m), Payo (p), Niru (n), and Sadd (s). The see-also data, shown in the brackets, are mainly reconstructed from notes in Niruttidīpanī. These are not yet well-checked, so irrelevancy can be found in some places. Only Niruttidīpanī has notes in the heads, mostly about references. Removing these notes can reduce noise in the result.
