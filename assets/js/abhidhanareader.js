@@ -114,7 +114,7 @@ abhidhanaReader.getSuttaList = function(book) {
 	const plist = this.util.getHtmlPList(this.textCache[book]);
 	let num = 0;
 	for (const p of plist) {
-		const idmatch = p.match(/id=".*?"/)
+		const idmatch = p.match(/id=".*?"/);
 		if (idmatch !== null) {
 			const id = idmatch[0].slice(4, -1);
 			this.suttaCache[book][id] = p;

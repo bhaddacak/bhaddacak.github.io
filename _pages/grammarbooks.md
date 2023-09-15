@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2023-09-11 12:00:00 +0700
+date: 2023-09-15 12:00:00 +0700
 ---
 
 This part is a collection of Pāli grammatical textbooks. I select the important ones, put them here, and make them easy to access and navigate. By the traditional account, there are three big schools of Pāli grammarians: Kaccāyana, Moggallāna, and Saddanīti. All these with their chief commentaries will be added here, together with other remarkable works.
@@ -68,5 +68,23 @@ The head of all suttas in the grammar books presented here are put together, sui
 [^norman-artificial]: Norman, 1983, p. 167.
 
 - [Abhidhānappadīpikā](/abhidhana) (+Ṭīkā)
+
+### 5. Subodhālaṅkāro Vuttodayaṃ ca
+
+> Another group of text dealing with poetics and prosody was composed by Saṅgharakkhita in Sri Lanka around the 12th century. *Subodhālaṅkāra* is about art of poetic composition, whereas *Vuttodaya* is about prosodic meter. All these books are adaptation from Sanskrit works. As for we also have  *Subodhālaṅkāraṭīkā* in the collection, I put it here separately because it already contains the text of the main work.
+>
+> Appreciation in Pāli poetics is a result of deep knowledge in Pāli grammar and its uses. Perhaps, you have to master Pāli by using it fluently before you can find poetic composition appealing. In the traditional curricula, advanced Pāli students are supposed to have ability to write Pāli in verses. Doing so nowadays is only for pedagogic purpose, if not for promoting certain ideology.
+> 
+> In my view, there are no practical uses of Pāli composition nowadays. Pāli used to be the lingua franca in Buddhist world, but no longer today. Writing things in Pāli is very difficult, if not impossible, to make the communication clear to the modern mind. Pāli itself brings with it an ancient mindset. Using that in the modern context likely produces miscomprehension rather than understanding.
+>
+> Therefore, I encourage those who aim their study to write a Pāli treatise or commentary to write it in a modern language instead. By this way, you can make the work clear and comprehensible to the reader. It does not matter much what language you write because workable AI translators[^ai] are coming. However, English is still the best choice for most people.
+>
+> An example I would like to mention is [*Vuttodayamañjarī*](https://drive.google.com/file/d/1I01XNzzferehq8QD2ZwBDo3TPYSd60SL/view) written in Thai by Ven. Gandhasārābhivaṃsa (2002, MCU). This is the best commentary on Vuttodaya I have ever seen. It presents prosodic forms in tables easily understood by the reader. That is a good commentary should be nowadays.
+
+[^ai]: You may think AI technology finally can translate Pāli accurately. I think it can do to some degree, but not accurate as human experts do. That is because AI learns from existing data, and we do not have data of Pāli translations that much like living languages. Even though ChatGTP knows many things, it is sometimes completely wrong. The best solution is putting your knowledge in your language articulately, then one day everyone can understand it.
+
+- [Subodhālaṅkāra](/subho)
+- [Subodhālaṅkāraṭīkā](/subhotika)
+- [Vuttodaya](/vutt)
 
 ## Notes
