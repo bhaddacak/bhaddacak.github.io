@@ -1,6 +1,8 @@
 /*! bcutil.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const bcUtil = {};
+bcUtil.paliChars = [ "a", "ā", "i", "ī", "u", "ū", "e", "o", "k", "kh", "g", "gh", "ṅ", "c", "ch", "j", "jh", "ñ", "ṭ", "ṭh", "ḍ", "ḍh", "ṇ", "t", "th", "d", "dh", "n", "p", "ph", "b", "bh", "m", "y", "r", "l", "v", "s", "h", "ḷ", "ṃ" ];
+bcUtil.hasH = "kgcjṭḍtdpb";
 bcUtil.thaiNum = "๐๑๒๓๔๕๖๗๘๙";
 bcUtil.ccsaHtmlText = "<div style='text-align:center;font-size:0.8em;'>This work is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</div>";
 bcUtil.clearNode = function(node) {
@@ -204,4 +206,46 @@ bcUtil.interweaveHtmlP = function(list1, list2) {
 		result += list2[i];
 	}
 	return result;
+};
+bcUtil.decomposePali = function(text) {
+	const result = [];
+	let i = 0;
+	for (; i<text.length-1; i++) {
+		const ch = text.charAt(i);
+		if (this.hasH.indexOf(ch) > -1 && text.charAt(i+1) === "h") {
+			i++;
+			result.push(ch + "h");
+		} else {
+			result.push(ch);
+		}
+	}
+	if (i < text.length)
+		result.push(text.charAt(i));
+	return result;
+};
+bcUtil.comparePali = function(term1, term2) {
+	const t1 = this.decomposePali(term1);
+	const t2 = this.decomposePali(term2);
+	if (t1.length === 0) {
+		if (t2.length === 0)
+			return 0;
+		else
+			return 1;
+	}
+	let i = 0;
+	for (; i<t1.length; i++) {
+		const ch1 = t1[i];
+		const ch2 = i<t2.length ? t2[i] : "";
+		const pos1 = this.paliChars.indexOf(ch1);
+		const pos2 = this.paliChars.indexOf(ch2);
+		if (pos1 - pos2 === 0) {
+			continue;
+		} else {
+			return(pos1 - pos2);
+		}
+	}
+	if (i === t2.length)
+		return 0;
+	else
+		return -1;
 };

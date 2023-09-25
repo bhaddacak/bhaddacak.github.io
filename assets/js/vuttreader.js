@@ -101,7 +101,3 @@ vuttReader.goSutta = function() {
 		}
 	}
 };
-
-
-
-

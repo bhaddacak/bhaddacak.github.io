@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2023-09-15 12:00:00 +0700
+date: 2023-09-25 12:00:00 +0700
 ---
 
 This part is a collection of Pāli grammatical textbooks. I select the important ones, put them here, and make them easy to access and navigate. By the traditional account, there are three big schools of Pāli grammarians: Kaccāyana, Moggallāna, and Saddanīti. All these with their chief commentaries will be added here, together with other remarkable works.
@@ -45,10 +45,10 @@ The head of all suttas in the grammar books presented here are put together, sui
 
 > Saddanīti is a monumental work written by Aggavaṃsa in Myanmar around the 12th-13th century. This is the most comprehensive Pāli grammatical book ever produced. It has three parts: Padamālā, Dhātumālā, and Suttamālā. The last one is the most important and more widely known. Because, I think, it follows the traditional format with formulas and explanations laid down formerly by Pāṇini.
 >
-> Dhātumālā is not yet available because it needs substantial validation and improvement.
+> In large part, Padamālā deals with declensions of terms. Analysis of the root *bhū* is given in detail towards the end. Other Pāli roots are listed in Dhātumālā in the way of Dhātupāṭha tradition. Detailed explanations are given only for some common roots.
 
 - [Padamālā](/saddpad)
-- Dhātumālā
+- [Dhātumālā](/sadddha)
 - [Suttamālā](/saddsut)
 - [Single Sutta Suttamālā](/sadd)
 
@@ -81,7 +81,7 @@ The head of all suttas in the grammar books presented here are put together, sui
 >
 > An example I would like to mention is [*Vuttodayamañjarī*](https://drive.google.com/file/d/1I01XNzzferehq8QD2ZwBDo3TPYSd60SL/view) written in Thai by Ven. Gandhasārābhivaṃsa (2002, MCU). This is the best commentary on Vuttodaya I have ever seen. It presents prosodic forms in tables easily understood by the reader. That is a good commentary should be nowadays.
 
-[^ai]: You may think AI technology finally can translate Pāli accurately. I think it can do to some degree, but not accurate as human experts do. That is because AI learns from existing data, and we do not have data of Pāli translations that much like living languages. Even though ChatGTP knows many things, it is sometimes completely wrong. The best solution is putting your knowledge in your language articulately, then one day everyone can understand it.
+[^ai]: Some may think AI technology finally can translate Pāli accurately. I think it can do to some degree, but not accurate as human experts do. That is because AI learns from existing data, and we do not have data of Pāli translations that much like living languages. Even though ChatGTP knows many things, it is sometimes completely wrong. The best solution is putting your knowledge in your language articulately, then one day everyone can understand it.
 
 - [Subodhālaṅkāra](/subho)
 - [Subodhālaṅkāraṭīkā](/subhotika)
