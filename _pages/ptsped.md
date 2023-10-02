@@ -2,7 +2,7 @@
 title: "PTS Pali-English Dictionary"
 permalink: /ptsped
 is_application: true
-date: 2023-08-16 12:00:00 +0700
+date: 2023-09-29 12:00:00 +0700
 ---
 
 This program is based on *The Pali Text Society's Pali-English Dictionary* revised in accordance with the 2015 "Reprint with corrections" by K.R. Norman, William Pruitt and Peter Jackson. The digital version is released by [Buddhadust](http://buddhadust.net/) (proofread 2021). We are grateful to the great effort that makes this happen. For more information, see [PTSPED](https://vpnry.github.io/ptsped/) and Buddhadust.

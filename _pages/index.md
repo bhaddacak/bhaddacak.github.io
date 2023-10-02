@@ -25,7 +25,7 @@ permalink: /
 - [PTS Tipitaka Reader](/ptsreader)
 - [Siam Rath Tipitaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
-- [Traditional Pāli Grammar Books](/grammarbooks)<span class="label label-green">Completed</span>
+- [Traditional Pāli Grammar Books](/grammarbooks)
 - [Pāli Literature of Thailand](/thaipalitext)
 
 ## Online Pāli Tools
@@ -33,7 +33,7 @@ permalink: /
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
 - [Declension Table Calculator](/declension)
-- [Pāli Root Finder](/paliroot)<span class="label label-green">New</span>
+- [Pāli Root Finder](/paliroot)<span class="label label-green">Updated</span>
 - [Grammatical Sutta Finder](/gramsut)
 
 ## Term Papers and Minor Writings

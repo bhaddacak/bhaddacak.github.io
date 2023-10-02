@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2023-09-25 12:00:00 +0700
+date: 2023-10-01 12:00:00 +0700
 ---
 
 This part is a collection of Pāli grammatical textbooks. I select the important ones, put them here, and make them easy to access and navigate. By the traditional account, there are three big schools of Pāli grammarians: Kaccāyana, Moggallāna, and Saddanīti. All these with their chief commentaries will be added here, together with other remarkable works.
@@ -12,6 +12,8 @@ I think studying these texts is not necessary to normal Buddhist practitioners, 
 Western students may find these works difficult, because it is hard to get full translations of these in their languages. This tells us that serious studies of the traditional Pāli textbooks in the West are really pressing. Perhaps, learning them with a help from living languages like Thai or Myanmar is more viable.
 
 The head of all suttas in the grammar books presented here are put together, suitable for search and overview, in [Grammatical Sutta Finder](/gramsut). This tools can also relate one work to each other.
+
+For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot) to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Dhātvatthasaṅgaha](/dhatva) can be a good source of learning.
 
 ### 1. Kaccāyanabyākaraṇaṃ
 

@@ -17,7 +17,7 @@ ncpedHost.getUrlParams = function() {
 	const result = {};
 	const vars = this.util.getUrlVars(location.href);
 	if ("q" in vars)
-		result["query"] = unescape(vars.q);
+		result["query"] = decodeURI(vars.q);
 	return result;
 };
 ncpedHost.showWordCount = function(num, mode) {
@@ -207,7 +207,7 @@ ncpedHost.getXR = function(xr) {
 };
 ncpedHost.goXR = function(xr) {
 	if (this.paliInput === null) {
-		window.open("/ncped?q=" + escape("\"" + xr), "ncped-dict");
+		window.open("/ncped?q=" + encodeURI("\"" + xr), "ncped-dict");
 	} else {
 		this.paliInput.setText("\"" + xr);
 		document.getElementById("findindef").checked = false;

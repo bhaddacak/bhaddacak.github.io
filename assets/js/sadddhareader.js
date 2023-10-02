@@ -2,7 +2,7 @@
 "use strict";
 const sadddhaReader = {};
 sadddhaReader.verbGroupRange = [ [1, 859], [860, 877], [878, 977], [978, 998], [999, 1030], [1031, 1040], [1041, 1053], [1054, 1412] ];
-sadddhaReader.verbGroupName = [ "I Bhū", "II Rudha", "III Diva", "IV Su", "V Kī", "VI Gaha", "VII Tana", "VIII Cura" ];
+sadddhaReader.verbGroupName = [ "I&nbsp;Bhū", "II&nbsp;Rudha", "III&nbsp;Diva", "IV&nbsp;Su", "V &nbsp;ī", "VI&nbsp;Gaha", "VII&nbsp;Tana", "VIII&nbsp;Cura" ];
 sadddhaReader.util = {};
 sadddhaReader.params = {};
 sadddhaReader.textCache = "";
@@ -148,7 +148,7 @@ sadddhaReader.showVerbGroup = function(defnum) {
 	const vgroup = this.getVerbGroup(defnum);
 	if (vgroup > -1) {
 		const vgElem = document.getElementById("verbgroup");
-		vgElem.innerText = this.verbGroupName[vgroup];
+		vgElem.innerHTML = this.verbGroupName[vgroup];
 		vgElem.style.display = "inline";
 		setTimeout(function() {
 			document.getElementById("verbgroup").style.display = "none";

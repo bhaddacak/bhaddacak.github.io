@@ -29,34 +29,34 @@ nirumoggUtil.addMoggXrefLinks = function(text) {
 	let result = text;
 	const niru = text.match(/Niru \d+/);
 	if (niru !== null)
-		result = result.replace(niru[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openMoggXref('" + escape(niru[0]) + "');>" + niru[0] + "</a>");
+		result = result.replace(niru[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openMoggXref('" + encodeURI(niru[0]) + "');>" + niru[0] + "</a>");
 	return result;
 };
 nirumoggUtil.addNiruXrefLinks = function(text) {
 	let result = text;
 	const ka = text.match(/ka\. \d+/);
 	if (ka !== null)
-		result = result.replace(ka[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + escape(ka[0]) + "');>" + ka[0] + "</a>");
+		result = result.replace(ka[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + encodeURI(ka[0]) + "');>" + ka[0] + "</a>");
 	const ru = text.match(/rū\. \d+/);
 	if (ru !== null)
-		result = result.replace(ru[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + escape(ru[0]) + "');>" + ru[0] + "</a>");
+		result = result.replace(ru[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + encodeURI(ru[0]) + "');>" + ru[0] + "</a>");
 	const ni = text.match(/nī\. \d+/);
 	if (ni !== null)
-		result = result.replace(ni[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + escape(ni[0]) + "');>" + ni[0] + "</a>");
+		result = result.replace(ni[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + encodeURI(ni[0]) + "');>" + ni[0] + "</a>");
 	const mo = text.match(/mo\. \d\.\d+/);
 	if (mo !== null)
-		result = result.replace(mo[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + escape(mo[0]) + "');>" + mo[0] + "</a>");
+		result = result.replace(mo[0], "<a style='cursor:pointer;' onClick=nirumoggUtil.openNiruXref('" + encodeURI(mo[0]) + "');>" + mo[0] + "</a>");
 	return result;
 };
 nirumoggUtil.openMoggXref = function(input) {
-	const link = unescape(input);
+	const link = decodeURI(input);
 	const firstSpace = link.indexOf(" ");
 	const book = link.slice(0, firstSpace).toLowerCase();
 	const num = link.slice(firstSpace+1).trim();
 	window.open("/" + book + "?" + num, "mogg-xref-" + book);
 };
 nirumoggUtil.openNiruXref = function(input) {
-	const link = unescape(input);
+	const link = decodeURI(input);
 	const firstDot = link.indexOf(".");
 	const book = link.slice(0, firstDot);
 	const num = link.slice(firstDot+1).trim();

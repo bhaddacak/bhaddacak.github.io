@@ -207,6 +207,19 @@ bcUtil.interweaveHtmlP = function(list1, list2) {
 	}
 	return result;
 };
+bcUtil.paliLength = function(text) {
+	let hcount = 0;
+	let i = 0;
+	const lowerText = text.toLowerCase();
+	for (; i<lowerText.length-1; i++) {
+		const ch = lowerText.charAt(i);
+		if (this.hasH.indexOf(ch) > -1 && lowerText.charAt(i+1) === "h") {
+			i++;
+			hcount++;
+		}
+	}
+	return text.length - hcount;
+};
 bcUtil.decomposePali = function(text) {
 	const result = [];
 	let i = 0;

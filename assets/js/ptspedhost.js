@@ -17,7 +17,7 @@ ptspedHost.getUrlParams = function() {
 	const result = {};
 	const vars = this.util.getUrlVars(location.href);
 	if ("q" in vars) {
-		let query = unescape(vars.q);
+		let query = decodeURI(vars.q);
 		if (query.startsWith("\""))
 			query = query.slice(1);
 		result["query"] = query;
