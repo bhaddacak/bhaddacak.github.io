@@ -2,7 +2,7 @@
 title: "Pāli Root Finder"
 permalink: /paliroot
 is_application: true
-date: 2023-10-02 12:00:00 +0700
+date: 2023-10-09 12:00:00 +0700
 ---
 
 <div style="padding-bottom:5px;">
@@ -10,7 +10,7 @@ date: 2023-10-02 12:00:00 +0700
 <div id="notebox" style="display:none;">
 <blockquote>
 <p>
-All Pāli roots known to us are collected here from various sources, including <em>Pāli Dhātupāṭha</em> (pāṭ), <em>Dhātumañjūsā</em> (mañ), <a href="/sadddha" target = "_blank"><em>Saddanīti Dhātumālā</em></a> (māl), and <a href="/dhatva" target = "_blank"><em>Dhātvatthasaṅgaha</em></a> (saṅ) (not available yet in the finder).
+All Pāli roots known to us are collected here from various sources, including <em>Pāli Dhātupāṭha</em> (pāṭ), <em>Dhātumañjūsā</em> (mañ), <a href="/sadddha" target = "_blank"><em>Saddanīti Dhātumālā</em></a> (māl), and <a href="/dhatva" target = "_blank"><em>Dhātvatthasaṅgaha</em></a> (saṅ). Hence, this is the most exhaustive collection of Pāli roots.
 </p>
 <p>
 The data of Pāli Dhātupāṭha and Dhātumañjūsā are taken from the book edited by <a href="https://archive.org/details/palidhatupathadh00andeuoft" target="_blank">Dines Andersen and Helmer Smith</a> (1921). If any doubt occurs, please consult the book directly. There are things to be concerned about the two. First, as for Dhātupāṭha is used by Moggallāna school whereas Dhātumañjūsā is used by Kaccayāna school, the two books use slightly different naming and grouping scheme. The former has 9 groups, the latter 7 (according to Andersen and Smith's book). However, schools following Kaccāyana scheme widely use 8-group classification, including Saddanīti and Dhātvatthasaṅgaha.
@@ -31,10 +31,10 @@ Finally, unlike Dhātupāṭha that most definitions are kept intact (except dou
 Saddanīti Dhātumālā also has variants. They are marked by <em>sy</em> (Thai, Bhūmibalo edition, 2016), and <em>sm</em> (the <a href="https://archive.org/details/SaddanitiAggavamsasPaliGrammar02" target="_blank">Smith's edition</a>). It is worth noting that several roots in Dhātumālā, 1687 distinctively counted by Smith, are duplicate here, and the numbers given are definition numbers not the counting.
 </p>
 <p>
-The recent Dhātvatthasaṅgaha was composed by the Thera of Visuddhārāma in Mandalay. This book can fulfill what are missing in the old texts.
+The recent Dhātvatthasaṅgaha was composed by the Thera of Visuddhārāma in Mandalay. This book can fulfill what are missing in the old texts. Several days are spent to make the data programmable. And several corrections are made against Thai edition of <em>Dhātvatthasaṅgahapāṭhanissaya</em> (MCU Press, 1992), in which some noteworthy variants are found (marked by <em>sy</em>). The reference numbers used in this book are stanzas' number, which can link to the text directly. I do not have enough time to recheck the whole thing. If anyone finds unusual instances, please kindly inform me.
 </p>
 <p>
-The program here is quite powerful. It can give you perspectives unaware to ancient scholars. Features in the finder are self-explained, so no detailed guidance is needed. The user just has to play around and experiment. However, you should know that filtering operates before grouping by unique function. If you want to search in the unique result, it is better to use search facility in the browser.
+The program here is quite powerful. It can give you perspectives unaware to ancient scholars. Features in the finder are self-explained, so no detailed guidance is needed. The user just has to play around and experiment. However, you should know that filtering operates before grouping by Unique function. If you want to search in the Unique result, it is better to use search facility in the browser.
 </p>
 </blockquote>
 </div>
@@ -45,7 +45,7 @@ The program here is quite powerful. It can give you perspectives unaware to anci
 <label for="cbdp" title="Pāli Dhātupāṭha"><input type="checkbox" id="cbdp" onChange="palirootFinder.filter();" checked>Pāṭha</label>
 <label for="cbdm" title="Kaccāyana-Dhātumañjūsā"><input type="checkbox" id="cbdm" onChange="palirootFinder.filter();" checked>Mañjūsā</label>
 <label for="cbsd" title="Saddanīti Dhātumālā"><input type="checkbox" id="cbsd" onChange="palirootFinder.filter();" checked>Mālā</label>
-<label for="cbds" title="Dhātvatthasaṅgaha"><input type="checkbox" id="cbds" onChange="palirootFinder.filter();" disabled>Saṅgaha</label>
+<label for="cbds" title="Dhātvatthasaṅgaha"><input type="checkbox" id="cbds" onChange="palirootFinder.filter();" checked>Saṅgaha</label>
 <button onClick="palirootFinder.bookSelect(true);">All</button>
 <button onClick="palirootFinder.bookSelect(false);">None</button>
 </span>

@@ -58,7 +58,7 @@ palirootFinder.bookSelect = function(isAll) {
 	document.getElementById("cbdp").checked = isAll;
 	document.getElementById("cbdm").checked = isAll;
 	document.getElementById("cbsd").checked = isAll;
-	//document.getElementById("cbds").checked = isAll;
+	document.getElementById("cbds").checked = isAll;
 	this.filter();
 };
 palirootFinder.processBookSwitch = function() {
@@ -119,7 +119,7 @@ palirootFinder.filter = function() {
 	const query = this.paliInput.getText();
 	for (const r of this.allRoot) {
 		if (this.shownBook.indexOf(r.book) > -1) {
-			if (r.book === "dm" || r.book === "sd") {
+			if (r.book === "dm" || r.book === "sd" || r.book === "ds") {
 				if (!document.getElementById("variant").checked && (r.var === "sy" || r.var === "sm"))
 					continue;
 			}
@@ -150,15 +150,15 @@ palirootFinder.getUniqueKey = function(rname) {
 		result = rname;
 	else if (document.getElementById("uopt-xx").checked)
 		result = rname.slice(0, -1);
-	else if (this.util.paliLength(rname) > 2 && document.getElementById("uopt-x").checked)
+	else if (document.getElementById("uopt-x").checked && this.util.paliLength(rname) > 2)
 		result = rname.slice(0, -1);
 	else if (rname.endsWith("o") && document.getElementById("uopt-o").checked)
 		result = rname.slice(0, -1) + "a";
-	else if (rname.endsWith("u") && document.getElementById("uopt-u").checked)
+	else if (document.getElementById("uopt-u").checked && rname.endsWith("u"))
 		result = rname.slice(0, -1) + "a";
-	else if (rname.endsWith("ā") && document.getElementById("uopt-aa").checked)
+	else if (document.getElementById("uopt-aa").checked && rname.endsWith("ā"))
 		result = rname.slice(0, -1) + "a";
-	else if (rname.endsWith("ī") && document.getElementById("uopt-ii").checked)
+	else if (document.getElementById("uopt-ii").checked && rname.endsWith("ī"))
 		result = rname.slice(0, -1) + "i";
 	return result;
 };
@@ -174,24 +174,24 @@ palirootFinder.computeUnique = function(list) {
 		if (key in uniqueList) {
 			const root = uniqueList[key];
 			const book = this.bookName[rt.book];
-			const reflink = rt.book === "sd"
-						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
+			const reflink = rt.book === "sd" || rt.book === "ds"
+						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
 						: book + "&nbsp;" + rt.ref + rvar;
 			root.bookref.push(reflink);
 			if (root.root.indexOf(rt.root) === -1)
 				root.root.push(rt.root);
-			root.def.push(rt.def);
+			root.def.push("- "+rt.def);
 			root.grp.push(this.getRootGroup(rt));
 			uniqueList[key] = root;
 		} else {
 			const root = {};
 			const book = this.bookName[rt.book];
-			const reflink = rt.book === "sd"
-						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
+			const reflink = rt.book === "sd" || rt.book === "ds"
+						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
 						: book + "&nbsp;" + rt.ref + rvar;
 			root.bookref = [reflink];
 			root.root = [rt.root];
-			root.def = [rt.def];
+			root.def = ["- "+rt.def];
 			root.grp = [this.getRootGroup(rt)];
 			uniqueList[key] = root;
 		}
@@ -215,28 +215,29 @@ palirootFinder.showResult = function() {
 		const table = document.createElement("table");
 		const thead = document.createElement("thead");
 		const trh = document.createElement("tr");
+		trh.style.fontSize = "0.9em";
 		trh.innerHTML = "<th>Reference</th><th>Root</th><th>Definition</th><th>Group</th>";
 		thead.appendChild(trh);
 		table.appendChild(thead);
 		const tbody = document.createElement("tbody");
 		for (const rt of this.shownList) {
 			const tr = document.createElement("tr");
-			tr.style.fontSize = "0.9em";
+			tr.style.fontSize = "0.85em";
 			let row = "";
 			if (document.getElementById("unique").checked) {
-				row = "<td style='width:5.5em;'>" + rt.bookref + "</td>";
+				row = "<td style='width:4em;'>" + rt.bookref + "</td>";
 				row += "<td>" + rt.root + "</td>";
 				row += "<td>" + rt.def + "</td>";
-				row += "<td style='width:5em;'>" + rt.grp + "</td>";
+				row += "<td style='width:4em;'>" + rt.grp + "</td>";
 			} else {
 				const rvar = rt.var === "sy" || rt.var === "sm" ? rt.var : "";
-				const reflink = rt.book === "sd"
-					? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.ref+"');>" + this.bookName[rt.book] + "&nbsp;" + rt.ref + "</a>" + rvar
+				const reflink = rt.book === "sd" || rt.book === "ds"
+					? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + this.bookName[rt.book] + "&nbsp;" + rt.ref + "</a>" + rvar
 					: this.bookName[rt.book] + "&nbsp;" + rt.ref + rvar;
-				row = "<td style='width:5.5em;'>" + reflink + "</td>";
+				row = "<td style='width:4em;'>" + reflink + "</td>";
 				row += "<td>" + rt.root + "</td>";
 				row += "<td>" + rt.def + "</td>";
-				row += "<td style='width:5em;'>" + this.getRootGroup(rt) + "</td>";
+				row += "<td style='width:4em;'>" + this.getRootGroup(rt) + "</td>";
 			}
 			tr.innerHTML = row;
 			tbody.appendChild(tr);
@@ -255,8 +256,9 @@ palirootFinder.getRootGroup = function(root) {
 	const result = root.book === "dp" ? this.rootGroup["9g"][grp-1] : this.rootGroup["8g"][grp-1];
 	return result;
 };
-palirootFinder.openRef = function(rnum) {
-	window.open("/sadddha?d=" + rnum, "paliroot-refwin");
+palirootFinder.openRef = function(book, rnum) {
+	const page = book === "sd" ? "sadddha?d" : "dhatva?s";
+	window.open("/" + page + "=" + rnum, "paliroot-refwin");
 };
 palirootFinder.sortRootList = function(list, bywhat) {
 	let result = [];

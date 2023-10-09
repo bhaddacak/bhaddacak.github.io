@@ -11,6 +11,8 @@ dhatvaReader.getUrlParams = function() {
 		result["chapter"] = vars.c;
 	if ("s" in vars)
 		result["versenum"] = vars.s;
+	else if ("v" in vars)
+		result["versenum"] = vars.v;
 	return result;
 };
 dhatvaReader.loadText = function() {

@@ -26,14 +26,34 @@ permalink: /
 - [Siam Rath Tipitaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
 - [Traditional Pāli Grammar Books](/grammarbooks)
+	- [Kaccāyana-Rūpasiddhi](/kaccrupa)
+	- [Single Sutta Kaccāyana](/kacc)
+	- [Single Sutta Rūpasiddhi](/rupa)
+	- [Moggallāna-Payogasiddhi](/moggpayo) (+Pañcikā)
+	- [Single Sutta Moggallāna](/mogg)
+	- [Single Sutta Payogasiddhi](/payo)
+	- [Niruttidīpanī](/nirutti)
+	- [Single Sutta Niruttidīpanī](/niru)
+	- [Padamālā](/saddpad)
+	- [Dhātumālā](/sadddha)
+	- [Suttamālā](/saddsut)
+	- [Single Sutta Suttamālā](/sadd)
+	- [Abhidhānappadīpikā](/abhidhana) (+Ṭīkā)
+	- [Subodhālaṅkāra](/subho)
+	- [Subodhālaṅkāraṭīkā](/subhotika)
+	- [Vuttodaya](/vutt)
+	- [Dhātvatthasaṅgaha](/dhatva)<span class="label label-green">Updated</span>
 - [Pāli Literature of Thailand](/thaipalitext)
+	- [Maṅgalatthadīpanī I](/mdreader?v=1)
+	- [Maṅgalatthadīpanī II](/mdreader?v=2)
+	- [Buddhaghosappavattikathā](/bgpv)
 
 ## Online Pāli Tools
 - [Pāli Passage Reader](/ppreader)
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
 - [Declension Table Calculator](/declension)
-- [Pāli Root Finder](/paliroot)<span class="label label-green">Updated</span>
+- [Pāli Root Finder](/paliroot)<span class="label label-green">Completed</span>
 - [Grammatical Sutta Finder](/gramsut)
 
 ## Term Papers and Minor Writings
