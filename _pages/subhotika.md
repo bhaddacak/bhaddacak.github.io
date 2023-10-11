@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-15 12:00:00 +0700
 ---
 
-The text is taken from [CSCD](https://tipitaka.org/romn). The main text is already included in the work.
+The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. The main text is already included in the work.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

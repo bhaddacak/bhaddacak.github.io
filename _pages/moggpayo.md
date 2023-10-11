@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-02 12:00:00 +0700
 ---
 
-The source of all the text comes from [CSCD](https://tipitaka.org/romn). The sutta numbers in Moggallāna are made easier to navigate. And since the sutta numbers in Payogasiddhi are really confusing and wrong in several places, I have added new running numbers and corrected the references to Moggallāna. This can relieve the headache from finding the corresponding suttas. Moggallānapañcikā can be included by the reader's selection. The numbers of the Pañcikā's suttas correspond to the main text, but the heads are truncated. Links to Niruttidīpanī are also shown in cross references. As the 7th chapter of Moggallāna was not formerly part of the text, so there are no commentaries for this.
+The source of all the text comes from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. The sutta numbers in Moggallāna are made easier to navigate. And since the sutta numbers in Payogasiddhi are really confusing and wrong in several places, I have added new running numbers and corrected the references to Moggallāna. This can relieve the headache from finding the corresponding suttas. Moggallānapañcikā can be included by the reader's selection. The numbers of the Pañcikā's suttas correspond to the main text, but the heads are truncated. Links to Niruttidīpanī are also shown in cross references. As the 7th chapter of Moggallāna was not formerly part of the text, so there are no commentaries for this.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

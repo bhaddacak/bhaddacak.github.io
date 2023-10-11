@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-05 12:00:00 +0700
 ---
 
-The text is taken from [CSCD](https://tipitaka.org/romn). Each sutta has references to other works, if any. But only the first number of Kaccāyana (ka.), Rūpasiddhi (rū.), and Saddanīti Suttamālā (nī.) can link to the target suttas, as well as to the Moggallāna (mo.) itself. The references, except for Moggallāna which I made them myself, are not well-checked. If any disagreement found upon the cross-references, please kindly inform me.
+The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. Each sutta has references to other works, if any. But only the first number of Kaccāyana (ka.), Rūpasiddhi (rū.), and Saddanīti Suttamālā (nī.) can link to the target suttas, as well as to the Moggallāna (mo.) itself. The references, except for Moggallāna which I made them myself, are not well-checked. If any disagreement found upon the cross-references, please kindly inform me.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

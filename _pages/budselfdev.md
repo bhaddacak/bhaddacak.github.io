@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-17 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 After I studied Buddhism seriously and critically, it happens that many things taught by the tradition have to be discarded. I do not want to make myself in trouble by rejecting the tradition. But rather my integrity does not allow inconsistency happens. When we really understand things critically, we cannot help rejecting things not conforming to what we hold as true.
 
 Still, many things in Buddhism survive the bomb of critical thinking, and we can apply them to our contemporary life. Here I will show the most realistic use of Buddhism that has withstood tests for more than two millennia. But to make it applicable to the world today, we have to interpret it with new light.
@@ -73,11 +76,11 @@ Likewise, morality exactly means controlling your body and speech to do and say 
 
 On the part of morality, if we take it strictly, it can draw the whole subject of Buddhist ethics into consideration. That is too much. We can think it simply in this way: actions counted as good in Buddhism are those not coming from greed (lobha), anger (dosa), and delusion (moha).[^kalama]
 
-[^kalama]: A good demonstration of the idea is in the Kālāmasutta (Aṅ Ti 7.66). See *Pāli for New Learners*, Book 2, chapter 29, [{{ site.url }}/palitex]({{ site.url }}/palitex).
+[^kalama]: A good demonstration of the idea is in the Kālāmasutta (Aṅ Ti 7.66). See *Pāli for New Learners*, Book 2, chapter 29, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
 
 On the part of concentration, I means meditation done in a simple way.[^medguide] You do not need to practice deep meditation in this model of development. So, everyone can do it. The main purpose of meditation is to get better control of your mind and emotions.
 
-[^medguide]: See *A Humble Guide to Meditation*, [{{ site.url }}/medguide]({{ site.url }}/medguide)
+[^medguide]: See *A Humble Guide to Meditation*, [{{ site.url }}/medguide]({{ site.url }}/medguide){:target="\_blank"}
 
 By this account, morality and concentration are combined into *self-control development*. This development is important to prosperity of our life. If you can control yourself well at young ages, you are likely to be successful in all aspect of your life, so to speak.[^marshmallow] On the contrary, if you cannot control yourself well, you are likely to be controlled and manipulated by others.
 
@@ -142,7 +145,7 @@ By my account given above, our triangular model of the threefold training can be
 
 Does the noble eightfold path have things to do with liberation? As asserted by the Buddha himself, the eightfold path is the way to get enlightened.[^dhammacak] Is my simplified account able to do the job---or is just that simple?
 
-[^dhammacak]: See Dhammacakkappavattanasutta (Saṃ Ma 12.1081). For my translation and analysis, see *Pāli for New Learners*, Book 2, chapter 25, [{{ site.url }}/palitex]({{ site.url }}/palitex).
+[^dhammacak]: See Dhammacakkappavattanasutta (Saṃ Ma 12.1081). For my translation and analysis, see *Pāli for New Learners*, Book 2, chapter 25, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
 
 Surely it does, because I see no substantial contradiction between the traditional explanation and my account. I just make the model more applicable. So, it should lead you to liberation. A more serious question, however, is what you exactly mean by liberation or enlightenment. I will not go to this metaphysical problem.
 
@@ -230,13 +233,13 @@ Here are my down-to-earth explanation of perfections.
 - *Effort* is simply the energy you run all the perfections.
 - *Endurance* is the quality of withstanding hardship.
 - *Truthfulness* is faithfulness to reality, sincerity or honesty. I would like to add *integrity* (being firm in moral principles) here, often fashioned as ''Do what you say, and say what you do.'' The opposite of this is hypocrisy.
-- *Resolution* is the state having firm determination. This is used a lot in meditation. And I make it the most important factor that brings success to our meditation (see [*A Humble Guide to Meditation*](/medguide)).
+- *Resolution* is the state having firm determination. This is used a lot in meditation. And I make it the most important factor that brings success to our meditation (see [*A Humble Guide to Meditation*](/medguide){:target="\_blank"}).
 - *Loving-kindness* is being kind or friendly to all beings. Technically, this means the intention to make all beings happy. It is logical to also include compassion (karuṇā), the intention to make all beings less suffer, here.
 - *Equanimity* is a subtle quality and has several facets. In general, it means indifference, or having emotional stability, to favorable and unfavorable situations. It can also means keeping oneself composed because nothing better can be done. It can imply a good quality of concentration, because equanimity is one of the jhānic factors.[^factors]
 
 [^nekkhamma]: In Pāli, *nekkhamma* is secondary derivation of *nikkhamma*, an absolutive form of *nikkhamati* (to go forth, to come out).
 
-[^factors]: There are five jhānic factors, namely *vitakka* (applied thought), *vicāra* (sustained thought), *pīti* (rapture), *sukha* (pleasure), and *upekkhā* (equanimity) (or *ekaggatā*). All these are technical terms with a variety of explanations, so I leave out them because they have little to do with the real practice. The most recognizable factor is pīti. See also in [*Is Vipassanā a Mystical Experience?*](/vipmysexp).
+[^factors]: There are five jhānic factors, namely *vitakka* (applied thought), *vicāra* (sustained thought), *pīti* (rapture), *sukha* (pleasure), and *upekkhā* (equanimity) (or *ekaggatā*). All these are technical terms with a variety of explanations, so I leave out them because they have little to do with the real practice. The most recognizable factor is pīti. See also in [*Is Vipassanā a Mystical Experience?*](/vipmysexp){:target="\_blank"}.
 
 Like the noble eightfold path, each perfection can be put in relation to the threefold training. For some items are redundant, I will leave them out. The full picture of all factors put together is shown in Figure 3.
 

@@ -42,7 +42,7 @@ permalink: /
 	- [Subodhālaṅkāra](/subho)
 	- [Subodhālaṅkāraṭīkā](/subhotika)
 	- [Vuttodaya](/vutt)
-	- [Dhātvatthasaṅgaha](/dhatva)<span class="label label-green">Updated</span>
+	- [Dhātvatthasaṅgaha](/dhatva)
 - [Pāli Literature of Thailand](/thaipalitext)
 	- [Maṅgalatthadīpanī I](/mdreader?v=1)
 	- [Maṅgalatthadīpanī II](/mdreader?v=2)
@@ -53,7 +53,7 @@ permalink: /
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
 - [Declension Table Calculator](/declension)
-- [Pāli Root Finder](/paliroot)<span class="label label-green">Completed</span>
+- [Pāli Root Finder](/paliroot)
 - [Grammatical Sutta Finder](/gramsut)
 
 ## Term Papers and Minor Writings
@@ -74,5 +74,5 @@ permalink: /
 - [Buddhism in Sri Lanka: An Essential Summary](/budsrilanka)
 
 ## ผลงานภาษาไทย
-- [อิสราศรม ทิศาปาโมกข์](https://bhaddacak.github.io/israsom) เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
-	- [Download pdf version](https://github.com/bhaddacak/israsom/releases) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)
+- [อิสราศรม ทิศาปาโมกข์](https://bhaddacak.github.io/israsom){:target="\_blank"} เพื่อความเข้าใจพุทธศาสนาอย่างมีเหตุผล
+	- [Download pdf version](https://github.com/bhaddacak/israsom/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (possibly not up-to-date)

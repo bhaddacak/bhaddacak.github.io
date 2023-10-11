@@ -5,6 +5,9 @@ is_article: true
 date: 2023-05-16 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 I am not a meditation teacher, and I will never position myself in such a role. Because I have little to say about meditation, even though I do it everyday for nearly two decades (plus one decade of occasional practices before that). I see it as a personal endeavor that everyone should find their own way to do it. Like bodily exercise, if done properly, meditation, beyond any dispute, has great benefits for our health and other aspects of our life. So, there is no reason why you shouldn't do it.
 
 If we detach meditation from religious context, it will be easier to encourage people to meditate. But nowadays meditation is often associated with Buddhism, and it is often tinted with certain ideology. So, I feel obliged to write a simple but essential guide to meditation. This will be intendedly short. For unexplained technical terms, please consult other sources, such as WikiPedia.
@@ -47,7 +50,7 @@ You may experiment with 2-hour or 3-hour sitting, if you can manage it. But it i
 
 I have to stress again that meditating daily is the most important rule. Nothing else matters much. If you fail to fulfill this rule, you meditation will go fruitless, no matter how long you can sit.
 
-[^ppmt]: See PPMT, for example. [{{ site.url }}/ppmt]({{ site.url }}/ppmt)
+[^ppmt]: See PPMT, for example. [{{ site.url }}/ppmt]({{ site.url }}/ppmt){:target="\_blank"}
 
 ### 2. Stay alert
 
@@ -59,7 +62,7 @@ Many things can happen in a meditation session, particularly a long one. The mos
 
 Without this rule, your meditation can go awry, and you can miss the very result of it. Many people start meditate with some goal in mind.[^medgoallist] This seriously hampers the practice. So, you have to expect nothing from your meditation.
 
-[^medgoallist]: See a list in "[Introduction to Critical Buddhist Studies](/cribudstu#meditation)," for example.
+[^medgoallist]: See a list in "[Introduction to Critical Buddhist Studies](/cribudstu#meditation){:target="\_blank"}," for example.
 
 Also do not judge your meditative experiences from any of your beliefs, like "This must come from my bad karma" or "This must be the Buddha coming to me" or "This must be a sign of the stream-enterer." Your beliefs will ruin your meditation's result and drive you crazy.
 
@@ -90,6 +93,6 @@ And these results will be better in the next decade to come. This is the nonsens
 
 [^zenmind]: Shunryu Suzuki, 2020, *Zen Mind, Beginner's Mind: Informal talks on Zen meditation and practice*, 50th anniversary edition, Shambhala.
 
-[^mappo]: For serious readers, see further "[Mappō, Hongaku, and Hijiri: Three Factors That Shaped Kamakura Buddhism](/mahohi)" for a deeper understanding of Japanese Buddhism and the idea of *original enlightenment* (hongaku).
+[^mappo]: For serious readers, see further "[Mappō, Hongaku, and Hijiri: Three Factors That Shaped Kamakura Buddhism](/mahohi){:target="\_blank"}" for a deeper understanding of Japanese Buddhism and the idea of *original enlightenment* (hongaku).
 
 ## Notes

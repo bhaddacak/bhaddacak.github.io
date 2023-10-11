@@ -5,7 +5,7 @@ is_application: true
 date: 2023-08-23 12:00:00 +0700
 ---
 
-This is a simple Pāli sutta reader, thanks to well-organized data from [SuttaCentral](https://suttacentral.net) that makes this possible. Only English translations by Ven. Brahmali (Vinaya) and Ven. Sujato (Suttanta), which have the best coverage, are available here. The program is meant to be fast and simple. So, please consult the original website for other details. [Sutta Lister](/suttalister) here may be helpful somehow, though.
+This is a simple Pāli sutta reader, thanks to well-organized data from [SuttaCentral](https://suttacentral.net){:target="\_blank"} that makes this possible. Only English translations by Ven. Brahmali (Vinaya) and Ven. Sujato (Suttanta), which have the best coverage, are available here. The program is meant to be fast and simple. So, please consult the original website for other details. [Sutta Lister](/suttalister){:target="\_blank"} here may be helpful somehow, though.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

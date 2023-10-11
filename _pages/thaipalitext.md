@@ -5,6 +5,9 @@ is_article: true
 date: 2023-08-10 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 This page is meant to be a collection of Pāli literature composed by Thai authors. The initial phase starts with texts that are easy to find in digital form. Then the conversion from scanned books will follow. This can help Pāli researchers find materials that inaccessible to foreigners.
 
 ### 1. Maṅgalatthadīpanī
@@ -13,8 +16,8 @@ This page is meant to be a collection of Pāli literature composed by Thai autho
 
 [^hinuber-md]: Oskar von Hinüber, 1996, *A Handbook of Pāli Literature*, Berlin: Walter de Gruyter, p. 179 (§389).
 
-- [Maṅgalatthadīpanī I](/mdreader?v=1)
-- [Maṅgalatthadīpanī II](/mdreader?v=2)
+- [Maṅgalatthadīpanī I](/mdreader?v=1){:target="\_blank"}
+- [Maṅgalatthadīpanī II](/mdreader?v=2){:target="\_blank"}
 
 ### 2. Buddhaghosappavattikathā
 
@@ -22,6 +25,6 @@ This page is meant to be a collection of Pāli literature composed by Thai autho
 
 [^ancient-works]: As listed by the author himself, the sources are *Saddhammasaṅgaha* and *Purāṇa Mahāvaṃsa*. Moreover, he mentioned some other works that give different accounts, such as, *Buddhaghosanidāna*, *Vaṃsamālinī*, and *Ñāṇodaya*.
 
-- [Buddhaghosappavattikathā](/bgpv)
+- [Buddhaghosappavattikathā](/bgpv){:target="\_blank"}
 
 ## Notes

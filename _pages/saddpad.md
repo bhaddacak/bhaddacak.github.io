@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-07 12:00:00 +0700
 ---
 
-The text is taken from [CSCD](https://tipitaka.org/romn), then combined into one piece. Padamālā has 14 chapters. There are no smaller points to make references. At best we can only refer to it by chapter numbers, or a searchable portion of text. The text here can be slightly different from the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar01)'s edition.
+The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}, then combined into one piece. Padamālā has 14 chapters. There are no smaller points to make references. At best we can only refer to it by chapter numbers, or a searchable portion of text. The text here can be slightly different from the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar01){:target="\_blank"}'s edition.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

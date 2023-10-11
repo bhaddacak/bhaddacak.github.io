@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-09 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > I wrote this essay as the midterm paper for *Japanese Buddhism* taught by Dr. Kieko Obuse in 2015. The paper may look difficult for those who know nothing about Japanese Buddhism, but for those who are familiar with the subject it may have some interesting points. And for general readers who get interested in Buddhism, investing time and effort for this essay can bring them an understanding of why Japanese Buddhism is so unique and colorful.
 
 In studying Japanese Buddhism, when we come to the period called Kamakura (1185--1333), we have many things to learn and discuss. That is because in this period major schools of Buddhism came into being and persisted until now. We can say that Kamakura is the most colorful period for Buddhism in Japan. Some says understanding Kamakura Buddhism is more or less equivalent to understanding Japanese Buddhism as a whole. I am doubtful about this statement at first, but now I incline to agree with that.

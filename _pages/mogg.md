@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-02 12:00:00 +0700
 ---
 
-This is the single-sutta version of Moggallāna. It can be accessed by URL. For example, [{{ site.url }}/mogg?1.1](/mogg?1.1) leads to the sutta no. 1.1. For the full version, please visit [Moggallāna-Payogasiddhi](/moggpayo).
+This is the single-sutta version of Moggallāna. It can be accessed by URL. For example, [{{ site.url }}/mogg?1.1](/mogg?1.1){:target="\_blank"} leads to the sutta no. 1.1. For the full version, please visit [Moggallāna-Payogasiddhi](/moggpayo){:target="\_blank"}.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

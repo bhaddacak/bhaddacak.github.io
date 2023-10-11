@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-07 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This is the midterm paper I wrote for *Buddhist Ethics* class in 2015. The first half of the course was taught by Dr. Matthew Kosuta. Mainly, we discussed the theory of evolution and ethics. Some insightful comments from Dr. Kosuta are also retained here. This is an reflective essay, not so rigorously scholarly, so it is easy to read by everyone.
 
 The general aim of this essay is to make sense of Buddhist ethics in evolutionary perspective. For analytical approach is my favorite, I will not start with Buddhist ethics, but with evolutionary theory. I also separate Buddhism from ethics (or morality which I take them as synonymous), and take a skeptical stance towards so-called "Buddhist ethics." I will doubt at first whether there is such thing. My strategy is pushing aside any presumption first and trying to make sense out of the subject bit by bit from zero position (or at least from a minimum point). So, I will start with a naïve mind (or pretend to be as much as possible) and go forward with curiously scientific mind.
@@ -19,7 +22,7 @@ I do not take science as an ideology comparing to religion, political ideas, etc
 
 > Well, evolution is a theory. It is also a fact. And facts and theories are different things, not rungs in a hierarchy of increasing certainty. Facts are the world's data. Theories are structures of ideas that explain and interpret facts. Facts do not go away when scientists debate rival theories to explain them. Einstein's theory of gravitation replaced Newton's, but apples did not suspend themselves in mid-air, pending the outcome. [...] In science, 'fact' can only mean "confirmed to such a degree that it would be perverse to withhold provisional assent." I suppose that apples might start to rise tomorrow, but the possibility does not merit equal time in physics classrooms.[^gould-theoryfact]
 
-[^gould-theoryfact]: Stephen Jay Gould, 1981, "Evolution as Fact and Theory," *Discover* 2 (May):34--37. [http://www.stephenjaygould.org/library/gould_fact-and-theory.html](http://www.stephenjaygould.org/library/gould_fact-and-theory.html)
+[^gould-theoryfact]: Stephen Jay Gould, 1981, "Evolution as Fact and Theory," *Discover* 2 (May):34--37. [http://www.stephenjaygould.org/library/gould_fact-and-theory.html](http://www.stephenjaygould.org/library/gould_fact-and-theory.html){:target="\_blank"}
 
 How evolution explains the process of our becoming? Since this essay is not intended to be a scientific paper on evolution, I will go through the account in a less scholarly manner. We all began with the most fundamental organism with only one cell. This organism had one critical aspect that never before happened, the ability to live by itself (self-organization). With this ability, it could respond to the environment, it ate, grew, and eventually reproduced by dividing its fat body into two.
 

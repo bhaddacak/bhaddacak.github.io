@@ -5,6 +5,9 @@ is_article: true
 date: 2023-05-26 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This is the second short essay I wrote for *Contemporary Approaches to the Study of Religion* class (2nd semester of 2014). Dr. Imtiyaz Yusuf, the instructor of the class, graded this essay as 'Excellent.' It must be something interesting here.
 
 When I read Karen Armstrong's *The Case for God*[^armstrong-case], particularly on the point that God is dead, I did not feel anything problematic. That is because, perhaps, the book is not for Buddhists or other practitioners of non-theistic traditions, even though Armstrong's God intentionally/implicitly covers all other names of the ultimate reality. According to my Buddhist background, whether God is dead is not a problem at all. It is true that we probably read Nirvana from God here, but when we consider the context it seems irrelevant. Since, for all Buddhist traditions, the notion of ultimate reality---so-called Nirvana or Suñyatā---has never been dead. In the history of Buddhism, as far as I know, no one has cried out that Nirvana is dead.
@@ -46,7 +49,7 @@ If we put Nirvana out of our attention, how does Buddhism go then? To this point
 
 What is it meant to be a Buddhist? By seeing religion as a practice, the real Buddhist is not one who can explain Buddhist philosophy comprehensively, but one who follows the path wholeheartedly, one who just keeps practicing inexorably by not concerning the goal. If we shift our attention from Nirvana to practice, what is its appeal? Because sometimes practice is tough and troublesome. To answer this point, we must go deeper into the word 'practice.' Practice does not mean just doing something. It means "to do or perform (something) repeatedly in order to acquire or polish a skill."[^ahdict-practice] Religious skill is a kind of ability that needs to be developed. It can be difficult at first, but when we practice bit by bit, we can master the skill eventually. Then the goal is reached no matter we want it or not. At the end, Nirvana will be experienced by the practitioners anyway.
 
-[^ahdict-practice]: The American Heritage Dictionary, "practice," [https://www.ahdictionary.com/word/ search.html?q=practice](https://www.ahdictionary.com/word/search.html?q=practice)
+[^ahdict-practice]: The American Heritage Dictionary, "practice," [https://www.ahdictionary.com/word/ search.html?q=practice](https://www.ahdictionary.com/word/search.html?q=practice){:target="\_blank"}
 
 ## Conclusion
 

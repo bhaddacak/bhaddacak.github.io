@@ -5,7 +5,7 @@ is_application: true
 date: 2023-08-26 12:00:00 +0700
 ---
 
-This is a convenient version of Saddanīti Suttamālā. It displays one sutta at a time, and can be accessed by URL. For example, [{{ site.url }}/sadd?1](/sadd?1) leads to the sutta no. 1. This can be used as an easy reference point.
+This is a convenient version of Saddanīti Suttamālā. It displays one sutta at a time, and can be accessed by URL. For example, [{{ site.url }}/sadd?1](/sadd?1){:target="\_blank"} leads to the sutta no. 1. This can be used as an easy reference point.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

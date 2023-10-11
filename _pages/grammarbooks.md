@@ -5,15 +5,18 @@ is_article: true
 date: 2023-10-01 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 This part is a collection of Pāli grammatical textbooks. I select the important ones, put them here, and make them easy to access and navigate. By the traditional account, there are three big schools of Pāli grammarians: Kaccāyana, Moggallāna, and Saddanīti. All these with their chief commentaries will be added here, together with other remarkable works.
 
 I think studying these texts is not necessary to normal Buddhist practitioners, but they can be an intellectual challenge for those who have already done the basic things and need to go deeper in the field. I do not think knowing deep grammar will bring you more or higher liberation. (Instead, it can hinder the progress because it needs lots of time and effort.) However, for scholarly-minded learners, studying Pāli language in depth can make the time worthwhile, and it contributes to the field of Buddhist Studies at large.
 
 Western students may find these works difficult, because it is hard to get full translations of these in their languages. This tells us that serious studies of the traditional Pāli textbooks in the West are really pressing. Perhaps, learning them with a help from living languages like Thai or Myanmar is more viable.
 
-The head of all suttas in the grammar books presented here are put together, suitable for search and overview, in [Grammatical Sutta Finder](/gramsut). This tools can also relate one work to each other.
+The head of all suttas in the grammar books presented here are put together, suitable for search and overview, in [Grammatical Sutta Finder](/gramsut){:target="\_blank"}. This tools can also relate one work to each other.
 
-For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot) to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Dhātvatthasaṅgaha](/dhatva) can be a good source of learning.
+For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot){:target="\_blank"} to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Dhātvatthasaṅgaha](/dhatva){:target="\_blank"} can be a good source of learning.
 
 ### 1. Kaccāyanabyākaraṇaṃ
 
@@ -23,9 +26,9 @@ For those who are interested in Pāli roots, they can use [Pāli Root Finder](/p
 
 [^norman-kacc]: K. R. Norman believes that this Kaccāyana must be later than Buddhaghosa because the name was not mentioned in the commentaries. See K. R. Norman, 1983, *Pāli Literature*,  Wiesbaden: Otto Harrassowitz, p. 163.
 
-- [Kaccāyana-Rūpasiddhi](/kaccrupa)
-- [Single Sutta Kaccāyana](/kacc)
-- [Single Sutta Rūpasiddhi](/rupa)
+- [Kaccāyana-Rūpasiddhi](/kaccrupa){:target="\_blank"}
+- [Single Sutta Kaccāyana](/kacc){:target="\_blank"}
+- [Single Sutta Rūpasiddhi](/rupa){:target="\_blank"}
 
 ### 2. Moggallānabyākaraṇaṃ
 
@@ -37,11 +40,11 @@ For those who are interested in Pāli roots, they can use [Pāli Root Finder](/p
 
 [^norman-mogg]: Norman, 1983, p. 165.
 
-- [Moggallāna-Payogasiddhi](/moggpayo) (+Pañcikā)
-- [Single Sutta Moggallāna](/mogg)
-- [Single Sutta Payogasiddhi](/payo)
-- [Niruttidīpanī](/nirutti)
-- [Single Sutta Niruttidīpanī](/niru)
+- [Moggallāna-Payogasiddhi](/moggpayo) {:target="\_blank"}(+Pañcikā)
+- [Single Sutta Moggallāna](/mogg){:target="\_blank"}
+- [Single Sutta Payogasiddhi](/payo){:target="\_blank"}
+- [Niruttidīpanī](/nirutti){:target="\_blank"}
+- [Single Sutta Niruttidīpanī](/niru){:target="\_blank"}
 
 ### 3. Saddanītippakaraṇaṃ
 
@@ -49,10 +52,10 @@ For those who are interested in Pāli roots, they can use [Pāli Root Finder](/p
 >
 > In large part, Padamālā deals with declensions of terms. Analysis of the root *bhū* is given in detail towards the end. Other Pāli roots are listed in Dhātumālā in the way of Dhātupāṭha tradition. Detailed explanations are given only for some common roots.
 
-- [Padamālā](/saddpad)
-- [Dhātumālā](/sadddha)
-- [Suttamālā](/saddsut)
-- [Single Sutta Suttamālā](/sadd)
+- [Padamālā](/saddpad){:target="\_blank"}
+- [Dhātumālā](/sadddha){:target="\_blank"}
+- [Suttamālā](/saddsut){:target="\_blank"}
+- [Single Sutta Suttamālā](/sadd){:target="\_blank"}
 
 ### 4. Abhidhānappadīpikā
 
@@ -69,7 +72,7 @@ For those who are interested in Pāli roots, they can use [Pāli Root Finder](/p
 [^norman-amarakosa]: Norman, 1983, p. 167.
 [^norman-artificial]: Norman, 1983, p. 167.
 
-- [Abhidhānappadīpikā](/abhidhana) (+Ṭīkā)
+- [Abhidhānappadīpikā](/abhidhana){:target="\_blank"} (+Ṭīkā)
 
 ### 5. Subodhālaṅkāro Vuttodayaṃ ca
 
@@ -81,12 +84,12 @@ For those who are interested in Pāli roots, they can use [Pāli Root Finder](/p
 >
 > Therefore, I encourage those who aim their study to write a Pāli treatise or commentary to write it in a modern language instead. By this way, you can make the work clear and comprehensible to the reader. It does not matter much what language you write because workable AI translators[^ai] are coming. However, English is still the best choice for most people.
 >
-> An example I would like to mention is [*Vuttodayamañjarī*](https://drive.google.com/file/d/1I01XNzzferehq8QD2ZwBDo3TPYSd60SL/view) written in Thai by Ven. Gandhasārābhivaṃsa (2002, MCU). This is the best commentary on Vuttodaya I have ever seen. It presents prosodic forms in tables easily understood by the reader. That is a good commentary should be nowadays.
+> An example I would like to mention is [*Vuttodayamañjarī*](https://drive.google.com/file/d/1I01XNzzferehq8QD2ZwBDo3TPYSd60SL/view){:target="\_blank"} written in Thai by Ven. Gandhasārābhivaṃsa (2002, MCU). This is the best commentary on Vuttodaya I have ever seen. It presents prosodic forms in tables easily understood by the reader. That is a good commentary should be nowadays.
 
 [^ai]: Some may think AI technology finally can translate Pāli accurately. I think it can do to some degree, but not accurate as human experts do. That is because AI learns from existing data, and we do not have data of Pāli translations that much like living languages. Even though ChatGTP knows many things, it is sometimes completely wrong. The best solution is putting your knowledge in your language articulately, then one day everyone can understand it.
 
-- [Subodhālaṅkāra](/subho)
-- [Subodhālaṅkāraṭīkā](/subhotika)
-- [Vuttodaya](/vutt)
+- [Subodhālaṅkāra](/subho){:target="\_blank"}
+- [Subodhālaṅkāraṭīkā](/subhotika){:target="\_blank"}
+- [Vuttodaya](/vutt){:target="\_blank"}
 
 ## Notes

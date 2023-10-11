@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-09 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This is my final term paper of *Japanese Buddhism* taught by Dr. Kieko Obuse in the first semester of 2015. In all courses I took in those years, I love this subject the most. I really learned a lot of things from the class's massive readings, thanks to Dr. Obuse's enthusiasm. The Japanese way of things always fascinates me.
 
 After studying Japanese Buddhism in some details, a thought usually comes up to one who studies it, especially a student of religion, "What kind of Buddhism is that?" We encounter unexpected non-religious things in Buddhist settings, such as married priesthood, temple business, and other worldly-religious mix-ups. From the traditional point of view, we are reluctant to say that Japanese Buddhism, no matter how Buddhist it is, is a good example of Buddhism.

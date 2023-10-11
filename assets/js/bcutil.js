@@ -220,7 +220,7 @@ bcUtil.paliLength = function(text) {
 	}
 	return text.length - hcount;
 };
-bcUtil.decomposePali = function(text) {
+bcUtil.decomposePali = function(text = "") {
 	const result = [];
 	let i = 0;
 	for (; i<text.length-1; i++) {

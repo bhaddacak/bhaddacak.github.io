@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-12 12:00:00 +0700
 ---
 
-The main text is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage). It is better than that in the CSCD. The ṭīkā is taken from [CSCD](https://tipitaka.org/romn). There are totally 1,203 stanzas. But in the ṭīkā, 7 of them are missing (or, perhaps, intendedly left out), i.e., no. 829, 847, 964, 1028, 1029, 1033, and, 1135.
+The main text is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage){:target="\_blank"}. It is better than that in the CSCD. The ṭīkā is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. There are totally 1,203 stanzas. But in the ṭīkā, 7 of them are missing (or, perhaps, intendedly left out), i.e., no. 829, 847, 964, 1028, 1029, 1033, and, 1135.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

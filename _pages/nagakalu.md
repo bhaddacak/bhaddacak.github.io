@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-05 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This is my term paper for *Buddhist Philosophy* class taught by Dr. Milos Hubina in 2015. This one is difficult to write, as well as to read by general readers who know nothing about the subject. Some trivial citations are given only books' title and years with their authors.
 
 Nāgārjuna, the founder of Mādhymaka school, is a great Buddhist philosopher. His idea has been interpreted in many ways by Western scholars. From the early time of Buddhist Studies, Eugene Burnouf and Louis de La Vallée Poussin put *nihilism* to Nāgārjuna's position, and recently Thomas Wood (Nāgārjunian Disputations, 1994) follows the same line. Also, I think, Paul Williams (Mahāyāna Buddhism, 1989) more or less takes the same stance.
@@ -30,7 +33,7 @@ The major points that David Kalupahana understands Nāgārjuna's philosophy will
 **(1) Nāgārjuna is an empiricist par excellence.** The reason Kalupahana gives to this claim is that Nāgārjuna rejects the notion of 'self' not on the basis of dialectical argument but on the ground of its non-availability.[^kalupahana-self] This sounds very similar to David Hume when he says he does not see any 'self' in his perception but only a rise and fall of psychological components.[^hume-treatise] Kalupahana differentiates Nāgārjuna from Hume by saying that Nāgārjuna also rejects momentariness as a consequence of his rejection of motion and time.[^kalupahana-motiontime]
 
 [^kalupahana-self]: David J. Kalupahana, 1986, *Nāgārjuna: The Philosophy of the Middle Way*, State University of New York Press, p. 81.
-[^hume-treatise]: See David Hume, 1739, *A Treatise of Human Nature*, [https://davidhume.org/texts/t/1/4/6](https://davidhume.org/texts/t/1/4/6).
+[^hume-treatise]: See David Hume, 1739, *A Treatise of Human Nature*, [https://davidhume.org/texts/t/1/4/6](https://davidhume.org/texts/t/1/4/6){:target="\_blank"}.
 [^kalupahana-motiontime]: Kalupahana, 1986, p. 82.
 
 Moreover, Kalupahana pushes Nāgārjuna as an empiricist to its extreme. He claims that Nāgārjuna leaves out any special intuitions such as extraordinary perception (ESP) because such perceptions are not related to sense experience.[^kalupahana-experience] Nāgārjuna does not reject special intuitions, according to Kalupahana, but rather he thinks this kind of perceptions still in some way relates to ordinary sensory faculties. He also supports his point by saying that no evidence found in the case of clairvoyance developed by one who is blind from birth, or clairaudience developed by a deaf person.[^kalupahana-clairvoyance] We can say that, for Kalupahana, Nāgārjuna is a radical empiricist. Self-nature (svabhāva) is not evident, because it is not available in experience.

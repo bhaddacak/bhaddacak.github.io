@@ -2,7 +2,7 @@
 title: "Pāli Root Finder"
 permalink: /paliroot
 is_application: true
-date: 2023-10-09 12:00:00 +0700
+date: 2023-10-10 12:00:00 +0700
 ---
 
 <div style="padding-bottom:5px;">

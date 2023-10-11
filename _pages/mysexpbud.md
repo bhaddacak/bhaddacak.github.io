@@ -5,7 +5,10 @@ is_article: true
 date: 2023-04-07 12:00:00 +0700
 ---
 
-> This is the last short essay I wrote for *Contemporary Approaches to the Study of Religion* in 2014 under the guidance of Dr. Milos Hubina. The essay has overlapping materials used in "[Is Vipassanā a Mystical Experience?](/vipmysexp)," but the both have different focuses. This one is a little easier to read.
+- TOC
+{:toc}
+
+> This is the last short essay I wrote for *Contemporary Approaches to the Study of Religion* in 2014 under the guidance of Dr. Milos Hubina. The essay has overlapping materials used in "[Is Vipassanā a Mystical Experience?](/vipmysexp){:target="\_blank"}," but the both have different focuses. This one is a little easier to read.
 
 Generally, the ways we understand religion scientifically is divided into two camps. The first is *reductionism*, an attempt to explain religion in the term of a more fundamental element that is not directly related to religion. The most prevalent form of reductionism is *functionalism*---a thing can be reduced to its function, as we see in classic theorists of religion, such as Marx, Durkheim and Freud who reduced religion to economic, social, and psychological function respectively. And more recently, cognitive scientists try to reduce religion to biological or brain functions.
 

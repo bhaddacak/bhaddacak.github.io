@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-15 12:00:00 +0700
 ---
 
-The text is taken from [CSCD](https://tipitaka.org/romn). For a short, survival treatment of Pāli prosody, see the maunal of [`PāliPlatform2`](/pp2man).
+The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. For a short, survival treatment of Pāli prosody, see the maunal of [`PāliPlatform2`](/pp2man){:target="\_blank"}.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

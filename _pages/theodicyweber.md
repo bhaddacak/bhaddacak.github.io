@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-10 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > In the first semester of my PhD courses (2014), I and my fellow students had to take *Foundation of Religious Studies: History and Theories*, taught by Dr. Matthew Kosuta at the time. This subject was compulsory, and we had to write several short pieces. This essay was the final term paper, my best one in this class. Other pieces were much crappier than this, so I keep them for myself only. Yet, my writing style here was still underdevelped. Dr. Kosuta commented that I used too many quotations. It would have been better if I used more paraphrasing. I put this work here because I love Weber, one of the most innovative thinkers on religion, and I want to keep his references on this topic in one place.
 
 After I went through some hundreds of pages of Max Weber's labyrinthine writings, with helping clues from some secondary sources, to find out what his main idea about religion is all about, I was baffled for days. In the very first sentence of *The Sociology of Religion* (a section in *Economy and Society*[^weber-sociology]), Weber starts with this:
@@ -33,7 +36,7 @@ However, to me, for one who studies his works, it is inevitable to reduce his th
 
 The word 'theodicy' was introduced by a German philosopher and mathematician, Gottfried Wilhelm Leibniz, in his book with that name published in 1710. 'Theodicy' comes from Greek *theos* (god) + *dikē* (justice). The whole word means "A vindication of God's goodness and justice in the face of the existence of evil."[^ahdict-theodicy] Alvin Plantinga, a contemporary American philosopher, puts it this way: When a theist answers the question "Whence evil?" or "Why does God permit evil?" he is giving a theodicy.[^plantinga-theodicy] In *Politics as a Vocation*, Weber writes about the idea as follows:
 
-[^ahdict-theodicy]: The American Heritage Dictionary, "theodicy," [https://www.ahdictionary.com/word/ search.html?q=theodicy](https://www.ahdictionary.com/word/search.html?q=theodicy)
+[^ahdict-theodicy]: The American Heritage Dictionary, "theodicy," [https://www.ahdictionary.com/word/ search.html?q=theodicy](https://www.ahdictionary.com/word/search.html?q=theodicy){:target="\_blank"}
 [^plantinga-theodicy]: Alvin Plantinga, 1974, *God, Freedom, and Evil*, Harper and Row, p. 10.
 
 > The age-old problem of theodicy consists of the very question of how it is that a power which is said to be at once omnipotent and kind could have created such an irrational world of undeserved suffering, unpunished injustice, and hopeless stupidity.[^weber-theodicy]

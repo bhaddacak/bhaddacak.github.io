@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-08 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > In the course titled *Contemporary Approaches to the Study of Religion* I took in the 2nd semester of 2014, I had to write several short essays. This is the first one. The first half of the course was taught by Dr. Imtiyaz Yusuf. For those who are interested in religious studies, this can give you some ideas of the field.
 
 What does religion have anything to do with map and territory? This is the main question I try to figure out in this essay. The main point to be focused and discussed here is about Jonathan Z. Smith's oft-quoted dictum "Map is Not Territory." I will point out how insightful his remark is for understanding our study of religion, and how he blunts his idea at the same time. Besides, I will touch a little bit about his critique on Mircea Eliade's idea which relates to my main point. This essay is intended to be a reflection at first, but it looks more like an analytical one at the end. 

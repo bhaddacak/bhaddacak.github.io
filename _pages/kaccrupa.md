@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-10 12:00:00 +0700
 ---
 
-All the text is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage). I have fixed some errors found in Kaccāyana. So, if any doubt occurs, please check the text with the version in the Chaṭṭha Saṅgāyana collection.
+All the text is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage){:target="\_blank"}. I have fixed some errors found in Kaccāyana. So, if any doubt occurs, please check the text with the version in the Chaṭṭha Saṅgāyana collection.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-13 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 Here, I am not going to introduce a new kind of discipline or field of study, because Buddhist studies has already been a well-established academic field for a long time, and very active with vast area of research nowadays. As an academic discipline, Buddhist studies is supposed to be engaged with a critical mind. That is to say, critical Buddhist studies should be a default mode of inquiry into the subject. In other words, it is redundant to use critical Buddhist studies in academia. The field should be critical by its nature.
 
 However, studying Buddhism in Buddhist countries looks less critical than it should be, particularly in universities directed by the Saṅgha (under control of the government). Moreover, the critical attitude is anathema to those who study the religion in monastic settings or devout communities. So, Buddhist studies is less likely to be critical in Buddhist countries, particularly outside the academic environment.
@@ -75,13 +78,13 @@ To know Buddhism, any kind of Buddhism, is essentially to know its scripture. An
 
 The main problem of learning Pāli is it is made (unnecessarily) difficult by the tradition, to keep its authoritative status unchallenged, I think. And learning Pāli from the Western world, mostly from Sanskrit scholars, looks irrelevant from the tradition's point of view; it is hard to penetrate the mindset of the tradition. Moreover, Pāli studies in both the West and the tradition is seriously outdated. I solve the problem by developing a new approach to the language, as shown in the two volumes of *Pāli for New Learners*.[^PNL]
 
-[^PNL]: Books 1: How to say it, [{{ site.url }}/palicon]({{ site.url }}/palicon); Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex)
+[^PNL]: Books 1: How to say it, [{{ site.url }}/palicon]({{ site.url }}/palicon){:target="\_blank"}; Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}
 
 When students of Buddhism know Pāli by themselves, not resorting to various translations, they can see what is really said in the text, and they can judge its credibility impartially. To have a clear critical view, mediators like translators has to be taken as supplementary, not primary source of information. Students have to understand Pāli text by their own reading, so to speak.
 
 So, learning Pāli is a critical task of CBS. And it has to be learned critically as well.[^PNL2] This means nothing is taken for granted before a text is read, and every presumption has to be assessed by critical attitude. The goal of critical reading of text is not to reject it as rubbish, or accept it mindlessly, but rather to clearly understand it first. Whether the reader will believe in the truthfulness of the text depends on the result of the critical assessment. This can be difficult sometimes to have a definite answer, but to understand it as such is the most important.
 
-[^PNL2]: A critical approach to Pāli studies can be seen clearly in *Pāli for New Learners,* Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex).
+[^PNL2]: A critical approach to Pāli studies can be seen clearly in *Pāli for New Learners,* Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
 
 I will show an example of a critical reading of a Pāli passage. In the Vinaya, this passage is written:
 
@@ -105,7 +108,7 @@ Is learning Pāli difficult? In fact, learning any second or third language is a
 
 You do not need to master Pāli in all respects to do CBS, though. You just know how the language works and how to use tools properly.[^paliplatform] We already have several good translations now. These can be a good helper that speeds up your learning process. So, to know Pāli enough to do critical thinking about it is not that difficult nowadays.
 
-[^paliplatform]: Pāli Platform, [{{ site.url }}/paliplatform]({{ site.url }}/paliplatform), is a comprehensive program for Pāli learning and research.
+[^paliplatform]: Pāli Platform, [{{ site.url }}/paliplatform]({{ site.url }}/paliplatform){:target="\_blank"}, is a comprehensive program for Pāli learning and research.
 
 ### 3. CBS needs scientific literacy
 
@@ -172,9 +175,9 @@ The 'why' question is more important in this regard, because it needs rigorous c
 
 The list can go on and on, because research in benefits and applications of meditation is very active nowadays. Meditation is really useful to our health, but is that the reason we meditation according to the doctrine?
 
-I give you a blunt answer here: we meditate just for the meditation itself. That's it. If you cannot set your mind in this way, you will never, or it is will be very hard to, get the benefits from Buddhism. Moreover, contrary to a common belief, true meditation is ridiculously simple and easy to do, at least at the conceptual level. Read on in [*A Humble Guide to Meditation*](/medguide).[^medguide]
+I give you a blunt answer here: we meditate just for the meditation itself. That's it. If you cannot set your mind in this way, you will never, or it is will be very hard to, get the benefits from Buddhism. Moreover, contrary to a common belief, true meditation is ridiculously simple and easy to do, at least at the conceptual level. Read on in [*A Humble Guide to Meditation*](/medguide){:target="\_blank"}.[^medguide]
 
-[^medguide]: [{{ site.url }}/medguide]({{ site.url }}/medguide)
+[^medguide]: [{{ site.url }}/medguide]({{ site.url }}/medguide){:target="\_blank"}
 
 ## Conclusion
 

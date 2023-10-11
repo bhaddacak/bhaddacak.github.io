@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-04 12:00:00 +0700
 ---
 
-To ease the looking up, all suttas that can be viewed with [Sutta Reader](/suttareader) are listed here. The data from [SuttaCentral](https://suttacentral.net) are prepared offline, so they can be not up-to-date.
+To ease the looking up, all suttas that can be viewed with [Sutta Reader](/suttareader){:target="\_blank"} are listed here. The data from [SuttaCentral](https://suttacentral.net){:target="\_blank"} are prepared offline, so they can be not up-to-date.
 
 {% include pali_input.html search_button="Filter" search_func="suttaLister.filter();" after_clear="suttaLister.filter();" placeholder="Filter ..." %}
 <div>

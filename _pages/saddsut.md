@@ -5,7 +5,7 @@ is_application: true
 date: 2023-08-31 12:00:00 +0700
 ---
 
-The Roman text of Suttamālā is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage). While cleaning up, I accidentally corrected a few points. Although the text is mostly well-edited, glitches can be found more than that. For a serious citation, therefore, please check against the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar03)'s edition first.
+The Roman text of Suttamālā is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage){:target="\_blank"}. While cleaning up, I accidentally corrected a few points. Although the text is mostly well-edited, glitches can be found more than that. For a serious citation, therefore, please check against the [Helmer Smith](https://archive.org/details/SaddanitiAggavamsasPaliGrammar03){:target="\_blank"}'s edition first.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

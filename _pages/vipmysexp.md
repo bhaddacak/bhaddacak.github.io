@@ -5,11 +5,14 @@ is_article: true
 date: 2023-04-09 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > The second half of *Contemporary Approaches to the Study of Religion* (2nd semester of 2014) was taught by Dr. Milos Hubina. The focus was mainly on the cognitive approach to religion. This essay is the first one for this part, but the third of the course. It is undoubtedly highly technical and difficult to read.
 
 The question raised as the topic of this essay is simple and straightforward. Can we count experiences from vipassanā, a Buddhist meditation technique, as mystical experience? My pursuit comes out of a controversy between constructive and perennial approaches to mystical experience. On one hand, Robert M. Gimello, who is on constructivist camp, insists that vipassanā or Buddhist path as the whole is not relevant to be counted as mystical experience because it still has a kind of interpretation or analytic component. On the other hand, Milos Hubina, my mentor, who more or less sides with perennialist camp, contends that vipassanā is in fact by all means mystical experience.[^hubina-mysticism] My task is to evaluate both claims and offer my own view on this issue. At first I will present general ideas about the topic, and then try to elucidate the point. In the end I will open my cards and offer another way out.
 
-[^hubina-mysticism]: Milos Hubina, 2016, "Mysticism and Theravāda Meditation," [https://vdocuments.mx/mysticism-and-theravada-meditation.html](https://vdocuments.mx/mysticism-and-theravada-meditation.html).
+[^hubina-mysticism]: Milos Hubina, 2016, "Mysticism and Theravāda Meditation," [https://vdocuments.mx/mysticism-and-theravada-meditation.html](https://vdocuments.mx/mysticism-and-theravada-meditation.html){:target="\_blank"}.
 
 ## What is vipassanā?
 

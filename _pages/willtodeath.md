@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-09 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This term paper is the final assignment of *Buddhist Ethics* in my last semester of coursework (1/2015) under the tutelage of Dr. Kieko Obuse. Among my writings in classes, this one is the best and the most I love.
 
 Why are the Japanese fond of suicide? No one likes suicide. But under certain circumstances, say, heartbreak, depression, or economic distress, people can commit suicide, you may argue. Nevertheless, it is not the case in Japan. The Japanese can commit suicide by unbelievable reasons. For examples, After Yukiko Okada, a famous popular singer, committed suicide in April 1986 by jumping off a seven-story building, more than thirty youngsters took their own lives within two weeks after her death.[^takahashi-yukiko] And the number of suicides doubles in that month comparing to the previous year.[^greenlees-yukiko] These copycat suicides are subsequently called "Yukiko Syndrome."
@@ -14,13 +17,13 @@ Why are the Japanese fond of suicide? No one likes suicide. But under certain ci
 
 A decade later, Hideto Matsumoto 'hide,' a heavy metal band's leader who died in May 1998 by hanging himself, made three teenage fans kill themselves in one week after his own attempt.[^wikipedia-hide] Another more tragic case, in January 1986, a 14 year-old junior high school student killed himself for being bullied by his classmates. After the news spread, other students committed suicide all over the country.[^takahashi-14yo] Are they crazy or just sympathetic?
 
-[^wikipedia-hide]: Wikipedia, 2023, "Hide (musician)," last modified April 3, [https://en.wikipedia.org/wiki/Hide_(musician)](https://en.wikipedia.org/wiki/Hide_(musician)).
+[^wikipedia-hide]: Wikipedia, 2023, "Hide (musician)," last modified April 3, [https://en.wikipedia.org/wiki/Hide_(musician)](https://en.wikipedia.org/wiki/Hide_(musician)){:target="\_blank"}.
 [^takahashi-14yo]: Takahashi, 1998, p. 121.
 
 Furthermore, there is a new kind of suicide attributed to Japanese origin. In October 2004, nine people died by shutting themselves inside their vehicles and poisoned themselves by breathing the fumes from portable charcoal stoves.[^fumes-9death] Seven cases did the same thing in March 2005.[^fumes-7death] They all used the Internet to manage their death together. We call these cases "internet suicide pacts." Dying alone is too lonely, they might think. There must be some intelligible explanation of the phenomena mentioned above. The reason that the Japanese are living in tension and likely to have a psychological breakdown so they kill themselves is too simple.
 
-[^fumes-9death]: The Guardian, 2004, "Nine Japanese die in suicide pacts," [http://www.theguardian. com/technology/2004/oct/13/japan.internationalnews](http://www.theguardian.com/technology/2004/oct/13/japan.internationalnews).
-[^fumes-7death]: The Guardian, 2005, "Seven die in online suicide pact in Japan," [http://www. theguardian.com/technology/2005/mar/02/japan.internationalnews](http://www.theguardian.com/technology/2005/mar/02/japan.internationalnews).
+[^fumes-9death]: The Guardian, 2004, "Nine Japanese die in suicide pacts," [http://www.theguardian. com/technology/2004/oct/13/japan.internationalnews](http://www.theguardian.com/technology/2004/oct/13/japan.internationalnews){:target="\_blank"}.
+[^fumes-7death]: The Guardian, 2005, "Seven die in online suicide pact in Japan," [http://www. theguardian.com/technology/2005/mar/02/japan.internationalnews](http://www.theguardian.com/technology/2005/mar/02/japan.internationalnews){:target="\_blank"}.
 
 Let us think about more serious episodes: Kamikaze attacks in World War II and samurais who disembowel (hara-kiri) themselves for the sake of honor. Even Durkheim once noticed that "The readiness of the Japanese to disembowel themselves for the slightest reason is well known."[^durkheim-harakiri] It is not just psychological factor that makes the Japanese do this, I think. There must be something in Japanese culture contributing to these peculiar incidents. In this essay, I will try to figure out what it is. Has it anything to do with Buddhism? This paper is intended to submit in Buddhist Ethics class, but my focus is rather on the Japanese way in dealing with suicide, not about ethics (the sense of right and wrong) as such. So, I find 'ethos' is a more appropriate word to use here.
 

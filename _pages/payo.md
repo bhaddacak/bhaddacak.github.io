@@ -5,7 +5,7 @@ is_application: true
 date: 2023-09-04 12:00:00 +0700
 ---
 
-This is the single-sutta version of Payogasiddhi. It can be accessed by URL. For example, [{{ site.url }}/payo?1](/payo?1) leads to the sutta no. 1. The sutta numbers in this book are newly generated, never used by the tradition. For the full version, please visit [Moggallāna-Payogasiddhi](/moggpayo).
+This is the single-sutta version of Payogasiddhi. It can be accessed by URL. For example, [{{ site.url }}/payo?1](/payo?1){:target="\_blank"} leads to the sutta no. 1. The sutta numbers in this book are newly generated, never used by the tradition. For the full version, please visit [Moggallāna-Payogasiddhi](/moggpayo){:target="\_blank"}.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">

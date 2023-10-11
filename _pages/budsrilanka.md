@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-11 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This was an additional study done for *Indian Buddhism* (2nd semester of 2014), taught by Dr. Julia Estève. This part was not discussed in the class, so it was assigned as a self-study. The work is a historical report in form. The main source used is H. R. Perera's *Buddhism in Sri Lanka: A Short History*. I put this writing here because I find it useful when we need to grasp a quick picture of Buddhism in Sri Lanka. I have not rechecked the data used here, particularly figures and years. So, do not seriously cite this article. Please refer to the source mentioned.
 
 This writing is the outcome of my self-study about Buddhism in Sri Lanka. Because of the limitation of materials used and the vast scope of the subject, it looks more like a historical summary with some reflections, not an analytical essay concerning the subject. The main focus of this writing is about history of Buddhism in Sri Lanka from the first arrival to the first half of the twentieth century, only some important events will be taken into account. I will structure my narration chronologically in order to draw a relevant timeline as presented at the end.

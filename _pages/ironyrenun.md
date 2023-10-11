@@ -5,6 +5,9 @@ is_article: true
 date: 2023-04-09 12:00:00 +0700
 ---
 
+- TOC
+{:toc}
+
 > This is a term paper for *Indian Buddhism* class in the 2nd semester of 2014, taught by Dr. Julia Estève. I love the idea I developed here, because irony in Buddhism can be seen here and there, but it is seldom picked up and talked about. My style of writing at this time was not so good, perhaps because of the tight schedule. In many places, I tended to use copying rather than paraphrasing. However, the essay is a good storehouse of citations in this topic.
 
 Sociologically speaking, Buddhism emerged as a response to the rapid growth of new social milieu. Move from pastoral to agrarian culture, expansion of new cities, urbanization, and new economics with monetary exchange, all these factors played a major role in the way that Buddhism came into being. The new kind of economic growth made life more comfort, busy, and anxious. The new kind of remedy was needed. Subsequently, the Buddha proposed his solution to the predicament of life by renouncing the society to be a mendicant. Leaving the family behind and forsaking any wealth, one should content with minimal needs and find peace inside oneself instead. This is the way the Buddha led his community in two and a half thousand years ago. Buddhism, as we have known until today, is a religion of renunciation.
