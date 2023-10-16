@@ -1,5 +1,5 @@
 ---
-title: "Siam Rath Tipitaka Reader"
+title: "Siam Rath Tipiṭaka Reader"
 permalink: /srtreader
 is_application: true
 date: 2023-09-11 12:00:00 +0700

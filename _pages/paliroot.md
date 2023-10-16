@@ -2,7 +2,7 @@
 title: "Pāli Root Finder"
 permalink: /paliroot
 is_application: true
-date: 2023-10-10 12:00:00 +0700
+date: 2023-10-12 12:00:00 +0700
 ---
 
 <div style="padding-bottom:5px;">
@@ -32,6 +32,9 @@ Saddanīti Dhātumālā also has variants. They are marked by <em>sy</em> (Thai,
 </p>
 <p>
 The recent Dhātvatthasaṅgaha was composed by the Thera of Visuddhārāma in Mandalay. This book can fulfill what are missing in the old texts. Several days are spent to make the data programmable. And several corrections are made against Thai edition of <em>Dhātvatthasaṅgahapāṭhanissaya</em> (MCU Press, 1992), in which some noteworthy variants are found (marked by <em>sy</em>). The reference numbers used in this book are stanzas' number, which can link to the text directly. I do not have enough time to recheck the whole thing. If anyone finds unusual instances, please kindly inform me.
+</p>
+<p>
+Typically, definitions of roots are given in locative case. It sounds like "in (the meaning of) ..." For example, <em>gatiyaṃ</em> means <em>in the meaning of going</em>. We can translate it simply as <em>going</em>. To find English meanings of common definitions, see <a href="/rootmeaning" target = "_blank">Meanings of Pāli Roots</a>.
 </p>
 <p>
 The program here is quite powerful. It can give you perspectives unaware to ancient scholars. Features in the finder are self-explained, so no detailed guidance is needed. The user just has to play around and experiment. However, you should know that filtering operates before grouping by Unique function. If you want to search in the Unique result, it is better to use search facility in the browser.

@@ -22,8 +22,8 @@ permalink: /
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
-- [PTS Tipitaka Reader](/ptsreader)
-- [Siam Rath Tipitaka Reader](/srtreader)
+- [PTS Tipiṭaka Reader](/ptsreader)
+- [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
 - [Traditional Pāli Grammar Books](/grammarbooks)
 	- [Kaccāyana-Rūpasiddhi](/kaccrupa)
@@ -34,9 +34,9 @@ permalink: /
 	- [Single Sutta Payogasiddhi](/payo)
 	- [Niruttidīpanī](/nirutti)
 	- [Single Sutta Niruttidīpanī](/niru)
-	- [Padamālā](/saddpad)
-	- [Dhātumālā](/sadddha)
-	- [Suttamālā](/saddsut)
+	- [Saddanīti Padamālā](/saddpad)
+	- [Saddanīti Dhātumālā](/sadddha)
+	- [Saddanīti Suttamālā](/saddsut)
 	- [Single Sutta Suttamālā](/sadd)
 	- [Abhidhānappadīpikā](/abhidhana) (+Ṭīkā)
 	- [Subodhālaṅkāra](/subho)
@@ -52,8 +52,10 @@ permalink: /
 - [Pāli Passage Reader](/ppreader)
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
+- [Thai-English-Pāli Dictionary](/tepdict)<span class="label label-green">NEW</span>
 - [Declension Table Calculator](/declension)
 - [Pāli Root Finder](/paliroot)
+- [Meanings of Pāli Roots](/rootmeaning)<span class="label label-green">NEW</span>
 - [Grammatical Sutta Finder](/gramsut)
 
 ## Term Papers and Minor Writings
