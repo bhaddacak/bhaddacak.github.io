@@ -22,6 +22,8 @@ permalink: /
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
+- [Chaṭṭha Saṅgāyana Tipiṭaka Reformatted](/cstpage)<span class="label label-green">NEW</span>
+    - [Table of Contents](/cst)
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
@@ -52,10 +54,10 @@ permalink: /
 - [Pāli Passage Reader](/ppreader)
 - [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
-- [Thai-English-Pāli Dictionary](/tepdict)<span class="label label-green">NEW</span>
+- [Thai-English-Pāli Dictionary](/tepdict)
 - [Declension Table Calculator](/declension)
 - [Pāli Root Finder](/paliroot)
-- [Meanings of Pāli Roots](/rootmeaning)<span class="label label-green">NEW</span>
+- [Meanings of Pāli Roots](/rootmeaning)
 - [Grammatical Sutta Finder](/gramsut)
 
 ## Term Papers and Minor Writings

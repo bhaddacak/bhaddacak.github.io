@@ -40,6 +40,11 @@ bcUtil.getUrlSingleVar = function(url) {
 	}
 	return result;
 };
+bcUtil.getInnerText = function(html) {
+	const start = html.indexOf(">");
+	const end = html.lastIndexOf("<");
+	return html.slice(start + 1, end);
+};
 bcUtil.scroll = function(element, condition) {
 	if (condition)
 		this.scrollIntoView(element);
@@ -101,6 +106,9 @@ bcUtil.toggleToolBar = function(obj) {
 	else
 		toolbar.classList.add("fixed");
 	obj.fixedToolBar = !obj.fixedToolBar;
+};
+bcUtil.capitalize = function(word) {
+	return word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
 };
 bcUtil.toArabicNum = function(num) {
 	let result = "";

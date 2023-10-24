@@ -55,7 +55,7 @@ The program here is quite powerful. It can give you perspectives unaware to anci
 </div>
 <div style="padding-top:5px;">
 <button onClick="palirootFinder.toggleGroupSelector();">Group Selection</button>
-<select id="sortorder" onClick="palirootFinder.filter();">
+<select id="sortorder" onChange="palirootFinder.filter();">
 <option value="none">Original order</option>
 <option value="name">Sorted by name</option>
 <option value="def">Sorted by def</option>

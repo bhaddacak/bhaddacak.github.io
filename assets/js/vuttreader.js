@@ -58,7 +58,7 @@ vuttReader.fillSuttaNumberList = function() {
 };
 vuttReader.goChapter = function() {
 	const chapSelector = document.getElementById("chapterselector");
-	let chapToGo = chapSelector.options[chapSelector.selectedIndex].value;
+	const chapToGo = chapSelector.options[chapSelector.selectedIndex].value;
 	const resultElem = document.getElementById("textdisplay");
 	const allH3 = resultElem.getElementsByTagName("h3");
 	const success = this.findElementAndGo(allH3, chapToGo);

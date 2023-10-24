@@ -10,7 +10,7 @@ This is a simple Pāli sutta reader, thanks to well-organized data from [SuttaCe
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(suttaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
-<select id="nikaya" onClick="suttaReader.changeNikaya();">
+<select id="nikaya" onChange="suttaReader.changeNikaya();">
 	<option value="vin">Vin</option>
 	<option value="dn" selected>DN</option>
 	<option value="mn">MN</option>
@@ -18,7 +18,7 @@ This is a simple Pāli sutta reader, thanks to well-organized data from [SuttaCe
 	<option value="an">AN</option>
 	<option value="kn">KN</option>
 </select>
-<select id="kngroup" style="display:none;" onClick="suttaReader.changeKNGroup();">
+<select id="kngroup" style="display:none;" onChange="suttaReader.changeKNGroup();">
 	<option value="kp">Khuddakapāṭha</option>
 	<option value="dhp">Dhammapada</option>
 	<option value="ud">Udāna</option>
@@ -28,13 +28,13 @@ This is a simple Pāli sutta reader, thanks to well-organized data from [SuttaCe
 	<option value="thig">Therīgāthā</option>
 	<option value="cp">Cariyāpiṭaka</option>
 </select>
-<select id="vingroup" style="display:none;" onClick="suttaReader.changeVinGroup();">
+<select id="vingroup" style="display:none;" onChange="suttaReader.changeVinGroup();">
 	<option value="bu-vb">Mahāvibhaṅga</option>
 	<option value="bi-vb">Bhikkhunivibhaṅga</option>
 	<option value="kd">Khandhaka</option>
 	<option value="pvr">Parivāra</option>
 </select>
-<select id="groupselector" style="display:none;" onClick="suttaReader.changeGroup();"></select>
+<select id="groupselector" style="display:none;" onChange="suttaReader.changeGroup();"></select>
 <select id="suttaselector"></select>
 <button onClick="suttaReader.loadSutta();">Load</button>
 <span style="padding: 3px">

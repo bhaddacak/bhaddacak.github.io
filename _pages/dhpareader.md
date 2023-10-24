@@ -11,7 +11,7 @@ This commentary to Dhammapada is taken from the traditional Thai monastic Pāli 
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(dhpaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <button onClick="dhpaReader.showTOC(true);">TOC</button>
-<select id="partselector" onClick="dhpaReader.selectPart();">
+<select id="partselector" onChange="dhpaReader.selectPart();">
 <option value="1">Part I</option>
 <option value="2">Part II</option>
 <option value="3">Part III</option>
