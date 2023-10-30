@@ -40,10 +40,13 @@ bcUtil.getUrlSingleVar = function(url) {
 	}
 	return result;
 };
-bcUtil.getInnerText = function(html) {
-	const start = html.indexOf(">");
-	const end = html.lastIndexOf("<");
-	return html.slice(start + 1, end);
+bcUtil.getInnerText = function(text) {
+	const start = text.indexOf(">");
+	const end = text.lastIndexOf("<");
+	if (start > -1 && end > -1)
+		return this.getInnerText(text.slice(start + 1, end));
+	else
+		return text;
 };
 bcUtil.scroll = function(element, condition) {
 	if (condition)

@@ -1,16 +1,22 @@
 /*! cstreader.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
 const cstReader = {};
+cstReader.cst_url = "";
 cstReader.util = {};
-cstReader.dataUtil = {};
 cstReader.params = {};
 cstReader.headSelectorOptions = [];
 cstReader.subheadSelectorOptions = [];
 cstReader.paranumList = [];
 cstReader.textCache = "";
+cstReader.cstInfo = {};
 cstReader.bookInfo = {};
 cstReader.exegWindows = {};
 cstReader.fixedToolBar = false;
+cstReader.abbr = { "vin": "Vinaya", "sut": "Suttanta", "abh": "Abhidhamma", "mul": "Mūla", "att": "Aṭṭhakathā", "tik": "Ṭīkā", "ann": "Añña", "exe": "Exegesis" };
+cstReader.titleDef = {
+	"vinmul": "Main texts in the Vinaya (Vinayapiṭake mūlaganthā)",
+	"vinexe": "Exegetical works in the Vinaya (Vinayapiṭake aṭṭhakathā ṭīkā ca)",
+};
 cstReader.instruction = "<strong>Instruction:</strong> Please read this first! Texts can be synchronized only with their opener. So, when opening individual documents here, they cannot be synced together. To sync them, they must be opened by their parent text with the <strong>toolbar</strong> provided. Chained synchonization can also be done by chained opening. The synchronization is done only for paragraph numbers.";
 cstReader.getUrlParams = function() {
 	const result = {};
@@ -29,6 +35,18 @@ cstReader.getUrlParams = function() {
 	}
 	return result;
 };
+cstReader.loadCstInfo = function() {
+	const ajaxParams = {};
+	ajaxParams.address = this.cst_url + "/cstinfo.json";
+	ajaxParams.successCallback = function(response) {
+		cstReader.cstInfo = JSON.parse(response);
+		cstReader.loadTOC();
+	};
+	ajaxParams.failureCallback = function() {
+		document.getElementById("textdisplay").innerHTML = "Unable to load CST information";
+	};
+	this.util.ajaxLoad(ajaxParams);
+};
 cstReader.loadTOC = function() {
 	this.params = this.getUrlParams();
 	const pkeys = Object.keys(this.params);
@@ -41,8 +59,8 @@ cstReader.showTOC = function() {
 	const texts = { "vinmul": [], "vinexe": [],
 					"sutmul": [], "sutexe": [],
 					"abhmul": [], "abhexe": [] };
-	for (const b in this.dataUtil.bookInfo) {
-		const book = this.dataUtil.bookInfo[b];
+	for (const b in this.cstInfo) {
+		const book = this.cstInfo[b];
 		texts[book.group + book.class].push(book);
 	}
 	const resultElem = document.getElementById("textdisplay");
@@ -58,7 +76,7 @@ cstReader.showTOC = function() {
 };
 cstReader.showTocTable = function(groupclass, list) {
 	const resultElem = document.getElementById("textdisplay");
-	const titleStr = this.dataUtil.titleDef[groupclass];
+	const titleStr = this.titleDef[groupclass];
 	const ppos = titleStr.indexOf("(");
 	const tdiv = document.createElement("div");
 	tdiv.style.paddingTop = "10px";
@@ -92,13 +110,20 @@ cstReader.showTocTable = function(groupclass, list) {
 	resultElem.appendChild(table);
 };
 cstReader.loadText = function(ref) {
-	this.bookInfo = this.dataUtil.bookInfo[ref];
+	this.bookInfo = this.cstInfo[ref];
+	if (this.bookInfo === undefined) {
+		document.getElementById("textdisplay").innerHTML = "Content not found";
+		return;
+	}
 	const ajaxParams = {};
-	ajaxParams.address = "/assets/palitext/cst/" + this.bookInfo.file;
+	ajaxParams.address = this.cst_url + "/gz/" + this.bookInfo.file;
 	ajaxParams.isBinary = true;
 	ajaxParams.successCallback = function(response) {
 		cstReader.textCache = cstReader.formatText(window.pako.ungzip(response, { to: "string" }), cstReader.bookInfo);
 		cstReader.displayText(cstReader.params[ref]);	
+	};
+	ajaxParams.failureCallback = function() {
+		document.getElementById("textdisplay").innerHTML = "Content not found";
 	};
 	this.util.ajaxLoad(ajaxParams);
 	document.title = this.bookInfo.name;
@@ -118,10 +143,11 @@ cstReader.formatText = function(text, book) {
 		if (lines[i].startsWith("<!--"))
 			continue;
 		if (lines[i].trim().length > 0) {
-			if (lines[i].startsWith("<h")) {
-				result += lines[i].replace(/<h2/, "<h2 style='text-align:center;'");
-				if (lines[i].startsWith("<h3")) {
-					const t = this.util.getInnerText(lines[i]);
+			const line = lines[i].replaceAll(/(\[.*?\])/g, "<span style='color:gray;'>$1</span>");
+			if (line.startsWith("<h")) {
+				result += line.replace(/<h2/, "<h2 style='text-align:center;'");
+				if (line.startsWith("<h3")) {
+					const t = this.util.getInnerText(line);
 					this.headSelectorOptions.push("<option value='" + t + "'>" + t + "</option>");
 					currHeadIndex++;
 					this.subheadSelectorOptions[currHeadIndex] = [];
@@ -129,33 +155,35 @@ cstReader.formatText = function(text, book) {
 						this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
 						optgroupStarted = false;
 					}
-				} else if (lines[i].startsWith("<h4")) {
-					const t = this.util.getInnerText(lines[i]);
+				} else if (line.startsWith("<h4")) {
+					const t = this.util.getInnerText(line);
 					this.subheadSelectorOptions[currHeadIndex].push("<option value='" + t + "'>" + t + "</option>");
 				}
-			} else if (lines[i].startsWith("<span class=\"group")) {
-				const t = this.util.getInnerText(lines[i]);
+			} else if (line.startsWith("<div class=\"group")) {
+				const t = this.util.getInnerText(line);
 				if (optgroupStarted)
 					this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
 				this.subheadSelectorOptions[currHeadIndex].push("<optgroup label='" + t + "'>");
 				optgroupStarted = true;
-				let line = lines[i].replace(/<\/?span.*?>/, "");
-				result += "<strong>" + line + "</strong><br>";
-			} else if (lines[i].startsWith("<span class=\"center")) {
-				let line = lines[i].replace(/<\/?span.*?>/, "");
-				line = "<div style='text-align:center;'>" + line + "</div>";
 				result += line;
-			} else if (lines[i].startsWith("<span class=\"indent")) {
-				result += "\t\t" + lines[i] + "<br><br>";
-			} else if (lines[i].startsWith("<span class=\"gatha")) {
-				result += "\t" + lines[i] + "<br>";
-			} else if (lines[i].match(/^\d+/) !== null) {
-				const pnum = lines[i].match(/^[0-9-]+/)[0];
+			} else if (line.startsWith("<div class=\"centre")) {
+				result += line.replace(/<div/, "<div style='text-align:center;'");
+			} else if (line.startsWith("<div class=\"indent")) {
+				result += line.replace(/>/, ">\t\t");
+			} else if (line.startsWith("<div class=\"gatha")) {
+				if (line.indexOf("\"gathalast\"") > -1)
+					result += line.replace(/>/, ">\t").replace(/div /, "div style='padding-bottom:12px;' ");
+				else
+					result += line.replace(/>/, ">\t");
+			} else if (line.match(/^\d+/) !== null) {
+				const pnum = line.match(/^[0-9-]+/)[0];
 				this.paranumList.push(pnum);
 				const br = lines[i-2].startsWith("<h") ? "" : "<br>";
-				result += br + "\t" + lines[i].replace(/^([0-9-]+)/, "<strong>$1</strong>") + "<br>";
+				result += br + "\t" + line.replace(/^([0-9-]+)/, "<strong>$1</strong>") + "<br>";
 			} else {
-				result += "\t" + lines[i] + "<br>";
+				const br = line.startsWith("<div") ? "" : "<br>";
+				const tab = line.startsWith("<div") ? "" : "\t";
+				result += tab + line + br;
 			}
 		}
 	}
@@ -173,7 +201,7 @@ cstReader.displayText = function(pnum) {
 		const exegBar = document.getElementById("exegbar");
 		exegBar.style.display = "inline";
 		for (const com of this.bookInfo.commentary) {
-			const exItem = this.dataUtil.bookInfo[com];
+			const exItem = this.cstInfo[com];
 			const exButt = document.createElement("button");
 			exButt.title = exItem.name;
 			exButt.innerHTML = "<svg class='icon'><use xlink:href='/assets/fontawesome/custom.svg#scroll'></use></svg>";

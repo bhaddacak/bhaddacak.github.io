@@ -22,7 +22,7 @@ permalink: /
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
-- [Chaṭṭha Saṅgāyana Tipiṭaka Reformatted](/cstpage)<span class="label label-green">NEW</span>
+- [Chaṭṭha Saṅgāyana Tipiṭaka Restructured](/cstpage)<span class="label label-green">NEW</span>
     - [Table of Contents](/cst)
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)

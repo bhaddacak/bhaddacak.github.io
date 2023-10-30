@@ -1,8 +1,8 @@
 ---
-title: "Chaṭṭha Saṅgāyana Tipiṭaka Reformatted"
+title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cst
 is_application: true
-date: 2023-10-24 12:00:00 +0700
+date: 2023-10-30 12:00:00 +0700
 ---
 
 <div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;z-index:10;">
@@ -18,12 +18,11 @@ date: 2023-10-24 12:00:00 +0700
 </span>
 </div>
 <div id="textdisplay" class="textdisplay">Loading... (please wait)</div>
-<script src="/assets/js/cstutil.js"></script>
 <script src="/assets/js/cstreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>
 window.cstReader = cstReader;
+cstReader.cst_url = "{{ site.cst_url }}";
 cstReader.util = bcUtil;
-cstReader.dataUtil = cstUtil;
-cstReader.loadTOC();
+cstReader.loadCstInfo();
 </script>
