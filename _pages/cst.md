@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cst
 is_application: true
-date: 2023-10-30 12:00:00 +0700
+date: 2023-11-03 12:00:00 +0700
 ---
 
 <div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;z-index:10;">
@@ -10,7 +10,7 @@ date: 2023-10-30 12:00:00 +0700
 <button onClick="bcUtil.toggleToolBar(cstReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="headselector" style="width:15em;" onChange="cstReader.goHead();"></select>
 <select id="subheadselector" style="width:15em;display:none;" onChange="cstReader.goSubhead();"></select>
-<select id="paranumselector" onChange="cstReader.goParaNum();"></select>
+<select id="paranumselector" style="display:none;" onChange="cstReader.goParaNum();"></select>
 <label for="withnotes" title="Show redactional notes"><input type="checkbox" id="withnotes" onClick="cstReader.updateDisplay();" checked><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#sticky-note"></use></svg></label>
 <span id="exegbar" style="display:none;">
 <label for="syncexeg" title="Synchronize with exegesis"><input type="checkbox" id="syncexeg" onClick="cstReader.syncExegesis();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#sync"></use></svg></label>

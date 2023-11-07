@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-10-30 12:00:00 +0700
+date: 2023-11-07 12:00:00 +0700
 ---
 
 - TOC
@@ -14,18 +14,154 @@ A better edited collection recently is of [SuttaCentral](https://suttacentral.ne
 
 Although the data of CST are reliable and good in many respects, the collection is not perfect. To programmers who make use of the data, several features are needed to be improved and many points are needed to be fixed so that we can make a better reader or search program. Moreover, to scholars, it should be an easier way to refer to the texts. This is a hard problem because referencing method depends heavily on the structure of the texts. Now the old days of PTS referring system have gone and several new systems arise. Here we will have another referencing system, which reflects the data we use.
 
-That is to say, the target users of this collection are researchers and serious learners. So, we organize the texts in the way that related data are put together, able to be used at hand. And by the motto of this site, *"Buddhists should be able to read Pāli texts by themselves"*, we do not offer any translation here.
+That is to say, the target users of this collection are researchers and serious learners. So, we organize the texts in the way that related works are put together, able to be used at hand. And each book in the collection is identified by its name. That is the best approach to Pāli literary studies. Moreover, by the motto of this site, *"Buddhists should be able to read Pāli texts by themselves"*, we do not offer any translation here.
 
 For more information about the structure of the collection, see [CST-Kit](https://github.com/bhaddacak/cst-kit){:target="\_blank"}.
 
+> For the information on Pāli literature is vast and somewhat perplexing to beginners, I will ignore most of them here. For those who want to delve into the details, please consult other better sources, for example, Oskar von Hinüber's *A Handbook of Pāli Literature* (Walter de Gruyter, 1996) or K.R. Norman's *Pāli Literature* (Otto Harrassowitz, 1983).
+
 ## Vinayapiṭaka
 
-At this beginning stage, available books are the main text in the Vinaya: Bhikkhuvibhaṅga 1 (Buv1), Bhikkhuvibhaṅga 2 (Buv2), Bhikkhunīvibhaņga (Biv), Mahāvagga (Mv), Cūḷavagga (Cv), and Parivāra (Pvr). The sole commentary of these is Samantapāsādikā (Sp) by Buddhaghosa, which is divided in the same manner, hence Sp1 to Sp6. And linkable exegeses of Sp are Sāratthadīpanī (Sd), its main commentary, Vajirabuddhi (Vjb), and Vimativinodanī (Vmv). All these have parallel structure to the main texts (there is no Vjb3 for Biv). If these documents are opened by chained opening using the toolbar, they can be synchronized at once, if the option is selected. To see the how it looks like, go [HERE](http://paliplatform.blogspot.com/2023/10/synchronization-of-cst-docs.html){:target="\_blank"}. Other texts with this structure can be used in the same manner.
+While the main texts in the Vinaya are of a handful, their related works are rich. All the texts are listed in the tree below, including their name and abbreviation for referring. Pāli learners should know all these names and their relationship. The most important exegesis is undoubtedly Samantapāsādikā by Buddhaghosa, because several subsequent works go around it. Unlike the original, I promote the Pātimokkha, both of the Bhikkhu and Bhikkhunī, to the main group. This makes sense because by their content they are not exegeses, but recapitulations.
 
-The remaining texts will be added up weekly. The collection is supposed to be completed around the end of November.
+Most texts in the Vinaya can be synchronized in the reader. To understand how it works, see [HERE](http://paliplatform.blogspot.com/2023/10/synchronization-of-cst-docs.html){:target="\_blank"}, or better try it yourself in the reader. Other texts with this structure can be used in the same manner.
+
+```
+============
+Vinayapiṭaka
+============
+  |- Bhikkhuvibhaṅga 1 (Buv1)
+  |   |- Samantapāsādikā 1 (Sp1)
+  |       |- Sāratthadīpanī 1 (Sd1)
+  |       |- Vimativinodanī 1 (Vmv1)
+  |       |- Vajirabuddhi 1 (Vjb1)
+  |
+  |- Bhikkhuvibhaṅga 2 (Buv2)
+  |   |- Samantapāsādikā 2 (Sp2)
+  |       |- Sāratthadīpanī 2 (Sd2)
+  |       |- Vimativinodanī 2 (Vmv2)
+  |       |- Vajirabuddhi 2 (Vjb2)
+  |       |- Pācityādiyojanā (Pc-y)
+  |
+  |- Bhikkhunīvibhaṅga (Biv)
+  |   |- Samantapāsādikā 3 (Sp3)
+  |       |- Sāratthadīpanī 3 (Sd3)
+  |       |- Vimativinodanī 3 (Vmv3)
+  |       |- Bhikkhunīvibhaṅgayojanā (Biv-y)
+  |
+  |- Mahāvagga (Mv)
+  |   |- Samantapāsādikā 4 (Sp4)
+  |       |- Sāratthadīpanī 4 (Sd4)
+  |       |- Vimativinodanī 4 (Vmv4)
+  |       |- Vajirabuddhi 4 (Vjb4)
+  |       |- Mahāvaggayojanā (Mv-y)
+  |
+  |- Cūḷavagga (Cv)
+  |   |- Samantapāsādikā 5 (Sp5)
+  |       |- Sāratthadīpanī 5 (Sd5)
+  |       |- Vimativinodanī 5 (Vmv5)
+  |       |- Vajirabuddhi 5 (Vjb5)
+  |       |- Cūḷavaggayojanā (Cv-y)
+  |
+  |- Parivāra (Pvr)
+  |   |- Samantapāsādikā 6 (Sp6)
+  |       |- Sāratthadīpanī 6 (Sd6)
+  |       |- Vimativinodanī 6 (Vmv6)
+  |       |- Vajirabuddhi 6 (Vjb6)
+  |       |- Parivārayojanā (Pvr-y)
+  |
+  |- Bhikkhupātimokkha (Bup)
+  |   |- Kaṅkhāvitaraṇī (Kkh1)
+  |       |- Kaṅkhāvitaraṇī-purāṇaṭīkā (Kkh-pt1)
+  |       |- Kaṅkhāvitaraṇī-abhinavaṭīkā (Kkh-nt1)
+  |
+  |- Bhikkhunīpātimokkha (Bip)
+      |- Kaṅkhāvitaraṇī (Kkh2)
+          |- Kaṅkhāvitaraṇī-purāṇaṭīkā (Kkh-pt2)
+          |- Kaṅkhāvitaraṇī-abhinavaṭīkā (Kkh-nt2)
+
+  ----------------------------------------
+  Independent Vinaya Exegeses/Compositions
+  ----------------------------------------
+      |- Vinayasaṅgaha (Vns)
+      |   |- Vinayālaṅkāra (Vnl)
+      |
+      |- Vinayavinicchaya (Vnv)
+      |   |- Vinayavinicchayaṭīkā (Vnv-t)
+      |
+      |- Uttaravinicchaya (Utv)
+      |   |- Uttaravinicchayaṭīkā (Utv-t)
+      |
+      |- Khuddasikkhā (Khds)
+      |   |- Khuddasikkhā-purāṇaṭīkā (Khds-pt)
+      |   |- Khuddasikkhā-abhinavaṭīkā (Khds-nt)
+      |
+      |- Mūlasikkhā (Mls)
+          |- Mūlasikkhāṭīkā (Mls-t)
+```
+
+## Suttantapiṭaka
+
+```
+==============
+Suttantapiṭaka
+==============
+  |- Dīghanikāya Sīlakkhandhavagga (D1)
+  |   |- Sumaṅgalavilāsinī 1 (Smv1)
+  |       |- Līnatthappakāsanā 1 (Lpa 1)
+  |       |- Sīlakkhandhavagga-abhinavaṭīkā (Sv-nt)
+  |
+  |- Dīghanikāya Mahāvagga (D2)
+  |   |- Sumaṅgalavilāsinī 2 (Smv2)
+  |       |- Līnatthappakāsanā 2 (Lpa 2)
+  |
+  |- Dīghanikāya Pāthikavagga (D3)
+  |   |- Sumaṅgalavilāsinī 3 (Smv3)
+  |       |- Līnatthappakāsanā 3 (Lpa 3)
+```
 
 ## Guideline for text referencing
 
-Texts in the collection can be accessed by URL, for example, to get to Bhikkhuvibhaṅga 1, you can go to [{{ site.url }}/cst?buv1](/cst?buv1){:target="\_blank"}. If a specific paragraph number is given, it can directly jump to that point, for example, [{{ site.url }}/cst?buv1=24](/cst?buv1=24){:target="\_blank"}.
+Texts in the collection can be accessed by URL with their abbreviation, for example, to get to Bhikkhuvibhaṅga 1, you can go to [{{ site.url }}/cst?buv1](/cst?buv1){:target="\_blank"}. If a specific paragraph number is given, it can directly jump to that point. For example, [{{ site.url }}/cst?buv1=24](/cst?buv1=24){:target="\_blank"} leads to the starting point of the first Pārājika.
+
+Some documents have complex structure with multiple number series, such as the Pātimokkha. They can be specifically accessed by adding group number in the query using a colon. For example, [{{ site.url }}/cst?bup=5:1](/cst?bup=5:1){:target="\_blank"} leads to the first rule of Pācittiya. If the group number is not used, it will always go to the first series.
+
+### Text referencing in writings
+
+Referring texts by URL is convenient in most online situations. In writings for publications, the format is slightly different. First, make clear to the reader that this collection is used by referring to its origin, i.e., [CST-Kit](https://github.com/bhaddacak/cst-kit){:target="\_blank"}. Then, mention texts by their abbreviation, optionally with a point of reference. This can be a paragraph number, if any, or a distinct portion of text.
+
+For example, to the first mātikā of Pārājika rule, we can refer by **Buv1 39** or use a decimal separator like **Buv1.39** or use Roman numeral for book volume (if any) as in the legacy system, hence **Buv I 39**. To the Dhammacakkappavattana-sutta in Mahāvagga, we can use, for example, **Mv 13-17** or **Mv.13-17**.
+
+| Target content | References |
+|---|---|
+| The first mātikā of Pārājika rule | Buv1 39, Buv1.39, Buv I 39 |
+| The Dhammacakkappavattana-sutta in Mahāvagga | Mv 13-17, Mv.13-17 |
+
+### Referencing to exegeses
+
+This can be baffling to new learners, but with the good organization of paragraph numbers, referring to subordinate texts is as easy as the main texts. We have two following methods:
+
+1. **Using the name of text** (recommended). For example, at the first point mentioned above, we can refer to the commentary by **Sp1 39** and the main subcommentary by **Sd1 39**. And to the Dhammacakka, the commentary is **Sp4 13** (there is little text here), and the main subcommentary **Sd4 13-17** (there is much more text here). See more examples in the table below.
+2. **Using the traditional way**. By adding a suffix to the main text, it can change the text mentioned relatively. Adding **-a** means commentary, and adding **-t** (or -ṭ) means subcommentary. For example, the commentary to the Pārājika above can be **Buv1-a 39** (= Sp1 39), and the subcommentary **Buv1-t 39** (equivalent to Sp1-t 39 = Sd1 39). And of the Dhammacakka can be **Mv-a 13** (= Sp4 13) and **Mv-t 13-17** (equivalent to Sp4-t 13-17 = Sd4 13-17).
+
+| Target content | By text name | By traditional way |
+|---|---|---|
+| The commentary to the first mātikā above | Sp1 39, Sp1.39, Sp I 39 | Buv1-a 39, Buv-a1.39, Buv-a I 39 |
+| The subcommentary to the first mātikā above | Sd1 39, Sd1.39, Sd I 39 | Buv1-t 39, Buv-t1.39, Buv-t I 39 |
+| The commentary to the Dhammacakka in Mahāvagga | Sp4 13, Sp4.13, Sp IV 13 | Mv-a 13 |
+| The subcommentary to the Dhammacakka in Mahāvagga | Sd4 13-17, Sd4.13-17, Sd IV 13-17 | Mv-t 13-17 |
+
+As we have seen above, the first method is more convenient and less error-prone. Moreover, it can be used to refer to any text, not just the texts in the established hierarchy. But we have to learn how to mention a book by its name. This is not a problem because all researchers or serious students of Buddhism and Pāli should know that anyway.
+
+However, for a simple structure of texts, using the traditional way can be less confusing. For example, to the first paragraph of the Brahmajālasutta in Dīghanikāya, we can refer to it by, for example, **D1 1**. And because there are no alternatives for exegeses in this group (except for the Sīlakkhandhavagga), we can simply refer to its commentary and subcommentary by **D1-a 1** and **D1-t 1** respectively (equivalent to **Smv1 1** and **Lpa1 1**).
+
+### When no numbers to refer to
+
+In some cases there is no proper series of number at all in the text. In publications, we can use page numbers for referring. In digital text like this, apart from using a bare abbreviation, we can use two following methods:
+
+1. **Quoting a heading**. This is a rough way to do, if structure can be found at all in the text. For example, in Kaṅkhāvitaraṇī 1 (the commentary to Bhikkhupātimokkha) we can refer to the first Pārājika by **Kkh1** "Paṭhamapārājikavaṇṇanā."
+2. **Quoting an excerpt**. To precisely refer to a text, there is no better way than to give a distinct portion of it. The portion should be long enough to make a unique search, for example, **Kkh1** *"Bhikkhūnaṃ sikkhāsājīvasamāpannoti yā bhikkhūnaṃ adhisīlasaṅkhātā sikkhā."*
+
+The second method is commonly used in writing scholarly works. When a portion of text is mentioned in the body of the writing, it can be added a footnote. Then only the book abbreviation is needed in the note.
 
 > [Table of Contents](/cst)

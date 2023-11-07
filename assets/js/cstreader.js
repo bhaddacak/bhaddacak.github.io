@@ -16,6 +16,10 @@ cstReader.abbr = { "vin": "Vinaya", "sut": "Suttanta", "abh": "Abhidhamma", "mul
 cstReader.titleDef = {
 	"vinmul": "Main texts in the Vinaya (Vinayapiṭake mūlaganthā)",
 	"vinexe": "Exegetical works in the Vinaya (Vinayapiṭake aṭṭhakathā ṭīkā ca)",
+	"sutmul": "Main texts in the Suttanta (Suttantapiṭake mūlaganthā)",
+	"sutexe": "Exegetical works in the Suttanta (Suttantapiṭake aṭṭhakathā ṭīkā ca)",
+	"abhmul": "Main texts in the Abhidhamma (Abhidhammapiṭake mūlaganthā)",
+	"abhexe": "Exegetical works in the Abhidhamma (Abhidhammapiṭake aṭṭhakathā ṭīkā ca)",
 };
 cstReader.instruction = "<strong>Instruction:</strong> Please read this first! Texts can be synchronized only with their opener. So, when opening individual documents here, they cannot be synced together. To sync them, they must be opened by their parent text with the <strong>toolbar</strong> provided. Chained synchonization can also be done by chained opening. The synchronization is done only for paragraph numbers.";
 cstReader.getUrlParams = function() {
@@ -87,21 +91,21 @@ cstReader.showTocTable = function(groupclass, list) {
 	const table = document.createElement("table");
 	table.style.fontSize = "0.9em";
 	const thead = document.createElement("thead");
-	thead.innerHTML = "<tr><th>Ref.</th><th>Book name</th><th>Description</th><th>Com.</th></tr>";
+	thead.innerHTML = "<tr><th style='width:4.5em;'>Ref.</th><th>Book name</th><th>Description</th><th style='width:4.5em;'>Com.</th></tr>";
 	table.appendChild(thead);
 	const tbody = document.createElement("tbody");
 	for (const item of list) {
 		const tr = document.createElement("tr");
 		const ref = "<a href='/cst?" + item.ref + "' target='_blank'>" + this.util.capitalize(item.ref) + "</a>";
 		let row = "<td>" + ref + "</td>";
-		const altname = item.altname.length > 0 ? " (" + item.altname.replace(/ (\d+)$/, "&nbsp;$1") + ")": "";
+		const altname = item.altname.length > 0 ? " (" + item.altname.join(", ").replace(/ (\d+)$/, "&nbsp;$1") + ")": "";
 		row += "<td>" + item.name.replace(/ (\d+)$/, "&nbsp;$1") + altname + "</td>";
 		row += "<td>" + item.description + "</td>";
 		let commen = "";
 		for (const com of item.commentary) {
-			commen += "<a href='/cst?" + com + "' target='_blank'>" + this.util.capitalize(com) + "</a>, ";
+			commen += "<a href='/cst?" + com + "' target='_blank'>" + this.util.capitalize(com) + "</a>,<br>";
 		}
-		commen = commen.slice(0, -2);
+		commen = commen.slice(0, -5);
 		row += "<td>" + commen + "</td>";
 		tr.innerHTML = row;
 		tbody.appendChild(tr);
@@ -138,6 +142,7 @@ cstReader.formatText = function(text, book) {
 	const lines = text.split(/\r?\n/);
 	result += "<br>";
 	let currHeadIndex = -1;
+	let paranumGroupIndex = -1;
 	let optgroupStarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
@@ -145,19 +150,22 @@ cstReader.formatText = function(text, book) {
 		if (lines[i].trim().length > 0) {
 			const line = lines[i].replaceAll(/(\[.*?\])/g, "<span style='color:gray;'>$1</span>");
 			if (line.startsWith("<h")) {
-				result += line.replace(/<h2/, "<h2 style='text-align:center;'");
-				if (line.startsWith("<h3")) {
+				if (line.startsWith("<h2")) {
+					result += line.replace(/<h2/, "<h2 style='text-align:center;'");
+				} else if (line.startsWith("<h3")) {
 					const t = this.util.getInnerText(line);
 					this.headSelectorOptions.push("<option value='" + t + "'>" + t + "</option>");
 					currHeadIndex++;
 					this.subheadSelectorOptions[currHeadIndex] = [];
 					if (optgroupStarted) {
-						this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
+						this.subheadSelectorOptions[currHeadIndex-1].push("</optgroup>");
 						optgroupStarted = false;
 					}
+					result += line.replace(/<h3/, "<h3 id='" + t + "'");
 				} else if (line.startsWith("<h4")) {
 					const t = this.util.getInnerText(line);
-					this.subheadSelectorOptions[currHeadIndex].push("<option value='" + t + "'>" + t + "</option>");
+					this.subheadSelectorOptions[currHeadIndex].push("<option value='" + currHeadIndex + ":" + t + "'>" + t + "</option>");
+					result += line.replace(/<h4/, "<h4 id='" + currHeadIndex + ":" + t + "'");
 				}
 			} else if (line.startsWith("<div class=\"group")) {
 				const t = this.util.getInnerText(line);
@@ -165,7 +173,7 @@ cstReader.formatText = function(text, book) {
 					this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
 				this.subheadSelectorOptions[currHeadIndex].push("<optgroup label='" + t + "'>");
 				optgroupStarted = true;
-				result += line;
+				result += line.replace(/<div/, "<div style='padding-top:10px;'");
 			} else if (line.startsWith("<div class=\"centre")) {
 				result += line.replace(/<div/, "<div style='text-align:center;'");
 			} else if (line.startsWith("<div class=\"indent")) {
@@ -177,9 +185,20 @@ cstReader.formatText = function(text, book) {
 					result += line.replace(/>/, ">\t");
 			} else if (line.match(/^\d+/) !== null) {
 				const pnum = line.match(/^[0-9-]+/)[0];
-				this.paranumList.push(pnum);
+				if (paranumGroupIndex === -1) {
+					paranumGroupIndex++;
+					this.paranumList.push([]);
+				} else {
+					// if another series starts
+					if (pnum === "1" || pnum.startsWith("1-")) {
+						paranumGroupIndex++;
+						this.paranumList.push([]);
+					}
+				}
+				this.paranumList[paranumGroupIndex].push(pnum);
 				const br = lines[i-2].startsWith("<h") ? "" : "<br>";
-				result += br + "\t" + line.replace(/^([0-9-]+)/, "<strong>$1</strong>") + "<br>";
+				const numId = "pn" + (paranumGroupIndex + 1) + ":" + pnum;
+				result += br + "\t" + line.replace(/^([0-9-]+)/, "<strong id='" + numId + "'>$1</strong>") + "<br>";
 			} else {
 				const br = line.startsWith("<div") ? "" : "<br>";
 				const tab = line.startsWith("<div") ? "" : "\t";
@@ -210,6 +229,7 @@ cstReader.displayText = function(pnum) {
 			});
 			exegBar.appendChild(exButt);
 		}
+		document.getElementById("syncexeg").disabled = !this.bookInfo.linkable;
 	}
 	if (pnum.length > 0)
 		this.goParaNum(pnum);
@@ -226,7 +246,19 @@ cstReader.openBook = function(ref) {
 	this.exegWindows[ref] = win;
 };
 cstReader.fillParaNumList = function() {
-	this.util.fillSelectOptions(document.getElementById("paranumselector"), this.paranumList);
+	const paranumSelector = document.getElementById("paranumselector");
+	if (this.paranumList.length > 0) {
+		paranumSelector.style.display = "inline";
+		const nlist = [];
+		const vlist = [];
+		for (let i=0; i < this.paranumList.length; i++) {
+			for (let j=0; j < this.paranumList[i].length; j++) {
+				nlist.push(this.paranumList[i][j]);
+				vlist.push((i+1) + ":" + this.paranumList[i][j]);
+			}
+		}
+		this.util.fillSelectOptions(paranumSelector, nlist, vlist);
+	}
 };
 cstReader.fillHeadSelector = function() {
 	const headSelector = document.getElementById("headselector");
@@ -242,60 +274,70 @@ cstReader.fillSubheadSelector = function(index) {
 		subheadSelector.style.display = "none";
 	}
 };
-cstReader.findElementAndGo = function(list, str) {
-	let success = false;
-	for (let i=0; i<list.length; i++) {
-		const elem = list[i];
-		const text = list[i].textContent.trim();
-		if (text === str) {
-			this.util.scroll(elem, this.fixedToolBar);
-			success = true;
-			break;
-		}
-	}
-	return success;
-};
 cstReader.goHead = function() {
 	const headSelector = document.getElementById("headselector");
 	const headToGo = headSelector.options[headSelector.selectedIndex].value;
-	const resultElem = document.getElementById("textdisplay");
-	const allH3 = resultElem.getElementsByTagName("h3");
-	this.findElementAndGo(allH3, headToGo);
+	const targetElem = document.getElementById(headToGo);
+	this.util.scroll(targetElem, this.fixedToolBar);
 	this.fillSubheadSelector(headSelector.selectedIndex);
 };
 cstReader.goSubhead = function() {
 	const subheadSelector = document.getElementById("subheadselector");
 	const subheadToGo = subheadSelector.options[subheadSelector.selectedIndex].value;
-	const resultElem = document.getElementById("textdisplay");
-	const allH4 = resultElem.getElementsByTagName("h4");
-	this.findElementAndGo(allH4, subheadToGo);
+	const targetElem = document.getElementById(subheadToGo);
+	this.util.scroll(targetElem, this.fixedToolBar);
 };
 cstReader.goParaNum = function(pnum) {
+	let success = false;
 	const paranumSelector = document.getElementById("paranumselector");
-	const pnumToGo = pnum === undefined || pnum.length === 0 ? paranumSelector.options[paranumSelector.selectedIndex].value : pnum;
+	const pnumToGo = pnum === undefined || pnum.length === 0
+				? paranumSelector.options[paranumSelector.selectedIndex].value
+				: pnum.indexOf(":") > -1
+					? pnum
+					: "1:" + pnum;
 	const resultElem = document.getElementById("textdisplay");
-	const allElm = resultElem.getElementsByTagName("strong");
-	for (let i=0; i<allElm.length; i++) {
-		const text = allElm[i].textContent.trim();
-		const dpos = text.indexOf("-");
-		const reStart = new RegExp("^" + pnumToGo + "-?");
-		const reEnd = new RegExp("-" + pnumToGo + "$");
-		if (text === pnumToGo || text.match(reStart) !== null || text.match(reEnd) !== null) {
-			this.util.scroll(allElm[i], this.fixedToolBar);
-			this.util.setSelectSelection(paranumSelector, text);
-			break;
-		} else if (dpos > -1) {
-			const nstart = parseInt(text.slice(0, dpos));
-			const nend = parseInt(text.slice(dpos + 1));
-			const pnum = parseInt(pnumToGo);
-			if (pnum > nstart && pnum < nend) {
+	const pnumElem = document.getElementById("pn" + pnumToGo);
+	if (pnumElem !== null) {
+		// if exactly found, go to it
+		this.util.scroll(pnumElem, this.fixedToolBar);
+		this.util.setSelectSelection(paranumSelector, pnumToGo);
+		success = true;
+	} else {
+		// if not, search in ranges through all
+		const pnumCode = pnumToGo.split(":");
+		const pnToGo = pnumCode[1];
+		const allElm = resultElem.getElementsByTagName("strong");
+		for (let i=0; i<allElm.length; i++) {
+			const elemId = allElm[i].id;
+			if (elemId === undefined || elemId === null)
+				continue;
+			const nCode = elemId.slice(2).split(":");
+			if (pnumCode[0] !== nCode[0])
+				continue;
+			const numStr = nCode[1];
+			const dpos = numStr.indexOf("-");
+			const reStart = new RegExp("^" + pnToGo + "-?");
+			const reEnd = new RegExp("-" + pnToGo + "$");
+			if (numStr === pnToGo || numStr.match(reStart) !== null || numStr.match(reEnd) !== null) {
 				this.util.scroll(allElm[i], this.fixedToolBar);
-				this.util.setSelectSelection(paranumSelector, text);
+				this.util.setSelectSelection(paranumSelector, nCode[0] + ":" + numStr);
+				success = true;
 				break;
+			} else if (dpos > -1) {
+				const nstart = parseInt(numStr.slice(0, dpos));
+				const nend = parseInt(numStr.slice(dpos + 1));
+				const pnum = parseInt(pnToGo);
+				if (pnum > nstart && pnum < nend) {
+					this.util.scroll(allElm[i], this.fixedToolBar);
+					this.util.setSelectSelection(paranumSelector, nCode[0] + ":" + numStr);
+					success = true;
+					break;
+				}
 			}
 		}
 	}
-	this.syncExegesis(pnum);
+	this.syncExegesis(pnumToGo);
+	return success;
 };
 cstReader.syncExegesis = function(pnum) {
 	const syncExeg = document.getElementById("syncexeg");
@@ -303,8 +345,17 @@ cstReader.syncExegesis = function(pnum) {
 		for (const win in this.exegWindows) {
 			if ("document" in this.exegWindows[win]) {
 				const paranumSelector = document.getElementById("paranumselector");
-				const pnToGo = pnum === undefined || pnum.length === 0 ? paranumSelector.options[paranumSelector.selectedIndex].value.replace(/-.*/, "") : pnum;
-				this.exegWindows[win].cstReader.goParaNum(pnToGo);
+				const selVal = paranumSelector.options[paranumSelector.selectedIndex].value;
+				const pn = pnum === undefined || pnum.length === 0 ? selVal : pnum;
+				let pnToGo = [pn];
+				if (pn.indexOf("-") > -1) {
+					const colPos = pn.indexOf(":");
+					const grpNum = pn.slice(0, colPos);
+					const nums = pn.slice(colPos + 1).split("-");
+					pnToGo = [grpNum + ":" + nums[0], grpNum + ":" + nums[1]];
+				}
+				if (!this.exegWindows[win].cstReader.goParaNum(pnToGo[0]) && pnToGo.length > 1)
+					this.exegWindows[win].cstReader.goParaNum(pnToGo[1])
 			}
 		}
 	}
