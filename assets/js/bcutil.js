@@ -41,10 +41,12 @@ bcUtil.getUrlSingleVar = function(url) {
 	return result;
 };
 bcUtil.getInnerText = function(text) {
-	const start = text.indexOf(">");
-	const end = text.lastIndexOf("<");
-	if (start > -1 && end > -1)
-		return this.getInnerText(text.slice(start + 1, end));
+	const firstOpen = text.indexOf("<");
+	const firstClose = text.indexOf(">");
+	const lastOpen = text.lastIndexOf("<");
+	const lastClose = text.lastIndexOf(">");
+	if (firstClose > -1 && lastOpen > -1)
+		return text.slice(0, firstOpen) + this.getInnerText(text.slice(firstClose + 1, lastOpen)) + text.slice(lastClose + 1);
 	else
 		return text;
 };

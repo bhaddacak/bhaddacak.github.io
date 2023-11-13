@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cst
 is_application: true
-date: 2023-11-03 12:00:00 +0700
+date: 2023-11-09 12:00:00 +0700
 ---
 
 <div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;z-index:10;">
@@ -16,6 +16,7 @@ date: 2023-11-03 12:00:00 +0700
 <label for="syncexeg" title="Synchronize with exegesis"><input type="checkbox" id="syncexeg" onClick="cstReader.syncExegesis();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#sync"></use></svg></label>
 </span>
 </span>
+<span class="label" id="suttainfo" style="display:none;"></span>
 </div>
 <div id="textdisplay" class="textdisplay">Loading... (please wait)</div>
 <script src="/assets/js/cstreader.js"></script>
@@ -25,4 +26,5 @@ window.cstReader = cstReader;
 cstReader.cst_url = "{{ site.cst_url }}";
 cstReader.util = bcUtil;
 cstReader.loadCstInfo();
+cstReader.loadSuttaInfo();
 </script>

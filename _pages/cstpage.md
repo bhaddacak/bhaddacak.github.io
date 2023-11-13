@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-11-07 12:00:00 +0700
+date: 2023-11-13 12:00:00 +0700
 ---
 
 - TOC
@@ -22,7 +22,7 @@ For more information about the structure of the collection, see [CST-Kit](https:
 
 ## Vinayapiṭaka
 
-While the main texts in the Vinaya are of a handful, their related works are rich. All the texts are listed in the tree below, including their name and abbreviation for referring. Pāli learners should know all these names and their relationship. The most important exegesis is undoubtedly Samantapāsādikā by Buddhaghosa, because several subsequent works go around it. Unlike the original, I promote the Pātimokkha, both of the Bhikkhu and Bhikkhunī, to the main group. This makes sense because by their content they are not exegeses, but recapitulations.
+While the main texts in the Vinaya are of a handful, their related works are rich. All the texts are listed in the tree below, including their name and abbreviation for referring. Pāli learners should know all these names and their relationships. The most important exegesis is undoubtedly Samantapāsādikā by Buddhaghosa, because several subsequent works go around it. Unlike the original, I promote the Pātimokkha, both of the Bhikkhu and Bhikkhunī, to the main group. This makes sense because by their content they are not exegeses, but recapitulations.
 
 Most texts in the Vinaya can be synchronized in the reader. To understand how it works, see [HERE](http://paliplatform.blogspot.com/2023/10/synchronization-of-cst-docs.html){:target="\_blank"}, or better try it yourself in the reader. Other texts with this structure can be used in the same manner.
 
@@ -106,18 +106,102 @@ Vinayapiṭaka
 ==============
 Suttantapiṭaka
 ==============
-  |- Dīghanikāya Sīlakkhandhavagga (D1)
-  |   |- Sumaṅgalavilāsinī 1 (Smv1)
-  |       |- Līnatthappakāsanā 1 (Lpa 1)
-  |       |- Sīlakkhandhavagga-abhinavaṭīkā (Sv-nt)
-  |
-  |- Dīghanikāya Mahāvagga (D2)
-  |   |- Sumaṅgalavilāsinī 2 (Smv2)
-  |       |- Līnatthappakāsanā 2 (Lpa 2)
-  |
-  |- Dīghanikāya Pāthikavagga (D3)
-  |   |- Sumaṅgalavilāsinī 3 (Smv3)
-  |       |- Līnatthappakāsanā 3 (Lpa 3)
+  |- Dīghanikāya
+  |   |
+  |   |- Sīlakkhandhavagga (D1)
+  |   |   |- Sumaṅgalavilāsinī 1 (Smv1)
+  |   |       |- Līnatthappakāsinī (Dīghanikāya) 1 (Lpd1)
+  |   |       |- Sīlakkhandhavagga-abhinavaṭīkā (Sv-nt)
+  |   |
+  |   |- Mahāvagga (D2)
+  |   |   |- Sumaṅgalavilāsinī 2 (Smv2)
+  |   |       |- Līnatthappakāsinī (Dīghanikāya) 2 (Lpd2)
+  |   |
+  |   |- Pāthikavagga (D3)
+  |       |- Sumaṅgalavilāsinī 3 (Smv3)
+  |           |- Līnatthappakāsinī (Dīghanikāya) 3 (Lpd3)
+  |    
+  |- Majjhimanikāya
+  |   |
+  |   |- Mūlapaṇṇāsa (M1)
+  |   |   |- Papañcasūdanī 1 (Pps1)
+  |   |       |- Līnatthappakāsinī (Majjhimanikāya) 1 (Lpm1)
+  |   |
+  |   |- Majjhimapaṇṇāsa (M2)
+  |   |   |- Papañcasūdanī 2 (Pps2)
+  |   |       |- Līnatthappakāsinī (Majjhimanikāya) 2 (Lpm2)
+  |   |
+  |   |- Uparipaṇṇāsa (M3)
+  |       |- Papañcasūdanī 3 (Pps3)
+  |           |- Līnatthappakāsinī (Majjhimanikāya) 3 (Lpm3)
+  |    
+  |- Saṃyuttanikāya
+  |   |
+  |   |- Sagāthāvagga (S1)
+  |   |   |- Sāratthappakāsinī 1 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 1 (Lps1)
+  |   |
+  |   |- Nidānavagga (S2)
+  |   |   |- Sāratthappakāsinī 2 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 2 (Lps2)
+  |   |
+  |   |- Khandhavagga (S3)
+  |   |   |- Sāratthappakāsinī 3 (Srp1)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 3 (Lps3)
+  |   |
+  |   |- Saḷāyatanavagga (S4)
+  |   |   |- Sāratthappakāsinī 4 (Srp4)
+  |   |       |- Līnatthappakāsinī (Saṃyuttanikāya) 4 (Lps4)
+  |   |
+  |   |- Mahāvagga (S5)
+  |       |- Sāratthappakāsinī 5 (Srp5)
+  |           |- Līnatthappakāsinī (Saṃyuttanikāya) 5 (Lps5)
+  |    
+  |- Aṅguttaranikāya
+  |   |
+  |   |- Ekakanipāta (A1)
+  |   |   |- Manorathapūraṇī 1 (Mnp1)
+  |   |       |- Sāratthamañjūsā 1 (Srm1)
+  |   |
+  |   |- Dukanipāta (A2)
+  |   |   |- Manorathapūraṇī 2 (Mnp2)
+  |   |       |- Sāratthamañjūsā 2 (Srm2)
+  |   |
+  |   |- Tikanipāta (A3)
+  |   |   |- Manorathapūraṇī 3 (Mnp3)
+  |   |       |- Sāratthamañjūsā 3 (Srm3)
+  |   |
+  |   |- Catukkanipāta (A4)
+  |   |   |- Manorathapūraṇī 4 (Mnp4)
+  |   |       |- Sāratthamañjūsā 4 (Srm4)
+  |   |
+  |   |- Pañcakanipāta (A5)
+  |   |   |- Manorathapūraṇī 5 (Mnp5)
+  |   |       |- Sāratthamañjūsā 5 (Srm5)
+  |   |
+  |   |- Chakkanipāta (A6)
+  |   |   |- Manorathapūraṇī 6 (Mnp6)
+  |   |       |- Sāratthamañjūsā 6 (Srm6)
+  |   |
+  |   |- Sattakanipāta (A7)
+  |   |   |- Manorathapūraṇī 7 (Mnp7)
+  |   |       |- Sāratthamañjūsā 7 (Srm7)
+  |   |
+  |   |- Aṭṭhakanipāta (A8)
+  |   |   |- Manorathapūraṇī 8 (Mnp8)
+  |   |       |- Sāratthamañjūsā 8 (Srm8)
+  |   |
+  |   |- Navakanipāta (A9)
+  |   |   |- Manorathapūraṇī 9 (Mnp9)
+  |   |       |- Sāratthamañjūsā 9 (Srm9)
+  |   |
+  |   |- Dasakanipāta (A10)
+  |   |   |- Manorathapūraṇī 10 (Mnp10)
+  |   |       |- Sāratthamañjūsā 10 (Srm10)
+  |   |
+  |   |- Ekādasakanipāta (A11)
+  |       |- Manorathapūraṇī 11 (Mnp11)
+  |           |- Sāratthamañjūsā 11 (Srm11)
 ```
 
 ## Guideline for text referencing
@@ -130,30 +214,30 @@ Some documents have complex structure with multiple number series, such as the P
 
 Referring texts by URL is convenient in most online situations. In writings for publications, the format is slightly different. First, make clear to the reader that this collection is used by referring to its origin, i.e., [CST-Kit](https://github.com/bhaddacak/cst-kit){:target="\_blank"}. Then, mention texts by their abbreviation, optionally with a point of reference. This can be a paragraph number, if any, or a distinct portion of text.
 
-For example, to the first mātikā of Pārājika rule, we can refer by **Buv1 39** or use a decimal separator like **Buv1.39** or use Roman numeral for book volume (if any) as in the legacy system, hence **Buv I 39**. To the Dhammacakkappavattana-sutta in Mahāvagga, we can use, for example, **Mv 13-17** or **Mv.13-17**.
+For example, to the first mātikā of Pārājika rule, we can refer by **Buv1 39** or use a decimal separator like **Buv1.39** or use Roman numeral for book volume (if any) as in the legacy system, hence **Buv I 39**. To the first sermon (Dhammacakkappavattana-sutta) in Mahāvagga, we can use, for example, **Mv 13-17** or **Mv.13-17**.
 
 | Target content | References |
 |---|---|
 | The first mātikā of Pārājika rule | Buv1 39, Buv1.39, Buv I 39 |
-| The Dhammacakkappavattana-sutta in Mahāvagga | Mv 13-17, Mv.13-17 |
+| The first sermon in Mahāvagga | Mv 13-17, Mv.13-17 |
 
 ### Referencing to exegeses
 
 This can be baffling to new learners, but with the good organization of paragraph numbers, referring to subordinate texts is as easy as the main texts. We have two following methods:
 
-1. **Using the name of text** (recommended). For example, at the first point mentioned above, we can refer to the commentary by **Sp1 39** and the main subcommentary by **Sd1 39**. And to the Dhammacakka, the commentary is **Sp4 13** (there is little text here), and the main subcommentary **Sd4 13-17** (there is much more text here). See more examples in the table below.
-2. **Using the traditional way**. By adding a suffix to the main text, it can change the text mentioned relatively. Adding **-a** means commentary, and adding **-t** (or -ṭ) means subcommentary. For example, the commentary to the Pārājika above can be **Buv1-a 39** (= Sp1 39), and the subcommentary **Buv1-t 39** (equivalent to Sp1-t 39 = Sd1 39). And of the Dhammacakka can be **Mv-a 13** (= Sp4 13) and **Mv-t 13-17** (equivalent to Sp4-t 13-17 = Sd4 13-17).
+1. **Using the name of text** (recommended). For example, at the first point mentioned above, we can refer to the commentary by **Sp1 39** and the main subcommentary by **Sd1 39**. And to the first sermon, the commentary is **Sp4 13** (there is little text here), and the main subcommentary **Sd4 13-17** (there is much more text here). See more examples in the table below.
+2. **Using the traditional way**. By adding a suffix to the main text, it can change the text mentioned relatively. Adding **-a** means commentary, and adding **-t** (or -ṭ) means subcommentary. For example, the commentary to the Pārājika above can be **Buv1-a 39** (= Sp1 39), and the subcommentary **Buv1-t 39** (equivalent to Sp1-t 39 = Sd1 39). And of the first sermon can be **Mv-a 13** (= Sp4 13) and **Mv-t 13-17** (equivalent to Sp4-t 13-17 = Sd4 13-17).
 
 | Target content | By text name | By traditional way |
 |---|---|---|
 | The commentary to the first mātikā above | Sp1 39, Sp1.39, Sp I 39 | Buv1-a 39, Buv-a1.39, Buv-a I 39 |
 | The subcommentary to the first mātikā above | Sd1 39, Sd1.39, Sd I 39 | Buv1-t 39, Buv-t1.39, Buv-t I 39 |
-| The commentary to the Dhammacakka in Mahāvagga | Sp4 13, Sp4.13, Sp IV 13 | Mv-a 13 |
-| The subcommentary to the Dhammacakka in Mahāvagga | Sd4 13-17, Sd4.13-17, Sd IV 13-17 | Mv-t 13-17 |
+| The commentary to the first sermon in Mahāvagga | Sp4 13, Sp4.13, Sp IV 13 | Mv-a 13 |
+| The subcommentary to the first sermon in Mahāvagga | Sd4 13-17, Sd4.13-17, Sd IV 13-17 | Mv-t 13-17 |
 
 As we have seen above, the first method is more convenient and less error-prone. Moreover, it can be used to refer to any text, not just the texts in the established hierarchy. But we have to learn how to mention a book by its name. This is not a problem because all researchers or serious students of Buddhism and Pāli should know that anyway.
 
-However, for a simple structure of texts, using the traditional way can be less confusing. For example, to the first paragraph of the Brahmajālasutta in Dīghanikāya, we can refer to it by, for example, **D1 1**. And because there are no alternatives for exegeses in this group (except for the Sīlakkhandhavagga), we can simply refer to its commentary and subcommentary by **D1-a 1** and **D1-t 1** respectively (equivalent to **Smv1 1** and **Lpa1 1**).
+However, for a simple structure of texts, using the traditional way can be less confusing. For example, to the first paragraph of the Brahmajālasutta in Dīghanikāya, we can refer to it by, for example, **D1 1**. And because there are no alternatives for exegeses in this group (except for the Sīlakkhandhavagga), we can simply refer to its commentary and subcommentary by **D1-a 1** and **D1-t 1** respectively (equivalent to **Smv1 1** and **Lpd1 1**).
 
 ### When no numbers to refer to
 
@@ -164,4 +248,56 @@ In some cases there is no proper series of number at all in the text. In publica
 
 The second method is commonly used in writing scholarly works. When a portion of text is mentioned in the body of the writing, it can be added a footnote. Then only the book abbreviation is needed in the note.
 
+## Abbreviations
+
+| Abbr. | Description |
+|---|---|
+| A | Aṅguttaranikāya |
+| Bip | Bhikkhunīpātimokkha |
+| Biv | Bhikkhunīvibhaṅga |
+| Biv-y | Bhikkhunīvibhaṅga-yojanā |
+| Bup | Bhikkhupātimokkha |
+| Buv | Bhikkhuvibhaṅga |
+| Cv | Cūḷavagga |
+| Cv-y | Cūḷavagga-yojanā |
+| D | Dīghanikāya |
+| Khds | Khuddasikkhā |
+| Khds-nt | Khuddasikkhā-abhinavaṭīkā |
+| Khds-pt | Khuddasikkhā-purāṇaṭīkā |
+| Kkh | Kaṅkhāvitaraṇī |
+| Kkh-nt | Kaṅkhāvitaraṇī-abhinavaṭīkā |
+| Kkh-pt | Kaṅkhāvitaraṇī-purāṇaṭīkā |
+| Lpd | Līnatthappakāsinī[^lnp] (Dīghanikāya-ṭīkā) |
+| Lpm | Līnatthappakāsinī (Majjhimanikāya-ṭīkā) |
+| Lps | Līnatthappakāsinī (Saṃyuttanikāya-ṭīkā) |
+| M | Majjhimanikāya |
+| Mls | Mūlasikkhā-ṭīkā |
+| Mls-t | Mūlasikkhā |
+| Mnp | Manorathapūraṇī (Aṅguttaranikāya-aṭṭhakathā) |
+| Mv | Mahāvagga |
+| Mv-y | Mahāvagga-yojanā |
+| Pc-y | Pācityādiyojanā |
+| Pps | Papañcasūdanī (Majjhimanikāya-aṭṭhakathā) |
+| Pvr | Parivāra |
+| Pvr-y | Parivāra-yojanā |
+| S | Saṃyuttanikāya |
+| Smv | Sumaṅgalavilāsinī (Dīghanikāya-aṭṭhakathā) |
+| Sd | Sāratthadīpanī (Vinaya-ṭīkā) |
+| Sp | Samantapāsādikā (Vinaya-aṭṭhakathā) |
+| Srm | Sāratthamañjūsā (Aṅguttaranikāya-ṭīkā) |
+| Srp | Sāratthappakāsinī (Saṃyuttanikāya-aṭṭhakathā) |
+| Sv-nt | Sīlakkhandhavagga-abhinavaṭīkā |
+| Utv | Uttaravinicchaya |
+| Utv-t | Uttaravinicchaya-ṭīkā |
+| Vjb | Vajirabuddhi (Vinaya-ṭīkā) |
+| Vmv | Vimativinodanī (Vinaya-ṭīkā) |
+| Vnl | Vinayālaṅkāra (Vinayasaṅgaha-ṭīkā) |
+| Vns | Vinayasaṅgaha |
+| Vnv | Vinayavinicchaya |
+| Vnv-t | Vinayavinicchaya-ṭīkā |
+
+[^lnp]: Līnatthappakāsinī is a common name. This form is most widely known. In the text, however, *Līnatthappakāsanā* is seen. Sometimes, it is called *Līnatthappakāsanī*.
+
 > [Table of Contents](/cst)
+
+## Notes

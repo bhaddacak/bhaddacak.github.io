@@ -9,6 +9,7 @@ cstReader.subheadSelectorOptions = [];
 cstReader.paranumList = [];
 cstReader.textCache = "";
 cstReader.cstInfo = {};
+cstReader.suttaInfo = [];
 cstReader.bookInfo = {};
 cstReader.exegWindows = {};
 cstReader.fixedToolBar = false;
@@ -21,7 +22,7 @@ cstReader.titleDef = {
 	"abhmul": "Main texts in the Abhidhamma (Abhidhammapiṭake mūlaganthā)",
 	"abhexe": "Exegetical works in the Abhidhamma (Abhidhammapiṭake aṭṭhakathā ṭīkā ca)",
 };
-cstReader.instruction = "<strong>Instruction:</strong> Please read this first! Texts can be synchronized only with their opener. So, when opening individual documents here, they cannot be synced together. To sync them, they must be opened by their parent text with the <strong>toolbar</strong> provided. Chained synchonization can also be done by chained opening. The synchronization is done only for paragraph numbers.";
+cstReader.instruction = "<strong>Instruction:</strong> Please read this first! Texts can be synchronized only with their opener. So, when documents are opened individually here, they cannot be synced together. To sync them, they must be opened by their parent text with the <strong>toolbar</strong> provided. Chained synchonization can also be done by chained opening. The synchronization works only for paragraph numbers.";
 cstReader.getUrlParams = function() {
 	const result = {};
 	const vars = this.util.getUrlVars(location.href);
@@ -51,6 +52,14 @@ cstReader.loadCstInfo = function() {
 	};
 	this.util.ajaxLoad(ajaxParams);
 };
+cstReader.loadSuttaInfo = function() {
+	const ajaxParams = {};
+	ajaxParams.address = this.cst_url + "/suttainfo.json";
+	ajaxParams.successCallback = function(response) {
+		cstReader.suttaInfo = JSON.parse(response);
+	};
+	this.util.ajaxLoad(ajaxParams);
+};
 cstReader.loadTOC = function() {
 	this.params = this.getUrlParams();
 	const pkeys = Object.keys(this.params);
@@ -65,18 +74,33 @@ cstReader.showTOC = function() {
 					"abhmul": [], "abhexe": [] };
 	for (const b in this.cstInfo) {
 		const book = this.cstInfo[b];
-		texts[book.group + book.class].push(book);
+		texts[book.group + book.docclass].push(book);
 	}
 	const resultElem = document.getElementById("textdisplay");
 	this.util.clearNode(resultElem);
 	const helpBox = document.createElement("blockquote");
 	helpBox.innerHTML = this.instruction;
 	resultElem.appendChild(helpBox);
+	const toctocElem = document.createElement("ul");
+	for (const t in texts) {
+		if (texts[t].length > 0) {
+			const itemElem = document.createElement("li");
+			const fulltitle = this.titleDef[t];
+			const itemStr = "<a style='cursor:pointer;' onClick=cstReader.goTOC('" + t + "')>" + fulltitle.slice(0, fulltitle.indexOf("(")) + "</a>";
+			itemElem.innerHTML = itemStr;
+			toctocElem.appendChild(itemElem);
+		}
+	}
+	resultElem.appendChild(toctocElem);
 	for (const t in texts) {
 		if (texts[t].length > 0) {
 			this.showTocTable(t, texts[t]);
 		}
 	}
+};
+cstReader.goTOC = function(groupclass) {
+	const tocElem = document.getElementById("toc-" + groupclass);
+	tocElem.scrollIntoView();
 };
 cstReader.showTocTable = function(groupclass, list) {
 	const resultElem = document.getElementById("textdisplay");
@@ -84,7 +108,7 @@ cstReader.showTocTable = function(groupclass, list) {
 	const ppos = titleStr.indexOf("(");
 	const tdiv = document.createElement("div");
 	tdiv.style.paddingTop = "10px";
-	let title = "<span style='font-weight:bold;font-size:1.2em;'>" + titleStr.slice(0, ppos) + "</span>";
+	let title = "<span id='toc-" + groupclass + "' style='font-weight:bold;font-size:1.2em;'>" + titleStr.slice(0, ppos) + "</span>";
 	title += "<span style='font-weight:bold;font-size:1em;'>" + titleStr.slice(ppos) + "</span>";
 	tdiv.innerHTML = title;
 	resultElem.appendChild(tdiv);
@@ -120,7 +144,7 @@ cstReader.loadText = function(ref) {
 		return;
 	}
 	const ajaxParams = {};
-	ajaxParams.address = this.cst_url + "/gz/" + this.bookInfo.file;
+	ajaxParams.address = this.cst_url + "/gz/" + this.bookInfo.file + ".gz";
 	ajaxParams.isBinary = true;
 	ajaxParams.successCallback = function(response) {
 		cstReader.textCache = cstReader.formatText(window.pako.ungzip(response, { to: "string" }), cstReader.bookInfo);
@@ -274,18 +298,31 @@ cstReader.fillSubheadSelector = function(index) {
 		subheadSelector.style.display = "none";
 	}
 };
+cstReader.isRefConvertible = function() {
+	const result = this.bookInfo.docclass === "mul" && !(this.bookInfo.file.match(/cst-s-[dms]\d/) === null);
+	return result;
+};
 cstReader.goHead = function() {
 	const headSelector = document.getElementById("headselector");
 	const headToGo = headSelector.options[headSelector.selectedIndex].value;
 	const targetElem = document.getElementById(headToGo);
 	this.util.scroll(targetElem, this.fixedToolBar);
 	this.fillSubheadSelector(headSelector.selectedIndex);
+	if (this.isRefConvertible()) {
+		if (!this.showSuttaInfo(headToGo, false)) {
+			const subheadSelector = document.getElementById("subheadselector");
+			const subheadToGo = subheadSelector.options[subheadSelector.selectedIndex].value;
+			this.showSuttaInfo(subheadToGo, false);
+		}
+	}
 };
 cstReader.goSubhead = function() {
 	const subheadSelector = document.getElementById("subheadselector");
 	const subheadToGo = subheadSelector.options[subheadSelector.selectedIndex].value;
 	const targetElem = document.getElementById(subheadToGo);
 	this.util.scroll(targetElem, this.fixedToolBar);
+	if (this.isRefConvertible())
+		this.showSuttaInfo(subheadToGo, false);
 };
 cstReader.goParaNum = function(pnum) {
 	let success = false;
@@ -337,6 +374,8 @@ cstReader.goParaNum = function(pnum) {
 		}
 	}
 	this.syncExegesis(pnumToGo);
+	if (this.isRefConvertible())
+		this.showSuttaInfo(pnumToGo, true);
 	return success;
 };
 cstReader.syncExegesis = function(pnum) {
@@ -355,9 +394,42 @@ cstReader.syncExegesis = function(pnum) {
 					pnToGo = [grpNum + ":" + nums[0], grpNum + ":" + nums[1]];
 				}
 				if (!this.exegWindows[win].cstReader.goParaNum(pnToGo[0]) && pnToGo.length > 1)
-					this.exegWindows[win].cstReader.goParaNum(pnToGo[1])
+					this.exegWindows[win].cstReader.goParaNum(pnToGo[1]);
 			}
 		}
 	}
+};
+cstReader.showSuttaInfo = function(target, isNumber) {
+	let success = false;
+	if (this.suttaInfo.length === 0 || !this.fixedToolBar)
+		return;
+	for (const sutta of this.suttaInfo) {
+		if (isNumber) {
+			const pnum = parseInt(target.slice(target.indexOf(":") + 1).replace(/-.*/, ""));
+			if (sutta.file === this.bookInfo.file && pnum >= sutta.paranum[0] && pnum <= sutta.paranum[1]) {
+				this.displaySuttaInfo(sutta);
+				success = true;
+				break;
+			}
+		} else {
+			const cpos = target.indexOf(":");
+			const selected = cpos > -1 ? target.slice(cpos + 1) : target;
+			if (sutta.file === this.bookInfo.file && sutta.name === selected) {
+				this.displaySuttaInfo(sutta);
+				success = true;
+				break;
+			}
+		}
+	}
+	return success;
+};
+cstReader.displaySuttaInfo = function(sutta) {
+	const sinfoElem = document.getElementById("suttainfo");
+	const scode = sutta.file.substr(6, 1).toUpperCase() + "N";
+	sinfoElem.innerHTML = scode + "&nbsp;" + sutta.number;
+	sinfoElem.style.display = "inline";
+	setTimeout(function() {
+		document.getElementById("suttainfo").style.display = "none";
+	}, 3000);
 };
 

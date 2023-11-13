@@ -23,7 +23,7 @@ permalink: /
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
 - [Chaṭṭha Saṅgāyana Tipiṭaka Restructured](/cstpage)
-    - [Table of Contents](/cst)<span class="label label-green">Vin. completed</span>
+    - [Table of Contents](/cst)<span class="label label-green">D-M-S-A completed</span>
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
