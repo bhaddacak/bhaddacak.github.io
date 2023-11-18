@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-11-13 12:00:00 +0700
+date: 2023-11-18 12:00:00 +0700
 ---
 
 - TOC
@@ -14,7 +14,7 @@ A better edited collection recently is of [SuttaCentral](https://suttacentral.ne
 
 Although the data of CST are reliable and good in many respects, the collection is not perfect. To programmers who make use of the data, several features are needed to be improved and many points are needed to be fixed so that we can make a better reader or search program. Moreover, to scholars, it should be an easier way to refer to the texts. This is a hard problem because referencing method depends heavily on the structure of the texts. Now the old days of PTS referring system have gone and several new systems arise. Here we will have another referencing system, which reflects the data we use.
 
-That is to say, the target users of this collection are researchers and serious learners. So, we organize the texts in the way that related works are put together, able to be used at hand. And each book in the collection is identified by its name. That is the best approach to Pāli literary studies. Moreover, by the motto of this site, *"Buddhists should be able to read Pāli texts by themselves"*, we do not offer any translation here.
+That is to say, the target users of this collection are researchers and serious learners. So, we organize the texts in the way that related works are put together, able to be used at hand. And each book in the collection is mostly identified by its name. That is the best approach to Pāli literary studies. Moreover, by the motto of this site, *"Buddhists should be able to read Pāli texts by themselves"*, we do not offer any translation here.
 
 For more information about the structure of the collection, see [CST-Kit](https://github.com/bhaddacak/cst-kit){:target="\_blank"}.
 
@@ -120,7 +120,7 @@ Suttantapiṭaka
   |   |- Pāthikavagga (D3)
   |       |- Sumaṅgalavilāsinī 3 (Smv3)
   |           |- Līnatthappakāsinī (Dīghanikāya) 3 (Lpd3)
-  |    
+  |
   |- Majjhimanikāya
   |   |
   |   |- Mūlapaṇṇāsa (M1)
@@ -134,7 +134,7 @@ Suttantapiṭaka
   |   |- Uparipaṇṇāsa (M3)
   |       |- Papañcasūdanī 3 (Pps3)
   |           |- Līnatthappakāsinī (Majjhimanikāya) 3 (Lpm3)
-  |    
+  |
   |- Saṃyuttanikāya
   |   |
   |   |- Sagāthāvagga (S1)
@@ -156,7 +156,7 @@ Suttantapiṭaka
   |   |- Mahāvagga (S5)
   |       |- Sāratthappakāsinī 5 (Srp5)
   |           |- Līnatthappakāsinī (Saṃyuttanikāya) 5 (Lps5)
-  |    
+  |
   |- Aṅguttaranikāya
   |   |
   |   |- Ekakanipāta (A1)
@@ -202,6 +202,83 @@ Suttantapiṭaka
   |   |- Ekādasakanipāta (A11)
   |       |- Manorathapūraṇī 11 (Mnp11)
   |           |- Sāratthamañjūsā 11 (Srm11)
+  |
+  |- Khuddakanikāya
+      |
+      |- Khuddakapāṭha (Khp)
+      |   |- Khuddakapāṭha-aṭṭhakathā (Khp-a)
+      |
+      |- Dhammapada (Dhp)
+      |   |- Dhammapada-aṭṭhakathā (Dhp-a)
+      |
+      |- Udāna (Ud)
+      |   |- Udāna-aṭṭhakathā (Ud-a)
+      |
+      |- Itivuttaka (It)
+      |   |- Itivuttaka-aṭṭhakathā (It-a)
+      |
+      |- Suttanipāta (Snp)
+      |   |- Suttanipāta-aṭṭhakathā (Snp-a)
+      |
+      |- Vimānavatthu (Vv)
+      |   |- Vimānavatthu-aṭṭhakathā (Vv-a)
+      |
+      |- Petavatthu (Pv)
+      |   |- Petavatthu-aṭṭhakathā (Pv-a)
+      |
+      |- Theragāthā (Thag)
+      |   |- Theragāthā-aṭṭhakathā (Thag-a)
+      |
+      |- Therīgāthā (Thig)
+      |   |- Therīgāthā-aṭṭhakathā (Thig-a)
+      |
+      |- Therāpadāna (Ap1)
+      |   |- Therāpadāna-aṭṭhakathā (Ap-a1)
+      |
+      |- Therīapadāna (Ap2)
+      |
+      |- Buddhavaṃsa (Bv)
+      |   |- Buddhavaṃsa-aṭṭhakathā (Bv-a)
+      |
+      |- Cariyāpiṭaka (Cp)
+      |   |- Cariyāpiṭaka-aṭṭhakathā (Cp-a)
+      |
+      |- Jātaka (Ja1)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
+      |
+      |- Jātaka (Ja2)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
+      |
+      |- Jātaka (Ja3)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a3)
+      |
+      |- Jātaka (Ja4)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a4)
+      |
+      |- Jātaka (Ja5)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a5)
+      |
+      |- Jātaka (Ja6)
+      |   |- Jātaka-aṭṭhakathā 1 (Ja-a6)
+      |
+      |- Mahāniddesa (Nidd1)
+      |   |- Mahāniddesa-aṭṭhakathā (Nidd-a1)
+      |
+      |- Cūḷaniddesa (Nidd2)
+      |   |- Cūḷaniddesa-aṭṭhakathā (Nidd-a2)
+      |
+      |- Paṭisambhidāmagga (Psm)
+      |   |- Paṭisambhidāmagga-aṭṭhakathā (Psm-a)
+      |
+      |- Milindapañha (Mil)
+      |
+      |- Nettippakaraṇa (Nett)
+      |   |- Nettippakaraṇa-aṭṭhakathā (Nett-a)
+      |   |   |- Nettippakaraṇa-ṭīkā (Nett-t)
+      |   |- Nettivibhāvinī (Nettv)
+      |
+      |- Peṭakopadesa (Ptkp)
+   
 ```
 
 ## Guideline for text referencing
@@ -232,8 +309,8 @@ This can be baffling to new learners, but with the good organization of paragrap
 |---|---|---|
 | The commentary to the first mātikā above | Sp1 39, Sp1.39, Sp I 39 | Buv1-a 39, Buv-a1.39, Buv-a I 39 |
 | The subcommentary to the first mātikā above | Sd1 39, Sd1.39, Sd I 39 | Buv1-t 39, Buv-t1.39, Buv-t I 39 |
-| The commentary to the first sermon in Mahāvagga | Sp4 13, Sp4.13, Sp IV 13 | Mv-a 13 |
-| The subcommentary to the first sermon in Mahāvagga | Sd4 13-17, Sd4.13-17, Sd IV 13-17 | Mv-t 13-17 |
+| The commentary to the first sermon in Mahāvagga | Sp4 13, Sp4.13, Sp IV 13 | Mv-a 13, Mv-a.13 |
+| The subcommentary to the first sermon in Mahāvagga | Sd4 13-17, Sd4.13-17, Sd IV 13-17 | Mv-t 13-17, Mv-t.13-17 |
 
 As we have seen above, the first method is more convenient and less error-prone. Moreover, it can be used to refer to any text, not just the texts in the established hierarchy. But we have to learn how to mention a book by its name. This is not a problem because all researchers or serious students of Buddhism and Pāli should know that anyway.
 
@@ -248,22 +325,44 @@ In some cases there is no proper series of number at all in the text. In publica
 
 The second method is commonly used in writing scholarly works. When a portion of text is mentioned in the body of the writing, it can be added a footnote. Then only the book abbreviation is needed in the note.
 
+### When numbers go complex
+
+With the structure we get from the source, the running numbers in some documents can be really complex, for example, in those of *Apadāna*, *Jātaka*, *Milindapañha*, and some others. To make the synchronization to their commentary possible, I have to add group number, separating by a colon (:), to the sequences. This may look ugly, but necessary. To precisely refer to these texts, the group number has also to be added. For instance, **Ja2.3:1** means the first gāthā of tikanipāta (group 3) of Jātaka Book 2. Other complex books can be treated in the same way.
+
+However, for Milindapañha[^milin] the above method may not work because its numbers are so complex that they cannot be treated in the same way. By the book's structure in this collection, the numbers correspond to question numbers. So, it may be better to refer to question numbers in their group instead. The first way to do is using the decimal system with part, group, and question number. For example, the well-known carriage analogy is the first question of Part 2-3, the first group (Mahāvagga), hence **Mil 2-3.1.1**. Another way to do is using the question name directly. So, in this case it is **Mil 2-3** "Paññattipañho". 
+
+[^milin]: The structure of Milindapañha is a little messy because it combines pieces of old and new works together. In other publications, the structure can be considerably different. Here, the original questions are in the Part 2-3 in the book (where to cut between 2 and 3 is unclear). So, I leave the structure intact and use it as it is. For more information, see Hinüber's *A Handbook of Pāli Literature*, pp. 82-86.
+
 ## Abbreviations
 
 | Abbr. | Description |
 |---|---|
 | A | Aṅguttaranikāya |
+| Ap | Apadāna |
+| Ap-a | Apadāna-aṭṭhakathā |
 | Bip | Bhikkhunīpātimokkha |
 | Biv | Bhikkhunīvibhaṅga |
 | Biv-y | Bhikkhunīvibhaṅga-yojanā |
 | Bup | Bhikkhupātimokkha |
 | Buv | Bhikkhuvibhaṅga |
+| Bv | Buddhavaṃsa |
+| Bv-a | Buddhavaṃsa-aṭṭhakathā |
+| Cp | Cariyāpiṭaka |
+| Cp-a | Cariyāpiṭaka-aṭṭhakathā |
 | Cv | Cūḷavagga |
 | Cv-y | Cūḷavagga-yojanā |
 | D | Dīghanikāya |
+| Dhp | Dhammapada |
+| Dhp-a | Dhammapada-aṭṭhakathā |
+| It | Itivuttaka |
+| It-a | Itivuttaka-aṭṭhakathā |
+| Ja | Jātaka |
+| Ja-a | Jātaka-aṭṭhakathā |
 | Khds | Khuddasikkhā |
 | Khds-nt | Khuddasikkhā-abhinavaṭīkā |
 | Khds-pt | Khuddasikkhā-purāṇaṭīkā |
+| Khp | Khuddakapāṭha |
+| Khp-a | Khuddakapāṭha-aṭṭhakathā |
 | Kkh | Kaṅkhāvitaraṇī |
 | Kkh-nt | Kaṅkhāvitaraṇī-abhinavaṭīkā |
 | Kkh-pt | Kaṅkhāvitaraṇī-purāṇaṭīkā |
@@ -271,22 +370,42 @@ The second method is commonly used in writing scholarly works. When a portion of
 | Lpm | Līnatthappakāsinī (Majjhimanikāya-ṭīkā) |
 | Lps | Līnatthappakāsinī (Saṃyuttanikāya-ṭīkā) |
 | M | Majjhimanikāya |
+| Mil | Milindapañha |
 | Mls | Mūlasikkhā-ṭīkā |
 | Mls-t | Mūlasikkhā |
 | Mnp | Manorathapūraṇī (Aṅguttaranikāya-aṭṭhakathā) |
 | Mv | Mahāvagga |
 | Mv-y | Mahāvagga-yojanā |
+| Nett | Nettippakaraṇa |
+| Nett-a | Nettippakaraṇa-aṭṭhakathā |
+| Nett-t | Nettippakaraṇa-ṭīkā |
+| Nettv | Nettivibhāvinī |
+| Nidd | Niddesa |
+| Nidd-a | Niddesa-aṭṭhakathā |
 | Pc-y | Pācityādiyojanā |
 | Pps | Papañcasūdanī (Majjhimanikāya-aṭṭhakathā) |
+| Psm | Paṭisambhidāmagga |
+| Psm-a | Paṭisambhidāmagga-aṭṭhakathā |
+| Ptkp | Peṭakopadesa |
+| Pv | Petavatthu |
+| Pv-a | Petavatthu-aṭṭhakathā |
 | Pvr | Parivāra |
 | Pvr-y | Parivāra-yojanā |
 | S | Saṃyuttanikāya |
-| Smv | Sumaṅgalavilāsinī (Dīghanikāya-aṭṭhakathā) |
 | Sd | Sāratthadīpanī (Vinaya-ṭīkā) |
+| Smv | Sumaṅgalavilāsinī (Dīghanikāya-aṭṭhakathā) |
+| Snp | Suttanipāta |
+| Snp-a | Suttanipāta-aṭṭhakathā |
 | Sp | Samantapāsādikā (Vinaya-aṭṭhakathā) |
 | Srm | Sāratthamañjūsā (Aṅguttaranikāya-ṭīkā) |
 | Srp | Sāratthappakāsinī (Saṃyuttanikāya-aṭṭhakathā) |
 | Sv-nt | Sīlakkhandhavagga-abhinavaṭīkā |
+| Thag | Theragāthā |
+| Thag-a | Theragāthā-aṭṭhakathā |
+| Thig | Therīgāthā |
+| Thig-a | Therīgāthā-aṭṭhakathā |
+| Ud | Udāna |
+| Ud-a | Udāna-aṭṭhakathā |
 | Utv | Uttaravinicchaya |
 | Utv-t | Uttaravinicchaya-ṭīkā |
 | Vjb | Vajirabuddhi (Vinaya-ṭīkā) |
@@ -295,6 +414,8 @@ The second method is commonly used in writing scholarly works. When a portion of
 | Vns | Vinayasaṅgaha |
 | Vnv | Vinayavinicchaya |
 | Vnv-t | Vinayavinicchaya-ṭīkā |
+| Vv | Vimānavatthu |
+| Vv-a | Vimānavatthu-aṭṭhakathā |
 
 [^lnp]: Līnatthappakāsinī is a common name. This form is most widely known. In the text, however, *Līnatthappakāsanā* is seen. Sometimes, it is called *Līnatthappakāsanī*.
 

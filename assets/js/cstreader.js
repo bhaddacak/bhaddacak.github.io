@@ -122,7 +122,7 @@ cstReader.showTocTable = function(groupclass, list) {
 		const tr = document.createElement("tr");
 		const ref = "<a href='/cst?" + item.ref + "' target='_blank'>" + this.util.capitalize(item.ref) + "</a>";
 		let row = "<td>" + ref + "</td>";
-		const altname = item.altname.length > 0 ? " (" + item.altname.join(", ").replace(/ (\d+)$/, "&nbsp;$1") + ")": "";
+		const altname = item.altname.length > 0 ? " [" + item.altname.join(", ").replace(/ (\d+)$/, "&nbsp;$1") + "]": "";
 		row += "<td>" + item.name.replace(/ (\d+)$/, "&nbsp;$1") + altname + "</td>";
 		row += "<td>" + item.description + "</td>";
 		let commen = "";
@@ -133,6 +133,11 @@ cstReader.showTocTable = function(groupclass, list) {
 		row += "<td>" + commen + "</td>";
 		tr.innerHTML = row;
 		tbody.appendChild(tr);
+		if (groupclass === "sutmul" && item.ref === "a11") {
+			const ktr = document.createElement("tr");
+			ktr.innerHTML = "<tr><th colspan='4'>Khuddakanikāya</th></tr>";
+			tbody.appendChild(ktr);
+		}
 	}
 	table.appendChild(tbody);
 	resultElem.appendChild(table);
@@ -206,9 +211,9 @@ cstReader.formatText = function(text, book) {
 				if (line.indexOf("\"gathalast\"") > -1)
 					result += line.replace(/>/, ">\t").replace(/div /, "div style='padding-bottom:12px;' ");
 				else
-					result += line.replace(/>/, ">\t");
+					result += line.replace(/> ?/, ">\t");
 			} else if (line.match(/^\d+/) !== null) {
-				const pnum = line.match(/^[0-9-]+/)[0];
+				const pnum = line.match(/^[0-9:-]+/)[0];
 				if (paranumGroupIndex === -1) {
 					paranumGroupIndex++;
 					this.paranumList.push([]);
@@ -221,8 +226,8 @@ cstReader.formatText = function(text, book) {
 				}
 				this.paranumList[paranumGroupIndex].push(pnum);
 				const br = lines[i-2].startsWith("<h") ? "" : "<br>";
-				const numId = "pn" + (paranumGroupIndex + 1) + ":" + pnum;
-				result += br + "\t" + line.replace(/^([0-9-]+)/, "<strong id='" + numId + "'>$1</strong>") + "<br>";
+				const numId = pnum.indexOf(":") > -1 ? "pn" + pnum : "pn" + (paranumGroupIndex + 1) + ":" + pnum;
+				result += br + "\t" + line.replace(/^([0-9:-]+)/, "<strong id='" + numId + "'>$1</strong>") + "<br>";
 			} else {
 				const br = line.startsWith("<div") ? "" : "<br>";
 				const tab = line.startsWith("<div") ? "" : "\t";
@@ -277,8 +282,10 @@ cstReader.fillParaNumList = function() {
 		const vlist = [];
 		for (let i=0; i < this.paranumList.length; i++) {
 			for (let j=0; j < this.paranumList[i].length; j++) {
-				nlist.push(this.paranumList[i][j]);
-				vlist.push((i+1) + ":" + this.paranumList[i][j]);
+				const num = this.paranumList[i][j];
+				nlist.push(num);
+				const prefix = num.indexOf(":") > -1 ? "" : (i+1) + ":";
+				vlist.push(prefix + num);
 			}
 		}
 		this.util.fillSelectOptions(paranumSelector, nlist, vlist);
@@ -342,7 +349,7 @@ cstReader.goParaNum = function(pnum) {
 	} else {
 		// if not, search in ranges through all
 		const pnumCode = pnumToGo.split(":");
-		const pnToGo = pnumCode[1];
+		const pnToGo = pnumCode[pnumCode.length - 1];
 		const allElm = resultElem.getElementsByTagName("strong");
 		for (let i=0; i<allElm.length; i++) {
 			const elemId = allElm[i].id;
@@ -351,7 +358,7 @@ cstReader.goParaNum = function(pnum) {
 			const nCode = elemId.slice(2).split(":");
 			if (pnumCode[0] !== nCode[0])
 				continue;
-			const numStr = nCode[1];
+			const numStr = nCode[nCode.length - 1];
 			const dpos = numStr.indexOf("-");
 			const reStart = new RegExp("^" + pnToGo + "-?");
 			const reEnd = new RegExp("-" + pnToGo + "$");
@@ -388,7 +395,7 @@ cstReader.syncExegesis = function(pnum) {
 				const pn = pnum === undefined || pnum.length === 0 ? selVal : pnum;
 				let pnToGo = [pn];
 				if (pn.indexOf("-") > -1) {
-					const colPos = pn.indexOf(":");
+					const colPos = pn.lastIndexOf(":");
 					const grpNum = pn.slice(0, colPos);
 					const nums = pn.slice(colPos + 1).split("-");
 					pnToGo = [grpNum + ":" + nums[0], grpNum + ":" + nums[1]];
