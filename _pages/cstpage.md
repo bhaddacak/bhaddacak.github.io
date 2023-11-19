@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-11-18 12:00:00 +0700
+date: 2023-11-19 12:00:00 +0700
 ---
 
 - TOC
@@ -243,23 +243,10 @@ Suttantapiṭaka
       |- Cariyāpiṭaka (Cp)
       |   |- Cariyāpiṭaka-aṭṭhakathā (Cp-a)
       |
-      |- Jātaka (Ja1)
+      |- Jātaka (Ja)
       |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
-      |
-      |- Jātaka (Ja2)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a1)
-      |
-      |- Jātaka (Ja3)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a3)
-      |
-      |- Jātaka (Ja4)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a4)
-      |
-      |- Jātaka (Ja5)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a5)
-      |
-      |- Jātaka (Ja6)
-      |   |- Jātaka-aṭṭhakathā 1 (Ja-a6)
+      |   |- Jātaka-aṭṭhakathā 2 (Ja-a2)
+      |   |- Jātaka-aṭṭhakathā 3 (Ja-a3)
       |
       |- Mahāniddesa (Nidd1)
       |   |- Mahāniddesa-aṭṭhakathā (Nidd-a1)
@@ -281,7 +268,7 @@ Suttantapiṭaka
    
 ```
 
-## Guideline for text referencing
+## Guidelines for text referencing
 
 Texts in the collection can be accessed by URL with their abbreviation, for example, to get to Bhikkhuvibhaṅga 1, you can go to [{{ site.url }}/cst?buv1](/cst?buv1){:target="\_blank"}. If a specific paragraph number is given, it can directly jump to that point. For example, [{{ site.url }}/cst?buv1=24](/cst?buv1=24){:target="\_blank"} leads to the starting point of the first Pārājika.
 
@@ -327,7 +314,7 @@ The second method is commonly used in writing scholarly works. When a portion of
 
 ### When numbers go complex
 
-With the structure we get from the source, the running numbers in some documents can be really complex, for example, in those of *Apadāna*, *Jātaka*, *Milindapañha*, and some others. To make the synchronization to their commentary possible, I have to add group number, separating by a colon (:), to the sequences. This may look ugly, but necessary. To precisely refer to these texts, the group number has also to be added. For instance, **Ja2.3:1** means the first gāthā of tikanipāta (group 3) of Jātaka Book 2. Other complex books can be treated in the same way.
+With the structure we get from the source, the running numbers in some documents can be really complex, for example, in those of *Apadāna*, *Jātaka*, *Milindapañha*, and some others. To make the synchronization to their commentary possible, I have to add group number, separating by a colon (:), to the sequences. This may look ugly, but necessary. To precisely refer to these texts, the group number has also to be added. For instance, **Ja 3:1** means the first gāthā of tikanipāta (group 3) of the Jātaka. Other complex books can be treated in the same way.
 
 However, for Milindapañha[^milin] the above method may not work because its numbers are so complex that they cannot be treated in the same way. By the book's structure in this collection, the numbers correspond to question numbers. So, it may be better to refer to question numbers in their group instead. The first way to do is using the decimal system with part, group, and question number. For example, the well-known carriage analogy is the first question of Part 2-3, the first group (Mahāvagga), hence **Mil 2-3.1.1**. Another way to do is using the question name directly. So, in this case it is **Mil 2-3** "Paññattipañho". 
 
