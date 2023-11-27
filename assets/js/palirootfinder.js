@@ -120,7 +120,7 @@ palirootFinder.filter = function() {
 	for (const r of this.allRoot) {
 		if (this.shownBook.indexOf(r.book) > -1) {
 			if (r.book === "dm" || r.book === "sd" || r.book === "ds") {
-				if (!document.getElementById("variant").checked && (r.var === "sy" || r.var === "sm"))
+				if (!document.getElementById("variant").checked && (r.var === "sy" || r.var === "sm" || r.var === "as"))
 					continue;
 			}
 			const gprefix = r.book === "dp" ? "g9" : "g8";
@@ -167,14 +167,14 @@ palirootFinder.computeUnique = function(list) {
 	const result = [];
 	const uniqueList = {};
 	for (const rt of list) {
-		if (!varElem.checked && (rt.var === "sy" || rt.var === "sm"))
+		if (!varElem.checked && (rt.var === "sy" || rt.var === "sm" || rt.var === "as"))
 			continue;
 		const key = this.getUniqueKey(rt.root);
-		const rvar = rt.var === "sy" || rt.var === "sm" ? rt.var : "";
+		const rvar = rt.var === "sy" || rt.var === "sm" || rt.var === "as" ? rt.var : "";
 		if (key in uniqueList) {
 			const root = uniqueList[key];
 			const book = this.bookName[rt.book];
-			const reflink = rt.book === "sd" || rt.book === "ds"
+			const reflink = rt.book === "sd" || rt.book === "dm" || rt.book === "ds"
 						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
 						: book + "&nbsp;" + rt.ref + rvar;
 			root.bookref.push(reflink);
@@ -186,7 +186,7 @@ palirootFinder.computeUnique = function(list) {
 		} else {
 			const root = {};
 			const book = this.bookName[rt.book];
-			const reflink = rt.book === "sd" || rt.book === "ds"
+			const reflink = rt.book === "sd" || rt.book === "dm" || rt.book === "ds"
 						? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + book + "&nbsp;" + rt.ref + "</a>" + rvar
 						: book + "&nbsp;" + rt.ref + rvar;
 			root.bookref = [reflink];
@@ -230,8 +230,8 @@ palirootFinder.showResult = function() {
 				row += "<td>" + rt.def + "</td>";
 				row += "<td style='width:4em;'>" + rt.grp + "</td>";
 			} else {
-				const rvar = rt.var === "sy" || rt.var === "sm" ? rt.var : "";
-				const reflink = rt.book === "sd" || rt.book === "ds"
+				const rvar = rt.var === "sy" || rt.var === "sm" || rt.var === "as" ? rt.var : "";
+				const reflink = rt.book === "sd" || rt.book === "dm" || rt.book === "ds"
 					? "<a style='cursor:pointer;' onClick=palirootFinder.openRef('"+rt.book+"','"+rt.ref+"');>" + this.bookName[rt.book] + "&nbsp;" + rt.ref + "</a>" + rvar
 					: this.bookName[rt.book] + "&nbsp;" + rt.ref + rvar;
 				row = "<td style='width:4em;'>" + reflink + "</td>";
@@ -257,7 +257,9 @@ palirootFinder.getRootGroup = function(root) {
 	return result;
 };
 palirootFinder.openRef = function(book, rnum) {
-	const page = book === "sd" ? "sadddha?d" : "dhatva?s";
+	const page = book === "sd" ? "sadddha?d"
+					: book === "dm" ? "dhmjs?s"
+					: "dhatva?s";
 	window.open("/" + page + "=" + rnum, "paliroot-refwin");
 };
 palirootFinder.sortRootList = function(list, bywhat) {

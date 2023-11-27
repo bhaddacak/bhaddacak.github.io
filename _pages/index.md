@@ -23,7 +23,7 @@ permalink: /
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
 - [Chaṭṭha Saṅgāyana Tipiṭaka Restructured](/cstpage)
-    - [Table of Contents](/cst)<span class="label label-green">sut completed</span>
+    - [Table of Contents](/cst)<span class="label label-green">completed</span>
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
@@ -44,6 +44,7 @@ permalink: /
 	- [Subodhālaṅkāra](/subho)
 	- [Subodhālaṅkāraṭīkā](/subhotika)
 	- [Vuttodaya](/vutt)
+    - [Kaccāyana-dhātumañjūsā](/dhmjs)<span class="label label-green">new</span>
 	- [Dhātvatthasaṅgaha](/dhatva)
 - [Pāli Literature of Thailand](/thaipalitext)
 	- [Maṅgalatthadīpanī I](/mdreader?v=1)
@@ -56,7 +57,7 @@ permalink: /
 - [PTS Pali-English Dictionary](/ptsped)
 - [Thai-English-Pāli Dictionary](/tepdict)
 - [Declension Table Calculator](/declension)
-- [Pāli Root Finder](/paliroot)
+- [Pāli Root Finder](/paliroot)<span class="label label-green">updated</span>
 - [Meanings of Pāli Roots](/rootmeaning)
 - [Grammatical Sutta Finder](/gramsut)
 

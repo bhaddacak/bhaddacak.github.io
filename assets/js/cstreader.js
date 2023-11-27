@@ -88,7 +88,13 @@ cstReader.showTOC = function() {
 			const fulltitle = this.titleDef[t];
 			const itemStr = "<a style='cursor:pointer;' onClick=cstReader.goTOC('" + t + "')>" + fulltitle.slice(0, fulltitle.indexOf("(")) + "</a>";
 			itemElem.innerHTML = itemStr;
-			toctocElem.appendChild(itemElem);
+			let elm = itemElem;
+			if (t.endsWith("exe")) {
+				const subUl = document.createElement("ul");
+				subUl.appendChild(itemElem);
+				elm = subUl;
+			}
+			toctocElem.appendChild(elm);
 		}
 	}
 	resultElem.appendChild(toctocElem);
@@ -109,7 +115,7 @@ cstReader.showTocTable = function(groupclass, list) {
 	const tdiv = document.createElement("div");
 	tdiv.style.paddingTop = "10px";
 	let title = "<span id='toc-" + groupclass + "' style='font-weight:bold;font-size:1.2em;'>" + titleStr.slice(0, ppos) + "</span>";
-	title += "<span style='font-weight:bold;font-size:1em;'>" + titleStr.slice(ppos) + "</span>";
+	title += "<span style='font-weight:bold;font-size:0.9em;'>" + titleStr.slice(ppos) + "</span>";
 	tdiv.innerHTML = title;
 	resultElem.appendChild(tdiv);
 	const table = document.createElement("table");
@@ -172,7 +178,8 @@ cstReader.formatText = function(text, book) {
 	result += "<br>";
 	let currHeadIndex = -1;
 	let paranumGroupIndex = -1;
-	let optgroupStarted = false;
+	let optPartStarted = false;
+	let optGroupStarted = false;
 	for (let i=0; i<lines.length; i++) {
 		if (lines[i].startsWith("<!--"))
 			continue;
@@ -186,9 +193,9 @@ cstReader.formatText = function(text, book) {
 					this.headSelectorOptions.push("<option value='" + t + "'>" + t + "</option>");
 					currHeadIndex++;
 					this.subheadSelectorOptions[currHeadIndex] = [];
-					if (optgroupStarted) {
+					if (optGroupStarted) {
 						this.subheadSelectorOptions[currHeadIndex-1].push("</optgroup>");
-						optgroupStarted = false;
+						optGroupStarted = false;
 					}
 					result += line.replace(/<h3/, "<h3 id='" + t + "'");
 				} else if (line.startsWith("<h4")) {
@@ -196,13 +203,28 @@ cstReader.formatText = function(text, book) {
 					this.subheadSelectorOptions[currHeadIndex].push("<option value='" + currHeadIndex + ":" + t + "'>" + t + "</option>");
 					result += line.replace(/<h4/, "<h4 id='" + currHeadIndex + ":" + t + "'");
 				}
+			} else if (line.startsWith("<div class=\"part")) {
+				const t = this.util.getInnerText(line);
+				if (optPartStarted)
+					this.headSelectorOptions.push("</optgroup>");
+				this.headSelectorOptions.push("<optgroup label='" + t + "'>");
+				optPartStarted = true;
+				result += line.replace(/<div/, "<div style='padding-top:10px;'");
+			} else if (line.startsWith("<div class=\"endpart")) {
+				this.headSelectorOptions.push("</optgroup>");
+				optPartStarted = false;
+				result += line;
 			} else if (line.startsWith("<div class=\"group")) {
 				const t = this.util.getInnerText(line);
-				if (optgroupStarted)
+				if (optGroupStarted)
 					this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
 				this.subheadSelectorOptions[currHeadIndex].push("<optgroup label='" + t + "'>");
-				optgroupStarted = true;
+				optGroupStarted = true;
 				result += line.replace(/<div/, "<div style='padding-top:10px;'");
+			} else if (line.startsWith("<div class=\"endgroup")) {
+				this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
+				optGroupStarted = false;
+				result += line;
 			} else if (line.startsWith("<div class=\"centre")) {
 				result += line.replace(/<div/, "<div style='text-align:center;'");
 			} else if (line.startsWith("<div class=\"indent")) {
@@ -235,9 +257,9 @@ cstReader.formatText = function(text, book) {
 			}
 		}
 	}
-	if (optgroupStarted) {
+	if (optGroupStarted) {
 		this.subheadSelectorOptions[currHeadIndex].push("</optgroup>");
-		optgroupStarted = false;
+		optGroupStarted = false;
 	}
 	return result;
 };

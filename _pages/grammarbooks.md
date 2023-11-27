@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2023-10-22 12:00:00 +0700
+date: 2023-11-27 12:00:00 +0700
 ---
 
 - TOC
@@ -16,7 +16,7 @@ Western students may find these works difficult, because it is hard to get full 
 
 The head of all suttas in the grammar books presented here are put together, suitable for search and overview, in [Grammatical Sutta Finder](/gramsut){:target="\_blank"}. This tools can also relate one work to each other.
 
-For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot){:target="\_blank"} to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Dhātvatthasaṅgaha](/dhatva){:target="\_blank"} can be a good source of learning.
+For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot){:target="\_blank"} to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Kaccāyana-dhātumañjūsā](/dhmjs){:target="\_blank"} and [Dhātvatthasaṅgaha](/dhatva){:target="\_blank"} can be good sources for learning.
 
 ### 1. Kaccāyanabyākaraṇaṃ
 

@@ -2,13 +2,13 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-11-19 12:00:00 +0700
+date: 2023-11-26 12:00:00 +0700
 ---
 
 - TOC
 {:toc}
 
-This will be the last addition here in this period before I continue writing `Pāli Platform 3`, and it is the hardest of all I have been doing so far. Unlike students of Buddhism in the past who had difficulty in finding Pāli texts to read, today we have several versions of them easily accessible via the Internet. The most complete collection is of the *Chaṭṭha Saṅgāyana Tipiṭaka* (CST), formerly known as [CSCD](https://www.tipitaka.org){:target="\_blank"} distributed by Vipassana Research Institute. This collection has been the main source of materials for many students of Buddhism and Pāli, including me.
+Unlike students of Buddhism in the past who had difficulty in finding Pāli texts to read, today we have several versions of them easily accessible via the Internet. The most complete collection is of the *Chaṭṭha Saṅgāyana Tipiṭaka* (CST), formerly known as [CSCD](https://www.tipitaka.org){:target="\_blank"} distributed by Vipassana Research Institute. This collection has been the main source of materials for many students of Buddhism and Pāli, including me.
 
 A better edited collection recently is of [SuttaCentral](https://suttacentral.net){:target="\_blank"}. Although this is not complete, it serves as a beginner-friendly source with a good coverage of English translations. Because of the fragmented data in this site plus its idiosyncracy, albeit well-organized, it is difficult to work with in some situations.
 
@@ -24,7 +24,7 @@ For more information about the structure of the collection, see [CST-Kit](https:
 
 While the main texts in the Vinaya are of a handful, their related works are rich. All the texts are listed in the tree below, including their name and abbreviation for referring. Pāli learners should know all these names and their relationships. The most important exegesis is undoubtedly Samantapāsādikā by Buddhaghosa, because several subsequent works go around it. Unlike the original, I promote the Pātimokkha, both of the Bhikkhu and Bhikkhunī, to the main group. This makes sense because by their content they are not exegeses, but recapitulations.
 
-Most texts in the Vinaya can be synchronized in the reader. To understand how it works, see [HERE](http://paliplatform.blogspot.com/2023/10/synchronization-of-cst-docs.html){:target="\_blank"}, or better try it yourself in the reader. Other texts with this structure can be used in the same manner.
+Most texts in the Vinaya can be synchronized in the reader. To understand how it works, see [HERE](http://paliplatform.blogspot.com/2023/10/synchronization-of-cst-docs.html){:target="\_blank"}, or better try it yourself in the reader. Other texts with similar structure can be used in the same manner.
 
 ```
 ============
@@ -101,6 +101,12 @@ Vinayapiṭaka
 ```
 
 ## Suttantapiṭaka
+
+The first four main nikāyas in the Suttanta have simple structure, suitable to use the traditional way of referring (see below). However, I use all text names in these nikāyas because by this way students can get better familiarity with the texts, particularly those written by Buddhaghosa. The main subcommentaries in the first three nikāyas have the same name. This can be a little confusing. Writers may call them by the traditional way instead, if they like, for example, D1-t, M1-t, and S1-t.
+
+Texts in Khuddakanikāya have various structures. Some are simple, but some are really complex (see Milindapañha mentioned below). To avoid confusion, it is better not to call their exegeses by names. So, in this nikāya (onward to the Abhidhamma) I use a different naming scheme.
+
+To make our life easier, I decide to move Visuddhimagga from the other group to be an exegetical text in the Suttanta, and I exclude the rest in that group altogether. Putting Visuddhimagga here makes sense. This can also make our collection tidier and unified.
 
 ```
 ==============
@@ -266,7 +272,94 @@ Suttantapiṭaka
       |
       |- Peṭakopadesa (Ptkp)
    
+  ------------------------------------------
+  Independent Suttanta Exegeses/Compositions
+  ------------------------------------------
+      |- Visuddhimagga (Vism)
+          |- Visuddhimagga-mahāṭīkā (Vism-t)
 ```
+
+## Abhidhammapiṭaka
+
+Main texts in the Abhidhamma are of a handful, but their internal structure is complex and somewhat messy. Only for Paṭṭhāna[^patthana], I took days for text cleaning. Still, it is not perfectly tidy, but far better than the original.
+
+[^patthana]: Among all texts in Pāli literature, Paṭṭhāna is the biggest single piece of work, and it is the least read and understood. This may be a product of mathematically inclined scholastic monks in the former time. The main theme is the enumerations of Tikapaṭṭhāna (22 groups of three) and Dukapaṭṭhāna (100 groups of two), and combinations of them. If we see this in terms of Set theory and Relations, we can discern that why listing all possible cases is so ghastly and tiresome. I cannot believe that the Buddha would entertain this kind of ideas. The text was preserved, I think, just because later generations do not fully understand it, yet stunned by it. They then think "This must be something," and keep it unread.
+
+Only Aṭṭhasālinī (Dhammasaṅgaṇī-aṭṭhakathā) is mentioned by name because it is normally called by that. Other books use the traditional scheme. In this group we can see the use of sub-subcommentaries. If we open related texts properly by chained opening, they can be synchronized at once. Try this yourself in the reader.
+
+```
+================
+Abhidhammapiṭaka
+================
+  |- Dhammasaṅgaṇī (Dhs)
+  |   |- Aṭṭhasālinī (As)
+  |       |- Dhammasaṅgaṇī-mūlaṭīkā (Dhs-t)
+  |           |- Dhammasaṅgaṇī-anuṭīkā (Dhs-at)
+  |
+  |- Vibhaṅga (Vbh)
+  |   |- Vibhaṅga-aṭṭhakathā (Vbh-a)
+  |       |- Vibhaṅga-mūlaṭīkā (Vbh-t)
+  |           |- Vibhaṅga-anuṭīkā (Vbh-at)
+  |
+  |- Dhātukathā (Dhk)
+  |   |- Dhātukathā-aṭṭhakathā (Dhk-a)
+  |       |- Dhātukathā-mūlaṭīkā (Dhk-t)
+  |           |- Dhātukathā-anuṭīkā (Dhk-at)
+  |
+  |- Puggalapaññatti (Pp)
+  |   |- Puggalapaññatti-aṭṭhakathā (Pp-a)
+  |       |- Puggalapaññatti-mūlaṭīkā (Pp-t)
+  |           |- Puggalapaññatti-anuṭīkā (Pp-at)
+  |
+  |- Kathāvatthu (Kv)
+  |   |- Kathāvatthu-aṭṭhakathā (Kv-a)
+  |       |- Kathāvatthu-mūlaṭīkā (Kv-t)
+  |           |- Kathāvatthu-anuṭīkā (Kv-at)
+  |
+  |- Yamaka (Ym)
+  |   |- Yamaka-aṭṭhakathā (Ym-a)
+  |       |- Yamaka-mūlaṭīkā (Ym-t)
+  |           |- Yamaka-anuṭīkā (Ym-at)
+  |
+  |- Paṭṭhāna 1 (Pt1)
+  |   |- Paṭṭhāna-aṭṭhakathā (Pt-a)
+  |       |- Paṭṭhāna-mūlaṭīkā (Pt-t)
+  |           |- Paṭṭhāna-anuṭīkā (Pt-at)
+  |
+  |- Paṭṭhāna 2 (Pt2)
+  |
+  |- Paṭṭhāna 3 (Pt3)
+
+  --------------------------------------------
+  Independent Abhidhamma Exegeses/Compositions
+  --------------------------------------------
+      |- Abhidhammāvatāra (Abhv)
+      |   |- Abhidhammāvatāra-purāṇaṭīkā (Abhv-pt)
+      |   |- Abhidhammāvatāra-abhinavaṭīkā (Abhv-nt)
+      |  
+      |- Abhidhammatthasaṅgaha (Abhs)
+      |   |- Abhidhammatthasaṅgaha-ṭīkā (Abhs-t)
+      |  
+      |- Abhidhammamātikā (Abhm)
+      |   |- Abhidhammamātikā-ṭīkā (Abhm-t)
+      |  
+      |- Nāmarūpapariccheda (Nrp)
+      |  
+      |- Paramatthavinicchaya (Prv)
+      |  
+      |- Saccasaṅkhepa (Scs)
+
+```
+
+## Statistical summary
+
+From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the other group (Añña) are excluded, except Visuddhimagga. The numbers of files in each group are shown in the following table:
+
+|  | Vinaya | Suttanta | Abhidhamma | total |
+|:---|---:|---:|---:|---:|
+| main | 8 | 42 | 9 | 59 |
+| exegetical | 45 | 68 | 31 | 144 |
+| total | 53 | 110 | 40 | **203** |
 
 ## Guidelines for text referencing
 
@@ -290,7 +383,15 @@ For example, to the first mātikā of Pārājika rule, we can refer by **Buv1 39
 This can be baffling to new learners, but with the good organization of paragraph numbers, referring to subordinate texts is as easy as the main texts. We have two following methods:
 
 1. **Using the name of text** (recommended). For example, at the first point mentioned above, we can refer to the commentary by **Sp1 39** and the main subcommentary by **Sd1 39**. And to the first sermon, the commentary is **Sp4 13** (there is little text here), and the main subcommentary **Sd4 13-17** (there is much more text here). See more examples in the table below.
-2. **Using the traditional way**. By adding a suffix to the main text, it can change the text mentioned relatively. Adding **-a** means commentary, and adding **-t** (or -ṭ) means subcommentary. For example, the commentary to the Pārājika above can be **Buv1-a 39** (= Sp1 39), and the subcommentary **Buv1-t 39** (equivalent to Sp1-t 39 = Sd1 39). And of the first sermon can be **Mv-a 13** (= Sp4 13) and **Mv-t 13-17** (equivalent to Sp4-t 13-17 = Sd4 13-17).
+2. **Using the traditional way**. By adding a suffix to the main text, it can change the text mentioned relatively. Here are suffixes used typically:
+    - **-a** aṭṭhakathā (commentary)
+    - **-t** (or -ṭ) ṭīkā/mūlaṭīkā (subcommentary)
+    - **-pt** purāṇaṭīkā (old subcommentary)
+    - **-nt** navaṭīkā/abhinavaṭīkā (new subcommentary)
+    - **-at** anuṭīkā (sub-subcommentary)
+    - **-y** yojanā (a kind of commentary)
+
+    For example, the commentary to the Pārājika above can be **Buv1-a 39** (= Sp1 39), and the subcommentary **Buv1-t 39** (equivalent to Sp1-t 39 = Sd1 39). And of the first sermon can be **Mv-a 13** (= Sp4 13) and **Mv-t 13-17** (equivalent to Sp4-t 13-17 = Sd4 13-17).
 
 | Target content | By text name | By traditional way |
 |---|---|---|
@@ -322,11 +423,21 @@ However, for Milindapañha[^milin] the above method may not work because its num
 
 ## Abbreviations
 
+I have tried my best to abbreviate book names here. My primary goal is to make them distinct, short, and easy to use. Only English characters are used for simplicity and programming-friendliness. Some characters may not be well-chosen grammatically, **Buv** (Bhikkhuvibhaṅga) for instance. But this is the best we can get so far. Some texts use abbreviations from academic textbooks, some from SuttaCentral. Several are newly created. In a way, this can disrupt the traditional way of text referencing. But I think it is the time to make them all consistent and unified. Sending suggestions and complaints to me if you have a better idea.
+
 | Abbr. | Description |
 |---|---|
 | A | Aṅguttaranikāya |
+| Abhm | Abhidhammamātikā |
+| Abhm-t | Abhidhammamātikā-ṭīkā |
+| Abhs | Abhidhammatthasaṅgaha |
+| Abhs-t | Abhidhammatthasaṅgaha-ṭīkā (Abhidhammatthavibhāvinī) |
+| Abhv | Abhidhammāvatāra |
+| Abhv-pt | Abhidhammāvatāra-purāṇaṭīkā |
+| Abhv-nt | Abhidhammāvatāra-abhinavaṭīkā |
 | Ap | Apadāna |
 | Ap-a | Apadāna-aṭṭhakathā |
+| As | Aṭṭhasālinī (Dhammasaṅgaṇī-aṭṭhakathā) |
 | Bip | Bhikkhunīpātimokkha |
 | Biv | Bhikkhunīvibhaṅga |
 | Biv-y | Bhikkhunīvibhaṅga-yojanā |
@@ -339,8 +450,15 @@ However, for Milindapañha[^milin] the above method may not work because its num
 | Cv | Cūḷavagga |
 | Cv-y | Cūḷavagga-yojanā |
 | D | Dīghanikāya |
+| Dhk | Dhātukathā |
+| Dhk-a | Dhātukathā-aṭṭhakathā |
+| Dhk-at | Dhātukathā-anuṭīkā |
+| Dhk-t | Dhātukathā-mūlaṭīkā |
 | Dhp | Dhammapada |
 | Dhp-a | Dhammapada-aṭṭhakathā |
+| Dhs | Dhammasaṅgaṇī |
+| Dhs-at | Dhammasaṅgaṇī-anuṭīkā |
+| Dhs-t | Dhammasaṅgaṇī-mūlaṭīkā |
 | It | Itivuttaka |
 | It-a | Itivuttaka-aṭṭhakathā |
 | Ja | Jātaka |
@@ -353,6 +471,10 @@ However, for Milindapañha[^milin] the above method may not work because its num
 | Kkh | Kaṅkhāvitaraṇī |
 | Kkh-nt | Kaṅkhāvitaraṇī-abhinavaṭīkā |
 | Kkh-pt | Kaṅkhāvitaraṇī-purāṇaṭīkā |
+| Kv | Kathāvatthu |
+| Kv-a | Kathāvatthu-aṭṭhakathā |
+| Kv-at | Kathāvatthu-anuṭīkā |
+| Kv-t | Kathāvatthu-mūlaṭīkā |
 | Lpd | Līnatthappakāsinī[^lnp] (Dīghanikāya-ṭīkā) |
 | Lpm | Līnatthappakāsinī (Majjhimanikāya-ṭīkā) |
 | Lps | Līnatthappakāsinī (Saṃyuttanikāya-ṭīkā) |
@@ -369,16 +491,27 @@ However, for Milindapañha[^milin] the above method may not work because its num
 | Nettv | Nettivibhāvinī |
 | Nidd | Niddesa |
 | Nidd-a | Niddesa-aṭṭhakathā |
+| Nrp | Nāmarūpapariccheda |
 | Pc-y | Pācityādiyojanā |
 | Pps | Papañcasūdanī (Majjhimanikāya-aṭṭhakathā) |
+| Pp | Puggalapaññatti |
+| Pp-a | Puggalapaññatti-aṭṭhakathā |
+| Pp-at | Puggalapaññatti-anuṭīkā |
+| Pp-t | Puggalapaññatti-mūlaṭīkā |
+| Prv | Paramatthavinicchaya |
 | Psm | Paṭisambhidāmagga |
 | Psm-a | Paṭisambhidāmagga-aṭṭhakathā |
+| Pt | Paṭṭhāna |
+| Pt-a | Paṭṭhāna-aṭṭhakathā |
+| Pt-at | Paṭṭhāna-anuṭīkā |
+| Pt-t | Paṭṭhāna-mūlaṭīkā |
 | Ptkp | Peṭakopadesa |
 | Pv | Petavatthu |
 | Pv-a | Petavatthu-aṭṭhakathā |
 | Pvr | Parivāra |
 | Pvr-y | Parivāra-yojanā |
 | S | Saṃyuttanikāya |
+| Scs | Saccasaṅkhepa |
 | Sd | Sāratthadīpanī (Vinaya-ṭīkā) |
 | Smv | Sumaṅgalavilāsinī (Dīghanikāya-aṭṭhakathā) |
 | Snp | Suttanipāta |
@@ -395,6 +528,12 @@ However, for Milindapañha[^milin] the above method may not work because its num
 | Ud-a | Udāna-aṭṭhakathā |
 | Utv | Uttaravinicchaya |
 | Utv-t | Uttaravinicchaya-ṭīkā |
+| Vbh | Vibhaṅga |
+| Vbh-a | Vibhaṅga-aṭṭhakathā |
+| Vbh-at | Vibhaṅga-anuṭīkā |
+| Vbh-t | Vibhaṅga-mūlaṭīkā |
+| Vism | Visuddhimagga |
+| Vism-t | Visuddhimagga-mahāṭīkā |
 | Vjb | Vajirabuddhi (Vinaya-ṭīkā) |
 | Vmv | Vimativinodanī (Vinaya-ṭīkā) |
 | Vnl | Vinayālaṅkāra (Vinayasaṅgaha-ṭīkā) |
@@ -403,6 +542,10 @@ However, for Milindapañha[^milin] the above method may not work because its num
 | Vnv-t | Vinayavinicchaya-ṭīkā |
 | Vv | Vimānavatthu |
 | Vv-a | Vimānavatthu-aṭṭhakathā |
+| Ym | Yamaka |
+| Ym-a | Yamaka-aṭṭhakathā |
+| Ym-at | Yamaka-anuṭīkā |
+| Ym-t | Yamaka-mūlaṭīkā |
 
 [^lnp]: Līnatthappakāsinī is a common name. This form is most widely known. In the text, however, *Līnatthappakāsanā* is seen. Sometimes, it is called *Līnatthappakāsanī*.
 
