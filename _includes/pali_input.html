@@ -10,7 +10,7 @@
 <button style="padding-left:0.5em;padding-right:0.5em;" onClick="paliInput.insertChar('ṇ');">ṇ</button>
 <button style="padding-left:0.5em;padding-right:0.5em;" onClick="paliInput.insertChar('ḷ');">ḷ</button>
 <button style="padding-left:0.5em;padding-right:0.5em;" onClick="paliInput.insertChar('ṃ');">ṃ</button>
-<span style="font-size:1.2em;font-weight:bold;cursor:pointer;" title="Also: =a, =i, =u, ^n, ~n, .t, .d, .n, .l, .m">&nbsp;?</span>
+<span style="font-size:1.2em;font-weight:bold;cursor:pointer;" title="Also: =a, =i, =u, ;n, ~n, .t, .d, .n, .l, .m">&nbsp;?</span>
 </span>
 </div>
 <div style="padding: 3px">
@@ -25,7 +25,11 @@
 <script>
 const paliInput = {};
 paliInput.textInputElem = document.getElementById("textinput");
-paliInput.charTable = { "=a": "ā", "=i": "ī", "=u": "ū", "\\^n": "ṅ", "~n": "ñ", "\\.t": "ṭ", "\\.d": "ḍ", "\\.n": "ṇ", "\\.l": "ḷ", "\\.m": "ṃ" };
+paliInput.charTable = { 
+	"=a": "ā", "=i": "ī", "=u": "ū", ";n": "ṅ", "\\^n": "ṅ", "~n": "ñ",
+	"\\.t": "ṭ", "\\.d": "ḍ", "\\.n": "ṇ", "\\.l": "ḷ", "\\.m": "ṃ",
+	",t": "ṭ", ",d": "ḍ", ",n": "ṇ", ",l": "ḷ", ",m": "ṃ"
+};
 paliInput.textInputElem.addEventListener("keydown", function(event) {
 	if (event.key === "Enter")
 		{{ include.search_func }}

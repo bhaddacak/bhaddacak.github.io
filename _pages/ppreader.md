@@ -2,10 +2,10 @@
 title: "Pāli Passage Reader"
 permalink: /ppreader
 is_application: true
-date: 2023-08-12 12:00:00 +0700
+date: 2023-12-03 12:00:00 +0700
 ---
 <div>
-<span><code> =a =i =u ^n ~n .t .d .n .l .m (āīūṅñṭḍṇḷṃ)</code></span> <button onClick="ppReader.showInstruction();">Instruction</button> <button onClick="ppReader.refresh();">Refresh</button>
+<span><code> =a =i =u ;n ~n .t .d .n .l .m (āīūṅñṭḍṇḷṃ)</code></span> <button onClick="ppReader.showInstruction();">Instruction</button> <button onClick="ppReader.refresh();">Refresh</button>
 </div>
 <blockquote id="instruction" style="display:none;">
 	<p>This program can break down a Pāli passage and try to find a definition of each item. The main resource is the <em>New Concise Pali-English Dictionary</em>. If an exact definition is not met, the nearest one is shown instead, marked by an asterisk (\*). The program can also recognize most forms of Pāli pronouns and some of irregular nouns. Moreover, it can recognize a number of <em>sandhi</em> words.</p>

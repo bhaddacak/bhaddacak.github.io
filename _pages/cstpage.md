@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-11-26 12:00:00 +0700
+date: 2023-12-02 12:00:00 +0700
 ---
 
 - TOC
@@ -353,13 +353,86 @@ Abhidhammapiṭaka
 
 ## Statistical summary
 
-From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the other group (Añña) are excluded, except Visuddhimagga. The numbers of files in each group are shown in the following table:
+From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the other group (Añña) are excluded, except Visuddhimagga.
+
+### File summary
 
 |  | Vinaya | Suttanta | Abhidhamma | total |
 |:---|---:|---:|---:|---:|
 | main | 8 | 42 | 9 | 59 |
 | exegetical | 45 | 68 | 31 | 144 |
 | total | 53 | 110 | 40 | **203** |
+
+### Word summary
+
+|  | Vinaya | Suttanta | Abhidhamma | total |
+|:---|---:|---:|---:|---:|
+| main | 33,246 | 136,874 | 18,309 | 163,974 |
+| exegetical | 220,286 | 511,567 | 157,961 | 721,700 |
+| total | 232,665 | 563,609 | 165,819 | **783,587** |
+
+### Top 50
+
+| Frequency | Term |
+|---:|:---|
+| 203709 | ti |
+| 148314 | ca |
+| 141737 | na |
+| 109392 | vā |
+|  70347 | pana |
+|  65021 | hoti |
+|  58078 | taṃ |
+|  50982 | tattha |
+|  49786 | evaṃ |
+|  48800 | pe |
+|  44761 | kho |
+|  44540 | so |
+|  39934 | nāma |
+|  36724 | hi |
+|  35259 | tassa |
+|  35039 | vuttaṃ |
+|  34935 | te |
+|  34509 | bhikkhave |
+|  27314 | attho |
+|  24920 | ayaṃ |
+|  24021 | viya |
+|  23520 | tena |
+|  22050 | tesaṃ |
+|  20729 | atha |
+|  20591 | me |
+|  20422 | katvā |
+|  20195 | yaṃ |
+|  20051 | āha |
+|  19228 | idaṃ |
+|  18912 | dhammaṃ |
+|  18852 | tasmā |
+|  18788 | dhammā |
+|  18441 | yathā |
+|  18142 | bhagavā |
+|  17897 | uppajjati |
+|  17701 | dhammo |
+|  17359 | ettha |
+|  17204 | paccayo |
+|  16747 | yo |
+|  16522 | tato |
+|  16484 | ekaṃ |
+|  16447 | tathā |
+|  16305 | attano |
+|  16088 | no |
+|  15589 | dve |
+|  15499 | bhante |
+|  15492 | paṭicca |
+|  15285 | bhikkhu |
+|  13753 | atthi |
+|  13393 | idha |
+
+### The longest term
+
+Here is the longest compound found in the exegetical Vinaya group.
+
+> avippavāsasammutisanthatasammutibhattuddesakasenāsanaggāhāpakabhaṇḍāgārika-
+cīvarappaṭiggāhakayāgubhājakaphalabhājakakhajjabhājakaappamattakavissajjaka-
+sāṭiyaggāhapakapattaggāhāpakaārāmikapesakasāmaṇerapesakasammutīti
 
 ## Guidelines for text referencing
 

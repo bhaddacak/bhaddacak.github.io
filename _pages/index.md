@@ -44,7 +44,7 @@ permalink: /
 	- [Subodhālaṅkāra](/subho)
 	- [Subodhālaṅkāraṭīkā](/subhotika)
 	- [Vuttodaya](/vutt)
-    - [Kaccāyana-dhātumañjūsā](/dhmjs)<span class="label label-green">new</span>
+    - [Kaccāyana-dhātumañjūsā](/dhmjs)
 	- [Dhātvatthasaṅgaha](/dhatva)
 - [Pāli Literature of Thailand](/thaipalitext)
 	- [Maṅgalatthadīpanī I](/mdreader?v=1)
@@ -57,7 +57,7 @@ permalink: /
 - [PTS Pali-English Dictionary](/ptsped)
 - [Thai-English-Pāli Dictionary](/tepdict)
 - [Declension Table Calculator](/declension)
-- [Pāli Root Finder](/paliroot)<span class="label label-green">updated</span>
+- [Pāli Root Finder](/paliroot)
 - [Meanings of Pāli Roots](/rootmeaning)
 - [Grammatical Sutta Finder](/gramsut)
 
