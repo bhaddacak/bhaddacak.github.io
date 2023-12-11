@@ -13,17 +13,18 @@ permalink: /
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 - [Pāli for New Learners, Book 1: How to say it](/palicon) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 - [Pāli for New Learners, Book 2: How to read it](/palitex) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
-- [Pāli Platform 2: The Official Manual](/pp2man) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
+- [Pāli Platform's User Manual](/ppmanual) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 ## Applications
-- [Pāli Platform 2](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
+- [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
+    - [Pāli Platform Classic](/ppclassic)<span class="label label-green">updated</span>
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
 - [Sutta Lister](/suttalister)
 - [Chaṭṭha Saṅgāyana Tipiṭaka Restructured](/cstpage)
-    - [Table of Contents](/cst)<span class="label label-green">completed</span>
+    - [Table of Contents](/cst)
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)

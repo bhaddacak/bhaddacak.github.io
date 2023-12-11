@@ -1,25 +1,23 @@
 ---
-title: "Pāli Platform 2 RC1"
+title: "Pāli Platform"
 permalink: /paliplatform
+is_article: true
+date: 2023-12-11 12:00:00 +0700
 ---
 
-![Pāli Platform 2's main screen](/assets/images/platform2-main-dark.png)
+This application is deliberately written to be a powerful learning and research tool on Pāli language. My ambitious goal is to make the most comprehensive Pāli tool indispensable to the language learning. However, as the thing has been developed so far, it is now difficult to add new functionality without forsaking the old code. So, the application is now split into two codebases.
+
+## Pāli Platform Classic
+
+This is the updated version of `Pāli Platform 2`. The content of the program is mostly retained, except some enhancement in `Document Finder` and several minor additions and fixes. The main purpose of this codebase is to preserve what has been done so far (before drastic changes are made). This branch of the program will not be developed further, except serious bug fixes, so its main version will stay with `2`. Also now the source code is fully opened under GPL3.
+
+> [Pāli Platform Classic's page](/ppclassic)
 
 
-A comprehensive tool for Pāli studies, `Pāli Platform 2` is newly rewritten, with a new look, more features, and less bugs (hopefully). The old version is now discontinued and revoked its current license. The GPL3 license will be applied to the new version in the coming release.
+## Pāli Platform (New Generation)
 
-The application can run in Windows, macOS, and GNU/Linux. For more information, see the user's manual in the package.
+After I have developed many tools in this website, I hope I can add them to `Pāli Platform` as well. By the fact that the program is heavily based on the CSCD data, adding new features without upsetting the old system becomes difficult. After I finished the [CST restructured](/cstpage), the need for the old collection is now less pressing. The main goal of the new `Pāli Platform` is therefore to move the focus to the new collection because of its better organization.
 
+Moreover, apart from the CST data we also have Pāli texts from other publications, such as PTS, BJT, Siam Rath, and SuttaCentral. These data should be incorporated into the program, or at least should be accessed by a provided reader. With this consideration, the tasks of new development loom really large.
 
-**Download links:**
-1. [PaliPlatform2.0-RC1-full.zip](https://drive.google.com/file/d/1M4W5xYUU3LALjDmgBkN8gidZfEHpQXrO/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> (~150 MB)
-
-	Suitable for Windows, GNU/Linux, and macOS, the package includes a Windows JRE (32-bit). This is the easiest way to run in all Windows machines.
-
-2. [PaliPlatform2.0-RC1.zip](https://drive.google.com/file/d/1bnyXcoDz4ehvkF4-t7Of3yXbrCp_BkiG/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> (~90 MB)
-
-	Suitable for GNU/Linux, macOS, and Windows, the package has no JRE. Windows users who plan to use other JRE (64-bit) should load this, then unpack your JRE, rename its folder to `jre` and move it to the program's root directory.
-
-3. [Sentences](https://github.com/bhaddacak/pp2-sentences) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg>
-
-	This backup data of the bundled sentences can help the users restore the original sentences in case they mess up with the existing ones.
+For the development has just started, I cannot say by now whether the new release will serve all of these. Maybe, some features need another split.

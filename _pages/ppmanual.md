@@ -1,8 +1,10 @@
 ---
-title: "Pāli Platform 2: The Official Manual"
-permalink: /pp2man
+title: "Pāli Platform's user manual"
+permalink: /ppmanual
 version: 2.0
 ---
+
+Now the program has been updated and branched. Several features are also planned to add soon. This entails that the manual will be substantially revised. This can take some time. However, the old manual (PP2Man) is still usable for the recent update.
 
 ![PP2MAN](/assets/images/pp2man.png)
 
