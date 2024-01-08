@@ -1,5 +1,5 @@
 ---
-title: "Works of J.R. Bhaddacak"
+title: "Works by J.R. Bhaddacak"
 permalink: /
 ---
 
@@ -8,6 +8,7 @@ permalink: /
 - [Introduction to Critical Buddhist Studies](/cribudstu)
 - [Buddhism as a Model of Self-Development](/budselfdev)
 - [A Humble Guide to Meditation](/medguide)
+- [Pāli Jokes](/palijokes)<span class="label label-green">new</span>
 
 ## Books
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
@@ -17,7 +18,7 @@ permalink: /
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
-    - [Pāli Platform Classic](/ppclassic)<span class="label label-green">updated</span>
+    - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
 ## Online Pāli Text Readers

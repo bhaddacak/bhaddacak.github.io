@@ -5,11 +5,11 @@ is_article: true
 date: 2023-12-11 12:00:00 +0700
 ---
 
-This application is deliberately written to be a powerful learning and research tool on Pāli language. My ambitious goal is to make the most comprehensive Pāli tool indispensable to the language learning. However, as the thing has been developed so far, it is now difficult to add new functionality without forsaking the old code. So, the application is now split into two codebases.
+This application is deliberately written to be a powerful learning and research tool on Pāli language. My ambitious goal is to make the most comprehensive Pāli tool indispensable to the language learning. However, as the thing has been developed so far, it is now difficult to add new functionality without forsaking the old code. So, the application is now split into two code bases.
 
 ## Pāli Platform Classic
 
-This is the updated version of `Pāli Platform 2`. The content of the program is mostly retained, except some enhancement in `Document Finder` and several minor additions and fixes. The main purpose of this codebase is to preserve what has been done so far (before drastic changes are made). This branch of the program will not be developed further, except serious bug fixes, so its main version will stay with `2`. Also now the source code is fully opened under GPL3.
+This is the updated version of `Pāli Platform 2`. The content of the program is mostly retained, except some enhancement in `Document Finder` and several minor additions and fixes. The main purpose of this code base is to preserve what has been done so far (before drastic changes are made). This branch of the program will not be developed further, except serious bug fixes, so its main version will stay with `2`. Also now the source code is fully opened under GPL3.
 
 > [Pāli Platform Classic's page](/ppclassic)
 
