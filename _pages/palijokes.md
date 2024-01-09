@@ -2,7 +2,7 @@
 title: "Pāli Jokes"
 permalink: /palijokes
 is_article: true
-date: 2024-01-08 12:00:00 +0700
+date: 2024-01-09 12:00:00 +0700
 ---
 
 - TOC
@@ -18,15 +18,13 @@ I create this page for those who are practicing Pāli. Writing jokes is a good p
 
 I am also experimenting with Facebook group. So, all the jokes will also be posted in [Pāli Jokes](https://web.facebook.com/groups/palijokes){:target="\_blank"}. Feel free to join the group and write some jokes yourselves.
 
-Some technical terms:
-- navalikhitaṃ (vatthu) = newly written (story)
-- parivattitaṃ = translated/adapted
-
-Abbreviations found in short pieces:
+**Abbreviations:**
+- NAVA (navalikhitaṃ vatthu) = newly written story
+- PARI (parivattitaṃ vatthu) = translated/adapted story
 - P (Pucchā) = Question
 - V (Visajjhanaṃ) = Answer
 
-**Caveat**: Some stories may be rated as adult jokes.
+**Caveat**: Some pieces may be rated as adult jokes.
 
 ## Style guide
 
@@ -40,7 +38,10 @@ Here is my style of writing. For beginners who do not yet establish their own st
 ## Stories
 
 ### Vācāsiddhi-isi
-(navalikhitaṃ)
+{: .inline-block}
+
+nava
+{: .label }
 
 > Ekasmiṃ vane atibalavā isi vasati. Tassa vācāsiddhi atthi, vatthūni māpituṃ sakkā vacībhedena eva.  
 > 
@@ -71,7 +72,10 @@ Here is my style of writing. For beginners who do not yet establish their own st
 > Samanantarā so isi nikujjitvā kālakato hoti.
 
 ### Yonisomanasikāro
-(navalikhitaṃ)
+{: .inline-block}
+
+nava
+{: .label }
 
 > Ekasmiṃ ārāme eko bhikkhūnaṃ ācariyo hoti. Sāmaññena so bhikkhū vāceti. Ekasmiṃ divase so evaṃ vitakketi:
 > 
@@ -92,7 +96,10 @@ Here is my style of writing. For beginners who do not yet establish their own st
 > "Yato tayā YONIsomanasikāro vācito, tato ahaṃ titikkhituṃ sakkā. Na sakkā sace LIṄGAsomanasikāro."
 
 ### Bhikkhu sārathi ca
-(parivattitaṃ)
+{: .inline-block}
+
+pari
+{: .label }
 
 > Ekasmiṃ samaye eko bhikkhu ca sārathi mattaññutāya jīvikaṃ kappetvā, kālakatā honti. Yato na garukaṃ pāpakammaṃ katā, tato dve devaloke uppajjito.
 > 
@@ -108,16 +115,16 @@ Here is my style of writing. For beginners who do not yet establish their own st
 
 ## Short pieces
 
-> (parivattitaṃ)
-> 
+> pari
+> {: .label }
 > P: Kittakaṃ attānaṃ tvaṃ ākaṅkhasi?
 > 
 > V: Yaṃ "Rathassa parimukhaṃ na kamati," iti eva, taṃ pahonakaṃ hoti.
 > 
 > (Shunryu Suzuki)
 
-> (parivattitaṃ)
-> 
+> pari
+> {: .label }
 > Na ahaṃ mama kammena amatabhāvaṃ paṭilabhituṃ icchāmi.
 > 
 > Amaraṇena pana ahaṃ amatabhāvaṃ paṭilabhituṃ icchāmi.
