@@ -2,7 +2,7 @@
 title: "Pāli Jokes"
 permalink: /palijokes
 is_article: true
-date: 2024-01-09 12:00:00 +0700
+date: 2024-01-14 12:00:00 +0700
 ---
 
 - TOC
@@ -10,7 +10,7 @@ date: 2024-01-09 12:00:00 +0700
 
 ## Introduction
 
-Jokes here are written in Pāli. They are not meant to be taken as sacred artifacts, nor historical reports. But some can have spiritual significance, in a way. They are mainly used as pedagogic devices, and for entertaining.
+Jokes (*hassavatthu*) here are written in Pāli. They are not meant to be taken as sacred artifacts, nor historical reports. But some can have spiritual significance, in a way. They are mainly used as pedagogic devices, and for entertaining.
 
 Some real Pāli jokes, which use puns, have to be read/understood in Pāli. Translation will give you little help. This can force learners to read them by their own effort.
 
@@ -19,8 +19,8 @@ I create this page for those who are practicing Pāli. Writing jokes is a good p
 I am also experimenting with Facebook group. So, all the jokes will also be posted in [Pāli Jokes](https://web.facebook.com/groups/palijokes){:target="\_blank"}. Feel free to join the group and write some jokes yourselves.
 
 **Abbreviations:**
-- NAVA (navalikhitaṃ vatthu) = newly written story
-- PARI (parivattitaṃ vatthu) = translated/adapted story
+- NAVA (navalikhitaṃ vatthu) = Newly written story
+- PARI (parivattitaṃ vatthu) = Translated/adapted story
 - P (Pucchā) = Question
 - V (Visajjhanaṃ) = Answer
 
@@ -31,9 +31,9 @@ I am also experimenting with Facebook group. So, all the jokes will also be post
 Here is my style of writing. For beginners who do not yet establish their own style, following my guideline can be helpful.
 
 1. I do not use sandhi words (because sandhi ruins clarity of communication).
-2. I use particles only when necessary (because particles, while adding little to the meaning, are often distracting rather than make things clearer). 
+2. I use particles only when necessary (because many particles, while adding little to the meaning, are often distracting rather than make things clearer). 
 3. I prefer short sentences to complex, long ones (because short sentences are easier to read and write).
-4. I place artistic aspects second to lucidity (because that is communication is all about).
+4. I place artistic quality second to lucidity (because that is what communication is mainly about).
 
 ## Stories
 
@@ -61,7 +61,7 @@ nava
 > 
 > "Passa. AHAṂ TAVA DHANAṂ KAROMI!"
 > 
-> Imasiṃ vāre mahagghāni vatthūni uppajjanti.
+> Imasmiṃ vāre mahagghāni vatthūni uppajjanti.
 > 
 > Tatiyo gamiko ekaṃ khaṇaṃ cintetvā, evaṃ vadati:
 > 
