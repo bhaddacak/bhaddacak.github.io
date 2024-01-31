@@ -12,4 +12,4 @@ The site's design and interface are intentionally kept **s**imple, **c**lean, **
 
 Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://paliplatform.blogspot.com){:target="\_blank"} blog. For a more serious communication, please use email (find the author's address in the books).
 
-In January 2024, the author may appear occasionally in [Facebook](https://web.facebook.com/groups/palijokes){:target="\_blank"}.
+For personal expressions of the author, see [Bhaddacak's Memoir](https://bhaddacak.wordpress.com){:target="\_blank"}.

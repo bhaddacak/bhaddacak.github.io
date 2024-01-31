@@ -2,7 +2,7 @@
 title: "Pāli Jokes"
 permalink: /palijokes
 is_article: true
-date: 2024-01-14 12:00:00 +0700
+date: 2024-01-15 12:00:00 +0700
 ---
 
 - TOC
@@ -28,9 +28,9 @@ I am also experimenting with Facebook group. So, all the jokes will also be post
 
 ## Style guide
 
-Here is my style of writing. For beginners who do not yet establish their own style, following my guideline can be helpful.
+Here is my style of writing. For beginners who have not yet established their own style, following my guideline can be helpful.
 
-1. I do not use sandhi words (because sandhi ruins clarity of communication).
+1. I rarely use sandhi words (because sandhi ruins clarity of communication).
 2. I use particles only when necessary (because many particles, while adding little to the meaning, are often distracting rather than make things clearer). 
 3. I prefer short sentences to complex, long ones (because short sentences are easier to read and write).
 4. I place artistic quality second to lucidity (because that is what communication is mainly about).
