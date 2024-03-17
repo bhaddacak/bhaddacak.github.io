@@ -8,6 +8,7 @@ _site
 *.gem
 assets/katex/
 assets/external/
+assets/images/wallpaper/.comments/
 gvimrc
 *.vim
 *.sh

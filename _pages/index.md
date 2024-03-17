@@ -8,7 +8,7 @@ permalink: /
 - [Introduction to Critical Buddhist Studies](/cribudstu)
 - [Buddhism as a Model of Self-Development](/budselfdev)
 - [A Humble Guide to Meditation](/medguide)
-- [Pāli Jokes](/palijokes)<span class="label label-green">new</span>
+- [Pāli Jokes](/palijokes)
 
 ## Books
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
@@ -20,6 +20,16 @@ permalink: /
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
     - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
+
+## Graphics
+- [Wallpaper gallery 1: The Buddha](/wall01) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 2: Landscape](/wall02) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 3: Flowers](/wall03) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 4: Plants](/wall04) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 5: People](/wall05) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 6: Animals](/wall06) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 7: Objects](/wall07) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 8: Vehicles](/wall08) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
 
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
