@@ -3,7 +3,7 @@ title: "Wallpaper gallery 7"
 permalink: /wall07
 is_article: true
 has_photo: true
-date: 2024-03-17 12:00:00 +0700
+date: 2024-03-18 12:00:00 +0700
 ---
 
 - TOC
@@ -18,6 +18,11 @@ There are many plain objects that look interesting in some way. Here are my favo
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240316_1431_e.jpg" alt="A monk's bowl basking in the sun 1" width="640" height="360"/>
     <figcaption>A monk's bowl basking in the sun 1</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240316_1431_g.jpg" alt="A monk's bowl basking in the sun 1" width="640" height="360"/>
+    <figcaption>A monk's bowl basking in the sun 1 (grayscale, tinted)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -60,6 +65,33 @@ There are many plain objects that look interesting in some way. Here are my favo
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240218_0127_e.jpg" alt="Another sculpture of chicken" width="640" height="360"/>
     <figcaption>Another sculpture of chicken</figcaption>
+</figure>
+
+### A bamboo hammock
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240225_172342_g.jpg" alt="A bamboo hammock 1" width="640" height="360"/>
+    <figcaption>A bamboo hammock 1 (grayscale)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240225_172342_gp.jpg" alt="A bamboo hammock 1" width="640" height="360"/>
+    <figcaption>A bamboo hammock 1 (grayscale, Painting effect in Fotoxx)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240225_172342_p.jpg" alt="A bamboo hammock 1" width="640" height="360"/>
+    <figcaption>A bamboo hammock 1 (Painting effect in Fotoxx)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240225_172328_gp.jpg" alt="A bamboo hammock 2" width="640" height="360"/>
+    <figcaption>A bamboo hammock 2 (grayscale, Painting effect in Fotoxx)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240225_172328_p.jpg" alt="A bamboo hammock 2" width="640" height="360"/>
+    <figcaption>A bamboo hammock 2 (Painting effect in Fotoxx)</figcaption>
 </figure>
 
 ### A discarded hat

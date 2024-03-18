@@ -3,7 +3,7 @@ title: "Wallpaper gallery 2"
 permalink: /wall02
 is_article: true
 has_photo: true
-date: 2024-03-17 12:00:00 +0700
+date: 2024-03-18 12:00:00 +0700
 ---
 
 - TOC
@@ -102,13 +102,23 @@ There are a lot of mundane things in agricultural areas and villages. But when w
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240310_164656_e.jpg" alt="A leafless tree against the sky" width="640" height="360"/>
-    <figcaption>A leafless tree against the sky</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240310_164656_e.jpg" alt="A leafless tree against the sky 1" width="640" height="360"/>
+    <figcaption>A leafless tree against the sky 1</figcaption>
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240310_164656_w.jpg" alt="A leafless tree against the sky" width="640" height="360"/>
-    <figcaption>A leafless tree against the sky (Waterpixels filter in GIMP)</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240310_164656_w.jpg" alt="A leafless tree against the sky 1" width="640" height="360"/>
+    <figcaption>A leafless tree against the sky 1 (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240222_170622_e.jpg" alt="A leafless tree against the sky 2" width="640" height="360"/>
+    <figcaption>A leafless tree against the sky 2</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240222_170622_w.jpg" alt="A leafless tree against the sky 2" width="640" height="360"/>
+    <figcaption>A leafless tree against the sky 2 (Waterpixels filter in GIMP)</figcaption>
 </figure>
 
 ### At sunrise and sunset
@@ -129,7 +139,17 @@ There are a lot of mundane things in agricultural areas and villages. But when w
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240223_0607_e.jpg" alt="A palm tree at a sunset" width="640" height="360"/>
-    <figcaption>A palm tree at a sunset</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240223_0607_e.jpg" alt="A palm tree at a sunset 1" width="640" height="360"/>
+    <figcaption>A palm tree at a sunset 1</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240221_181448_o.jpg" alt="A palm tree at a sunset 2" width="640" height="360"/>
+    <figcaption>A palm tree at a sunset 2 (Oilify filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240221_181448_w.jpg" alt="A palm tree at a sunset 2" width="640" height="360"/>
+    <figcaption>A palm tree at a sunset 2 (Waterpixels filter in GIMP)</figcaption>
 </figure>
 
