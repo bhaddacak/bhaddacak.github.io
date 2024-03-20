@@ -22,14 +22,14 @@ permalink: /
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
 ## Graphics
-- [Wallpaper gallery 1: The Buddha](/wall01) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 1: The Buddha](/wall01) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 - [Wallpaper gallery 2: Landscape](/wall02) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
-- [Wallpaper gallery 3: Flowers](/wall03) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
-- [Wallpaper gallery 4: Plants](/wall04) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
-- [Wallpaper gallery 5: People](/wall05) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
-- [Wallpaper gallery 6: Animals](/wall06) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 3: Flowers](/wall03) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
+- [Wallpaper gallery 4: Plants](/wall04) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
+- [Wallpaper gallery 5: People](/wall05) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
+- [Wallpaper gallery 6: Animals](/wall06) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
 - [Wallpaper gallery 7: Objects](/wall07) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">updated</span>
-- [Wallpaper gallery 8: Vehicles](/wall08) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 8: Vehicles](/wall08) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)

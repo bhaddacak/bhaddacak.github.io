@@ -3,7 +3,7 @@ title: "Wallpaper gallery 6"
 permalink: /wall06
 is_article: true
 has_photo: true
-date: 2024-03-17 12:00:00 +0700
+date: 2024-03-20 12:00:00 +0700
 ---
 
 - TOC
@@ -29,6 +29,11 @@ date: 2024-03-17 12:00:00 +0700
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240226_0778_e.jpg" alt="A sleeping puppy 1" width="640" height="360"/>
     <figcaption>A sleeping puppy 1</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240226_0778_g.jpg" alt="A sleeping puppy 1" width="640" height="360"/>
+    <figcaption>A sleeping puppy 1 (grayscale, tinted)</figcaption>
 </figure>
 
 <figure style="text-align:center;">

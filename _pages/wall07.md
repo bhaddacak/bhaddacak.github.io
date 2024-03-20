@@ -3,7 +3,7 @@ title: "Wallpaper gallery 7"
 permalink: /wall07
 is_article: true
 has_photo: true
-date: 2024-03-18 12:00:00 +0700
+date: 2024-03-20 12:00:00 +0700
 ---
 
 - TOC
@@ -60,6 +60,11 @@ There are many plain objects that look interesting in some way. Here are my favo
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240313_0102_w.jpg" alt="A sculpture of chicken" width="640" height="360"/>
     <figcaption>A sculpture of chicken (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240227_0825_w.jpg" alt="The chicken in context" width="640" height="360"/>
+    <figcaption>The chicken in context (Waterpixels filter in GIMP)</figcaption>
 </figure>
 
 <figure style="text-align:center;">

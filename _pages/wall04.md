@@ -3,13 +3,19 @@ title: "Wallpaper gallery 4"
 permalink: /wall04
 is_article: true
 has_photo: true
-date: 2024-03-17 12:00:00 +0700
+date: 2024-03-20 12:00:00 +0700
 ---
 
 - TOC
 {:toc}
 
 ## Plants
+
+This collection is about plants other than flowers.
+
+### Bo leaves
+
+Bo trees and leaves have symbolic meaning in Buddhist context. I took a lot of photos of the leaves but only a handful look good.
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240313_0091_e.jpg" alt="Bo leaves 1" width="640" height="360"/>
@@ -50,6 +56,18 @@ date: 2024-03-17 12:00:00 +0700
     <img src="/assets/images/wallpaper/IMG_20240306_1061_w.jpg" alt="Bo leaves 4" width="640" height="360"/>
     <figcaption>Bo leaves 4, in a morning (Waterpixels filter in GIMP)</figcaption>
 </figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_0335_e.jpg" alt="Bo leaves 5" width="640" height="360"/>
+    <figcaption>Bo leaves 5</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240309_064722_e.jpg" alt="Bo leaves 6" width="640" height="360"/>
+    <figcaption>Bo leaves 6</figcaption>
+</figure>
+
+### Other plants
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240220_0307_w.jpg" alt="A bitter melon" width="640" height="360"/>

@@ -3,7 +3,7 @@ title: "Wallpaper gallery 2"
 permalink: /wall02
 is_article: true
 has_photo: true
-date: 2024-03-18 12:00:00 +0700
+date: 2024-03-20 12:00:00 +0700
 ---
 
 - TOC
@@ -11,7 +11,7 @@ date: 2024-03-18 12:00:00 +0700
 
 ## Landscape
 
-Shooting landscape is my favorite activity, so I have a lot of photos of this sort. More pictures will be added subsequently when ready.
+Shooting landscape is my favorite activity, so I have a lot of photos of this sort.
 
 ### The monastery
 
@@ -121,7 +121,52 @@ There are a lot of mundane things in agricultural areas and villages. But when w
     <figcaption>A leafless tree against the sky 2 (Waterpixels filter in GIMP)</figcaption>
 </figure>
 
+### Mountain areas
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240305_063708_e.jpg" alt="Mountains and the sky" width="640" height="360"/>
+    <figcaption>Mountains and the sky</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240304_172205_e.jpg" alt="A mountain and the sky" width="640" height="360"/>
+    <figcaption>A mountain and the sky</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240304_172205_w.jpg" alt="A mountain and the sky" width="640" height="360"/>
+    <figcaption>A mountain and the sky (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_1466_p.jpg" alt="A pagoda on a mountain" width="640" height="360"/>
+    <figcaption>A pagoda on a mountain (Painting effect in Fotoxx)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240206_164247_e.jpg" alt="A view from a mountaintop" width="640" height="360"/>
+    <figcaption>A view from a mountaintop</figcaption>
+</figure>
+
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240206_164247_w.jpg" alt="A view from a mountaintop" width="640" height="360"/>
+    <figcaption>A view from a mountaintop (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_0265_o.jpg" alt="A view from a mountain" width="640" height="360"/>
+    <figcaption>A view from a mountain (Oilify filter in GIMP)</figcaption>
+</figure>
+
+
 ### At sunrise and sunset
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_0271_e.jpg" alt="A sunset on a mountain" width="640" height="360"/>
+    <figcaption>A sunset on a mountain</figcaption>
+</figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240314_1404_e.jpg" alt="A leafless tree at dawn" width="640" height="360"/>
@@ -151,5 +196,25 @@ There are a lot of mundane things in agricultural areas and villages. But when w
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240221_181448_w.jpg" alt="A palm tree at a sunset 2" width="640" height="360"/>
     <figcaption>A palm tree at a sunset 2 (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_0276_e.jpg" alt="A tree at a sunset" width="640" height="360"/>
+    <figcaption>A tree at a sunset</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_0276_w.jpg" alt="A tree at a sunset" width="640" height="360"/>
+    <figcaption>A tree at a sunset (Waterpixels filter in GIMP)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_1473_e.jpg" alt="Bamboo trees at a sunset" width="640" height="360"/>
+    <figcaption>Bamboo trees at a sunset</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240319_1473_w.jpg" alt="Bamboo trees at a sunset" width="640" height="360"/>
+    <figcaption>Bamboo trees at a sunset (Waterpixels filter in GIMP)</figcaption>
 </figure>
 
