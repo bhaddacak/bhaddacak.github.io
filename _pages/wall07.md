@@ -3,7 +3,7 @@ title: "Wallpaper gallery 7"
 permalink: /wall07
 is_article: true
 has_photo: true
-date: 2024-03-20 12:00:00 +0700
+date: 2024-03-25 12:00:00 +0700
 ---
 
 - TOC
@@ -32,12 +32,12 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240316_1447_w.jpg" alt="A monk's bowl basking in the sun 2" width="640" height="360"/>
-    <figcaption>By Waterpixels filter in GIMP</figcaption>
+    <figcaption>By Waterpixels</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240215_063716_p.jpg" alt="A broom and a basket" width="640" height="360"/>
-    <figcaption>A broom and a basket (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A broom and a basket (Painting)</figcaption>
 </figure>
 
 ### Sculptures
@@ -49,7 +49,7 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240227_0826_w.jpg" alt="The frog in context" width="640" height="360"/>
-    <figcaption>The frog in context (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>The frog in context (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -59,12 +59,12 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240313_0102_w.jpg" alt="A sculpture of chicken" width="640" height="360"/>
-    <figcaption>A sculpture of chicken (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A sculpture of chicken (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240227_0825_w.jpg" alt="The chicken in context" width="640" height="360"/>
-    <figcaption>The chicken in context (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>The chicken in context (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -81,22 +81,22 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240225_172342_gp.jpg" alt="A bamboo hammock 1" width="640" height="360"/>
-    <figcaption>A bamboo hammock 1 (grayscale, Painting effect in Fotoxx)</figcaption>
+    <figcaption>A bamboo hammock 1 (grayscale, Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240225_172342_p.jpg" alt="A bamboo hammock 1" width="640" height="360"/>
-    <figcaption>A bamboo hammock 1 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A bamboo hammock 1 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240225_172328_gp.jpg" alt="A bamboo hammock 2" width="640" height="360"/>
-    <figcaption>A bamboo hammock 2 (grayscale, Painting effect in Fotoxx)</figcaption>
+    <figcaption>A bamboo hammock 2 (grayscale, Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240225_172328_p.jpg" alt="A bamboo hammock 2" width="640" height="360"/>
-    <figcaption>A bamboo hammock 2 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A bamboo hammock 2 (Painting)</figcaption>
 </figure>
 
 ### A discarded hat
@@ -108,7 +108,7 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240218_0053_p.jpg" alt="A discarded hat 1" width="640" height="360"/>
-    <figcaption>A discarded hat 1 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A discarded hat 1 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -118,7 +118,7 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240213_171842_p.jpg" alt="A discarded hat 2" width="640" height="360"/>
-    <figcaption>A discarded hat 2 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A discarded hat 2 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -133,23 +133,35 @@ There are many plain objects that look interesting in some way. Here are my favo
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240306_1019_p.jpg" alt="A discarded hat 4" width="640" height="360"/>
-    <figcaption>A discarded hat 4 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A discarded hat 4 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240306_1019_o.jpg" alt="A discarded hat 4" width="640" height="360"/>
-    <figcaption>A discarded hat 4 (Oilify filter in GIMP)</figcaption>
+    <figcaption>A discarded hat 4 (Oilify)</figcaption>
+</figure>
+
+### Discarded shrines
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240111_170549_w.jpg" alt="Discarded shrines 1" width="640" height="360"/>
+    <figcaption>Discarded shrines 1 (Waterpixels)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240324_165509_w.jpg" alt="Discarded shrines 2" width="640" height="360"/>
+    <figcaption>Discarded shrines 2 (Waterpixels)</figcaption>
 </figure>
 
 ### Natural things
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240213_9288_w.jpg" alt="The skull stone 1" width="640" height="360"/>
-    <figcaption>The skull stone 1 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>The skull stone 1 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240120_134117_p.jpg" alt="The skull stone 2" width="640" height="360"/>
-    <figcaption>The skull stone 2 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>The skull stone 2 (Painting)</figcaption>
 </figure>
 

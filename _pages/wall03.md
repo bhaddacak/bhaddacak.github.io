@@ -3,7 +3,7 @@ title: "Wallpaper gallery 3"
 permalink: /wall03
 is_article: true
 has_photo: true
-date: 2024-03-20 12:00:00 +0700
+date: 2024-03-25 12:00:00 +0700
 ---
 
 - TOC
@@ -24,7 +24,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240221_080521_w.jpg" alt="Yellow flowers 1" width="640" height="360"/>
-    <figcaption>Yellow flowers 1 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 1 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -34,7 +34,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240126_135101_p.jpg" alt="Yellow flowers 2" width="640" height="360"/>
-    <figcaption>Yellow flowers 2 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>Yellow flowers 2 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -44,7 +44,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240126_135215_w.jpg" alt="Yellow flowers 3" width="640" height="360"/>
-    <figcaption>Yellow flowers 3 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 3 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -54,7 +54,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240214_140756_w.jpg" alt="Yellow flowers 4" width="640" height="360"/>
-    <figcaption>Yellow flowers 4 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 4 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -64,7 +64,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240213_9363_w.jpg" alt="Yellow flowers 5" width="640" height="360"/>
-    <figcaption>Yellow flowers 5 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 5 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -74,7 +74,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240213_9273_w.jpg" alt="Yellow flowers 6" width="640" height="360"/>
-    <figcaption>Yellow flowers 6 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 6 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -84,7 +84,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240213_9275_w.jpg" alt="Yellow flowers 7" width="640" height="360"/>
-    <figcaption>Yellow flowers 7 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>Yellow flowers 7 (Waterpixels)</figcaption>
 </figure>
 
 ### Other kinds of flowers
@@ -106,7 +106,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240126_135533_w.jpg" alt="A crown of thorns 2" width="640" height="360"/>
-    <figcaption>A crown of thorns 2 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A crown of thorns 2 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -121,7 +121,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240220_0287_w.jpg" alt="An orchid tree" width="640" height="360"/>
-    <figcaption>An orchid tree (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>An orchid tree (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -131,7 +131,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240211_165234_w.jpg" alt="A crown flower" width="640" height="360"/>
-    <figcaption>A crown flower (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A crown flower (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -141,7 +141,7 @@ I do not know how to call this type of tree. It has bright yellow flowers bloomi
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240210_164532_w.jpg" alt="A bunch of crown flower" width="640" height="360"/>
-    <figcaption>A bunch of crown flower (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A bunch of crown flower (Waterpixels)</figcaption>
 </figure>
 
 ### Weeds
@@ -155,12 +155,12 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240312_0015_p.jpg" alt="A weed 1" width="640" height="360"/>
-    <figcaption>A weed 1 (Painting effect in Fotoxx)</figcaption>
+    <figcaption>A weed 1 (Painting)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240312_0015_w.jpg" alt="A weed 1" width="640" height="360"/>
-    <figcaption>A weed 1 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 1 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -170,7 +170,7 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240202_162558_w.jpg" alt="A weed 2" width="640" height="360"/>
-    <figcaption>A weed 2 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 2 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -180,7 +180,7 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240202_164056_w.jpg" alt="A weed 3" width="640" height="360"/>
-    <figcaption>A weed 3 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 3 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -190,7 +190,7 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240202_163940_w.jpg" alt="A weed 4" width="640" height="360"/>
-    <figcaption>A weed 4 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 4 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -200,7 +200,7 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240130_143744_w.jpg" alt="A weed 5" width="640" height="360"/>
-    <figcaption>A weed 5 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 5 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
@@ -210,7 +210,7 @@ When I explore miniature lives, I usually use my mobile phone's camera because i
 
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240125_141205_w.jpg" alt="A weed 6" width="640" height="360"/>
-    <figcaption>A weed 6 (Waterpixels filter in GIMP)</figcaption>
+    <figcaption>A weed 6 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
