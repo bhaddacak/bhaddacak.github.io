@@ -3,7 +3,7 @@ title: "Wallpaper gallery 2"
 permalink: /wall02
 is_article: true
 has_photo: true
-date: 2024-03-25 12:00:00 +0700
+date: 2024-03-27 12:00:00 +0700
 ---
 
 - TOC
@@ -11,7 +11,7 @@ date: 2024-03-25 12:00:00 +0700
 
 ## Landscape
 
-Shooting landscape is my favorite activity, so I have a lot of photos of this sort. Here are only some of my favorites.
+Shooting landscape is my delightful activity, so I have a lot of photos of this sort. Here are only some of my favorites.
 
 ### The monastery
 
@@ -121,6 +121,11 @@ There are a lot of mundane things in agricultural areas and villages. But when w
     <figcaption>A leafless tree against the sky 2 (Waterpixels)</figcaption>
 </figure>
 
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240325_172535_w.jpg" alt="The former leafless tree, now full of leaves" width="640" height="360"/>
+    <figcaption>The former leafless tree, now full of leaves (Waterpixels)</figcaption>
+</figure>
+
 ### Mountain areas
 
 <figure style="text-align:center;">
@@ -160,18 +165,18 @@ There are a lot of mundane things in agricultural areas and villages. But when w
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240323_170121_w.jpg" alt="A field and the cloudy sky 1" width="640" height="360"/>
-    <figcaption>A field and the cloudy sky 1 (Waterpixels)</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240323_170121_w.jpg" alt="A field and a cloudy sky 1" width="640" height="360"/>
+    <figcaption>A field and a cloudy sky 1 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240322_165539_w.jpg" alt="A field and the cloudy sky 2" width="640" height="360"/>
-    <figcaption>A field and the cloudy sky 2 (Waterpixels)</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240322_165539_w.jpg" alt="A field and a cloudy sky 2" width="640" height="360"/>
+    <figcaption>A field and a cloudy sky 2 (Waterpixels)</figcaption>
 </figure>
 
 <figure style="text-align:center;">
-    <img src="/assets/images/wallpaper/IMG_20240324_172652_w.jpg" alt="Just clouds in the sky" width="640" height="360"/>
-    <figcaption>Just clouds in the sky (Waterpixels)</figcaption>
+    <img src="/assets/images/wallpaper/IMG_20240324_172652_w.jpg" alt="Just clouds in a clear sky" width="640" height="360"/>
+    <figcaption>Just clouds in a clear sky (Waterpixels)</figcaption>
 </figure>
 
 ### At sunrise and sunset
@@ -229,5 +234,20 @@ There are a lot of mundane things in agricultural areas and villages. But when w
 <figure style="text-align:center;">
     <img src="/assets/images/wallpaper/IMG_20240319_1473_w.jpg" alt="Bamboo trees at a sunset" width="640" height="360"/>
     <figcaption>Bamboo trees at a sunset (Waterpixels)</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240325_1640_e.jpg" alt="Mountains at a sunset" width="640" height="360"/>
+    <figcaption>Mountains at a sunset</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240326_181013_e.jpg" alt="Mountains after a sunset" width="640" height="360"/>
+    <figcaption>Mountains after a sunset</figcaption>
+</figure>
+
+<figure style="text-align:center;">
+    <img src="/assets/images/wallpaper/IMG_20240326_180544_e.jpg" alt="The village at a sunset" width="640" height="360"/>
+    <figcaption>The village at a sunset</figcaption>
 </figure>
 

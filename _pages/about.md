@@ -13,3 +13,5 @@ The site's design and interface are intentionally kept **s**imple, **c**lean, **
 Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://paliplatform.blogspot.com){:target="\_blank"} blog. For a more serious communication, please use email (find the author's address in the books).
 
 For personal expressions of the author, see [Bhaddacak's Memoir](https://bhaddacak.wordpress.com){:target="\_blank"}.
+
+In April 2024, the author will cut off all communication to concentrate on the current work.

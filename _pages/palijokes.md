@@ -2,7 +2,7 @@
 title: "Pāli Jokes"
 permalink: /palijokes
 is_article: true
-date: 2024-01-15 12:00:00 +0700
+date: 2024-01-27 12:00:00 +0700
 ---
 
 - TOC
@@ -15,8 +15,6 @@ Jokes (*hassavatthu*) here are written in Pāli. They are not meant to be taken 
 Some real Pāli jokes, which use puns, have to be read/understood in Pāli. Translation will give you little help. This can force learners to read them by their own effort.
 
 I create this page for those who are practicing Pāli. Writing jokes is a good practice for informal composition. Jokes are short, self-contained, and, of course, funny. So, I hope Pāli learners will find materials here useful.
-
-I am also experimenting with Facebook group. So, all the jokes will also be posted in [Pāli Jokes](https://web.facebook.com/groups/palijokes){:target="\_blank"}. Feel free to join the group and write some jokes yourselves.
 
 **Abbreviations:**
 - NAVA (navalikhitaṃ vatthu) = Newly written story

@@ -16,3 +16,4 @@ This repository is the web portal of works done by [J.R. Bhaddacak](https://bhad
 - `Pako` is licensed under [MIT](http://opensource.org/licenses/MIT) and [Zlib](http://zlib.net/).
 - Textual materials written by the author are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 - Textual materials edited, formatted, and presented here, if not stated otherwise, are licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
+- Graphic materials created by the author are licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
