@@ -3,7 +3,7 @@ title: "Works by J.R. Bhaddacak"
 permalink: /
 ---
 
-*Attanā pālibhāsaṃ uggahaṇaṃ seyyaṃ; Kiriyena dhammaṃ uggahaṇaṃ varatamaṃ.*
+![banner](/assets/images/banner.jpg)
 ## Articles
 - [Introduction to Critical Buddhist Studies](/cribudstu)
 - [Buddhism as a Model of Self-Development](/budselfdev)
