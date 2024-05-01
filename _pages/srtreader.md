@@ -24,7 +24,7 @@ This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The 
 <optgroup label="Dīghanikāyo">
 <option value="09.gz">9. Sīlakkhandhavaggo</option>
 <option value="10.gz">10. Mahāvaggo</option>
-<option value="11.gz">11. Pāṭikvaggo</option>
+<option value="11.gz">11. Pāṭikavaggo</option>
 </optgroup>
 <optgroup label="Majjhimanikāyo">
 <option value="12.gz">12. Mūlapaṇṇāsakaṃ</option>
@@ -35,15 +35,15 @@ This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The 
 <option value="15.gz">15. Sagāthavaggo</option>
 <option value="16.gz">16. Nidānavaggo</option>
 <option value="17.gz">17. Khandhavāravaggo</option>
-<option value="18.gz">18. Saḷāyatavaggo</option>
+<option value="18.gz">18. Saḷāyatanavaggo</option>
 <option value="19.gz">19. Mahāvāravaggo</option>
 </optgroup>
 <optgroup label="Aṅguttaranikāyo">
-<option value="20.gz">20. 1: Eka, Duka, Tikanipātā</option>
-<option value="21.gz">21. 2: Catukkanipātā</option>
-<option value="22.gz">22. 3: Pañcaka, Chakkanipātā</option>
-<option value="23.gz">23. 4: Sattaka, Aṭṭhaka, Navakanipātā</option>
-<option value="24.gz">24. 5: Dasaka, Ekādasakanipātā</option>
+<option value="20.gz">20. 1: Eka-Duka-Tikanipātā</option>
+<option value="21.gz">21. 2: Catukkanipāto</option>
+<option value="22.gz">22. 3: Pañcaka-Chakkanipātā</option>
+<option value="23.gz">23. 4: Sattaka-Aṭṭhaka-Navakanipātā</option>
+<option value="24.gz">24. 5: Dasaka-Ekādasakanipātā</option>
 </optgroup>
 <optgroup label="Khuddakanikāyo">
 <option value="25.gz">25. Khuddakapāṭho, Dhammapadagāthā, Udānaṃ, Itivuttakaṃ, Suttanipātā</option>

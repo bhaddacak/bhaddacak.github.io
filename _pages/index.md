@@ -30,6 +30,7 @@ permalink: /
 - [Wallpaper gallery 6: Animals](/wall06) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 - [Wallpaper gallery 7: Objects](/wall07) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 - [Wallpaper gallery 8: Vehicles](/wall08) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
+- [Wallpaper gallery 9: Tablet Wallpapers](/wall09) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
 
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)

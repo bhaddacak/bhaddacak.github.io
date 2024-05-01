@@ -62,7 +62,7 @@ This collection of the Pali Text Society's Pāli canon is taken from [GRETIL](ht
 <option value="jatak5ou.gz">Jataka XVI-XXI</option>
 <option value="jatak6ou.gz">Jataka XXII</option>
 <option value="nidde1ou.gz">Mahaniddesa</option>
-<option value="nidde2ou.gz">Culaniddesa</option>
+<option value="nidde2ou.gz">Cullaniddesa</option>
 <option value="patis1ou.gz">Patisambhidamagga 1</option>
 <option value="patis2ou.gz">Patisambhidamagga 2</option>
 </optgroup>
@@ -70,7 +70,7 @@ This collection of the Pali Text Society's Pāli canon is taken from [GRETIL](ht
 <option value="dhamsgou.gz">Dhammasangani</option>
 <option value="vibhanou.gz">Vibhanga</option>
 <option value="dhatukou.gz">Dhatukatha</option>
-<option value="pugpanou.gz">Puggalapannati</option>
+<option value="pugpanou.gz">Puggalapannatti</option>
 <option value="kathavou.gz">Kathavatthu</option>
 <option value="yamak1ou.gz">Yamaka I</option>
 <option value="yamak2ou.gz">Yamaka II</option>

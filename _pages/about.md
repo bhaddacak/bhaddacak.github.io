@@ -14,4 +14,4 @@ Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://
 
 For personal expressions of the author, see [Bhaddacak's Memoir](https://bhaddacak.wordpress.com){:target="\_blank"}.
 
-In April 2024, the author will cut off all communication to concentrate on the current work.
+From May 2024 onward until the release of `Pāli Platform 3`, the author will use the Internet once in a month (i.e. capable of responding to communication channels), except in case of emergency needs for information and goods.
