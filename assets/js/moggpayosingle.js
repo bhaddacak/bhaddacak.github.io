@@ -5,8 +5,8 @@ moggpayoSingle.util = {};
 moggpayoSingle.book = "";
 moggpayoSingle.nirumoggUtil = {};
 moggpayoSingle.params = {};
-moggpayoSingle.suttaNumberList = { "mogg": [], "payo": [] , "panc": [] };
-moggpayoSingle.suttaList = { "mogg": [], "payo": [] , "panc": [] };
+moggpayoSingle.suttaNumberList = { "mogg": [], "payo": [] , "panct": [] };
+moggpayoSingle.suttaList = { "mogg": [], "payo": [] , "panct": [] };
 moggpayoSingle.fixedToolBar = false;
 moggpayoSingle.getUrlParams = function() {
 	const result = {};
@@ -41,13 +41,13 @@ moggpayoSingle.loadText = function() {
 	this.util.ajaxLoad(ajaxParams);
 };
 moggpayoSingle.includePancika = function() {
-	if (this.suttaList.panc.length === 0) {
+	if (this.suttaList.panct.length === 0) {
 		const ajaxParams = {};
-		ajaxParams.address = "/assets/palitext/gram/moggpanc.gz";
+		ajaxParams.address = "/assets/palitext/gram/panct.gz";
 		ajaxParams.isBinary = true;
 		ajaxParams.successCallback = function(response) {
 			const content = window.pako.ungzip(response, { to: "string" });
-			moggpayoSingle.suttaList.panc = moggpayoSingle.formatText(content, "panc");
+			moggpayoSingle.suttaList.panct = moggpayoSingle.formatText(content, "panct");
 			moggpayoSingle.updateDisplay();
 		};
 		this.util.ajaxLoad(ajaxParams);
@@ -102,9 +102,9 @@ moggpayoSingle.updateDisplay = function() {
 				for (const key of payoKeys)
 					refText += this.suttaList.payo[this.suttaNumberList.payo.indexOf(key)];
 				if (pancSelected) {
-					const pancInd = this.suttaNumberList.panc.indexOf(this.params.sutta);
+					const pancInd = this.suttaNumberList.panct.indexOf(this.params.sutta);
 					if (pancInd > -1)
-						refText += this.suttaList.panc[pancInd];
+						refText += this.suttaList.panct[pancInd];
 				}
 			} else {
 				const moggKeys = this.getMoggSuttaNumber(this.params.sutta);
@@ -114,9 +114,9 @@ moggpayoSingle.updateDisplay = function() {
 						refText += this.nirumoggUtil.addMoggXrefLinks("Niru " + niruNum.join(", ")) + "<br>";
 					refText += this.suttaList.mogg[this.suttaNumberList.mogg.indexOf(key)];
 					if (pancSelected) {
-						const pancInd = this.suttaNumberList.panc.indexOf(key);
+						const pancInd = this.suttaNumberList.panct.indexOf(key);
 						if (pancInd > -1)
-							refText += this.suttaList.panc[pancInd];
+							refText += this.suttaList.panct[pancInd];
 					}
 				}
 			}

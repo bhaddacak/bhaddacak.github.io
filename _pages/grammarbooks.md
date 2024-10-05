@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2023-11-27 12:00:00 +0700
+date: 2024-10-05 12:00:00 +0700
 ---
 
 - TOC
@@ -34,13 +34,13 @@ The Kaccāyana has a number of commentaries or rearranged works. The most import
 
 The second big school is of Moggallāna. The work was written in the early 12th century. It often has different views from Kaccāyana. As noted by K. R. Norman, "Moggallāna deals with the linguistic material more exhaustively and with greater understanding of the essence and character of Pali."[^norman-mogg] In general, the formulas of Moggallāna's suttas are terse and more difficult to decipher.
 
-Moggallāna wrote his own commentary known as *Moggallānapañcikā*. This work is somewhat difficult to follow. A more popular commentary on Moggallāna is *Payogasiddhi* written by Medhaṅkara around the 13th century. Its status is like Rūpasiddhi to Kaccāyana. So, I put Moggallāna and Payogasiddhi together in the same manner. However, the Pañcikā is also included as the reader's option.
+Moggallāna wrote his own commentary known as *Moggallānapañcikā*, now lost. What we have here is *Moggallānapañcikāṭīkā* and it is somewhat difficult to follow. A more popular commentary on Moggallāna is *Payogasiddhi* written by Medhaṅkara around the 13th century. Its status is like Rūpasiddhi to Kaccāyana. So, I put Moggallāna and Payogasiddhi together in the same manner. However, the Pañcikā is also included as the reader's option.
 
 Another recent important commentary in this school is Leḍī Sayāḍo's *Niruttidīpanī*, finished in 1903. With this work, we can link Moggallāna to Kaccāyana and Saddanīti suttas. This is really helpful to Pāli students and researchers for doing a comparative study.
 
 [^norman-mogg]: Norman, 1983, p. 165.
 
-> - [Moggallāna-Payogasiddhi](/moggpayo){:target="\_blank"} (+Pañcikā)
+> - [Moggallāna-Payogasiddhi](/moggpayo){:target="\_blank"} (+Pañcikāṭīkā)
 > - [Single Sutta Moggallāna](/mogg){:target="\_blank"}
 > - [Single Sutta Payogasiddhi](/payo){:target="\_blank"}
 > - [Niruttidīpanī](/nirutti){:target="\_blank"}
@@ -72,7 +72,7 @@ Because of its unfamiliar format, the book is of little use today. It will be be
 [^norman-amarakosa]: Norman, 1983, p. 167.
 [^norman-artificial]: Norman, 1983, p. 167.
 
-> - [Abhidhānappadīpikā](/abhidhana){:target="\_blank"} (+Ṭīkā)
+> - [Abhidhānappadīpikā](/abhidha){:target="\_blank"} (+Ṭīkā)
 
 ### 5. Subodhālaṅkāro Vuttodayaṃ ca
 
@@ -89,7 +89,7 @@ An example I would like to mention is [*Vuttodayamañjarī*](https://drive.googl
 [^ai]: Some may think AI technology finally can translate Pāli accurately. I think it can do to some degree, but not accurate as human experts do. That is because AI learns from existing data, and we do not have data of Pāli translations that much like living languages. Even though ChatGTP knows many things, it is sometimes completely wrong. The best solution is putting your knowledge in your language articulately, then one day everyone can understand it.
 
 > - [Subodhālaṅkāra](/subho){:target="\_blank"}
-> - [Subodhālaṅkāraṭīkā](/subhotika){:target="\_blank"}
+> - [Subodhālaṅkāraṭīkā](/subhot){:target="\_blank"}
 > - [Vuttodaya](/vutt){:target="\_blank"}
 
 ## Notes

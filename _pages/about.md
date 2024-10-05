@@ -14,4 +14,6 @@ Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://
 
 For personal expressions of the author, see [Bhaddacak's Memoir](https://bhaddacak.wordpress.com){:target="\_blank"}.
 
-From May 2024 onward until the release of `Pāli Platform 3`, the author will use the Internet once in a month (i.e. capable of responding to communication channels), except in case of emergency needs for information and goods.
+Since the Internet is a great enemy of the peaceful mind, the author lives offline life most of the time, and only connects to the world when necessary. The shortest period can be once in a week or weeks, but it can be as long as once in a month or even longer. So, the author apologizes to those who need a serious communication with him. If it is serious enough, it is always worth waiting for.
+
+### *Let's celebrate offline life*

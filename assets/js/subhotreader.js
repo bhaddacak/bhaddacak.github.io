@@ -1,20 +1,20 @@
-/*! subhotikareader.js (c) J.R. Bhaddacak @license (GPL3) */
+/*! subhotreader.js (c) J.R. Bhaddacak @license (GPL3) */
 "use strict";
-const subhotikaReader = {};
-subhotikaReader.util = {};
-subhotikaReader.fixedToolBar = false;
-subhotikaReader.firstOpen = true;
-subhotikaReader.loadText = function() {
+const subhotReader = {};
+subhotReader.util = {};
+subhotReader.fixedToolBar = false;
+subhotReader.firstOpen = true;
+subhotReader.loadText = function() {
 	const ajaxParams = {};
-	ajaxParams.address = "/assets/palitext/gram/subhotika.gz";
+	ajaxParams.address = "/assets/palitext/gram/subhot.gz";
 	ajaxParams.isBinary = true;
 	ajaxParams.successCallback = function(response) {
 		const content = window.pako.ungzip(response, { to: "string" });
-		subhotikaReader.displayText(subhotikaReader.formatText(content));
+		subhotReader.displayText(subhotReader.formatText(content));
 	};
 	this.util.ajaxLoad(ajaxParams);
 };
-subhotikaReader.formatText = function(text) {
+subhotReader.formatText = function(text) {
 	let result = "";
 	const lines = text.split(/\r?\n/);
 	const pstyle = "style='text-align:left;padding-top:5px;'";
@@ -38,11 +38,11 @@ subhotikaReader.formatText = function(text) {
 	}
 	return result;
 };
-subhotikaReader.displayText = function(text) {
+subhotReader.displayText = function(text) {
 	this.updateDisplay(text);
 	this.fillSuttaNumberList();
 };
-subhotikaReader.updateDisplay = function(text) {
+subhotReader.updateDisplay = function(text) {
 	const resultElem = document.getElementById("textdisplay");
 	let head = this.util.makeHead("Subodhālaṅkāraṭīkā");
 	head += this.util.ccsaHtmlText;
@@ -52,20 +52,20 @@ subhotikaReader.updateDisplay = function(text) {
 	else
 		this.util.scroll(resultElem, this.fixedToolBar);
 };
-subhotikaReader.fillSuttaNumberList = function() {
+subhotReader.fillSuttaNumberList = function() {
 	const list = [];
 	for (let i=1; i<=367; i++)
 		list.push(""+i);
 	this.util.fillSelectOptions(document.getElementById("suttaselector"), list);
 };
-subhotikaReader.goChapter = function() {
+subhotReader.goChapter = function() {
 	const chapSelector = document.getElementById("chapterselector");
 	let chapToGo = chapSelector.options[chapSelector.selectedIndex].value;
 	const resultElem = document.getElementById("textdisplay");
 	const allH4 = resultElem.getElementsByTagName("h4");
 	this.findElementAndGo(allH4, chapToGo);
 };
-subhotikaReader.findElementAndGo = function(list, str) {
+subhotReader.findElementAndGo = function(list, str) {
 	let success = false;
 	for (let i=0; i<list.length; i++) {
 		const elem = list[i];
@@ -78,7 +78,7 @@ subhotikaReader.findElementAndGo = function(list, str) {
 	}
 	return success;
 };
-subhotikaReader.goSutta = function() {
+subhotReader.goSutta = function() {
 	const suttaSelector = document.getElementById("suttaselector");
 	const suttaToGo = suttaSelector.options[suttaSelector.selectedIndex].value;
 	const resultElem = document.getElementById("textdisplay");

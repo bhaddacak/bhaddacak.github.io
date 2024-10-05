@@ -19,6 +19,7 @@ permalink: /
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
     - [Pāli Platform Classic](/ppclassic)
+    - [Pāli Platform 3](/platform3) <span class="label label-green">new</span>
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
 ## Graphics
@@ -30,7 +31,7 @@ permalink: /
 - [Wallpaper gallery 6: Animals](/wall06) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 - [Wallpaper gallery 7: Objects](/wall07) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 - [Wallpaper gallery 8: Vehicles](/wall08) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
-- [Wallpaper gallery 9: Tablet Wallpapers](/wall09) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg> <span class="label label-green">new</span>
+- [Wallpaper gallery 9: Tablet Wallpapers](/wall09) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 
 ## Online Pāli Text Readers
 - [Sutta Reader](/suttareader)
@@ -44,7 +45,7 @@ permalink: /
 	- [Kaccāyana-Rūpasiddhi](/kaccrupa)
 	- [Single Sutta Kaccāyana](/kacc)
 	- [Single Sutta Rūpasiddhi](/rupa)
-	- [Moggallāna-Payogasiddhi](/moggpayo) (+Pañcikā)
+	- [Moggallāna-Payogasiddhi](/moggpayo) (+Pañcikāṭīkā)
 	- [Single Sutta Moggallāna](/mogg)
 	- [Single Sutta Payogasiddhi](/payo)
 	- [Niruttidīpanī](/nirutti)
@@ -53,9 +54,9 @@ permalink: /
 	- [Saddanīti Dhātumālā](/sadddha)
 	- [Saddanīti Suttamālā](/saddsut)
 	- [Single Sutta Suttamālā](/sadd)
-	- [Abhidhānappadīpikā](/abhidhana) (+Ṭīkā)
+	- [Abhidhānappadīpikā](/abhidha) (+Ṭīkā)
 	- [Subodhālaṅkāra](/subho)
-	- [Subodhālaṅkāraṭīkā](/subhotika)
+	- [Subodhālaṅkāraṭīkā](/subhot)
 	- [Vuttodaya](/vutt)
     - [Kaccāyana-dhātumañjūsā](/dhmjs)
 	- [Dhātvatthasaṅgaha](/dhatva)
@@ -66,7 +67,7 @@ permalink: /
 
 ## Online Pāli Tools
 - [Pāli Passage Reader](/ppreader)
-- [New Concise Pāli-English Dictionary](/ncped)
+- [New Concise Pāli-English Dictionary](/ncped) <span class="label label-green">updated</span>
 - [PTS Pali-English Dictionary](/ptsped)
 - [Thai-English-Pāli Dictionary](/tepdict)
 - [Declension Table Calculator](/declension)

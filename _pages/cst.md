@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cst
 is_application: true
-date: 2023-11-26 12:00:00 +0700
+date: 2024-10-05 12:00:00 +0700
 ---
 
 <div id="toolbar" class="fixed" style="display:none;padding-top:3px;padding-bottom:10px;z-index:10;">

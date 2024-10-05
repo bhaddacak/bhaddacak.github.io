@@ -1,16 +1,16 @@
 ---
 title: "Abhidhānappadīpikā"
-permalink: /abhidhana
+permalink: /abhidha
 is_application: true
-date: 2023-09-12 12:00:00 +0700
+date: 2024-10-06 12:00:00 +0700
 ---
 
 The main text is converted from Thai script available at [Palipage](https://sites.google.com/view/palipage){:target="\_blank"}. It is better than that in the CSCD. The ṭīkā is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. There are totally 1,203 stanzas. But in the ṭīkā, 7 of them are missing (or, perhaps, intendedly left out), i.e., no. 829, 847, 964, 1028, 1029, 1033, and, 1135.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
-<button onClick="bcUtil.toggleToolBar(abhidhanaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
-<select id="chapterselector" onChange="abhidhanaReader.goChapter();">
+<button onClick="bcUtil.toggleToolBar(abhidhaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
+<select id="chapterselector" onChange="abhidhaReader.goChapter();">
 <optgroup label="1. Saggakaṇḍa">
 <option value="1.1">1.1. buddhādivagga</option>
 <option value="1.2">1.2. saggādivagga</option>
@@ -34,16 +34,16 @@ The main text is converted from Thai script available at [Palipage](https://site
 <option value="3.4">3.4. abyayavagga</option>
 </optgroup>
 </select>
-<select id="suttaselector" title="Stanza number to go" onChange="abhidhanaReader.goSutta();"></select>
-<label for="xref" title="Show Xref"><input type="checkbox" id="xref" onClick="abhidhanaReader.updateDisplay();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#link"></use></svg></label>
+<select id="suttaselector" title="Stanza number to go" onChange="abhidhaReader.goSutta();"></select>
+<label for="xref" title="Show Xref"><input type="checkbox" id="xref" onClick="abhidhaReader.updateDisplay();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#link"></use></svg></label>
 </span>
 </div>
 <div id="textdisplay" style="text-align:left;padding-top:5px;">Loading... (please wait)</div>
-<script src="/assets/js/abhidhanareader.js"></script>
+<script src="/assets/js/abhidhareader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>
-abhidhanaReader.util = bcUtil;
-abhidhanaReader.loadText();
+abhidhaReader.util = bcUtil;
+abhidhaReader.loadText();
 </script>
 
 

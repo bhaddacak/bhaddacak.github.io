@@ -1,16 +1,16 @@
 ---
 title: "Subodhālaṅkāraṭīkā"
-permalink: /subhotika
+permalink: /subhot
 is_application: true
-date: 2023-09-15 12:00:00 +0700
+date: 2024-10-05 12:00:00 +0700
 ---
 
 The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. The main text is already included in the work.
 
 <div id="toolbar" style="padding-bottom:10px;padding-top:3px;z-index:10;">
 <span class="toolbarbg">
-<button onClick="bcUtil.toggleToolBar(subhotikaReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
-<select id="chapterselector" onChange="subhotikaReader.goChapter();">
+<button onClick="bcUtil.toggleToolBar(subhotReader);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
+<select id="chapterselector" onChange="subhotReader.goChapter();">
 <optgroup label="1. Dosāvabodha paṭhamapariccheda">
 <option value="Ratanattayappaṇāmavaṇṇanā">Ratanattayappaṇāmavaṇṇanā</option>
 <option value="Nimittavaṇṇanā">Nimittavaṇṇanā</option>
@@ -120,15 +120,15 @@ The text is taken from [CSCD](https://tipitaka.org/romn){:target="\_blank"}. The
 <option value="Samaṭhāyībhāva">Samaṭhāyībhāva</option>
 </optgroup>
 </select>
-<select id="suttaselector" title="Stanza number to go" onChange="subhotikaReader.goSutta();"></select>
+<select id="suttaselector" title="Stanza number to go" onChange="subhotReader.goSutta();"></select>
 </span>
 </div>
 <div id="textdisplay" style="text-align:left;padding-top:5px;">Loading... (please wait)</div>
-<script src="/assets/js/subhotikareader.js"></script>
+<script src="/assets/js/subhotreader.js"></script>
 <script src="/assets/js/pako_inflate.min.js"></script>
 <script>
-subhotikaReader.util = bcUtil;
-subhotikaReader.loadText();
+subhotReader.util = bcUtil;
+subhotReader.loadText();
 </script>
 
 

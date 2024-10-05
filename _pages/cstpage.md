@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2023-12-02 12:00:00 +0700
+date: 2024-10-05 12:00:00 +0700
 ---
 
 - TOC
@@ -239,7 +239,7 @@ Suttantapiṭaka
       |   |- Therīgāthā-aṭṭhakathā (Thig-a)
       |
       |- Therāpadāna (Ap1)
-      |   |- Therāpadāna-aṭṭhakathā (Ap-a1)
+      |   |- Therāpadāna-aṭṭhakathā (Ap1-a)
       |
       |- Therīapadāna (Ap2)
       |
@@ -255,10 +255,10 @@ Suttantapiṭaka
       |   |- Jātaka-aṭṭhakathā 3 (Ja-a3)
       |
       |- Mahāniddesa (Nidd1)
-      |   |- Mahāniddesa-aṭṭhakathā (Nidd-a1)
+      |   |- Mahāniddesa-aṭṭhakathā (Nidd1-a)
       |
       |- Cūḷaniddesa (Nidd2)
-      |   |- Cūḷaniddesa-aṭṭhakathā (Nidd-a2)
+      |   |- Cūḷaniddesa-aṭṭhakathā (Nidd2-a)
       |
       |- Paṭisambhidāmagga (Psm)
       |   |- Paṭisambhidāmagga-aṭṭhakathā (Psm-a)
@@ -345,7 +345,7 @@ Abhidhammapiṭaka
       |  
       |- Nāmarūpapariccheda (Nrp)
       |  
-      |- Paramatthavinicchaya (Prv)
+      |- Paramatthavinicchaya (Pmv)
       |  
       |- Saccasaṅkhepa (Scs)
 
@@ -571,7 +571,7 @@ I have tried my best to abbreviate book names here. My primary goal is to make t
 | Pp-a | Puggalapaññatti-aṭṭhakathā |
 | Pp-at | Puggalapaññatti-anuṭīkā |
 | Pp-t | Puggalapaññatti-mūlaṭīkā |
-| Prv | Paramatthavinicchaya |
+| Pmv | Paramatthavinicchaya |
 | Psm | Paṭisambhidāmagga |
 | Psm-a | Paṭisambhidāmagga-aṭṭhakathā |
 | Pt | Paṭṭhāna |

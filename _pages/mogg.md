@@ -2,7 +2,7 @@
 title: "Moggallāna's Suttas"
 permalink: /mogg
 is_application: true
-date: 2023-09-02 12:00:00 +0700
+date: 2024-10-05 12:00:00 +0700
 ---
 
 This is the single-sutta version of Moggallāna. It can be accessed by URL. For example, [{{ site.url }}/mogg?1.1](/mogg?1.1){:target="\_blank"} leads to the sutta no. 1.1. For the full version, please visit [Moggallāna-Payogasiddhi](/moggpayo){:target="\_blank"}.
@@ -11,7 +11,7 @@ This is the single-sutta version of Moggallāna. It can be accessed by URL. For 
 <span class="toolbarbg">
 <button onClick="bcUtil.toggleToolBar(moggpayoSingle);"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#window-maximize"></use></svg></button>
 <select id="suttaselector" title="Sutta number to go" onChange="moggpayoSingle.goSutta();"></select>
-<label for="pancika" title="Include Moggallānapañcikā"><input type="checkbox" id="pancika" onClick="moggpayoSingle.includePancika();">Pañcikā</label>
+<label for="pancika" title="Include Moggallānapañcikāṭīkā"><input type="checkbox" id="pancika" onClick="moggpayoSingle.includePancika();">Pañcikāṭīkā</label>
 <label for="xref" title="Show Xref"><input type="checkbox" id="xref" onClick="moggpayoSingle.updateDisplay();"><svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#link"></use></svg></label>
 </span>
 </div>

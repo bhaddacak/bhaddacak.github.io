@@ -3,11 +3,11 @@
 const moggpayoReader = {};
 moggpayoReader.util = {};
 moggpayoReader.nirumoggUtil = {};
-moggpayoReader.chapterList = { "mogg": [], "payo": [] , "panc": [] };
-moggpayoReader.suttaNumberList = { "mogg": [], "payo": [] , "panc": [] };
-moggpayoReader.suttaFormulaList = { "mogg": [], "payo": [] , "panc": [] };
-moggpayoReader.textCache = { "mogg": "", "payo": "" , "panc": "" };
-moggpayoReader.suttaCache = { "mogg": {}, "payo": {} , "panc": {} };
+moggpayoReader.chapterList = { "mogg": [], "payo": [] , "panct": [] };
+moggpayoReader.suttaNumberList = { "mogg": [], "payo": [] , "panct": [] };
+moggpayoReader.suttaFormulaList = { "mogg": [], "payo": [] , "panct": [] };
+moggpayoReader.textCache = { "mogg": "", "payo": "" , "panct": "" };
+moggpayoReader.suttaCache = { "mogg": {}, "payo": {} , "panct": {} };
 moggpayoReader.fixedToolBar = false;
 moggpayoReader.firstOpen = true;
 moggpayoReader.getCurrBook = function() {
@@ -19,7 +19,7 @@ moggpayoReader.getHead = function(book) {
 	switch (book) {
 		case "kacc": result = "Moggallānabyākaraṇaṃ"; break;
 		case "payo": result = "Payogasiddhi"; break;
-		case "panc": result = "Moggallānapañcikā"; break;
+		case "panct": result = "Moggallānapañcikāṭīkā"; break;
 	}
 	return result;
 };
@@ -42,14 +42,14 @@ moggpayoReader.includePancika = function() {
 	const bookSelector = document.getElementById("bookselector");
 	const pancSelected = document.getElementById("pancika").checked;
 	bookSelector.options[2].disabled = !pancSelected;
-	if (this.textCache.panc.length === 0) {
+	if (this.textCache.panct.length === 0) {
 		const ajaxParams = {};
-		ajaxParams.address = "/assets/palitext/gram/moggpanc.gz";
+		ajaxParams.address = "/assets/palitext/gram/panct.gz";
 		ajaxParams.isBinary = true;
 		ajaxParams.successCallback = function(response) {
 			const content = window.pako.ungzip(response, { to: "string" });
-			moggpayoReader.textCache.panc = moggpayoReader.formatText(content, "panc");
-			moggpayoReader.getSuttaList("panc");
+			moggpayoReader.textCache.panct = moggpayoReader.formatText(content, "panct");
+			moggpayoReader.getSuttaList("panct");
 			moggpayoReader.updateDisplay();
 		};
 		this.util.ajaxLoad(ajaxParams);
@@ -124,18 +124,18 @@ moggpayoReader.updateDisplay = function() {
 					for (const key of payoKeys)
 						refText += this.suttaFormulaList.payo[this.suttaNumberList.payo.indexOf(key)] + "<br>";
 					if (pancika.checked) {
-						const pancInd = this.suttaNumberList.panc.indexOf(moggNum);
+						const pancInd = this.suttaNumberList.panct.indexOf(moggNum);
 						if (pancInd > -1)
-							refText += this.suttaFormulaList.panc[pancInd] + "<br>";
+							refText += this.suttaFormulaList.panct[pancInd] + "<br>";
 					}
 				} else if (currBook === "payo") {
 					refText += this.suttaFormulaList.mogg[this.suttaNumberList.mogg.indexOf(moggNum)] + "<br>";
 					if (pancika.checked) {
-						const pancInd = this.suttaNumberList.panc.indexOf(moggNum);
+						const pancInd = this.suttaNumberList.panct.indexOf(moggNum);
 						if (pancInd > -1)
-							refText += this.suttaFormulaList.panc[pancInd] + "<br>";
+							refText += this.suttaFormulaList.panct[pancInd] + "<br>";
 					}
-				} else if (currBook === "panc") {
+				} else if (currBook === "panct") {
 					refText += this.suttaFormulaList.mogg[this.suttaNumberList.mogg.indexOf(moggNum)] + "<br>";
 					const payoKeys = this.getPayoSuttaNumber(moggNum);
 					for (const key of payoKeys)
@@ -168,13 +168,13 @@ moggpayoReader.updateDisplay = function() {
 				const payoKeys = this.getPayoSuttaNumber(moggNum);
 				for (const key of payoKeys)
 					refText += this.suttaCache.payo[key];
-				if (pancika.checked && moggNum in this.suttaCache.panc)
-					refText += this.suttaCache.panc[moggNum];
+				if (pancika.checked && moggNum in this.suttaCache.panct)
+					refText += this.suttaCache.panct[moggNum];
 			} else if (currBook === "payo") {
 				refText += this.suttaCache.mogg[moggNum];
-				if (pancika.checked && moggNum in this.suttaCache.panc)
-					refText += this.suttaCache.panc[moggNum];
-			} else if (currBook === "panc") {
+				if (pancika.checked && moggNum in this.suttaCache.panct)
+					refText += this.suttaCache.panct[moggNum];
+			} else if (currBook === "panct") {
 				refText += this.suttaCache.mogg[moggNum];
 				const payoKeys = this.getPayoSuttaNumber(moggNum);
 				for (const key of payoKeys)
