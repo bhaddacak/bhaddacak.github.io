@@ -13,7 +13,7 @@ The program is in alpha state by now, but everything has been done. Let us test.
 
 ### Executable
 
-- [PaliPlatform3.0-alpha1](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~140 MB)<span class="label label-green">new</span>
+- [PaliPlatform3.0-alpha2](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~140-220 MB)<span class="label label-green">new</span>
 
 ### Source code
 

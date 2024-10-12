@@ -10,7 +10,7 @@ This site is meant to be the official portal to his works and thoughts. The Jeky
 
 The site's design and interface are intentionally kept **s**imple, **c**lean, **u**nintrusive, and mostly **v**anilla (SCUV). Using Firefox will give the user experiences as the author intend.
 
-Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://paliplatform.blogspot.com){:target="\_blank"} blog. For a more serious communication, please use email (find the author's address in the books).
+Trivial comments and suggestions can be posted at the [`Pāli Platform`](http://paliplatform.blogspot.com){:target="\_blank"} blog. For a more serious communication, please use this email address: `bhaddacak` at `proton` dot `me`. 
 
 For personal expressions of the author, see [Bhaddacak's Memoir](https://bhaddacak.wordpress.com){:target="\_blank"}.
 
