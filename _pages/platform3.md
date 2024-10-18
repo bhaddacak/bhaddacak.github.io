@@ -1,15 +1,20 @@
 ---
 title: "Pāli Platform 3"
 permalink: /platform3
+is_article: true
+date: 2024-10-18 12:00:00 +0700
 ---
+
+- TOC
+{:toc}
 
 ![Pāli Platform 3's About](/assets/images/platform3-about-dark.png)
 
-Finally, it is here. This about window has something hidden. Let us find out.
+Finally, `Pāli Platform 3` is here. The look is not much different, but its functions surpass the old one in many respects. This About window has something hidden. Let us find out.
 
 ## Links
 
-The program is in alpha state by now, but everything has been done. Let us test.
+The program in its beta state is quite stable now, but testing is still needed. Let us help the making the best Pāli tool. Now the program comes with an updating system or `Patch Installer`. If patches are available, the program can load and install them to itself. This is not automatically, so the users have to learn how the system works.
 
 ### Executable
 
@@ -42,3 +47,27 @@ It is better if the rendition of this becomes *saṅgītin’ti*. Then we get *s
 That is the main reason I fixed *nti* in [CSTR collection](cstpage). In this release of PP3, I also offer the fixed-version of CST4 data. But the user must download the file separately, rename it and replace the old one in `data/text/cst4`.
 
 It suffices to say that *n’ti* is better than *’nti*. You can also see this in non-Devanagari-based text collections, such as, SuttaCentral.
+
+## ScUtil (SuttaCentral Utilities)
+
+When I made the reader for SuttaCentral corpus, I made myself a tool to deal with its data. This is called `ScUtil`. It is quite useful for programming-inclined persons. So, I made it easy to access. The program can list files, show text, and many more.
+
+To use `ScUtil`, you have to make the program ready to run first (JavaFX is required but not used), and you have to use it at the program's root directory. Open a terminal there, then use its wrapper script this way:
+
+```
+(Linux/macOS)
+$ ./scutil.sh
+
+(Windows)
+> scutil
+```
+
+The program has only CLI mode and some help. Please read the help carefully. Here is an example to show MN1 in the terminal:
+
+```
+(Linux/macOS)
+$ ./scutil.sh show -t mn1
+
+(Windows)
+> scutil show -t mn1
+```

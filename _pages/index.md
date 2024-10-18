@@ -18,8 +18,8 @@ permalink: /
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
-    - [Pāli Platform Classic](/ppclassic)
     - [Pāli Platform 3](/platform3) <span class="label label-green">new</span>
+    - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
 ## Graphics
@@ -67,7 +67,7 @@ permalink: /
 
 ## Online Pāli Tools
 - [Pāli Passage Reader](/ppreader)
-- [New Concise Pāli-English Dictionary](/ncped) <span class="label label-green">updated</span>
+- [New Concise Pāli-English Dictionary](/ncped)
 - [PTS Pali-English Dictionary](/ptsped)
 - [Thai-English-Pāli Dictionary](/tepdict)
 - [Declension Table Calculator](/declension)
