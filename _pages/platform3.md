@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2024-10-18 12:00:00 +0700
+date: 2024-10-19 12:00:00 +0700
 ---
 
 - TOC
@@ -10,7 +10,7 @@ date: 2024-10-18 12:00:00 +0700
 
 ![Pāli Platform 3's About](/assets/images/platform3-about-dark.png)
 
-Finally, `Pāli Platform 3` is here. The look is not much different, but its functions surpass the old one in many respects. This About window has something hidden. Let us find out.
+Finally, `Pāli Platform 3` is here. The look is not much changed, but its functions surpass the old one in many respects. This About window has something hidden. Let us find out.
 
 ## Links
 
@@ -47,6 +47,41 @@ It is better if the rendition of this becomes *saṅgītin’ti*. Then we get *s
 That is the main reason I fixed *nti* in [CSTR collection](cstpage). In this release of PP3, I also offer the fixed-version of CST4 data. But the user must download the file separately, rename it and replace the old one in `data/text/cst4`.
 
 It suffices to say that *n’ti* is better than *’nti*. You can also see this in non-Devanagari-based text collections, such as, SuttaCentral.
+
+## Manual installation of patches
+
+This is not recommended but sometimes you may find it necessary. When patches are available in the program's releases, you may download the files to your computer. You have two options hereafter:
+
+1. First, `Update online info` and place the patch files in directory `cache/` (if it does not exist, create one in the program's root). Then open `Patch Installer` and install the patches with the **Skip download** option checked. If the installer cannot recognize the patches (check the info button), you cannot install them in this way.
+2. If the previous method fails, you have to unpack the file manually by using your known utility (WinRAR, File Roller or the like) to unpack the file into the program's root directory, replacing the old files if asked.
+
+**IMPORTANT:** After the manual installation, you have to restart the program using either `PPLauncher.exe`, `PPLauncher.rar`, `launch.cmd`, or `launch.sh`, NOT `run.cmd` or `run.sh`.
+
+Since the patch installation is destructive, it can unexpectedly break the program. So, it is better to keep the original program's zip file at hand to use as an emergency recovery.
+
+## Manual installation of DPD and SuttaCentral data
+
+Even though the program has download helpers for DPD and SuttaCentral data, in some situations you may need to install them manually. For example, you may want to use the latest release of DPD.
+
+### DPD
+
+When a new release of DPD is launched, I need some time to test that its structure is not changed to the extent that it may break the program's functionality. But, sometimes I have no access to the Internet for weeks or even months. The update for the link therefore can be late.
+
+To solve the problem *ad hoc*, you need to know how to put the file properly, but at the risk of breaking the system (rarely, I suppose).
+
+- Download `dpd.db.tar.bz2` from the DPD Releases to your computer.
+- You have two options hereafter:
+    1. Unpack it yourself with your known utility and place or replace `dpd.db` in directory `data/db/`.
+    2. To use the program's unpacker, you have to place `dpd.db.tar.bz2` in directory `cache/` (if not exist, create one at the program's root). Then use the `DPD downloader` to install the file with the **Skip download** option checked. Then wait for some minutes.
+
+### SuttaCentral
+
+In the case of SuttaCentral data, it will be easier because the link is unlikely to change and we use the whole zip file.
+
+- Download the whole published source of *SuttaCentral Bilara data* from [`github.com/suttacentral/bilara-data`](https://github.com/suttacentral/bilara-data){:target="\_blank"}. The obtained file is named `bilara-data-published.zip`.
+- Place or replace the file in `data/text/sc/`. If directory `sc` does not exist, create a new one.
+
+The structure of SC data is quite stable. So, the new file is unlikely to break the program. If it is the case, however, please report this to me.
 
 ## ScUtil (SuttaCentral Utilities)
 
