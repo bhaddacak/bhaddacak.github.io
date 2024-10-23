@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2024-10-19 12:00:00 +0700
+date: 2024-10-23 12:00:00 +0700
 ---
 
 - TOC
@@ -106,3 +106,11 @@ $ ./scutil.sh show -t mn1
 (Windows)
 > scutil show -t mn1
 ```
+
+## Notes on Myanmar script transliteration
+
+I have tackled with Myanmar script transformation for several days after knowing that the former conversion is wrong in many places. I myself do not know Myanmar, so it is really awkward to me to solve the problem. Thanks to Antonio Costanzo, I can handle it in the end.
+
+Now we can convert Roman to Myanmar correspondingly well enough to the printed texts (but still not perfect). But we also lose the Myanmar to Roman converting capacity. That is inevitably because in many cases we have to manipulate the characters programmatically. Reverting the conversion is very difficult, so I drop this functionality.
+
+Unfortunately, the conversion does not conform to any standard, and indeed it uses a lot of tinkering. The main reason is Java cannot handle Myanmar script well enough (due to the lack of standard, I guess). As a result, we have to use exclusive fonts modified for this purpose only. And the texts produced by the conversion cannot be used elsewhere without the use of these fonts.
