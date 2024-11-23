@@ -2,7 +2,7 @@
 title: "Introduction to Critical Buddhist Studies"
 permalink: /cribudstu
 is_article: true
-date: 2023-04-13 12:00:00 +0700
+date: 2024-11-21 12:00:00 +0700
 ---
 
 - TOC
@@ -76,15 +76,16 @@ How to think critically, then? If we take the subject seriously, it will be a lo
 
 To know Buddhism, any kind of Buddhism, is essentially to know its scripture. And beyond Buddhist sectarianism, the Pāli canon is the common asset, the best preserved text in the Buddhist world. This does not mean it is impeccable, but rather it is the most complete set of text we have. To understand Buddhism critically therefore we have to understand the Pāli text critically as well. So, knowing Pāli well is necessary.
 
-The main problem of learning Pāli is it is made (unnecessarily) difficult by the tradition, to keep its authoritative status unchallenged, I think. And learning Pāli from the Western world, mostly from Sanskrit scholars, looks irrelevant from the tradition's point of view; it is hard to penetrate the mindset of the tradition. Moreover, Pāli studies in both the West and the tradition is seriously outdated. I solve the problem by developing a new approach to the language, as shown in the two volumes of *Pāli for New Learners*.[^PNL]
+The main problem of learning Pāli is it is made (unnecessarily) difficult by the tradition, to keep its authoritative status unchallenged, I think. And learning Pāli from the Western world, mostly from Sanskrit scholars, looks irrelevant from the tradition's point of view; it is hard to penetrate the mindset of the tradition. Moreover, Pāli studies in both the West and the tradition is seriously outdated. I solve the problem by developing a new approach to the language, as shown in *Pāli for New Learners*[^PNL] and *Pāli Text Reading: A Handbook*.[^PTR]
 
-[^PNL]: Books 1: How to say it, [{{ site.url }}/palicon]({{ site.url }}/palicon){:target="\_blank"}; Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}
+[^PNL]: [{{ site.url }}/pnl]({{ site.url }}/pnl){:target="\_blank"}
+[^PTR]: [{{ site.url }}/ptr]({{ site.url }}/ptr){:target="\_blank"}
 
 When students of Buddhism know Pāli by themselves, not resorting to various translations, they can see what is really said in the text, and they can judge its credibility impartially. To have a clear critical view, mediators like translators has to be taken as supplementary, not primary source of information. Students have to understand Pāli text by their own reading, so to speak.
 
-So, learning Pāli is a critical task of CBS. And it has to be learned critically as well.[^PNL2] This means nothing is taken for granted before a text is read, and every presumption has to be assessed by critical attitude. The goal of critical reading of text is not to reject it as rubbish, or accept it mindlessly, but rather to clearly understand it first. Whether the reader will believe in the truthfulness of the text depends on the result of the critical assessment. This can be difficult sometimes to have a definite answer, but to understand it as such is the most important.
+So, learning Pāli is a critical task of CBS. And it has to be learned critically as well.[^PTR2] This means nothing is taken for granted before a text is read, and every presumption has to be assessed by critical attitude. The goal of critical reading of text is not to reject it as rubbish, or accept it mindlessly, but rather to clearly understand it first. Whether the reader will believe in the truthfulness of the text depends on the result of the critical assessment. This can be difficult sometimes to have a definite answer, but to understand it as such is the most important.
 
-[^PNL2]: A critical approach to Pāli studies can be seen clearly in *Pāli for New Learners,* Book 2: How to read it, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
+[^PTR2]: A critical approach to Pāli studies can be seen clearly in *Pāli Text Reading: A Handbook*, [{{ site.url }}/ptr]({{ site.url }}/ptr){:target="\_blank"}.
 
 I will show an example of a critical reading of a Pāli passage. In the Vinaya, this passage is written:
 
@@ -116,7 +117,7 @@ Logical thinking works on facts. Without good data, critical thinking only yield
 
 A marked example is the idea of cosmology which has a huge mountain (sineru/sumeru) at its center.[^abhibhu] That picture is downright false. If we accept that the Buddha could be wrong about the world, the science-like accounts of reality in the canon should not be taken seriously.
 
-[^abhibhu]: For example, in Aṅguttaranikāya Tikanipāta 8.81 (Cūḷanikāsutta)
+[^abhibhu]: For example, in Aṅguttaranikāya Tikanipāta (A3 81, Cūḷanikāsutta)
 
 Scientific knowledge nowadays can shape our view on reality in a significant way. If we do not know what is going on in modern sciences and insist on the traditional beliefs, we can fall into a post-truth victim who denies good evidence.
 

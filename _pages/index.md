@@ -12,8 +12,8 @@ permalink: /
 
 ## Books
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
-- [Pāli for New Learners, Book 1: How to say it](/palicon) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
-- [Pāli for New Learners, Book 2: How to read it](/palitex) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
+- [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">updated</span>
+- [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">updated</span>
 - [Pāli Platform's User Manual](/ppmanual) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 ## Applications

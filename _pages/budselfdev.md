@@ -2,7 +2,7 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2023-04-17 12:00:00 +0700
+date: 2024-11-21 12:00:00 +0700
 ---
 
 - TOC
@@ -22,13 +22,13 @@ What I will describe here goes beyond the notion of ethics in its narrow sense--
 
 It is worth noting that, the wholesome life in Buddhist view is not achieved by having or getting rid of things, or by doing a particular set of actions. Rather, the wholesome life is attained only by training or developing oneself. There are many instances in the canon confirming this, as shown below:
 
-> *Cittassa damatho sādhu, cittaṃ dantaṃ sukhāvahaṃ.* (Dham 3.35)<br>
+> *Cittassa damatho sādhu, cittaṃ dantaṃ sukhāvahaṃ.* (Dhp 3.35)<br>
 > The mastery of mind is good. The trained mind brings happiness.
 >
-> *Attanā hi sudantena, nāthaṃ labhati dullabhaṃ.* (Dham 12.160)<br>
+> *Attanā hi sudantena, nāthaṃ labhati dullabhaṃ.* (Dhp 12.160)<br>
 > With oneself well-trained, [one] gets a guardian hard to obtain.
 >
-> *[So] Danto seṭṭho manussesu, yotivākyaṃ titikkhati.* (Dham 23.321)<br>
+> *[So] Danto seṭṭho manussesu, yotivākyaṃ titikkhati.* (Dhp 23.321)<br>
 > Which person endures [insulting] words, [that one], trained [oneself], is the best among humans. (my translation)
 
 ## The threefold training: the big picture
@@ -39,17 +39,17 @@ The general idea is so vague that applying these to the real life looks indistin
 
 To understand the training in the Buddhist way, we have to trace its origin first. Surprisingly, there are scanty details on the subject. Mostly they are just mentioned by each name, without any further explanation. An important instance can be found in Mahāparinibbānasutta.
 
-> iti sīlaṃ, iti samādhi, iti paññā. Sīlaparibhāvito samādhi mahapphalo hoti mahānisaṃso. Samādhiparibhāvitā paññā mahapphalā hoti mahānisaṃsā. Paññāparibhāvitaṃ cittaṃ sammadeva āsavehi vimuccati, seyyathidaṃ -- kāmāsavā, bhavāsavā, avijjāsavā. (Dī 2.3.142, DN 16)
+> iti sīlaṃ, iti samādhi, iti paññā. Sīlaparibhāvito samādhi mahapphalo hoti mahānisaṃso. Samādhiparibhāvitā paññā mahapphalā hoti mahānisaṃsā. Paññāparibhāvitaṃ cittaṃ sammadeva āsavehi vimuccati, seyyathidaṃ -- kāmāsavā, bhavāsavā, avijjāsavā. (D2 142, DN 16)
 >
 > Thus morality, thus concentration, thus wisdom. Trained by morality, concentration is rich in fruit, rich in benefit. Trained by concentration, wisdom is rich in fruit, rich in benefit. Trained by wisdom, the mind is liberated completely from mental intoxicants, namely the intoxicant of pleasure, of existence, of ignorance. (my translation)
 
 In other places, *adhisīlasikkhā*, *adhicittasikkhā*, and *adhipaññāsikkhā* are mentioned.[^adhisikkha] Here, *citta* is used instead of *samādhi*. In this context, it means mental capacity; more or less both are synonymous.
 
-[^adhisikkha]: Dī 3.10.305 (DN 33); Aṅ Ti 9.82
+[^adhisikkha]: D3 305 (DN 33); A3 82
 
 In Aṅguttaranikāya, specific explanations are also given. By and large, adhisīlasikkhā means the rules of monks to be learned, adhicittasikkhā means the four jhānas, and adhipaññāsikkhā means the penetration of the ultimate truth.[^adhidetail] I find these specific explanations have little use for us. So, I ignore them and do not try to explain further.
 
-[^adhidetail]: See Aṅ Ti 9.90--91, for example.
+[^adhidetail]: See A3 90--91, for example.
 
 I am not sure why *adhi* is added here. Thus, these can be rendered as *higher morality*, *higher mentality*, and *higher wisdom*. In what sense of *higher*, I still wonder. Perhaps, it means higher than worldly concerns, hence super-mundane (lokuttara). Since the *adhi*-things sounds too discriminating, we will stick to the simpler terms: sīla, samādhi, and paññā.
 
@@ -76,7 +76,7 @@ Likewise, morality exactly means controlling your body and speech to do and say 
 
 On the part of morality, if we take it strictly, it can draw the whole subject of Buddhist ethics into consideration. That is too much. We can think it simply in this way: actions counted as good in Buddhism are those not coming from greed (lobha), anger (dosa), and delusion (moha).[^kalama]
 
-[^kalama]: A good demonstration of the idea is in the Kālāmasutta (Aṅ Ti 7.66). See *Pāli for New Learners*, Book 2, chapter 29, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
+[^kalama]: A good demonstration of the idea is in the Kālāmasutta (A3 66). See *Pāli Text Reading: A Handbook*, chapter 29, [{{ site.url }}/ptr]({{ site.url }}/ptr){:target="\_blank"}.
 
 On the part of concentration, I means meditation done in a simple way.[^medguide] You do not need to practice deep meditation in this model of development. So, everyone can do it. The main purpose of meditation is to get better control of your mind and emotions.
 
@@ -145,7 +145,7 @@ By my account given above, our triangular model of the threefold training can be
 
 Does the noble eightfold path have things to do with liberation? As asserted by the Buddha himself, the eightfold path is the way to get enlightened.[^dhammacak] Is my simplified account able to do the job---or is just that simple?
 
-[^dhammacak]: See Dhammacakkappavattanasutta (Saṃ Ma 12.1081). For my translation and analysis, see *Pāli for New Learners*, Book 2, chapter 25, [{{ site.url }}/palitex]({{ site.url }}/palitex){:target="\_blank"}.
+[^dhammacak]: See Dhammacakkappavattanasutta (S5 1081). For my translation and analysis, see *Pāli Text Reading: A Handbook*, chapter 25, [{{ site.url }}/ptr]({{ site.url }}/ptr){:target="\_blank"}.
 
 Surely it does, because I see no substantial contradiction between the traditional explanation and my account. I just make the model more applicable. So, it should lead you to liberation. A more serious question, however, is what you exactly mean by liberation or enlightenment. I will not go to this metaphysical problem.
 
@@ -260,7 +260,7 @@ This problem is basically ideological one. The main idea is to be a perfectly en
 
 It is true that ascetic life is essential to the enlightenment of the Buddha, as we know from his story. And the ascetic life is somehow essential to the elimination of suffering as well, as shown by this expression:
 
-> sambādho gharāvāso rajopatho, abbhokāso pabbajjā. Nayidaṃ sukaraṃ agāraṃ ajjhāvasatā ekantaparipuṇṇaṃ ekantaparisuddhaṃ saṅkhalikhitaṃ brahmacariyaṃ carituṃ. Yaṃnūnāhaṃ kesamassuṃ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṃ pabbajeyyaṃ. (Dī 1.2.191; DN 2)
+> sambādho gharāvāso rajopatho, abbhokāso pabbajjā. Nayidaṃ sukaraṃ agāraṃ ajjhāvasatā ekantaparipuṇṇaṃ ekantaparisuddhaṃ saṅkhalikhitaṃ brahmacariyaṃ carituṃ. Yaṃnūnāhaṃ kesamassuṃ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṃ pabbajeyyaṃ. (D1 191; DN 2)
 >
 > Being a householder [is] inconvenient; [it is like a] dusty (defiled) path; taking up the ascetic life [is like] an open space. [Being one] living in a house [is] not easy to completely, perfectly like a well-scraped conch, practice the religious life. Indeed, I, cutting down hair and beard, putting on yellow robes, should go forth from home into homelessness. (my translation)
 
