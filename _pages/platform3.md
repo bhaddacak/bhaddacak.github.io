@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2024-10-23 12:00:00 +0700
+date: 2024-12-30 12:00:00 +0700
 ---
 
 - TOC
@@ -34,7 +34,13 @@ Since there is no dedicated manual for this version yet, please take time to lea
 
 For the old manual, see [PP2Man](ppmanual).
 
-## Notes on CST4 nti-fixed version
+## Notes on CST better corrected version
+
+After I knew that the corpus of CST4 is now has an active correction system at [Tipitaka.org XML](https://github.com/vipassanatech/tipitaka-xml){:target="\_blank"}, I have utilized this corpus in the program. Apart from the corrections already applied by the maintaining team, I have also worked on my own on some undetected points. The report of my correction can be found at [Tipiṭaka Correction Report](/correport){:target="\_blank"}.
+
+At this occasion, I have also applied the corrections to the CSTR and Gram collection, as shown in the report. That is to say, now the CST data used by the program are possibly the most updated.
+
+## Notes on CST4 and BJT nti-fixed version
 
 As you may know, the original CST data in digital form are in Devanagari. The way words composed in Devanagari makes inevitably the `’nti` rendition (Antonio Costanzo told me this, not exactly but close). That is unsatisfactory for Pāli learners because some information is lost.
 
@@ -44,7 +50,7 @@ Consider *saṅgīti’nti*[^Cv444], for example. When we cut this into two word
 
 It is better if the rendition of this becomes *saṅgītin’ti*. Then we get *saṅgītin* and *ti*. By this way, the ending *n* unambiguously marks the word as accusative.
 
-That is the main reason I fixed *nti* in [CSTR collection](cstpage). In this release of PP3, I also offer the fixed-version of CST4 data. But the user must download the file separately, rename it and replace the old one in `data/text/cst4`.
+That is the main reason I fixed *nti* in [CSTR collection](cstpage). In this release of PP3, I also offer the fixed-version of CST4 and BJT data. But the user must download the file separately, rename it and correspondingly replace the old one in `data/text/cst4` or `data/text/bjt`.
 
 It suffices to say that *n’ti* is better than *’nti*. You can also see this in non-Devanagari-based text collections, such as, SuttaCentral.
 
@@ -73,6 +79,16 @@ To solve the problem *ad hoc*, you need to know how to put the file properly, bu
 - You have two options hereafter:
     1. Unpack it yourself with your known utility and place or replace `dpd.db` in directory `data/db/`.
     2. To use the program's unpacker, you have to place `dpd.db.tar.bz2` in directory `cache/` (if not exist, create one at the program's root). Then use the `DPD downloader` to install the file with the **Skip download** option checked. Then wait for some minutes.
+
+Recently, I added a script wrapper of `DpdUtil` (available in version RC1 onward) to ease the test. This can check the applicability of the database by a command line. After the database is unpacked or installed to the program, enter this command:
+
+```
+(Linux/macOS)
+$ ./dpdutil.sh -t
+
+(Windows)
+> dpdutil -t
+```
 
 ### SuttaCentral
 
@@ -114,3 +130,5 @@ I have tackled with Myanmar script transformation for several days after knowing
 Now we can convert Roman to Myanmar correspondingly well enough to the printed texts (but still not perfect). But we also lose the Myanmar to Roman converting capacity. That is inevitably because in many cases we have to manipulate the characters programmatically. Reverting the conversion is very difficult, so I drop this functionality.
 
 Unfortunately, the conversion does not conform to any standard, and indeed it uses a lot of tinkering. The main reason is Java cannot handle Myanmar script well enough (due to the lack of standard, I guess). As a result, we have to use exclusive fonts modified for this purpose only. And the texts produced by the conversion cannot be used elsewhere without the use of these fonts.
+
+Recently, I brought back the straight conversion of Myanmar script, available only in Batch Script Transformer. This can convert Roman text to Myanmar in a sort of standard way that can be used elsewhere. Still, the conversion is close enough to that done by the CST4 program (not identical) and far from perfect.

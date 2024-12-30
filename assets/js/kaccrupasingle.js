@@ -110,24 +110,29 @@ kaccrupaSingle.getSuttaKey = function(suttaNum) {
 };
 kaccrupaSingle.getKaccSuttaKey = function(rupaNum) {
 	let result = [];
-	if (rupaNum === "88")
-		return ["271, 88, 308"];
+	const rexNum = new RegExp("\\d+", "g");
 	for (const key of this.suttaNumberList.kacc) {
-		if (key.endsWith(" " + rupaNum))
-			result.push(key);
+		const snums = key.match(rexNum);
+		if (snums.length > 1) {
+			snums.shift();
+			if (snums.indexOf(rupaNum) > -1) {
+				result.push(key);
+			}
+		}
 	}
 	return result;
 };
 kaccrupaSingle.getRupaSuttaNumber = function(kaccNum) {
 	let result = [];
-	if (kaccNum === "271")
-		return ["88", "308"];
-	const rex = new RegExp("^" + kaccNum + ",");
+	const rexKNum = new RegExp("^" + kaccNum + ",");
+	const rexNum = new RegExp("\\d+", "g");
 	for (const key of this.suttaNumberList.kacc) {
-		if (key.match(rex) !== null) {
-			const num = key.slice(key.lastIndexOf(",") + 1).trim();
-			if (num.length > 0)
-				result.push(num);
+		if (key.match(rexKNum) !== null) {
+			const snums = key.match(rexNum);
+			if (snums.length > 1) {
+				for (let i = 1; i < snums.length; i++)
+					result.push(snums[i]);
+			}
 			break;
 		}
 	}

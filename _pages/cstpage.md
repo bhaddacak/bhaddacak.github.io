@@ -2,7 +2,7 @@
 title: "Chaṭṭha Saṅgāyana Tipiṭaka Restructured"
 permalink: /cstpage
 is_article: true
-date: 2024-10-05 12:00:00 +0700
+date: 2024-12-14 12:00:00 +0700
 ---
 
 - TOC
@@ -353,7 +353,7 @@ Abhidhammapiṭaka
 
 ## Statistical summary
 
-From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the other group (Añña) are excluded, except Visuddhimagga.
+From 2,698 fragmented files in the original CSCD collection, now we have only 203 files. Most of documents in the extra group (Añña) are excluded, except Visuddhimagga.
 
 ### File summary
 

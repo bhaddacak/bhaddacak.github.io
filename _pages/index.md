@@ -12,13 +12,13 @@ permalink: /
 
 ## Books
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
-- [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">updated</span>
-- [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">updated</span>
+- [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v3.0</span>
+- [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v3.0</span>
 - [Pāli Platform's User Manual](/ppmanual) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
-    - [Pāli Platform 3](/platform3) <span class="label label-green">new</span>
+    - [Pāli Platform 3](/platform3) <span class="label label-green">beta2</span>
     - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
@@ -34,10 +34,11 @@ permalink: /
 - [Wallpaper gallery 9: Tablet Wallpapers](/wall09) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>
 
 ## Online Pāli Text Readers
-- [Sutta Reader](/suttareader)
-- [Sutta Lister](/suttalister)
+- [Tipiṭaka Correction Report](/correport) <span class="label label-green">new</span>
 - [Chaṭṭha Saṅgāyana Tipiṭaka Restructured](/cstpage)
     - [Table of Contents](/cst)
+- [SC Sutta Reader](/suttareader)
+- [SC Sutta Lister](/suttalister)
 - [PTS Tipiṭaka Reader](/ptsreader)
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
