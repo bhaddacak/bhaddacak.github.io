@@ -43,7 +43,7 @@ To make these erroneous points visible to the text maintainers, I therefore add 
 > - [PDF](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/cst4/tipitaka-xml_analyzing_report.pdf){:target="\_blank"}
 > - [TXT](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/cst4//tipitaka-xml_analyzing_report.txt){:target="\_blank"}
 
-Some may be curious how to do character analysis. You can see the program and other tools in [Tipiṭaka-Kit](https://github.com.bhaddacak/tipitaka-kit/){:target="\_blank"}
+Some may be curious how to do character analysis. You can see the program and other tools in [Tipiṭaka-Kit](https://github.com/bhaddacak/tipitaka-kit/){:target="\_blank"}
 
 ### Manually *nti* fixing report
 
