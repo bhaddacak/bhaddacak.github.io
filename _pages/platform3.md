@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2024-12-30 12:00:00 +0700
+date: 2024-12-31 12:00:00 +0700
 ---
 
 - TOC
@@ -18,7 +18,7 @@ The program in its beta state is quite stable now, but testing is still needed. 
 
 ### Executable
 
-- [PaliPlatform3.0-beta1](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~140-220 MB)<span class="label label-green">new</span>
+- [PaliPlatform3.0-RC1](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-230 MB)<span class="label label-green">updated</span>
 
 ### Source code
 
