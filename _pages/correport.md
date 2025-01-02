@@ -2,7 +2,7 @@
 title: "Tipiṭaka Correction Report"
 permalink: /correport
 is_article: true
-date: 2024-12-30 12:00:00 +0700
+date: 2025-01-02 12:00:00 +0700
 ---
 
 - TOC
@@ -57,9 +57,9 @@ Mostly we can fix the *nti* programmatically. See the actual program for this co
 
 ## Buddha Jayanthi Tripitaka (BJT)
 
-The BJT texts hosted in [GRETIL](http://gretil.sub.uni-goettingen.de/gretil.htm) are really messy. A better digital version of that collection is maintained by [Path Nirvana Foundation](https://pathnirvana.org){:target="\_blank"} at this [Github](https://github.com/pathnirvana/tipitaka.lk/tree/master/public/static/text){:target="\_blank"}. So, I decide to remove the GRETIL BJT corpus from PP3 and use this better version instead (available in PP3 RC1 onward).
+The tipitaka.lk's BJT texts hosted in [GRETIL](http://gretil.sub.uni-goettingen.de/gretil.htm) are really messy. A better digital version of that collection is maintained by [Path Nirvana Foundation](https://pathnirvana.org){:target="\_blank"} at this [Github](https://github.com/pathnirvana/tipitaka.lk/tree/master/public/static/text){:target="\_blank"}. So, I decide to remove the GRETIL BJT corpus from PP3 and use this better version instead (available in PP3 RC1 onward).
 
-When I worked on this corpus as I always do for every text collection I use, I also found several errors myself. So, I corrected some obvious cases of them and made a report below.
+When I worked on this corpus as I always do for every text collection I use, I also found several errors myself, reported in the links below. Because this corpus uses [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/) license, I leave these errors unedited. 
 
 > *BJT Pāli Correction Report*
 > - [Excel](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/bjt/bjt_pali_correction_report.xlsx){:target="\_blank"}

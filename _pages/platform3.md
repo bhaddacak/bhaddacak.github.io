@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2024-12-31 12:00:00 +0700
+date: 2025-01-02 12:00:00 +0700
 ---
 
 - TOC
@@ -18,7 +18,7 @@ The program in its beta state is quite stable now, but testing is still needed. 
 
 ### Executable
 
-- [PaliPlatform3.0-RC1](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-230 MB)<span class="label label-green">updated</span>
+- [PaliPlatform3.0-RC2](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-230 MB)<span class="label label-green">updated</span>
 
 ### Source code
 
@@ -40,7 +40,7 @@ After I knew that the corpus of CST4 is now has an active correction system at [
 
 At this occasion, I have also applied the corrections to the CSTR and Gram collection, as shown in the report. That is to say, now the CST data used by the program are possibly the most updated.
 
-## Notes on CST4 and BJT nti-fixed version
+## Notes on CST4 nti-fixed version
 
 As you may know, the original CST data in digital form are in Devanagari. The way words composed in Devanagari makes inevitably the `’nti` rendition (Antonio Costanzo told me this, not exactly but close). That is unsatisfactory for Pāli learners because some information is lost.
 
@@ -50,9 +50,20 @@ Consider *saṅgīti’nti*[^Cv444], for example. When we cut this into two word
 
 It is better if the rendition of this becomes *saṅgītin’ti*. Then we get *saṅgītin* and *ti*. By this way, the ending *n* unambiguously marks the word as accusative.
 
-That is the main reason I fixed *nti* in [CSTR collection](cstpage). In this release of PP3, I also offer the fixed-version of CST4 and BJT data. But the user must download the file separately, rename it and correspondingly replace the old one in `data/text/cst4` or `data/text/bjt`.
+That is the main reason I fixed *nti* in [CSTR collection](cstpage){:target="\_blank"}. In this release of PP3, I also offer the fixed-version of CST4 data. But the user must download the file separately, rename it and replace the old one in `data/text/cst4`.
 
 It suffices to say that *n’ti* is better than *’nti*. You can also see this in non-Devanagari-based text collections, such as, SuttaCentral.
+
+## Notes on BJT collection
+
+The BJT of tipitaka.lk recently bundled with the program is under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/){:target="\_blank"} license. I can do only convert the text into Roman script. Even many errors were found, I left them unedited (for the official release version).
+
+In fact, the editing has been done in RC1 version, but revoked due to the license. To make the edited version available, I therefore share it as my personal treatment. So, please recognize this as an unofficial version of BJT Pāli. Any flaws found in this collection attribute to me only.
+
+- [Unofficial BJT Pāli](https://drive.google.com/file/d/1UBmeWlc-DWafhpJ0B5ELNlwKdvlfueeP/view?usp=sharing){:target="\_blank"}
+- [Unofficial nti-fixed BJT Pāli](https://drive.google.com/file/d/1SOqtaL5tm5vYwFrBaXYpQGdDgtzkzBRq/view?usp=sharing){:target="\_blank"}
+
+To make use of these files (only one at a time), rename either one to `bjt_pali.zip` and replace the old file in `data/text/bjt` (it is better to keep the old one by renaming it to something else first).
 
 ## Manual installation of patches
 

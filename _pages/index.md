@@ -18,7 +18,7 @@ permalink: /
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
-    - [Pāli Platform 3](/platform3) <span class="label label-green">RC1</span>
+    - [Pāli Platform 3](/platform3) <span class="label label-green">RC2</span>
     - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
 
