@@ -239,7 +239,7 @@ Apart from a different design, this version gives you more information in both T
 To use the program in your device, go to the page above, save it to your device and open it with a web browser. For future uses, you may need to set a bookmark for it.
 
 Here are abbreviations shown in the program:
-- LP = Leap Year (*adhikasuradina*)
+- LY = Leap Year (*adhikasuradina*)
 - EM = Extra Month (*adhikamāsa*)
 - ED = Extra Day (*adhikavāra*)
 

@@ -264,7 +264,7 @@ for (let i = 0; i < 42; i++) {
 <input type="button" style="width:3em;" value=">>" onClick="nextYear()" />
 </td></tr>
 <tr><td colspan=7 align=center>
-<input name="textoutputhead" class="thaical-textoutput" title="LP = Leap Year, EM = Extra Month, ED = Extra Day" readonly="true" type="text" />
+<input name="textoutputhead" class="thaical-textoutput" title="LY = Leap Year, EM = Extra Month, ED = Extra Day" readonly="true" type="text" />
 </td></tr>
 <tr><td colspan=7 align=center>
 <input name="textoutputen" class="thaical-textoutput" readonly="true" type="text" />
@@ -356,7 +356,7 @@ function showInfo(hdays) {
   let yinfoEn = [];
   let yinfoTh = [];
   if (isLeapYear(year)) {
-    yinfoEn.push("LP");
+    yinfoEn.push("LY");
     yinfoTh.push("อธิกสุรทิน");
   } else {
     yinfoTh.push("ปกติสุรทิน");
