@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=480, height=device-height"/>
+<title>Thai Holy Days</title>
+<style>
+.thaicalarea {
+  text-align: center;
+  padding: 5px;
+}
+.thaicaltable {
+  background: midnightblue;
+  padding: 5px;
+  border-radius: 5px
+}
+.thaical-dayhead {
+  color: lightyellow;
+  text-align: center;
+  font-size: 0.8em;
+}
+.thaicalcell-normal {
+  background: midnightblue;
+  color: lightyellow;
+  border-style: dotted;
+  border-width: thin;
+  text-align: right;
+  width: 2.7em;
+  height: 1.5em;
+  cursor: default;
+}
+.thaicalcell-fullmoon {
+  background: orange;
+  color: black;
+  border-style: dotted;
+  border-width: thin;
+  text-align: right;
+  width: 2.7em;
+  height: 1.5em;
+  cursor: default;
+}
+.thaicalcell-newmoon {
+  background: royalblue;
+  color: black;
+  border-style: dotted;
+  border-width: thin;
+  text-align: right;
+  width: 2.7em;
+  height: 1.5em;
+  cursor: default;
+}
+.thaicalcell-halfmoon {
+  background: darkgray;
+  color: black;
+  border-style: dotted;
+  border-width: thin;
+  text-align: right;
+  width: 2.7em;
+  height: 1.5em;
+  cursor: default;
+}
+.thaicalcell-today {
+  background: green;
+  color: black;
+  border-style: dotted;
+  border-width: thin;
+  text-align: right;
+  width: 2.7em;
+  height: 1.5em;
+  cursor: default;
+}
+.thaical-textoutput {
+  background: midnightblue;
+  color: lightyellow;
+  border-style: dotted;
+  border-width: thin;
+  width: 98%;
+  height: 1.5em;
+  text-align: left;
+}
+</style>
+<script language="JavaScript">
+/*! thaiholydays.js (c) J.R. Bhaddacak @license (GPL3) */
+"use strict";
+const thaiHolyDays = {};
+thaiHolyDays.version = "1.0";
+thaiHolyDays.yearStart = 1928;
+thaiHolyDays.yearEnd = 2129;
+thaiHolyDays.baseDateMilis = Date.UTC(1927, 11, 1);
+thaiHolyDays.yearsOfExtraDay = [ 1929, 1933, 1936, 1943, 1949, 1952, 1957, 1963, 1970, 1973, 1979, 1987, 1990, 1997, 2000, 2005, 2009, 2016, 2020, 2025, 2031, 2036, 2041, 2046, 2052, 2057, 2062, 2066, 2073, 2077, 2082, 2087, 2093, 2098, 2103, 2109, 2114, 2119, 2123, 2128 ];
+thaiHolyDays.metonicNumsOfExtraMonth = [ 0, 3, 6, 8, 11, 14, 17 ];
+thaiHolyDays.defiantYears = [ [2050, 384], [2051, 354], [2069, 384], [2070, 354], [2088, 384], [2089, 354], [2107, 384], [2108, 354], [2126, 384], [2127, 354] ];
+thaiHolyDays.calTable = {
+  y354: [ "1:8+:7", "1:15+:8", "1:8-:6", "1:14-:8", "2:8+:7", "2:15+:8", "2:8-:7", "2:15-:8", "3:8+:7", "3:15+:8", "3:8-:6", "3:14-:8", "4:8+:7", "4:15+:8", "4:8-:7", "4:15-:8", "5:8+:7", "5:15+:8", "5:8-:6", "5:14-:8", "6:8+:7", "6:15+:8", "6:8-:7", "6:15-:8", "7:8+:7", "7:15+:8", "7:8-:6", "7:14-:8", "8:8+:7", "8:15+:8", "8:8-:7", "8:15-:8", "9:8+:7", "9:15+:8", "9:8-:6", "9:14-:8", "10:8+:7", "10:15+:8", "10:8-:7", "10:15-:8", "11:8+:7", "11:15+:8", "11:8-:6", "11:14-:8", "12:8+:7", "12:15+:8", "12:8-:7", "12:15-:8" ],
+  y355: [ "1:8+:7", "1:15+:8", "1:8-:6", "1:15-:8", "2:8+:7", "2:15+:8", "2:8-:7", "2:15-:8", "3:8+:7", "3:15+:8", "3:8-:6", "3:14-:8", "4:8+:7", "4:15+:8", "4:8-:7", "4:15-:8", "5:8+:7", "5:15+:8", "5:8-:6", "5:14-:8", "6:8+:7", "6:15+:8", "6:8-:7", "6:15-:8", "7:8+:7", "7:15+:8", "7:8-:7", "7:15-:8", "8:8+:7", "8:15+:8", "8:8-:7", "8:15-:8", "9:8+:7", "9:15+:8", "9:8-:6", "9:14-:8", "10:8+:7", "10:15+:8", "10:8-:7", "10:15-:8", "11:8+:7", "11:15+:8", "11:8-:6", "11:14-:8", "12:8+:7", "12:15+:8", "12:8-:7", "12:15-:8" ],
+  y384: [ "1:8+:7", "1:15+:8", "1:8-:6", "1:14-:8", "2:8+:7", "2:15+:8", "2:8-:7", "2:15-:8", "3:8+:7", "3:15+:8", "3:8-:6", "3:14-:8", "4:8+:7", "4:15+:8", "4:8-:7", "4:15-:8", "5:8+:7", "5:15+:8", "5:8-:6", "5:14-:8", "6:8+:7", "6:15+:8", "6:8-:7", "6:15-:8", "7:8+:7", "7:15+:8", "7:8-:6", "7:14-:8", "8:8+:7", "8:15+:8", "8:8-:7", "8:15-:8", "88:8+:7", "88:15+:8", "88:8-:7", "88:15-:8", "9:8+:7", "9:15+:8", "9:8-:6", "9:14-:8", "10:8+:7", "10:15+:8", "10:8-:7", "10:15-:8", "11:8+:7", "11:15+:8", "11:8-:6", "11:14-:8", "12:8+:7", "12:15+:8", "12:8-:7", "12:15-:8" ]
+};
+thaiHolyDays.formatDateInput = function(input) {
+  return input.length >= 4
+    ? input.indexOf("-") > -1
+    ? input.substr(0, 7)
+    : input.substr(0, 4) + "-" + input.substr(4, 2)
+    : "";
+};
+thaiHolyDays.getTargetMonth = function(input) {
+  const result = { year: null, month: null };
+  if (input !== undefined) {
+    const ymd = input.split(/-/);
+    result.year = isNaN(ymd[0]) || ymd[0].length === 0 ? null : parseInt(ymd[0]);
+    result.month = isNaN(ymd[1]) || ymd[1].length === 0 ? null : parseInt(ymd[1]);
+  }
+  return result;
+};
+thaiHolyDays.validateTargetMonth = function(targetMonth) {
+  let messResult = "";
+  if (targetMonth.year === null) {
+    messResult = "Error: invalid input";
+  } else {
+    if (targetMonth.year < this.yearStart || targetMonth.year > this.yearEnd) {
+      messResult = "Error: input out of range";
+    } else if (targetMonth.month !== null && (targetMonth.month < 1 || targetMonth.month > 12)) {
+      messResult = "Error: invalid month number";
+    }
+  }
+  return messResult;
+};
+thaiHolyDays.getDayCount = function(year) {
+  if (!Number.isInteger(year)) return 0;
+  if (year < this.yearStart || year > this.yearEnd) return 0;
+  let defiantCount = 0;
+  for (const dy of this.defiantYears) {
+    if (year === dy[0]) {
+      defiantCount = dy[1];
+      break;
+    }
+  }
+  return defiantCount > 0
+    ? defiantCount
+    : this.yearsOfExtraDay.indexOf(year) > -1
+    ? 355
+    : this.metonicNumsOfExtraMonth.indexOf((year - 1) % 19) > -1
+    ? 384
+    : 354;
+};
+thaiHolyDays.getThaiYear = function(year) {
+	return (year + 8) % 12;
+};
+thaiHolyDays.compute = function(targetMonth, isFull = false) {
+  const result = [];
+  const lastYear = targetMonth.year < this.yearEnd ? targetMonth.year + 1 : this.yearEnd;
+  let currDateMilis = this.baseDateMilis;
+  let currDate = new Date(currDateMilis);
+  for (let y = this.yearStart; y <= lastYear; y++) {
+    const dayCount = this.getDayCount(y);
+    if (y < targetMonth.year - 1) {
+      currDateMilis = currDateMilis + (dayCount * 86400000);
+      currDate = new Date(currDateMilis);
+    } else if (y >= targetMonth.year - 1 && y < targetMonth.year + 2) {
+      const calTable = this.calTable["y" + dayCount];
+      for (const md of calTable) {
+        const mdArr = md.split(/:/);
+        const item = { thaimonth: mdArr[0], thaiday: mdArr[1], date: new Date(currDateMilis) };
+        if (targetMonth.year === currDate.getUTCFullYear()) {
+          if (isFull) {
+            result.push(item);
+          } else {
+            if (targetMonth.month === currDate.getUTCMonth() + 1)
+              result.push(item);
+          }
+        }
+        const dayStep = parseInt(mdArr[2]);
+        currDateMilis = currDateMilis + (dayStep * 86400000);
+        currDate = new Date(currDateMilis);
+      }
+    } else {
+      break;
+    }
+  }
+  return result;
+};
+thaiHolyDays.computeMonth = function(dateInput) {
+  const target = this.formatDateInput(dateInput);
+  const targetMonth = thaiHolyDays.getTargetMonth(target);
+  if (targetMonth.month === null)
+    targetMonth.month = 1;
+  const mess = thaiHolyDays.validateTargetMonth(targetMonth);
+  if (mess.length === 0) {
+    return thaiHolyDays.compute(targetMonth);
+  } else {
+    console.log(mess);
+    return [];
+  }
+};
+</script>
+</head>
+<body onLoad="setNow()">
+<script language="JavaScript">
+const arabicnums = "0123456789";
+const thainums = "๐๑๒๓๔๕๖๗๘๙";
+function toThaiNum(num) {
+  let result = "";
+  const numStr = "" + num;
+  for (const ch of numStr) {
+    const numpos = arabicnums.indexOf(ch);
+    result += numpos > -1 ? thainums[numpos] : ch;
+  }
+  return result;
+}
+</script>
+<div class="thaicalarea">
+<form name="calarea" onSubmit="return false">
+<table class="thaicaltable">
+<tr><td colspan=7 align="center"><span style="font-size:1.5em;font-weight:bold;color:lightyellow;">Thai Holy Days</span></td></tr>
+<tr><td colspan=7 align="center"><span style="font-size:1em;font-weight:bold;color:lightyellow;">ปฏิทินวันพระไทย</span></td></tr>
+<tr><td colspan=7 align="center">
+<select name="monthSelector" style="background:lightgray;" onChange="selectMY()">
+  <option>January/มกราคม</option>
+  <option>February/กุมภาพันธ์</option>
+  <option>March/มีนาคม</option>
+  <option>April/เมษายน</option>
+  <option>May/พฤษภาคม</option>
+  <option>June/มิถุนายน</option>
+  <option>July/กรกฎาคม</option>
+  <option>August/สิงหาคม</option>
+  <option>September/กันยายน</option>
+  <option>October/ตุลาคม</option>
+  <option>November/พฤศจิกายน</option>
+  <option>December/ธันวาคม</option>
+</select>
+<select name="yearSelector" style="background:lightgray;" onChange="selectMY()">
+<script language="JavaScript">
+for (let y = thaiHolyDays.yearStart; y < thaiHolyDays.yearEnd; y++) {
+  const thaiyear = y + 543;
+  document.write("<option>" + y + "/" + toThaiNum(thaiyear) + "</option>");
+}
+</script>
+</select>
+</td></tr>
+<tr>
+<td class='thaical-dayhead'>Sun</td>
+<td class='thaical-dayhead'>Mon</td>
+<td class='thaical-dayhead'>Tue</td>
+<td class='thaical-dayhead'>Wed</td>
+<td class='thaical-dayhead'>Thu</td>
+<td class='thaical-dayhead'>Fri</td>
+<td class='thaical-dayhead'>Sat</td>
+</tr>
+<script language="JavaScript">
+for (let i = 0; i < 42; i++) {
+  if (i % 7 === 0) {
+    document.write("<tr>");
+  }
+  document.write("<td><input class='thaicalcell-normal' type=text size=2 readonly=true name=cell" + i + " onClick=cellClicked(" + i + ") /></td>")
+  if (i % 7 === 6) {
+    document.write("</tr>");
+  }
+}
+</script>
+<tr><td colspan=7 align="center">
+<input type="button" style="width:3em;" value="<<" onClick="prevYear()" />
+<input type="button" style="width:3em;" value="<" onClick="prevMonth()" />
+<input type="button" style="width:5em;" value="Today" onClick="setNow()" />
+<input type="button" style="width:3em;" value=">" onClick="nextMonth()" />
+<input type="button" style="width:3em;" value=">>" onClick="nextYear()" />
+</td></tr>
+<tr><td colspan=7 align=center>
+<input name="textoutputhead" class="thaical-textoutput" title="LP = Leap Year, EM = Extra Month, ED = Extra Day" readonly="true" type="text" />
+</td></tr>
+<tr><td colspan=7 align=center>
+<input name="textoutputen" class="thaical-textoutput" readonly="true" type="text" />
+</td></tr>
+<tr><td colspan=7 align=center>
+<input name="textoutputth" class="thaical-textoutput" readonly="true" type="text" />
+</td></tr>
+<tr><td colspan=7 align="center"><span style="font-size:0.65em;color:lightyellow;">© 2025 J.R. Bhaddacak (bhaddacak.github.io)</span></td></tr>
+</table>
+</form>
+</div>
+<script language="JavaScript">
+const engyearnames = new Array("rat", "cow", "tiger", "rabbit", "dragon", "snake", "horse", "goat", "monkey", "rooster", "dog", "pig");
+const thaiyearnames = new Array("ชวด", "ฉลู", "ขาล", "เถาะ", "มะโรง", "มะเส็ง", "มะเมีย", "มะแม", "วอก", "ระกา", "จอ", "กุน");
+const thaidaynames = new Array("อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัส", "ศุกร์", "เสาร์");
+const monthdays = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+let hdpos, thaimonths, thaidays;
+function isLeapYear(year) {
+    return ((year % 4) === 0) && ((year % 100) !== 0) || ((year % 400) === 0)
+}
+function clearArea(){
+  for(let c = 0; c < 42; c++){
+    document.calarea["cell" + c].value = " ";
+    document.calarea["cell" + c].className = "thaicalcell-normal";
+  }
+  document.calarea.textoutputhead.value = "";
+  document.calarea.textoutputen.value = "";
+  document.calarea.textoutputth.value = "";
+}
+function draw(y, m){
+  const workingDate = new Date(Date.UTC(y, m, 1));
+  const thisday = workingDate.getDay();
+  const thismonth = workingDate.getMonth();
+  const thisdate = workingDate.getDate();
+  const thisyear = workingDate.getFullYear();
+  if (isLeapYear(thisyear)) {
+    monthdays[1] = 29;
+  } else {
+    monthdays[1] = 28;
+  }
+  let offset = thisdate;
+  while (offset > 7)
+    offset -= 7;
+  offset = thisday - offset + 1;
+  if (offset < 0)
+    offset += 7;
+  const dlist = new Array();
+  for (let c = 0; c < offset; c++) {
+    dlist.push("");
+  }
+  for (let c = 0; c < monthdays[thismonth]; c++){
+    dlist.push(c + 1);
+  }
+  const targetInput = thisyear + "-" + (thismonth + 1);
+  const hdays = thaiHolyDays.computeMonth(targetInput);
+  hdpos = new Array();
+  thaimonths = new Array();
+  thaidays = new Array();
+  for (const item of hdays) {
+    hdpos.push(item.date.getDate() + offset - 1);
+    thaimonths.push(item.thaimonth);
+    thaidays.push(item.thaiday);
+  }
+  clearArea();
+  for (let c = 0; c < dlist.length; c++) {
+    document.calarea["cell" + c].value = dlist[c];
+  }
+  for (let c = 0; c < hdpos.length; c++) {
+    if (thaidays[c].slice(0,1) === "1") {
+      if (thaidays[c].indexOf("+") > -1) {
+        document.calarea["cell" + hdpos[c]].className = "thaicalcell-fullmoon";
+      } else {
+        document.calarea["cell" + hdpos[c]].className = "thaicalcell-newmoon";
+      }
+    } else {
+      document.calarea["cell" + hdpos[c]].className = "thaicalcell-halfmoon";
+    }
+  }
+  document.calarea.monthSelector.selectedIndex = thismonth;
+  document.calarea.yearSelector.selectedIndex = thisyear - thaiHolyDays.yearStart;
+  const today = new Date();
+  if (today.getFullYear() === workingDate.getFullYear() && today.getMonth() === thismonth){
+    document.calarea["cell" + (today.getDate() + offset - 1)].className = "thaicalcell-today";
+  }
+  showInfo(hdays);
+}
+function showInfo(hdays) {
+  const year = parseInt(document.calarea.yearSelector.value.split("/")[0]);
+  let yinfoEn = [];
+  let yinfoTh = [];
+  if (isLeapYear(year)) {
+    yinfoEn.push("LP");
+    yinfoTh.push("อธิกสุรทิน");
+  } else {
+    yinfoTh.push("ปกติสุรทิน");
+  }
+  switch (thaiHolyDays.getDayCount(year)) {
+    case 354:
+      yinfoTh.push("ปกติวาร");
+      break;
+    case 355:
+      yinfoTh.push("อธิกวาร");
+      yinfoEn.push("ED");
+      break;
+    case 384:
+      yinfoTh.push("อธิกมาส");
+      yinfoEn.push("EM");
+      break;
+  }
+  let info = document.calarea.yearSelector.value + " = " + yinfoTh.join(" ");
+  if (yinfoEn.length > 0)
+    info += " (" + yinfoEn.join(", ") + ")";
+  document.calarea.textoutputhead.value = info;
+  const months = [];
+  for (const hd of hdays) {
+    if (months.indexOf(hd.thaimonth) === -1)
+      months.push(hd.thaimonth);
+  }
+  let engInfo = "lunar month " + months.join(", ") + " of year ";
+  let thaiInfo = "เดือน " + toThaiNum(months.join(", ")) + " ปี";
+  const engYears = [];
+  const thaiYears = [];
+  for (const m of months) {
+    const yr = parseInt(document.calarea.yearSelector.value);
+    const ynum = document.calarea.monthSelector.selectedIndex >= 10 && parseInt(m) <= 2
+                 ? thaiHolyDays.getThaiYear(yr + 1)
+                 : thaiHolyDays.getThaiYear(yr);
+    const ynameEn = engyearnames[ynum];
+    const ynameTh = thaiyearnames[ynum];
+    if (engYears.indexOf(ynameEn) === -1)
+      engYears.push(ynameEn);
+    if (thaiYears.indexOf(ynameTh) === -1)
+      thaiYears.push(ynameTh);
+  }
+  document.calarea.textoutputen.value = engInfo + engYears.join(", ");
+  document.calarea.textoutputth.value = thaiInfo + thaiYears.join(", ");
+}
+function setNow() {
+  const now = new Date();
+  draw(now.getFullYear(), now.getMonth());
+}
+function nextMonth() {
+  let y, m;
+  if (document.calarea.monthSelector.selectedIndex === 11) {
+    if (document.calarea.yearSelector.selectedIndex === document.calarea.yearSelector.length - 1)
+      return;
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart + 1;
+    m = 0;
+  } else {
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart;
+    m = document.calarea.monthSelector.selectedIndex + 1;
+  }
+  draw(y, m);
+}
+function prevMonth() {
+  let y, m;
+  if (document.calarea.monthSelector.selectedIndex === 0) {
+    if (document.calarea.yearSelector.selectedIndex === 0)
+      return;  
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart - 1;
+    m = 11;
+  } else {
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart;
+    m = document.calarea.monthSelector.selectedIndex - 1;
+  }
+  draw(y, m);
+}
+function nextYear() {
+  let y, m;
+  if (document.calarea.yearSelector.selectedIndex === document.calarea.yearSelector.length - 1) {
+      return;
+  } else {
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart + 1;
+    m = document.calarea.monthSelector.selectedIndex;
+  }
+  draw(y, m);
+}
+function prevYear() {
+  let y, m;
+  if (document.calarea.yearSelector.selectedIndex === 0) {
+      return;
+  } else{
+    y = document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart - 1;
+    m = document.calarea.monthSelector.selectedIndex;
+  }
+  draw(y, m);
+}
+function selectMY() {
+  draw(document.calarea.yearSelector.selectedIndex + thaiHolyDays.yearStart, document.calarea.monthSelector.selectedIndex);
+}
+function cellClicked(pos) {
+  for (let c = 0; c < hdpos.length; c++) {
+    if (hdpos[c] === pos) {
+      const monthValues = document.calarea.monthSelector.value.split("/");
+      const yearValues = document.calarea.yearSelector.value.split("/");
+      const thisDate = document.calarea["cell" + hdpos[c]].value;
+      let messDay = monthValues[0].substr(0, 3) + " " + thisDate + ", " + yearValues[0];
+      messDay += " = " + toThaiNum(thisDate) + " " + monthValues[1] + " " + yearValues[1];
+      document.calarea.textoutputhead.value = messDay;
+      let messEn = "";
+      if (thaidays[c].charAt(0) === "1") {
+        messEn += thaidays[c].indexOf("+") > -1 ? "full-moon day" : "new-moon day";
+      } else {
+        messEn += "half-moon day";
+      }
+      messEn += " (" + thaidays[c] + ") ";
+      messEn += "of lunar month " + thaimonths[c];
+      document.calarea.textoutputen.value = messEn;
+      const yr = parseInt(yearValues[0]);
+      const thaiYear = document.calarea.monthSelector.selectedIndex >= 10 && parseInt(thaimonths[c]) <= 2
+                       ? thaiHolyDays.getThaiYear(yr + 1)
+                       : thaiHolyDays.getThaiYear(yr);
+      let messTh = "วัน" + thaidaynames[pos % 7];
+      if (thaidays[c].indexOf("+") > -1) {
+        messTh += " ขึ้น " + toThaiNum(thaidays[c].split("+")[0]);
+      } else {
+        messTh += " แรม " + toThaiNum(thaidays[c].split("-")[0]);
+      }
+      messTh += " ค่ำ เดือน " + toThaiNum(thaimonths[c]);
+      messTh += " ปี" + thaiyearnames[thaiYear];
+      document.calarea.textoutputth.value = messTh;
+    }
+  }
+}
+</script>
+</body>
+</html>
