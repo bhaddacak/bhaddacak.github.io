@@ -21,7 +21,7 @@ permalink: /
     - [Pāli Platform 3](/platform3) <span class="label">RC2</span>
     - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
-- [Calendar of Thai Holy Days](/thaiholydays) <span class="label label-green">new</span>
+- [Calendar of Thai Holy Days (ปฏิทินวันพระไทย)](/thaiholydays) <span class="label label-green">new</span>
 
 ## Graphics
 - [Wallpaper gallery 1: The Buddha](/wall01) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>

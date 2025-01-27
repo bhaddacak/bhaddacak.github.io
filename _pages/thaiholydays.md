@@ -2,7 +2,7 @@
 title: "Thai Holy Days"
 permalink: /thaiholydays
 is_application: true
-date: 2025-01-25 12:00:00 +0700
+date: 2025-01-27 12:00:00 +0700
 ---
 
 <script src="/assets/js/thaiholydays.js"></script>
@@ -232,16 +232,16 @@ setNow();
 
 As seen above, the limitation of the website's theme makes the program difficult to write. So, it is preferable to use this stand-alone version.
 
-- [Calendar of Thai Holy Days (stand-alone)](https://bhaddacak.github.io/assets/dist/thaiholydays.html){:target="\_blank"}
+- [Calendar of Thai Holy Days (ปฏิทินวันพระไทย)](https://bhaddacak.github.io/assets/dist/thaiholydays.html){:target="\_blank"} <span class="label">stand-alone</span>
 
 Apart from a different design, this version gives you more information in both Thai and English. The program is self-contained and ready to run everywhere that has a JavaScript-enabled web browser. This is an ideal cross-platform application, the smallest and fastest of its kind.
 
 To use the program in your device, go to the page above, save it to your device and open it with a web browser. For future uses, you may need to set a bookmark for it.
 
 Here are abbreviations shown in the program:
-- LY = Leap Year (*adhikasuradina*)
-- EM = Extra Month (*adhikamāsa*)
-- ED = Extra Day (*adhikavāra*)
+- LY = Leap Year (*adhikasuradina*), a year with 29-day February
+- EM = Extra Month (*adhikamāsa*), a year with an intercalary month
+- ED = Extra Day (*adhikavāra*), a year with an intercalary day
 
 Colors used in normal day-mode display are:
 - Orange = full-moon (clickable)
