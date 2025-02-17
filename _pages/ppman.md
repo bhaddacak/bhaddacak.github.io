@@ -1,6 +1,6 @@
 ---
 title: "Pāli Platform's user manual"
-permalink: /ppmanual
+permalink: /ppman
 version: 2.0
 ---
 

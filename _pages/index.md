@@ -14,14 +14,14 @@ permalink: /
 - [Buddhist Discourses in Thai Merit-Making Rituals](/buddisthai) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 - [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
 - [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
-- [Pāli Platform's User Manual](/ppmanual) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
+- [Pāli Platform's User Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
     - [Pāli Platform 3](/platform3) <span class="label">RC2</span>
     - [Pāli Platform Classic](/ppclassic)
 - [Pāli Platform Meditation Timer (PPMT)](/ppmt) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#android"></use></svg>
-- [Calendar of Thai Holy Days (ปฏิทินวันพระไทย)](/thaiholydays) <span class="label label-green">new</span>
+- [Calendar of Thai Holy Days (ปฏิทินวันพระไทย)](/thaiholydays)
 
 ## Graphics
 - [Wallpaper gallery 1: The Buddha](/wall01) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#images"></use></svg>

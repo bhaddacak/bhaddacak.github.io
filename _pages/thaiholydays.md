@@ -2,7 +2,7 @@
 title: "Thai Holy Days"
 permalink: /thaiholydays
 is_application: true
-date: 2025-01-27 12:00:00 +0700
+date: 2025-02-05 12:00:00 +0700
 ---
 
 <script src="/assets/js/thaiholydays.js"></script>
@@ -239,9 +239,9 @@ Apart from a different design, this version gives you more information in both T
 To use the program in your device, go to the page above, save it to your device and open it with a web browser. For future uses, you may need to set a bookmark for it.
 
 Here are abbreviations shown in the program:
-- LY = Leap Year (*adhikasuradina*), a year with 29-day February
-- EM = Extra Month (*adhikamāsa*), a year with an intercalary month
-- ED = Extra Day (*adhikavāra*), a year with an intercalary day
+- LY = Leap Year (*adhikasuradina*), a year with 29-day February (an intercalary solar day)
+- EM = Extra Month (*adhikamāsa*), a year with an intercalary lunar month
+- ED = Extra Day (*adhikavāra*), a year with an intercalary lunar day
 
 Colors used in normal day-mode display are:
 - Orange = full-moon (clickable)

@@ -32,7 +32,7 @@ The program is fully portable, no installation required. On 64-bit Windows (7+),
 
 Since there is no dedicated manual for this version yet, please take time to learn the program by yourselves. It is really powerful. Most windows has their help, and the interface is easy to understand. You have to be familiar with it first. This product comes from countless hours of my engineering effort in years. 
 
-For the old manual, see [PP2Man](ppmanual).
+For the old manual, see [PP2Man](ppman).
 
 ## Notes on CST better corrected version
 
