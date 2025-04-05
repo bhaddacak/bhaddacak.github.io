@@ -18,11 +18,15 @@ The program in its beta state is quite stable now, but testing is still needed. 
 
 ### Executable
 
-- [PaliPlatform3.0-RC2](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-230 MB)<span class="label label-green">updated</span>
+- [Pali Platform v3.0.8](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-240 MB)
 
 ### Source code
 
 - [Pāli Platform 3](https://github.com/bhaddacak/paliplatform){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg>
+
+### User's manual
+
+- [Pāli Platform: The Official Manual](/ppman){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 ![Pāli Platform 3's main screen](/assets/images/platform3-main-dark.png)
 
@@ -30,9 +34,7 @@ The program in its beta state is quite stable now, but testing is still needed. 
 
 The program is fully portable, no installation required. On 64-bit Windows (7+), you can download the `winready` package, which is ready to run on that machine. For other platforms, please consult `README.txt` in the bundle. I will not reproduce here.
 
-Since there is no dedicated manual for this version yet, please take time to learn the program by yourselves. It is really powerful. Most windows has their help, and the interface is easy to understand. You have to be familiar with it first. This product comes from countless hours of my engineering effort in years. 
-
-For the old manual, see [PP2Man](ppman).
+Now that *Pāli Platform: The Official Manual* is available in the recent package, the full information about the program should be read from the manual.
 
 ## Notes on CST better corrected version
 
@@ -56,14 +58,7 @@ It suffices to say that *n’ti* is better than *’nti*. You can also see this 
 
 ## Notes on BJT collection
 
-The BJT of tipitaka.lk recently bundled with the program is under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/){:target="\_blank"} license. I can do only convert the text into Roman script. Even many errors were found, I left them unedited (for the official release version).
-
-In fact, the editing has been done in RC1 version, but revoked due to the license. To make the edited version available, I therefore share it as my personal treatment. So, please recognize this as an unofficial version of BJT Pāli. Any flaws found in this collection attribute to me only.
-
-- [Unofficial BJT Pāli](https://drive.google.com/file/d/1UBmeWlc-DWafhpJ0B5ELNlwKdvlfueeP/view?usp=sharing){:target="\_blank"}
-- [Unofficial nti-fixed BJT Pāli](https://drive.google.com/file/d/1SOqtaL5tm5vYwFrBaXYpQGdDgtzkzBRq/view?usp=sharing){:target="\_blank"}
-
-To make use of these files (only one at a time), rename either one to `bjt_pali.zip` and replace the old file in `data/text/bjt` (it is better to keep the old one by renaming it to something else first).
+The BJT of tipitaka.lk recently bundled with the program is under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/){:target="\_blank"} license. I can do only convert the text into Roman script. Even many errors were found, I left them unedited.
 
 ## Manual installation of patches
 

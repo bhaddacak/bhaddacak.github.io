@@ -1,35 +1,33 @@
 ---
-title: "Pāli Platform's user manual"
+title: "Pāli Platform: The Official Manual"
 permalink: /ppman
-version: 2.0
+code: "ppman"
+version: 3.0
+year: 2025
 ---
 
-Now the program has been updated and branched. Several features are also planned to add soon. This entails that the manual will be substantially revised. This can take some time. However, the old manual (PP2Man) is still usable for the recent update.
-
-![PP2MAN](/assets/images/pp2man.png)
+![PPMAN](/assets/images/ppman.jpg)
 
 | --- | --- |
-| Book title: | **Pāli Platform 2: The Official Manual** |
+| Book title: | **Pāli Platform: The Official Manual** |
 | Author: | *J.R. Bhaddacak* |
-| Description: | The survival manual of Pāli Platform 2 |
-| Project code: | pp2man |
+| Description: | The official manual of Pāli Platform |
+| Project code: | ppman |
 | Version: | {{ page.version }} |
-| License: | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) |
-| File: | [pp2man.pdf](https://drive.google.com/file/d/1N7e1FYr1LGP5PbYWtQhsqxT9bn7FX-m-/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| Typical citation: | Bhaddacak, J. R. 2023. *Pāli Platform 2: The Official Manual*. {{ page.version }}. https://bhaddacak.github.io/pp2man |
+| License: | [GNU Free Documentation License](https://www.gnu.org/licenses/){:target="\_blank"} |
+| Source: | [PPMan at Github](https://github.com/bhaddacak/{{ page.code }}){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> |
+| Download: | [PPMan releases at Github](https://github.com/bhaddacak/{{ page.code }}/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> |
+| Typical citation: | Bhaddacak, J. R. {{ page.year }}. *{{ page.title }}*. {{ page.version }}. https://bhaddacak.github.io/{{ page.code }} |
 | Notes: | The file is already included in the program's package.|
 
 #### Bib file entry
 ```bib
-@book{bhaddacak:pp2man,
+@book{bhaddacak:ppman,
 	author = {J. R. Bhaddacak},
-	title = {Pāli Platform 2},
+	title = {Pāli Platform},
 	subtitle = {The Official Manual},
-	edition = {2.0},
-	year = {2023},
-	url = {https://bhaddacak.github.io/pp2man},
+	edition = {3.0},
+	year = {2025},
+	url = {https://bhaddacak.github.io/ppman},
 }
 ```
-
-#### Preview
-{% include embed.html url="https://drive.google.com/file/d/1N7e1FYr1LGP5PbYWtQhsqxT9bn7FX-m-/preview" %}

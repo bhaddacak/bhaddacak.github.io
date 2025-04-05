@@ -2,7 +2,7 @@
 title: "Siam Rath Tipiṭaka Reader"
 permalink: /srtreader
 is_application: true
-date: 2023-10-17 12:00:00 +0700
+date: 2025-03-20 12:00:00 +0700
 ---
 
 This is the full set (45 volumes) of Siam Rath Pāli canon in Roman script. The Thai script version can be found at [Learn Tripitaka](http://www.learntripitaka.com/){:target="\_blank"}. The source also includes the Pāli commentaries (48 volumes). All these will be available soon in `Pāli Platform 3` (forthcoming). The printed version can be downloaded here, Vols: [1](http://www.car.chula.ac.th/rarebook/book2/clra58_0001.pdf){:target="\_blank"}, [2](http://www.car.chula.ac.th/rarebook/book2/clra58_0002.pdf){:target="\_blank"}, ...[45](http://www.car.chula.ac.th/rarebook/book2/clra58_0045.pdf){:target="\_blank"}. Typically, the Thai Pāli canon is refered by volume, paragraph, and page number, e.g., Dī Sī 9/314/250 (the paragraph number does not conform to those in CSCD), but in the older system only volume and page number are used. In this tool, once a page is selected to go, the user can navigate to pages by keyboard. Dehyphenation is done by computing, so it can get wrong in some cases.
@@ -87,7 +87,7 @@ Tepiṭakaṃ buddhavacanaṃ nāma buddhassa bhagavato dhammavinayassa samodhā
 Aparabhāge buddhassa bhagavato parinibbānā chattiṃsasaṃvaccharuttaresu catussatādhikesu dvīsu saṃvaccharasahassesu atikkantesu cūḷālaṅkaraṇo nāma syāmānaṃ piyamahārājā tiṇṇaṃ piṭakānaṃ bhiyyoso patthaṭabhāvaṃ patthayanto tadā tipiṭakadhare therānutthere bhuddhassa bhagavato tepiṭakaṃ bhuddhavacanaṃ sodhāpetvā syāmaraṭṭhasmiṃ paṭhamaṃ muddāpesi. Tampana tattha tattha vissajjāpittāya itāni anavasiṭṭhaṃ hoti atidullabhaṃ. Tasmāyaṃ puna muddāpesuṃ sampattakāloyeva.
 </p>
 <p style="text-align:left">
-Apica kho imasmiṃ saṃvacchare kālakato mahāvajirāvudho nāma mahārājā maraṇāsannakāle mama kālakatassa anussaraṇatthāya yo koci bhuddhasāsanupakaraṇo gantho muddāpito hotūti āṇāpesi. Atha paramindo mahāpajādhipako nāma mahārājā imasmiṃ kale rajjaṃ kārento mayhaṃ jeṭṭhabhāturañño manorathassa samijjhanatthāya tepiṭakaṃ bhuddhavacanameva muddāpetabbayuttakanti vicinitvā jinavarasaṅgharājappamukhe tepiṭake therānutthere ārādhetvā pubbe mudditaṃ puna sodhāpetvā tassa muddāpane attano dhanaṃ pariccajituṃ syāmaraṭṭhavāsiṃ mahājanaṃ samādapesi.
+Apica kho imasmiṃ saṃvacchare kālakato mahāvajirāvudho nāma mahārājā maraṇāsannakāle mama kālakatassa anussaraṇatthāya yo koci bhuddhasāsanupakaraṇo gantho muddāpito hotūti āṇāpesi. Atha paramindo mahāpajādhipako nāma mahārājā imasmiṃ kāle rajjaṃ kārento mayhaṃ jeṭṭhabhāturañño manorathassa samijjhanatthāya tepiṭakaṃ bhuddhavacanameva muddāpetabbayuttakanti vicinitvā jinavarasaṅgharājappamukhe tepiṭake therānutthere ārādhetvā pubbe mudditaṃ puna sodhāpetvā tassa muddāpane attano dhanaṃ pariccajituṃ syāmaraṭṭhavāsiṃ mahājanaṃ samādapesi.
 </p>
 <p style="text-align:left">
 Evamidaṃ tiṇṇaṃ piṭakānaṃ samūhabhūtaṃ syāmaraṭṭhassa tepiṭakaṃ rājappamukhe syāmaraṭṭhavāsinā mahājanena buddhassa bhagavato parinibbānā catussatādhikanaṃ dvinnaṃ sahassānamupari aṭṭhasaṭṭhiyā vassānamaccayena muddāpetuṃ āraddhaṃ.
