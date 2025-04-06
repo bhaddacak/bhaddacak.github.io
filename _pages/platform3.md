@@ -2,7 +2,7 @@
 title: "Pāli Platform 3"
 permalink: /platform3
 is_article: true
-date: 2025-01-02 12:00:00 +0700
+date: 2025-04-06 12:00:00 +0700
 ---
 
 - TOC
@@ -14,7 +14,7 @@ Finally, `Pāli Platform 3` is here. The look is not much changed, but its funct
 
 ## Links
 
-The program in its beta state is quite stable now, but testing is still needed. Let us help the making the best Pāli tool. Now the program comes with an updating system or `Patch Installer`. If patches are available, the program can load and install them to itself. This is not automatically, so the users have to learn how the system works.
+The program now has its full release, but bugs still lurk somewhere. Let us help the making of the best Pāli tool. Now the program comes with an updating system or `Patch Installer`. If patches are available, the program can load and install them to itself. This is not automatically, so the users have to learn how the system works.
 
 ### Executable
 
@@ -22,7 +22,7 @@ The program in its beta state is quite stable now, but testing is still needed. 
 
 ### Source code
 
-- [Pāli Platform 3](https://github.com/bhaddacak/paliplatform){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg>
+- [Pāli Platform](https://github.com/bhaddacak/paliplatform){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg>
 
 ### User's manual
 
