@@ -2,7 +2,7 @@
 title: "Tipiṭaka Correction Report"
 permalink: /correport
 is_article: true
-date: 2025-01-02 12:00:00 +0700
+date: 2025-04-10 12:00:00 +0700
 ---
 
 - TOC
@@ -59,10 +59,22 @@ Mostly we can fix the *nti* programmatically. See the actual program for this co
 
 The tipitaka.lk's BJT texts hosted in [GRETIL](http://gretil.sub.uni-goettingen.de/gretil.htm) are really messy. A better digital version of that collection is maintained by [Path Nirvana Foundation](https://pathnirvana.org){:target="\_blank"} at this [Github](https://github.com/pathnirvana/tipitaka.lk/tree/master/public/static/text){:target="\_blank"}. So, I decide to remove the GRETIL BJT corpus from PP3 and use this better version instead (available in PP3 RC1 onward).
 
+This corpus is easier to deal with than the CST4 XML, and it has undergone a similar treatments. You can see my programs used here at [Tipiṭaka-Kit](https://github.com/bhaddacak/tipitaka-kit){:target="\_blank"}. And please go through its `README` first.
+
+### Report from character analysis
+
 When I worked on this corpus as I always do for every text collection I use, I also found several errors myself, reported in the links below. Because this corpus uses [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/) license, I leave these errors unedited. 
 
 > *BJT Pāli Correction Report*
 > - [Excel](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/bjt/bjt_pali_correction_report.xlsx){:target="\_blank"}
 > - [Gnumeric](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/bjt/bjt_pali_correction_report.gnumeric){:target="\_blank"}
+>
+> Most of errors in this report are now fixed.
 
-This corpus is easier to deal with than the CST4 XML, and it has undergone a similar treatments. You can see my programs used here at [Tipiṭaka-Kit](https://github.com/bhaddacak/tipitaka-kit){:target="\_blank"}. And please go through its `README` first.
+### Report on odd sequences
+
+Odd sequences are unexpected character sequences that signal possible errors. Triple letters are a common error often found in poorly edited Pāli text, for example. There are also other kinds of odd sequences that can be detected programmatically. All possible errors found from odd sequence analyses are reported here:
+
+> *BJT Odd Sequence Report*
+> - [Text](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/bjt/bjt_odd_seq_report.txt){:target="\_blank"}
+> - [PDF](https://raw.githubusercontent.com/bhaddacak/tipitaka-kit/main/bjt/bjt_odd_seq_report.pdf){:target="\_blank"}
