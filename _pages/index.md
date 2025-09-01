@@ -15,7 +15,7 @@ permalink: /
 - [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
 - [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
 - [Pāli Platform's User Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
-- [Grammatical Suttas of Kaccāyana](/ksut) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v0.8</span>
+- [Grammatical Suttas of Kaccāyana](/ksut) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v0.9</span>
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>

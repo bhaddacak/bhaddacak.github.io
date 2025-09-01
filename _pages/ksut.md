@@ -2,7 +2,7 @@
 title: "Grammatical Suttas of Kaccāyana"
 permalink: /ksut
 code: "ksut"
-version: 0.8-snapshot
+version: 0.9
 year: 2025
 ---
 
@@ -24,7 +24,7 @@ year: 2025
 @book{bhaddacak:ksut,
 	author = {J. R. Bhaddacak},
 	title = {Grammatical Suttas of Kaccāyana},
-	edition = {0.8},
+	edition = {0.9},
 	year = {2025},
 	url = {https://bhaddacak.github.io/ksut},
 }
