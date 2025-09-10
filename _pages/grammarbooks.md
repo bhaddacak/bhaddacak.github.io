@@ -2,7 +2,7 @@
 title: "Traditional Pāli Grammar Books"
 permalink: /grammarbooks
 is_article: true
-date: 2024-10-05 12:00:00 +0700
+date: 2025-09-10 12:00:00 +0700
 ---
 
 - TOC
@@ -17,6 +17,8 @@ Western students may find these works difficult, because it is hard to get full 
 The head of all suttas in the grammar books presented here are put together, suitable for search and overview, in [Grammatical Sutta Finder](/gramsut){:target="\_blank"}. This tools can also relate one work to each other.
 
 For those who are interested in Pāli roots, they can use [Pāli Root Finder](/paliroot){:target="\_blank"} to examine the whole territory. And apart from Saddanīti Dhātumālā listed below, [Kaccāyana-dhātumañjūsā](/dhmjs){:target="\_blank"} and [Dhātvatthasaṅgaha](/dhatva){:target="\_blank"} can be good sources for learning.
+
+A more comprehensive environment to study all these, plus more other texts, is [Pāli Platform](/paliplatform){:target="\_blank"}. Now the program is more updated than the contents here.
 
 ### 1. Kaccāyanabyākaraṇaṃ
 
@@ -34,7 +36,7 @@ The Kaccāyana has a number of commentaries or rearranged works. The most import
 
 The second big school is of Moggallāna. The work was written in the early 12th century. It often has different views from Kaccāyana. As noted by K. R. Norman, "Moggallāna deals with the linguistic material more exhaustively and with greater understanding of the essence and character of Pali."[^norman-mogg] In general, the formulas of Moggallāna's suttas are terse and more difficult to decipher.
 
-Moggallāna wrote his own commentary known as *Moggallānapañcikā*, now lost. What we have here is *Moggallānapañcikāṭīkā* and it is somewhat difficult to follow. A more popular commentary on Moggallāna is *Payogasiddhi* written by Medhaṅkara around the 13th century. Its status is like Rūpasiddhi to Kaccāyana. So, I put Moggallāna and Payogasiddhi together in the same manner. However, the Pañcikā is also included as the reader's option.
+Moggallāna wrote his own commentary known as *Moggallānapañcikā*. What we have here is *Moggallānapañcikāṭīkā* and it is somewhat difficult to follow. A more popular commentary on Moggallāna is *Payogasiddhi* written by Medhaṅkara around the 13th century. Its status is like Rūpasiddhi to Kaccāyana. So, I put Moggallāna and Payogasiddhi together in the same manner. However, the Pañcikā is also included as the reader's option.
 
 Another recent important commentary in this school is Leḍī Sayāḍo's *Niruttidīpanī*, finished in 1903. With this work, we can link Moggallāna to Kaccāyana and Saddanīti suttas. This is really helpful to Pāli students and researchers for doing a comparative study.
 

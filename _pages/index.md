@@ -15,7 +15,7 @@ permalink: /
 - [Pāli for New Learners](/pnl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
 - [Pāli Text Reading: A Handbook](/ptr) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
 - [Pāli Platform's User Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v3.0</span>
-- [Grammatical Suttas of Kaccāyana](/ksut) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v0.9</span>
+- [Grammatical Suttas of Kaccāyana](/ksut) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v0.9.1</span>
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
@@ -44,28 +44,7 @@ permalink: /
 - [Siam Rath Tipiṭaka Reader](/srtreader)
 - [Dhammapadaṭṭhakathā Reader](/dhpareader)
 - [Traditional Pāli Grammar Books](/grammarbooks)
-	- [Kaccāyana-Rūpasiddhi](/kaccrupa)
-	- [Single Sutta Kaccāyana](/kacc)
-	- [Single Sutta Rūpasiddhi](/rupa)
-	- [Moggallāna-Payogasiddhi](/moggpayo) (+Pañcikāṭīkā)
-	- [Single Sutta Moggallāna](/mogg)
-	- [Single Sutta Payogasiddhi](/payo)
-	- [Niruttidīpanī](/nirutti)
-	- [Single Sutta Niruttidīpanī](/niru)
-	- [Saddanīti Padamālā](/saddpad)
-	- [Saddanīti Dhātumālā](/sadddha)
-	- [Saddanīti Suttamālā](/saddsut)
-	- [Single Sutta Suttamālā](/sadd)
-	- [Abhidhānappadīpikā](/abhidha) (+Ṭīkā)
-	- [Subodhālaṅkāra](/subho)
-	- [Subodhālaṅkāraṭīkā](/subhot)
-	- [Vuttodaya](/vutt)
-    - [Kaccāyana-dhātumañjūsā](/dhmjs)
-	- [Dhātvatthasaṅgaha](/dhatva)
 - [Pāli Literature of Thailand](/thaipalitext)
-	- [Maṅgalatthadīpanī I](/mdreader?v=1)
-	- [Maṅgalatthadīpanī II](/mdreader?v=2)
-	- [Buddhaghosappavattikathā](/bgpv)
 
 ## Online Pāli Tools
 - [Pāli Passage Reader](/ppreader)
