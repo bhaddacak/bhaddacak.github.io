@@ -2,7 +2,7 @@
 title: "Grammatical Suttas of Kaccāyana"
 permalink: /ksut
 code: "ksut"
-version: 0.9.1
+version: 0.9.2
 year: 2025
 ---
 
