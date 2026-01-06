@@ -1,24 +1,24 @@
 ---
-title: "Pāli Platform 3"
-permalink: /platform3
+title: "Pāli Platform 4"
+permalink: /platform4
 is_article: true
-date: 2025-12-22 12:00:00 +0700
+date: 2026-01-05 12:00:00 +0700
 ---
 
 - TOC
 {:toc}
 
-![Pāli Platform 3's About](/assets/images/platform3-about-dark.png)
+![Pāli Platform 4's About](/assets/images/platform4-about.png)
 
-Finally, `Pāli Platform 3` is here. The look is not much changed, but its functions surpass the old one in many respects. This About window has something hidden. Let us find out.
+Here comes the most comprehensive tool for Pāli studies. This major release focuses more on usability. There are many enhancements in features and optional settings. The program is now directed to support Sanskrit learning as well.
 
 ## Links
 
-The program now has its full release, but bugs still lurk somewhere. Let us help the making of the best Pāli tool. Now the program comes with an updating system or `Patch Installer`. If patches are available, the program can load and install them to itself. This is not automatically, so the users have to learn how the system works.
+Normally, the program will be released in two forms: (1) for all platforms without JRE, and (2) the same as the former but including JRE for 64-bit Windows. The latter is marked by `winready`.
 
 ### Executable
 
-- [Pali Platform v3.6.0](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-240 MB)
+- [Pali Platform v4.0.0](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-240 MB)
 
 ### Source code
 
@@ -28,13 +28,36 @@ The program now has its full release, but bugs still lurk somewhere. Let us help
 
 - [Pāli Platform: The Official Manual](/ppman){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
-![Pāli Platform 3's main screen](/assets/images/platform3-main-dark.png)
+The manual still lags behind the development, but some information is relevant. An up-to-date revision will be launched after the program is stable for a while.
+
+![Pāli Platform 4's main screen](/assets/images/platform4-main.png)
 
 ## Installation guide
 
 The program is fully portable, no installation required. On 64-bit Windows (7+), you can download the `winready` package, which is ready to run on that machine. For other platforms, please consult `README.txt` in the bundle. I will not reproduce here.
 
 Now that *Pāli Platform: The Official Manual* is available in the recent package, the full information about the program should be read from the manual.
+
+## Features developed from 3.2 to 4.0
+
+Started from version 3.2, the program has been enhanced in several aspects. Here are notable some.
+
+- **Grammatical books edited and added**. After I have translated Kaccāyana's suttas, the text has also been edited substantially, as well as some related texts have been added to the collection.
+- **Margaret Cone's dictionary support**. This can be really helpful for students, but the data is not bundled to the program (due to the copyright concern). The user has to download this separately.
+- **Integration of CST Devanāgarī base XMLs**. This corpus is the fountainhead of all digital version of the CST data. The program helps you access to the source easily, but knowledge of Devanāgarī is now required.
+- **New transliterating engine**. Now the program can handle transliteration properly, including Myanmar (but still not perfect). All scripts can be converted back and forth. And we have several options for Roman transliterations, including Sanskrit support.
+- **Several enhancements of settings**. There are several default settings added to the program. This can make the program more user-friendly.
+- **`CpUtil` added**. This command-line tool can help power users access and manipulate the text corpora easier. This tool complements `ScUtil` developed earlier (see below).
+- **Essential Sanskrit dictionaries added**. The is a solid helper for all serious learners of Pāli and Sanskrit.
+- **Support of GRETIL Sanskrit documents**. Now the Sanskrit GRETIL corpus is seen as a collection by the program. This means you can list, view, and search the documents like you do in all Pāli collections.
+
+## Future plan for Sanskrit learning tools
+
+There is feasibility to implement grammatical tools for Sanskrit learning, comparable to what we have in the Pāli tools, such as root exploration, declension table, and conjugation table, and more essential in Sanskrit, such as sandhi combiner, and sandhi analyzer. The latter two are fundamental and needs to be developed first.
+
+We will see all these tool in coming releases later on. Because of the complexity, they need time to study, analyze, design, and finish.
+
+The following part is taken from the page of the former `Pāli Platform 3`. Some sections are also updated.
 
 ## Notes on CST better corrected version
 
@@ -71,13 +94,13 @@ This is not recommended but sometimes you may find it necessary. When patches ar
 
 Since the patch installation is destructive, it can unexpectedly break the program. So, it is better to keep the original program's zip file at hand to use as an emergency recovery.
 
-## Manual installation of DPD and SuttaCentral data
+## Manual installation of data
 
-Even though the program has download helpers for DPD and SuttaCentral data, in some situations you may need to install them manually. For example, you may want to use the latest release of DPD.
+Even though the program has download helpers for data such as DPD, SuttaCentral, Sanskrit dictionaries and documents, in some situations you may need to install them manually.
 
 ### DPD
 
-When a new release of DPD is launched, I need some time to test that its structure is not changed to the extent that it may break the program's functionality. But, sometimes I have no access to the Internet for weeks or even months. The update for the link therefore can be late.
+When a new release of DPD is launched, I need some time to test that its structure is not changed to the extent that it may break the program's functionality. But, sometimes I have no access to the Internet for weeks or even months. The update for the link therefore can be late. (In PP4, we have an option to download the latest version of DPD at your own risk.)
 
 To solve the problem *ad hoc*, you need to know how to put the file properly, but at the risk of breaking the system (rarely, I suppose).
 
@@ -86,7 +109,7 @@ To solve the problem *ad hoc*, you need to know how to put the file properly, bu
     1. Unpack it yourself with your known utility and place or replace `dpd.db` in directory `data/db/`.
     2. To use the program's unpacker, you have to place `dpd.db.tar.bz2` in directory `cache/` (if not exist, create one at the program's root). Then use the `DPD downloader` to install the file with the **Skip download** option checked. Then wait for some minutes.
 
-Recently, I added a script wrapper of `DpdUtil` (available in version RC1 onward) to ease the test. This can check the applicability of the database by a command line. After the database is unpacked or installed to the program, enter this command:
+Recently, I added a script wrapper of `DpdUtil` to ease the test. This can check the applicability of the database by a command line. After the database is unpacked or installed to the program, enter this command:
 
 ```
 (Linux/macOS)
@@ -104,6 +127,18 @@ In the case of SuttaCentral data, it will be easier because the link is unlikely
 - Place or replace the file in `data/text/sc/`. If directory `sc` does not exist, create a new one.
 
 The structure of SC data is quite stable. So, the new file is unlikely to break the program. If it is the case, however, please report this to me.
+
+### Sanskrit dictionaries
+
+Installing Sanskrit dictionaries manually is awkward for normal users. For power users, I will guide you briefly as follows:
+
+- Study `pp4urls.properties` at the program's root after the first run with the Internet access. You can see the required URLs there for the eight dictionaries, i.e., `mw_url, ap_url, shs_url, md_url, bhs_url, mwe_url, ae_url, bor_url`. Download all these and place the files in `cache/`.
+- Open the Sanskrit Dict Downloader, check the **Skip download** option and press **Start**.
+- Another way to do is unpacking the zip files to get the dict `.txt` file, and place all txt files (8 totally) into `data/dict/`. Then use the program's menu *Create Skt. Dict data*.
+
+### Sanskrit documents
+
+Installing GRETIL Sanskrit documents by hand is easy. Just download the Sanskrit zip file, [1_sanskr.zip](https://gretil.sub.uni-goettingen.de/gretil/1_sanskr.zip){:target="\_blank"}. Then place the file in `data/text/skt/` (do not unzip it). If the folder does not exist yet, create a new one.
 
 ## ScUtil (SuttaCentral Utilities)
 
@@ -129,12 +164,3 @@ $ ./scutil.sh show -t mn1
 > scutil show -t mn1
 ```
 
-## Notes on Myanmar script transliteration
-
-I have tackled with Myanmar script transformation for several days after knowing that the former conversion is wrong in many places. I myself do not know Myanmar, so it is really awkward to me to solve the problem. Thanks to Antonio Costanzo, I can handle it in the end.
-
-Now we can convert Roman to Myanmar correspondingly well enough to the printed texts (but still not perfect). But we also lose the Myanmar to Roman converting capacity. That is inevitably because in many cases we have to manipulate the characters programmatically. Reverting the conversion is very difficult, so I drop this functionality.
-
-Unfortunately, the conversion does not conform to any standard, and indeed it uses a lot of tinkering. The main reason is Java cannot handle Myanmar script well enough (due to the lack of standard, I guess). As a result, we have to use exclusive fonts modified for this purpose only. And the texts produced by the conversion cannot be used elsewhere without the use of these fonts.
-
-Recently, I brought back the straight conversion of Myanmar script, available only in Batch Script Transformer. This can convert Roman text to Myanmar in a sort of standard way that can be used elsewhere. Still, the conversion is close enough to that done by the CST4 program (not identical) and far from perfect.
