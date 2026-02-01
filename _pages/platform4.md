@@ -2,7 +2,7 @@
 title: "Pāli Platform 4"
 permalink: /platform4
 is_article: true
-date: 2026-01-05 12:00:00 +0700
+date: 2026-02-01 12:00:00 +0700
 ---
 
 - TOC
@@ -29,6 +29,12 @@ Normally, the program will be released in two forms: (1) for all platforms witho
 - [Pāli Platform: The Official Manual](/ppman){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg>
 
 The manual still lags behind the development, but some information is relevant. An up-to-date revision will be launched after the program is stable for a while.
+
+### Tutorials
+
+- Presentations for a quick learning and workshops can be found in the release's assets
+- Some tutorial videos can be found at [YouTube](https://www.youtube.com/@Bhaddacak){:target="\_blank"}
+- Difficult points worthy for tutorials should be suggested to the author
 
 ![Pāli Platform 4's main screen](/assets/images/platform4-main.png)
 
