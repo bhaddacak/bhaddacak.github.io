@@ -2,13 +2,13 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2024-11-21 12:00:00 +0700
+date: 2026-02-08 12:00:00 +0700
 ---
 
 - TOC
 {:toc}
 
-After I studied Buddhism seriously and critically, it happens that many things taught by the tradition have to be discarded. I do not want to make myself in trouble by rejecting the tradition. But rather my integrity does not allow inconsistency happens. When we really understand things critically, we cannot help rejecting things not conforming to what we hold as true.
+After I studied Buddhism seriously and critically, it happens that many things taught by the tradition have to be discarded. I do not want to make myself in trouble by rejecting the tradition. But rather my integrity does not allow inconsistency (which probably leads to hypocrisy). When we really understand things critically, we cannot help rejecting things not conforming to what we hold as true.
 
 Still, many things in Buddhism survive the bomb of critical thinking, and we can apply them to our contemporary life. Here I will show the most realistic use of Buddhism that has withstood tests for more than two millennia. But to make it applicable to the world today, we have to interpret it with new light.
 
@@ -35,7 +35,7 @@ It is worth noting that, the wholesome life in Buddhist view is not achieved by 
 
 The threefold learning is the backbone of Buddhist training (sikkhā), commonly known as the triad *sīla* (morality), *samādhi* (concentration), and *paññā* (wisdom). The general idea is simple: Embarking on the Buddhist way of living, one must learn (a) to behave properly or be moral, (b) to concentrate the mind, and (c) to be wise.
 
-The general idea is so vague that applying these to the real life looks indistinct from the general good way of living. Unquestionably, one has to be ethical according to the social standard, and to be wise is far better than to be foolish. Concentration sounds a little unique, but it can mean the opposite of ADHD (Attention  Deficit Hyperactivity Disorder), which normal, healthy people have.
+The general idea is so vague that applying these to the real life looks indistinct from the general good way of living. Unquestionably, one has to be ethical according to the social standard, and to be wise is far better than to be foolish. Concentration sounds a little unique, but it can mean the opposite of ADHD (Attention Deficit Hyperactivity Disorder), which normal, healthy people have.
 
 To understand the training in the Buddhist way, we have to trace its origin first. Surprisingly, there are scanty details on the subject. Mostly they are just mentioned by each name, without any further explanation. An important instance can be found in Mahāparinibbānasutta.
 
@@ -153,6 +153,25 @@ I suggest instead that those who lead themselves with the Buddhist way of traini
 
 [^healthiness]: If an explanation has to be given at all, I will define the ultimate goal as *healthiness in its entirety*.
 
+## The practical idea of liberation
+
+Suggestion in the previous section that practitioners should delete 'liberation' and the like from their practical dictionary may make some feel uncomfortable or ungrounded or a little blasphemous. So, I add an illustration of the idea of liberation according to our model, shown in Figure 3.
+
+<center>
+<img src="assets/images/self-dev-graph.jpg" alt="Personal development graph" title="Personal development graph" />
+<br>Figure 3: Personal development graph
+</center>
+
+The graph shows unfolding patterns of people. We divide people into two groups here: the trained (green line) and the untrained (orange line). The former is of those who embarks on the path of religious practice, i.e., the self-development according to the Buddhist model (or other similar models). The latter is of the rest, the common worldly people.
+
+The development of the untrained is familiar to most of us. The pattern is highly wavering. Sometimes the life is up (we are happy), sometimes the life is down (we are not happy). At some point we meet a life crisis, at another point we have high exuberance. We learn the life along the way, sometimes successfully, sometimes not. But the level of development normally increases as we grow up, and becomes more stable in the later period of life. Yet, an unexpected downturn of life may be seen.
+
+In contrast, the developmental pattern of the trained is smoother, and it rises up close to the point of the ideal (we may see this as the Buddha line of reference). Once the training is started, the trained ones develop themselves constantly. The life of them can also be up and down because of inevitable vicissitude, but they can handle the hardship properly. So, the trained people are less likely to meet a grave life crisis. They are generally happier and have more enjoyment of their simpler life.
+
+The well-trained line marks the point of no-return. This means once the practitioners reach the point, they are no longer possible to fall back to the pattern of the untrained. Ascending with little wavering is guaranteed. (Some may see this point as the Stream Enterer, but be very careful to use a loaded concept. The point is real, and you can feel it in that way when it comes. But the concept imposed on it is ideology-bound.) The concept of liberation will make the real sense when the practitioners are well-trained enough. And it has no mysterious flavor.
+
+I remember that Alan Watts once said, enlightened, (or 'well-trained' in this context), people just feel and act like ordinary ones but 2 inches above the ground. This means they just live a normal life but without any burden and anxiety. This can be a matter of degree, but the feeling is real.
+
 ## The perfections: model for perfect beings
 
 Rarely associated with the threefold training, the perfections (pāramī) can be likewise seen as a course of training. I bring this into perspective because it really makes sense.
@@ -241,11 +260,11 @@ Here are my down-to-earth explanation of perfections.
 
 [^factors]: There are five jhānic factors, namely *vitakka* (applied thought), *vicāra* (sustained thought), *pīti* (rapture), *sukha* (pleasure), and *upekkhā* (equanimity) (or *ekaggatā*). All these are technical terms with a variety of explanations, so I leave out them because they have little to do with the real practice. The most recognizable factor is pīti. See also in [*Is Vipassanā a Mystical Experience?*](/vipmysexp){:target="\_blank"}.
 
-Like the noble eightfold path, each perfection can be put in relation to the threefold training. For some items are redundant, I will leave them out. The full picture of all factors put together is shown in Figure 3.
+Like the noble eightfold path, each perfection can be put in relation to the threefold training. For some items are redundant, I will leave them out. The full picture of all factors put together is shown in Figure 4.
 
 <center>
 <img src="assets/images/threefold-training-with-parami.jpg" alt="The final triangular model with ten perfections" title="The final triangular model with ten perfections" />
-<br>Figure 3: The final triangular model with ten perfections
+<br>Figure 4: The final triangular model with ten perfections
 </center>
 
 I find it makes sense to put giving, renunciation, truthfulness, and morality itself into sīla category because all these operate in bodily and verbal realms. Resolution and equanimity are best put in samādhi side because they are used mostly here. Loving-kindness straddles both sīla and samādhi because they can be used in both. Endurance is put in the middle because it is commonly used by all parts of training.
@@ -264,7 +283,7 @@ It is true that ascetic life is essential to the enlightenment of the Buddha, as
 >
 > Being a householder [is] inconvenient; [it is like a] dusty (defiled) path; taking up the ascetic life [is like] an open space. [Being one] living in a house [is] not easy to completely, perfectly like a well-scraped conch, practice the religious life. Indeed, I, cutting down hair and beard, putting on yellow robes, should go forth from home into homelessness. (my translation)
 
-We can say that early Buddhism gave high value to ascetic lifestyle, and it seems inevitable that the Buddha had to establish the ascetic community (the Saṅgha). So, it is logical to have renunciation as a key factor of successful practitioners. Bu it is too far to say that everyone should be an ascetic from Buddhist ideology.
+We can say that early Buddhism gave high value to ascetic lifestyle, and it seems inevitable that the Buddha had to establish the ascetic community (the Saṅgha). So, it is logical to have renunciation as a key factor of successful practitioners. But it is too far to say that everyone should be an ascetic from Buddhist ideology.
 
 Now I will fast-forward to our time. Is renunciation still relevant nowadays? As we can see in Buddhist countries, many monks now have a lot of money and use luxurious articles. Their life is far comfortable than many poor people in the country. Many Theravāda monks, except having wife and children, live much like householders nowadays. Will renunciation really help, then?
 
@@ -282,6 +301,6 @@ If you are a Buddhist uncomfortable with many absurd ideas and practices in the 
 
 The last caveats: All three folds of the training have to be practice in this very life. Do not develop only morality in this life and postpone concentration to the next, then develop wisdom in another next, otherwise you will miss the whole thing. And the training has to be done throughout your life. Once started, it will be never finished.
 
-The last assertion: The guideline articulated so far is not just a fancy or a thesis proposal. This practical guide can really be done, not so difficult as the tradition puts/stipulates/imagines it, and it has been being done with affirmative result.
+The last assertion: The guideline articulated so far is not just a fancy or a thesis proposal. This practical guide can really be done, not so difficult as the tradition puts/stipulates/imagines it, and it has been being done with an affirmative result.
 
 ## Notes

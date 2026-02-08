@@ -6,7 +6,7 @@ permalink: /
 ![banner](/assets/images/banner.jpg)
 ## Articles
 - [Introduction to Critical Buddhist Studies](/cribudstu)
-- [Buddhism as a Model of Self-Development](/budselfdev)
+- [Buddhism as a Model of Self-Development](/budselfdev) <span class="label label-green">updated</span>
 - [A Humble Guide to Meditation](/medguide)
 - [Pāli Jokes](/palijokes)
 
