@@ -2,7 +2,7 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2026-02-08 12:00:00 +0700
+date: 2026-02-11 12:00:00 +0700
 ---
 
 - TOC
@@ -155,22 +155,32 @@ I suggest instead that those who lead themselves with the Buddhist way of traini
 
 ## The practical idea of liberation
 
-Suggestion in the previous section that practitioners should delete 'liberation' and the like from their practical dictionary may make some feel uncomfortable or ungrounded or a little blasphemous. So, I add an illustration of the idea of liberation according to our model, shown in Figure 3.
+Suggestion in the previous section that practitioners should delete 'liberation' and the like from their practical dictionary may make some feel uncomfortable or ungrounded or a little blasphemous. So, I add an illustration of the idea of liberation, shown in Figure 3, according to our model.
 
 <center>
 <img src="assets/images/self-dev-graph.jpg" alt="Personal development graph" title="Personal development graph" />
 <br>Figure 3: Personal development graph
 </center>
 
-The graph shows unfolding patterns of people. We divide people into two groups here: the trained (green line) and the untrained (orange line). The former is of those who embarks on the path of religious practice, i.e., the self-development according to the Buddhist model (or other similar models). The latter is of the rest, the common worldly people.
+The graph shows unfolding patterns of people. I divide people into two groups here: the trained (green line) and the untrained (orange line). The former is of those who embark on the path of religious practice, i.e., the self-development according to the Buddhist model (or other similar models). The latter is of the rest, the common worldly people.
 
 The development of the untrained is familiar to most of us. The pattern is highly wavering. Sometimes the life is up (we are happy), sometimes the life is down (we are not happy). At some point we meet a life crisis, at another point we have high exuberance. We learn the life along the way, sometimes successfully, sometimes not. But the level of development normally increases as we grow up, and becomes more stable in the later period of life. Yet, an unexpected downturn of life may be seen.
 
-In contrast, the developmental pattern of the trained is smoother, and it rises up close to the point of the ideal (we may see this as the Buddha line of reference). Once the training is started, the trained ones develop themselves constantly. The life of them can also be up and down because of inevitable vicissitude, but they can handle the hardship properly. So, the trained people are less likely to meet a grave life crisis. They are generally happier and have more enjoyment of their simpler life.
+In contrast, the developmental pattern of the trained is smoother, and it rises up close to the level of the ideal (we may see this as the Buddha line of reference). Once the training is started, the trained ones develop themselves constantly. Their life can also be up and down because of inevitable vicissitudes, but they can handle the hardship properly. So, the trained people are less likely to meet a grave life crisis. They are generally happier and have more enjoyment of their simpler life.
 
-The well-trained line marks the point of no-return. This means once the practitioners reach the point, they are no longer possible to fall back to the pattern of the untrained. Ascending with little wavering is guaranteed. (Some may see this point as the Stream Enterer, but be very careful to use a loaded concept. The point is real, and you can feel it in that way when it comes. But the concept imposed on it is ideology-bound.) The concept of liberation will make the real sense when the practitioners are well-trained enough. And it has no mysterious flavor.
+The well-trained line marks the point of no-return. This means once the practitioners train themselves properly for a good period of time, they are no longer possible to fall back to the pattern of the untrained. Ascending with little wavering is guaranteed. (Some may see this point as the Stream Enterer, but be very careful to use a loaded concept. The point is real, and you can feel it in that way when it comes. But the concept imposed on it is ideology-bound.) The concept of liberation will make real sense when the practitioners are well-trained enough. And it has no mysterious flavor. Ability to do miracles, if that is possible after all, is irrelevant here.[^miracle]
 
-I remember that Alan Watts once said, enlightened, (or 'well-trained' in this context), people just feel and act like ordinary ones but 2 inches above the ground. This means they just live a normal life but without any burden and anxiety. This can be a matter of degree, but the feeling is real.
+[^miracle]: Many Buddhists get stuck with the idea that an enlightened one has to be able to perform some miracle feat. The belief is really misleading, mostly beneficial to temple business and personality cults.
+
+I remember that Alan Watts once said, enlightened (or 'well-trained' in this context) people just feel and act like ordinary ones but 2 inches above the ground. This means they just live a normal life but without any burden and anxiety. This can be a matter of degree, but the feeling is real.
+
+The mentioning above is in fact from D.T. Suzuki. Here is the exact quote:
+
+> When D.T. Suzuki was asked what it is like to experience satori---enlightenment---he replied, "It's like everyday experience---but about two inches off the ground." [^suzuki]
+
+[^suzuki]: Alan Watts, 2017, *Out of Your Mind: Tricksters, Interdependence, and the Cosmic Game of Hide-and-Seek*, Boulder: Sounds True, p. 172.
+
+(Some of you may be curious, like me in my early days, that whether the Zen's *satori* is the same as Theravāda's *vimutti* or liberating experiences in other traditions. This is a hard question if you want an absolute answer. But from the subjectivity of experiencers, it does not matter at all. Arguing over words is useless for, even harmful to, the practice you undertake. Just forget about words, be aware of ideological constraints, and do properly whatever fits you. The real liberation liberates us from even the notion of 'liberation' itself. There is also no point to say that one gets liberated because words just make things complicated and confusing. Those who claim the arhantship explicitly are therefore very suspicious because NO PERSON/PUGGALA can really become an arhant. Only thing a practitioner can claim is whether one is on the training path or not.)
 
 ## The perfections: model for perfect beings
 
