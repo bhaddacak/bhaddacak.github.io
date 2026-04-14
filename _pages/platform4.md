@@ -2,7 +2,7 @@
 title: "Pāli Platform 4"
 permalink: /platform4
 is_article: true
-date: 2026-02-01 12:00:00 +0700
+date: 2026-04-14 12:00:00 +0700
 ---
 
 - TOC
@@ -18,7 +18,7 @@ Normally, the program will be released in two forms: (1) for all platforms witho
 
 ### Executable
 
-- [Pali Platform v4.0.0](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~150-240 MB)
+- [Pali Platform v4.1.0](https://github.com/bhaddacak/paliplatform/releases){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> (~200-300 MB)
 
 ### Source code
 
@@ -44,7 +44,7 @@ The program is fully portable, no installation required. On 64-bit Windows (7+),
 
 Now that *Pāli Platform: The Official Manual* is available in the recent package, the full information about the program should be read from the manual.
 
-## Features developed from 3.2 to 4.0
+## Features developed from 3.2 to 4.1
 
 Started from version 3.2, the program has been enhanced in several aspects. Here are notable some.
 
@@ -54,14 +54,11 @@ Started from version 3.2, the program has been enhanced in several aspects. Here
 - **New transliterating engine**. Now the program can handle transliteration properly, including Myanmar (but still not perfect). All scripts can be converted back and forth. And we have several options for Roman transliterations, including Sanskrit support.
 - **Several enhancements of settings**. There are several default settings added to the program. This can make the program more user-friendly.
 - **`CpUtil` added**. This command-line tool can help power users access and manipulate the text corpora easier. This tool complements `ScUtil` developed earlier (see below).
-- **Essential Sanskrit dictionaries added**. The is a solid helper for all serious learners of Pāli and Sanskrit.
+- **Essential Sanskrit dictionaries added**. This is a solid helper for all serious learners of Pāli and Sanskrit.
 - **Support of GRETIL Sanskrit documents**. Now the Sanskrit GRETIL corpus is seen as a collection by the program. This means you can list, view, and search the documents like you do in all Pāli collections.
+- **Essential Sanskrit Tools**. This toolset is fully available from v4.1.0 onward, including _Sandhi Rules, Sandhi Combiner and Analyzer, Nominal Paradigms and Declension Table, Verbal Paradigms and Conjugation Table,_ and _Whitney's Roots_.
 
-## Future plan for Sanskrit learning tools
-
-There is feasibility to implement grammatical tools for Sanskrit learning, comparable to what we have in the Pāli tools, such as root exploration, declension table, and conjugation table, and more essential in Sanskrit, such as sandhi combiner, and sandhi analyzer. The latter two are fundamental and needs to be developed first.
-
-We will see all these tool in coming releases later on. Because of the complexity, they need time to study, analyze, design, and finish.
+* * *
 
 The following part is taken from the page of the former `Pāli Platform 3`. Some sections are also updated.
 

@@ -2,7 +2,7 @@
 title: "Buddhism as a Model of Self-Development"
 permalink: /budselfdev
 is_article: true
-date: 2026-02-11 12:00:00 +0700
+date: 2026-03-27 12:00:00 +0700
 ---
 
 - TOC
@@ -176,9 +176,9 @@ I remember that Alan Watts once said, enlightened (or 'well-trained' in this con
 
 The mentioning above is in fact from D.T. Suzuki. Here is the exact quote:
 
-> When D.T. Suzuki was asked what it is like to experience satori---enlightenment---he replied, "It's like everyday experience---but about two inches off the ground." [^suzuki]
+> It is said that when Professor D.T. Suzuki was once asked how it feels to have attained *satori*, the Zen experience of "awakening," he answered, "Just like ordinary everyday experience, except about two inches off the ground!" [^suzuki]
 
-[^suzuki]: Alan Watts, 2017, *Out of Your Mind: Tricksters, Interdependence, and the Cosmic Game of Hide-and-Seek*, Boulder: Sounds True, p. 172.
+[^suzuki]: Alan Watts, 1957/1989, *The Way of Zen", New York: Vintage Books, p. 22. See also Alan Watts, 2017, *Out of Your Mind: Tricksters, Interdependence, and the Cosmic Game of Hide-and-Seek*, Boulder: Sounds True, p. 172.
 
 (Some of you may be curious, like me in my early days, that whether the Zen's *satori* is the same as Theravāda's *vimutti* or liberating experiences in other traditions. This is a hard question if you want an absolute answer. But from the subjectivity of experiencers, it does not matter at all. Arguing over words is useless for, even harmful to, the practice you undertake. Just forget about words, be aware of ideological constraints, and do properly whatever fits you. The real liberation liberates us from even the notion of 'liberation' itself. There is also no point to say that one gets liberated because words just make things complicated and confusing. Those who claim the arhantship explicitly are therefore very suspicious because NO PERSON/PUGGALA can really become an arhant. Only thing a practitioner can claim is whether one is on the training path or not.)
 
