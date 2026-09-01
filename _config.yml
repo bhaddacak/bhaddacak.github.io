@@ -1,0 +1,53 @@
+title: "bhaddacak.github.io"
+author: "J.R. Bhaddacak"
+description: "Make life simple, contemplative, and easily happy"
+bilara_url: "https://raw.githubusercontent.com/suttacentral/bilara-data/published"
+#bilara_url: "/assets/external/bilara"
+cst_url: "https://raw.githubusercontent.com/bhaddacak/cst-kit/main"
+#cst_url: "/assets/external/cst"
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+
+# Menu
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md", title: Home}
+  - {file: "about.md"}
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Home, icon: home, url: "/"}
+  - {title: WordPress, icon: wordpress, url: "https://bhaddacak.wordpress.com"}
+  - {title: YouTube, icon: youtube, url: "https://www.youtube.com/@Bhaddacak"}
+  - {title: Github, icon: github, url: "https://github.com/bhaddacak"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+
+plugins:
+ - jekyll-feed
+
+defaults:
+  -
+    scope:
+      type: posts
+      path: _posts
+    values:
+      is_post: true
+      layout: post
+      permalink: /blog/:title/
+  -
+    scope:
+      type: pages
+      path: _pages
+    values:
+      is_post: false
+      layout: page
+        
+include: [_pages]

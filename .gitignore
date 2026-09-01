@@ -1,0 +1,14 @@
+.DS_Store
+.bundle
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+Gemfile.lock
+_site
+*.gem
+assets/katex/
+assets/external/
+assets/images/wallpaper/.comments/
+gvimrc
+*.vim
+*.sh
