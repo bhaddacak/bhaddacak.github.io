@@ -18,7 +18,7 @@ permalink: /
 - [Pāli Platform: The Official Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v4.0</span>
 
 ## หนังสือภาษาไทย
-- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.1</span>
+- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.2</span>
 
 [![LibWis](/assets/images/libwis-small.jpg)](/libwis)
 
