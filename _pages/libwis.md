@@ -1,7 +1,7 @@
 ---
 title: "ปัญญาสู่อิสรภาพ"
 permalink: /libwis
-version: 1.0.2
+version: 1.0.3
 ---
 
 ![BUDDISTHAI](/assets/images/libwis.jpg)
