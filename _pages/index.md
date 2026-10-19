@@ -19,8 +19,9 @@ permalink: /
 
 ## หนังสือภาษาไทย
 - [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.3</span>
+- [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.1</span>
 
-[![LibWis](/assets/images/libwis-small.jpg)](/libwis)
+[![LibWis](/assets/images/libwis-small.jpg)](/libwis) [![BSL](/assets/images/bsl-small.jpg)](/bsl)
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
