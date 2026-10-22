@@ -18,10 +18,10 @@ permalink: /
 - [Pāli Platform: The Official Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v4.0</span>
 
 ## หนังสือภาษาไทย
-- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.3</span>
+- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.4</span>
 - [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.1</span>
 
-[![LibWis](/assets/images/libwis-small.jpg)](/libwis) [![BSL](/assets/images/bsl-small.jpg)](/bsl)
+[![LibWis](/assets/images/libwis-3d.png)](/libwis) [![BSL](/assets/images/bsl-3d.png)](/bsl)
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>
