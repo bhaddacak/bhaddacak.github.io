@@ -6,7 +6,7 @@ version: 0.9.3
 year: 2025
 ---
 
-![PPMAN](/assets/images/ksut.jpg)
+![PPMAN](/assets/images/ksut-cover.png)
 
 | --- | --- |
 | Book title: | **Grammatical Suttas of Kaccāyana** |

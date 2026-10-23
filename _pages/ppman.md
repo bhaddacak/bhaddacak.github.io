@@ -6,7 +6,7 @@ version: 4.0
 year: 2026
 ---
 
-![PPMAN](/assets/images/ppman.jpg)
+![PPMAN](/assets/images/ppman-cover.png)
 
 | --- | --- |
 | Book title: | **Pāli Platform: The Official Manual** |

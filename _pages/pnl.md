@@ -8,7 +8,7 @@ year: 2024
 
 > Please note that the author has NEVER sold this book, either electronic or printed version. The money you might pay for a copy of this will never go to the author.
 
-![PNL](/assets/images/pnl-cover.jpg)
+![PNL](/assets/images/pnl-cover.png)
 
 | --- | --- |
 | Book title: | **{{ page.title }}** |

@@ -4,7 +4,7 @@ permalink: /buddisthai
 version: 0.9.1
 ---
 
-![BUDDISTHAI](/assets/images/buddisthai.png)
+![BUDDISTHAI](/assets/images/buddisthai-cover.png)
 
 | --- | --- |
 | Book title: | **Buddhist Discourses in Thai Merit-Making Rituals** |

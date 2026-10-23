@@ -17,6 +17,8 @@ permalink: /
 - [Grammatical Suttas of Kaccāyana](/ksut) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v0.9.3</span>
 - [Pāli Platform: The Official Manual](/ppman) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label">v4.0</span>
 
+[![BudDisThai](/assets/images/buddisthai-3d.png)](/buddisthai)[![PNL](/assets/images/pnl-3d.png)](/pnl)[![PTR](/assets/images/ptr-3d.png)](/ptr)[![KSut](/assets/images/ksut-3d.png)](/ksut)[![PPMan](/assets/images/ppman-3d.png)](/ppman)
+
 ## หนังสือภาษาไทย
 - [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.4</span>
 - [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.1</span>
