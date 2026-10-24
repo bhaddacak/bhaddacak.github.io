@@ -21,7 +21,7 @@ permalink: /
 
 ## หนังสือภาษาไทย
 - [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.4</span>
-- [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.1</span>
+- [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.2</span>
 
 [![LibWis](/assets/images/libwis-3d.png)](/libwis) [![BSL](/assets/images/bsl-3d.png)](/bsl)
 
