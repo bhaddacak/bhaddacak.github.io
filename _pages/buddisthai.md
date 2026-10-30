@@ -10,6 +10,7 @@ version: 0.9.1
 | Book title: | **Buddhist Discourses in Thai Merit-Making Rituals** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | A comprehensive analysis of formal Thai merit-making rituals |
+| Thickness: | 312 pages (A5) |
 | Project code: | buddisthai |
 | Version: | {{ page.version }} |
 | License: | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) |

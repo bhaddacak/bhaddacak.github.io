@@ -12,6 +12,7 @@ year: 2026
 | Book title: | **Pāli Platform: The Official Manual** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | The official manual of Pāli Platform |
+| Thickness: | 294 pages (A5) |
 | Project code: | ppman |
 | Version: | {{ page.version }} |
 | License: | [GNU Free Documentation License](https://www.gnu.org/licenses/){:target="\_blank"} |

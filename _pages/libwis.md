@@ -1,16 +1,16 @@
 ---
 title: "ปัญญาสู่อิสรภาพ"
 permalink: /libwis
-version: 1.0.4
+version: 1.0.5
 ---
 
 ![BUDDISTHAI](/assets/images/libwis-cover.jpg)
 
 | --- | --- |
-| ชื่อหนังสือ: | **ปัญญาสู่อิสรภาพ** (Liberating Wisdom)|
+| ชื่อหนังสือ: | **ปัญญาสู่อิสรภาพ** (Liberating Wisdom) |
 | ผู้แต่ง: | จร ภัททาจาร |
 | คำอธิบาย: | แนวทางการปฏิบัติเพื่ออิสรภาพฉบับลัดสั้น |
-| ความหนา: | 52 หน้า |
+| ความหนา: | 52 หน้า (A5) |
 | รหัสโครงการ: | libwis |
 | ผู้ผลิตและเผยแพร่: | [อิสราศรม ทิศาปาโมกข์](https://www.facebook.com/disapamokkh){:target="\_blank"}  <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#facebook-square"></use></svg>|
 | เวอร์ชั่น: | {{ page.version }} |

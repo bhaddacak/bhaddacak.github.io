@@ -20,10 +20,11 @@ permalink: /
 [![BudDisThai](/assets/images/buddisthai-3d.png)](/buddisthai)[![PNL](/assets/images/pnl-3d.png)](/pnl)[![PTR](/assets/images/ptr-3d.png)](/ptr)[![KSut](/assets/images/ksut-3d.png)](/ksut)[![PPMan](/assets/images/ppman-3d.png)](/ppman)
 
 ## หนังสือภาษาไทย
-- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.4</span>
+- [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.5</span>
 - [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.2</span>
+- [ธรรมะทางเลือก](/altdham) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.0</span>
 
-[![LibWis](/assets/images/libwis-3d.png)](/libwis) [![BSL](/assets/images/bsl-3d.png)](/bsl)
+[![LibWis](/assets/images/libwis-3d.png)](/libwis) [![BSL](/assets/images/bsl-3d.png)](/bsl) [![AltDham](/assets/images/altdham-3d.png)](/altdham)
 
 ## Applications
 - [Pāli Platform](/paliplatform) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#linux"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#apple"></use></svg> <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#windows"></use></svg>

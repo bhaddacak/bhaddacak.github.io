@@ -12,6 +12,7 @@ year: 2025
 | Book title: | **Grammatical Suttas of Kaccāyana** |
 | Author: | *J.R. Bhaddacak* |
 | Description: | A clean translation of Kaccāyana's grammatical suttas |
+| Thickness: | 460 pages (A5) |
 | Project code: | ksut |
 | Version: | {{ page.version }} |
 | License: | [GNU Free Documentation License](https://www.gnu.org/licenses/){:target="\_blank"} |

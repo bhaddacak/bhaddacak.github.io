@@ -14,6 +14,7 @@ year: 2024
 | Book title: | **{{ page.title }}** |
 | Author: | *J. R. Bhaddacak* |
 | Description: | A reader-friendly, yet comprehensive, Pāli primer |
+| Thickness: | 800 pages (A5) |
 | Version: | {{ page.version }} |
 | License: | [GNU Free Documentation License](https://www.gnu.org/licenses/){:target="\_blank"} |
 | Source: | [PNL at Github](https://github.com/bhaddacak/{{ page.code }}){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> |

@@ -14,6 +14,7 @@ year: 2026
 | Book title: | **{{ page.title }}** |
 | Author: | *J. R. Bhaddacak* |
 | Description: | A manual of Pāli text reading and translation |
+| Thickness: | 360 pages (A5) |
 | Version: | {{ page.version }} |
 | License: | [GNU Free Documentation License](https://www.gnu.org/licenses/){:target="\_blank"} |
 | Source: | [PTR at Github](https://github.com/bhaddacak/{{ page.code }}){:target="\_blank"} <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#github-alt"></use></svg> |
