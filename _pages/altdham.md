@@ -10,7 +10,7 @@ version: 0.9.0
 | ชื่อหนังสือ: | **ธรรมะทางเลือก** (Alternative Dhamma) |
 | ชื่อรอง: | สู่อิสรภาพด้วยการไม่ปฏิบัติ |
 | ผู้แต่ง: | จร ภัททาจาร |
-| คำอธิบาย: | ทางเลือกอันลัดสั้นสู่การรู้แ้จง |
+| คำอธิบาย: | ทางเลือกอันลัดสั้นสู่การรู้แจ้ง |
 | ความหนา: | 56 หน้า (A5) |
 | รหัสโครงการ: | altdham |
 | ผู้ผลิตและเผยแพร่: | [อิสราศรม ทิศาปาโมกข์](https://www.facebook.com/disapamokkh){:target="\_blank"}  <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#facebook-square"></use></svg>|
