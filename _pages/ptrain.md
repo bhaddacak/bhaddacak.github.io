@@ -1,7 +1,7 @@
 ---
 title: "ทางสายปฏิบัติ"
 permalink: /ptrain
-version: 0.9.1
+version: 0.9.2
 ---
 
 ![BUDDISTHAI](/assets/images/ptrain-cover.jpg)

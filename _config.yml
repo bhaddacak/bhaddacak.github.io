@@ -23,6 +23,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Home, icon: home, url: "/"}
   - {title: WordPress, icon: wordpress, url: "https://bhaddacak.wordpress.com"}
   - {title: YouTube, icon: youtube, url: "https://www.youtube.com/@Bhaddacak"}
+  - {title: Facebook, icon: facebook, url: "https://www.facebook.com/bhaddacak"}
   - {title: Github, icon: github, url: "https://github.com/bhaddacak"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 

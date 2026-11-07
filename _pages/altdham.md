@@ -1,7 +1,7 @@
 ---
 title: "ธรรมะทางเลือก"
 permalink: /altdham
-version: 0.9.0
+version: 0.9.1
 ---
 
 ![BUDDISTHAI](/assets/images/altdham-cover.jpg)

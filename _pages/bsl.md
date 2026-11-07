@@ -1,7 +1,7 @@
 ---
 title: "พุทธศาสน์ชาติเดียว"
 permalink: /bsl
-version: 0.9.2
+version: 0.9.3
 ---
 
 ![BUDDISTHAI](/assets/images/bsl-cover.jpg)
