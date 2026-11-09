@@ -1,7 +1,7 @@
 ---
 title: "ธรรมะทางเลือก"
 permalink: /altdham
-version: 0.9.1
+version: 1.0
 ---
 
 ![BUDDISTHAI](/assets/images/altdham-cover.jpg)
@@ -16,7 +16,7 @@ version: 0.9.1
 | ผู้ผลิตและเผยแพร่: | [อิสราศรม ทิศาปาโมกข์](https://www.facebook.com/disapamokkh){:target="\_blank"}  <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#facebook-square"></use></svg>|
 | เวอร์ชั่น: | {{ page.version }} |
 | ไฟล์: | [ธรรมะทางเลือก.pdf](https://drive.google.com/file/d/1eTKtVy_4ZtIZyOO2ljezEYWl6ZP1u9I7/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| ไฟล์สำหรับพิมพ์: | (ยังไม่พร้อม)|
+| ไฟล์สำหรับพิมพ์: | [ธรรมะทางเลือก_สำหรับพิมพ์.zip](https://drive.google.com/file/d/1kLuh41u2icXoTnfq-N7U85rjMAXSzepU/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
 
 > **คำแนะนำการพิมพ์**
 > 
