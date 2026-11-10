@@ -23,7 +23,7 @@ permalink: /
 - [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.7</span>
 - [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.3</span>
 - [ธรรมะทางเลือก](/altdham) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0</span>
-- [ทางสายปฏิบัติ](/ptrain) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.2</span>
+- [ทางสายปฏิบัติ](/ptrain) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0</span>
 
 [![LibWis](/assets/images/libwis-3d.png)](/libwis) [![BSL](/assets/images/bsl-3d.png)](/bsl) [![AltDham](/assets/images/altdham-3d.png)](/altdham) [![PTrain](/assets/images/ptrain-3d.png)](/ptrain)
 

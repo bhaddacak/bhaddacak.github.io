@@ -1,7 +1,7 @@
 ---
 title: "ทางสายปฏิบัติ"
 permalink: /ptrain
-version: 0.9.2
+version: 1.0
 ---
 
 ![BUDDISTHAI](/assets/images/ptrain-cover.jpg)
@@ -15,7 +15,7 @@ version: 0.9.2
 | ผู้ผลิตและเผยแพร่: | [อิสราศรม ทิศาปาโมกข์](https://www.facebook.com/disapamokkh){:target="\_blank"}  <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#facebook-square"></use></svg>|
 | เวอร์ชั่น: | {{ page.version }} |
 | ไฟล์: | [ทางสายปฏิบัติ.pdf](https://drive.google.com/file/d/19zC787Vn-f0XNzvfWfr0HCTqrDVqjG4s/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| ไฟล์สำหรับพิมพ์: | (ยังไม่พร้อม)|
+| ไฟล์สำหรับพิมพ์: | [ทางสายปฏิบัติ_สำหรับพิมพ์.zip](https://drive.google.com/file/d/18lTeUZvWbfuDoWEO1IL2FqFTUtiQsp1X/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
 
 > **คำแนะนำการพิมพ์**
 > 
