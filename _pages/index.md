@@ -21,7 +21,7 @@ permalink: /
 
 ## หนังสือภาษาไทย {#thaibooks}
 - [ปัญญาสู่อิสรภาพ](/libwis) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0.7</span>
-- [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v0.9.3</span>
+- [พุทธศาสน์ชาติเดียว](/bsl) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0</span>
 - [ธรรมะทางเลือก](/altdham) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0</span>
 - [ทางสายปฏิบัติ](/ptrain) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#file-pdf"></use></svg> <span class="label label-green">v1.0</span>
 

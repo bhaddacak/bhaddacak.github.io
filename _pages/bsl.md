@@ -1,7 +1,7 @@
 ---
 title: "พุทธศาสน์ชาติเดียว"
 permalink: /bsl
-version: 0.9.3
+version: 1.0
 ---
 
 ![BUDDISTHAI](/assets/images/bsl-cover.jpg)
@@ -16,7 +16,7 @@ version: 0.9.3
 | ผู้ผลิตและเผยแพร่: | [อิสราศรม ทิศาปาโมกข์](https://www.facebook.com/disapamokkh){:target="\_blank"}  <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#facebook-square"></use></svg>|
 | เวอร์ชั่น: | {{ page.version }} |
 | ไฟล์: | [พุทธศาสน์ชาติเดียว.pdf](https://drive.google.com/file/d/1er9kC5Ym0eSiQZdELKxnG5kdvXZgUioZ/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
-| ไฟล์สำหรับพิมพ์: | (ยังไม่พร้อม)|
+| ไฟล์สำหรับพิมพ์: | [พุทธศาสน์ชาติเดียว_สำหรับพิมพ์.zip](https://drive.google.com/file/d/1taMF_QOIJMOKFBHCWdbG05cYnD1w_jqn/view?usp=sharing) <svg class="icon"><use xlink:href="/assets/fontawesome/custom.svg#google-drive"></use></svg> |
 
 > **คำแนะนำการพิมพ์**
 > 
